@@ -5,96 +5,145 @@
     <link>https://hidecars.github.io/infosys</link>
     <description>応用情報技術者試験 情報システム開発分野の音声解説</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 May 2025 11:54:32 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jun 2025 12:41:59 +0900</lastBuildDate>
 
+    <item>
+      <title>01.共通フレーム</title>
+      <description>01.共通フレーム の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/01.共通フレーム.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/01.共通フレーム.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>02.ウォータフォールモデル</title>
+      <description>02.ウォータフォールモデル の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/02.ウォータフォールモデル.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/02.ウォータフォールモデル.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>03.アジャイル開発</title>
+      <description>03.アジャイル開発 の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/03.アジャイル開発.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/03.アジャイル開発.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>04.分析・設計手法</title>
+      <description>04.分析・設計手法 の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/04.分析・設計手法.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/04.分析・設計手法.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>05.オブジェクト指向</title>
+      <description>05.オブジェクト指向 の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/05.オブジェクト指向.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/05.オブジェクト指向.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>06.テスト</title>
+      <description>06.テスト の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/06.テスト.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/06.テスト.m4a" type="audio/m4a" />
+    </item>
+    <item>
+      <title>07.レビュー</title>
+      <description>07.レビュー の音声解説です</description>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
+      <guid>https://hidecars.github.io/infosys/07.レビュー.m4a</guid>
+      <enclosure url="https://hidecars.github.io/infosys/07.レビュー.m4a" type="audio/m4a" />
+    </item>
     <item>
       <title>情報システム開発_2012</title>
       <description>情報システム開発_2012 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2012.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2012.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2013</title>
       <description>情報システム開発_2013 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2013.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2013.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2014</title>
       <description>情報システム開発_2014 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2014.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2014.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2015</title>
       <description>情報システム開発_2015 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2015.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2015.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2016</title>
       <description>情報システム開発_2016 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2016.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2016.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2017</title>
       <description>情報システム開発_2017 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2017.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2017.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2018</title>
       <description>情報システム開発_2018 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2018.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2018.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2019</title>
       <description>情報システム開発_2019 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2019.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2019.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2020</title>
       <description>情報システム開発_2020 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2020.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2020.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2021</title>
       <description>情報システム開発_2021 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2021.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2021.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2022</title>
       <description>情報システム開発_2022 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2022.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2022.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2023</title>
       <description>情報システム開発_2023 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2023.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2023.m4a" type="audio/m4a" />
     </item>
     <item>
       <title>情報システム開発_2024</title>
       <description>情報システム開発_2024 の音声解説です</description>
-      <pubDate>Sat, 31 May 2025 11:54:32 +0900</pubDate>
+      <pubDate>Wed, 11 Jun 2025 12:41:59 +0900</pubDate>
       <guid>https://hidecars.github.io/infosys/情報システム開発_2024.m4a</guid>
       <enclosure url="https://hidecars.github.io/infosys/情報システム開発_2024.m4a" type="audio/m4a" />
     </item>
