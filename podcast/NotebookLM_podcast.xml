@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>NotebookLM Podcast</title>
+  <link>https://hidecars.github.io/podcast/NotebookLM_podcast.xml</link>
+  <description>Audio feed for NotebookLM</description>
+  <language>ja</language>
+  <item>
+    <title>2025年7月クリップ</title>
+    <enclosure url="https://hidecars.github.io/podcast/NotebookLM/2025年7月クリップ.m4a" type="audio/mp4" />
+    <guid>https://hidecars.github.io/podcast/NotebookLM/2025年7月クリップ.m4a</guid>
+    <pubDate>Tue, 24 Jun 2025 17:00:30 +0900</pubDate>
+  </item>
+</channel>
+</rss>
