@@ -1,0 +1,3 @@
+✅ Podcast処理 完了！\n\nRSSフィード一覧：
+https://hidecars.github.io/podcast/NotebookLM_podcast.xml
+https://hidecars.github.io/podcast/infosys_podcast.xml
