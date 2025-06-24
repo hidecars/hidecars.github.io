@@ -1,681 +1,678 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
-  <title>infosys Podcast</title>
-  <link>https://hidecars.github.io/podcast/infosys_podcast.xml</link>
-  <description>Audio feed for infosys</description>
-  <language>ja</language>
-  <item>
-    <title>情報システム開発_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>04.分析・設計手法</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/04.分析・設計手法.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/04.分析・設計手法.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>07.テスト</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/07.テスト.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/07.テスト.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>08.レビュー</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/08.レビュー.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/08.レビュー.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>02.ウォータフォールモデル</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/02.ウォータフォールモデル.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/02.ウォータフォールモデル.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>05.オブジェクト指向</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/05.オブジェクト指向.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/05.オブジェクト指向.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>01.共通フレーム</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/01.共通フレーム.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/01.共通フレーム.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>06.モジュール分割</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/06.モジュール分割.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/06.モジュール分割.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>03.アジャイル開発</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/03.アジャイル開発.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/03.アジャイル開発.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報システム開発_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
-  </item>
-  <item>
-    <title>04.ネットワークインターフェース層</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/04.ネットワークインターフェース層.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/04.ネットワークインターフェース層.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>10.無線ネットワーク</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/10.無線ネットワーク.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/10.無線ネットワーク.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>02.TCP-IP</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/02.TCP-IP.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/02.TCP-IP.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>09.スパニングツリー</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/09.スパニングツリー.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/09.スパニングツリー.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>08.VLAN</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/08.VLAN.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/08.VLAN.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>05.インターネット層</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/05.インターネット層.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/05.インターネット層.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>11.伝送速度</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/11.伝送速度.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/11.伝送速度.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>ネットワーク_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>07.アプリケーション層</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/07.アプリケーション層.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/07.アプリケーション層.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>06.トランスポート層</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/06.トランスポート層.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/06.トランスポート層.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>03.物理層</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/03.物理層.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/03.物理層.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>01.ネットワークとは</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/network/01.ネットワークとは.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/network/01.ネットワークとは.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>システム監査_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プロジェクトマネジメント_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>プログラミング_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>02.サービスサポート</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/02.サービスサポート.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/02.サービスサポート.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>03.サービスデリバリ</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/03.サービスデリバリ.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/03.サービスデリバリ.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2013</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2013.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2013.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2012</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2012.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2012.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>01.サービスマネージメントとは</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/01.サービスマネージメントとは.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/01.サービスマネージメントとは.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>サービスマネジメント_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2024</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2024.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2024.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2018</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2018.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2018.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2019</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2019.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2019.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2022</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2022.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2022.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2023</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2023.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2023.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2021</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2021.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2021.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>セキュリティ10大脅威</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/セキュリティ10大脅威.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/セキュリティ10大脅威.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2020</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2020.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2020.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2017</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2017.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2017.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2016</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2016.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2016.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2014</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2014.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2014.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-  <item>
-    <title>情報セキュリティ_2015</title>
-    <enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2015.m4a" type="audio/mp4" />
-    <guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2015.m4a</guid>
-    <pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
-  </item>
-</channel>
-</rss>
+<rss version="2.0"><channel>
+<title>infosys Podcast</title>
+<link>https://hidecars.github.io/podcast/infosys_podcast.xml</link>
+<description>Auto-generated podcast RSS</description>
+<item>
+<title>情報システム開発_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2019.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2018.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2024.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2020.m4a</guid>
+</item>
+<item>
+<title>04.分析・設計手法.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/04.分析・設計手法.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/04.分析・設計手法.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2021.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2023.m4a</guid>
+</item>
+<item>
+<title>07.テスト.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/07.テスト.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/07.テスト.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2022.m4a</guid>
+</item>
+<item>
+<title>08.レビュー.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/08.レビュー.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/08.レビュー.m4a</guid>
+</item>
+<item>
+<title>02.ウォータフォールモデル.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/02.ウォータフォールモデル.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/02.ウォータフォールモデル.m4a</guid>
+</item>
+<item>
+<title>05.オブジェクト指向.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/05.オブジェクト指向.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/05.オブジェクト指向.m4a</guid>
+</item>
+<item>
+<title>01.共通フレーム.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/01.共通フレーム.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/01.共通フレーム.m4a</guid>
+</item>
+<item>
+<title>06.モジュール分割.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/06.モジュール分割.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/06.モジュール分割.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2013.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2012.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2015.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2014.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2016.m4a</guid>
+</item>
+<item>
+<title>03.アジャイル開発.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/03.アジャイル開発.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/03.アジャイル開発.m4a</guid>
+</item>
+<item>
+<title>情報システム開発_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 15:31:04 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosys/情報システム開発_2017.m4a</guid>
+</item>
+<item>
+<title>04.ネットワークインターフェース層.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/04.ネットワークインターフェース層.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/04.ネットワークインターフェース層.m4a</guid>
+</item>
+<item>
+<title>10.無線ネットワーク.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/10.無線ネットワーク.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/10.無線ネットワーク.m4a</guid>
+</item>
+<item>
+<title>02.TCP-IP.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/02.TCP-IP.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/02.TCP-IP.m4a</guid>
+</item>
+<item>
+<title>09.スパニングツリー.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/09.スパニングツリー.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/09.スパニングツリー.m4a</guid>
+</item>
+<item>
+<title>08.VLAN.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/08.VLAN.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/08.VLAN.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2012.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2013.m4a</guid>
+</item>
+<item>
+<title>05.インターネット層.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/05.インターネット層.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/05.インターネット層.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2014.m4a</guid>
+</item>
+<item>
+<title>11.伝送速度.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/11.伝送速度.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/11.伝送速度.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2015.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2017.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2016.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2018.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2024.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2019.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2021.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2020.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2022.m4a</guid>
+</item>
+<item>
+<title>ネットワーク_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/ネットワーク_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/ネットワーク_2023.m4a</guid>
+</item>
+<item>
+<title>07.アプリケーション層.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/07.アプリケーション層.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/07.アプリケーション層.m4a</guid>
+</item>
+<item>
+<title>06.トランスポート層.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/06.トランスポート層.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/06.トランスポート層.m4a</guid>
+</item>
+<item>
+<title>03.物理層.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/03.物理層.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/03.物理層.m4a</guid>
+</item>
+<item>
+<title>01.ネットワークとは.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/network/01.ネットワークとは.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/network/01.ネットワークとは.m4a</guid>
+</item>
+<item>
+<title>システム監査_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2022.m4a</guid>
+</item>
+<item>
+<title>システム監査_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2023.m4a</guid>
+</item>
+<item>
+<title>システム監査_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2021.m4a</guid>
+</item>
+<item>
+<title>システム監査_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2020.m4a</guid>
+</item>
+<item>
+<title>システム監査_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2024.m4a</guid>
+</item>
+<item>
+<title>システム監査_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2018.m4a</guid>
+</item>
+<item>
+<title>システム監査_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2019.m4a</guid>
+</item>
+<item>
+<title>システム監査_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2017.m4a</guid>
+</item>
+<item>
+<title>システム監査_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2016.m4a</guid>
+</item>
+<item>
+<title>システム監査_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2014.m4a</guid>
+</item>
+<item>
+<title>システム監査_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2015.m4a</guid>
+</item>
+<item>
+<title>システム監査_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2012.m4a</guid>
+</item>
+<item>
+<title>システム監査_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/sysaudit/システム監査_2013.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2012.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2013.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2014.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2015.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2017.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2016.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2024.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2018.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2019.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2021.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2020.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2022.m4a</guid>
+</item>
+<item>
+<title>プロジェクトマネジメント_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/projmng/プロジェクトマネジメント_2023.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2022.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2023.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2021.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2020.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2018.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2024.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2019.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2017.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2016.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2014.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2015.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2012.m4a</guid>
+</item>
+<item>
+<title>プログラミング_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/programming/プログラミング_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/programming/プログラミング_2013.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2019.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2024.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2018.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2023.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2022.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2020.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2021.m4a</guid>
+</item>
+<item>
+<title>02.サービスサポート.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/02.サービスサポート.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/02.サービスサポート.m4a</guid>
+</item>
+<item>
+<title>03.サービスデリバリ.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/03.サービスデリバリ.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/03.サービスデリバリ.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2013.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2013.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2013.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2012.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2012.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2012.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2016.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2017.m4a</guid>
+</item>
+<item>
+<title>01.サービスマネージメントとは.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/01.サービスマネージメントとは.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/01.サービスマネージメントとは.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2015.m4a</guid>
+</item>
+<item>
+<title>サービスマネジメント_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:51:00 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/servicemng/サービスマネジメント_2014.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2024.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2024.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2024.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2018.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2018.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2018.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2019.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2019.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2019.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2022.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2022.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2022.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2023.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2023.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2023.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2021.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2021.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2021.m4a</guid>
+</item>
+<item>
+<title>セキュリティ10大脅威.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/セキュリティ10大脅威.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/セキュリティ10大脅威.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2020.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2020.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2020.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2017.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2017.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2017.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2016.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2016.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2016.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2014.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2014.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2014.m4a</guid>
+</item>
+<item>
+<title>情報セキュリティ_2015.m4a</title>
+<enclosure url="https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2015.m4a" type="audio/mp4" />
+<pubDate>Tue, 24 Jun 2025 10:50:59 +0900</pubDate>
+<guid>https://hidecars.github.io/podcast/infosys/infosec/情報セキュリティ_2015.m4a</guid>
+</item>
+</channel></rss>
