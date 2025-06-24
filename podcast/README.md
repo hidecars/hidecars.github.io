@@ -1,20 +1,23 @@
-# 🎙 Podcast 自動処理システム - 技術ドキュメント
+# 🎧 Podcast 自動生成＆GitHubアップロードスクリプト
 
-## ✅ 概要
+## 📝 概要
 
-このシステムは、以下の処理を1クリックで実行する **Mac用Automatorアプリ**を作成するためのドキュメントです。
+このリポジトリでは、音声学習用に `wav` ファイルを `m4a` に変換し、Podcast用のRSSフィードを自動生成・GitHub Pagesに公開する **Mac用Automatorアプリ** を提供します。
 
-- `.wav` → `.m4a` に変換（ffmpeg使用）
-- 親カテゴリごとのPodcast用RSSファイルを生成
-- GitHub Pagesへ自動Push
-- RSS URLをダイアログで通知
-- 家庭・職場両方のMacで共通運用
+NotebookLMなどで生成した `.wav` 音声を、自動で次の処理を行います：
+
+1. `.wav` → `.m4a` に変換（元ファイルは削除）
+2. RSSファイル（カテゴリ別）を自動生成
+3. GitHub Pages に push
+4. 完了通知とRSS URLをダイアログ表示
 
 ---
 
-## 🗂 フォルダ構成
+## 📁 フォルダ構成
 
-/Library/Mobile Documents/comapple~CloudDocs/hidecars.github.io/
+iCloudフォルダ上の `hidecars.github.io/podcast/` に、以下のような学習カテゴリ構成で保存してください：
+
+hidecars.github.io/
 └── podcast/
 ├── infosys/
 │   ├── infosec/
@@ -26,64 +29,66 @@
 │   └── sysaudit/
 └── NotebookLM/
 
-各親フォルダごとにRSSファイルを生成します（例：`infosys_podcast.xml`, `NotebookLM_podcast.xml`）。
+- `infosys_podcast.xml` や `NotebookLM_podcast.xml` などのRSSファイルが生成され、`podcast/` フォルダに保存されます。
+- すべての `.m4a` 音声ファイルは、親フォルダ配下のすべてのサブカテゴリを対象に一括収録されます。
 
 ---
 
-## 🔧 必要なツール
+## ⚙️ 必要な環境
 
-- Homebrew
-- ffmpeg（インストール例）:
-  ```bash
-  brew install ffmpeg
+- macOS（Automator使用）
+- `ffmpeg`：Homebrewでインストール
 
-	•	Git（GitHub設定済）
-	•	.nojekyll ファイル（GitHub Pages用）
+```bash
+brew install ffmpeg
 
-⸻
+	•	GitHubリポジトリ：hidecars.github.io（GitHub Pages有効）
+	•	iCloud連携：以下のパスに同期
 
-📦 処理仕様
+~/Library/Mobile Documents/com~apple~CloudDocs/hidecars.github.io/
 
-ステップ	処理内容
-①	.wav ファイルを .m4a に変換し、元ファイルを削除
-②	親カテゴリごとにRSSファイル（XML）を生成
-③	GitHub Pagesへ git add → commit → pull --rebase → push
-④	完了通知をAppleScriptでダイアログ表示
-⑤	処理対象の親フォルダは可変（追加・削除・改名に対応）
 
 
 ⸻
 
-🤖 Automatorアプリの作成手順
-	1.	Macの「Automator」アプリを開く
-	2.	「新規書類」→「アプリケーション」を選択
-	3.	「シェルスクリプトを実行」アクションを追加
-	4.	/bin/bash を指定
-	5.	下記のスクリプトをコピーして貼り付け
-	6.	名前を付けて保存（例：PodcastUpdater.app）
+🚀 Automatorアプリの作成手順
+	1.	Automator を開く →「アプリケーション」を選択
+	2.	アクションに「シェルスクリプトを実行」を追加
+	3.	次のスクリプトを貼り付けて保存（例：PodcastUpdater.app）
 
 ⸻
 
-📜 完全版シェルスクリプト（最新版）
+🧩 スクリプト（最終版）
 
 #!/bin/bash
 
 # 環境設定
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"  # ffmpegなどを使えるように
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 BASE_DIR="$HOME/Library/Mobile Documents/com~apple~CloudDocs/hidecars.github.io/podcast"
 GITHUB_URL="https://hidecars.github.io/podcast"
 
-# 一時ファイル
 TMPFILE=$(mktemp)
 
-# 1. wav → m4a 変換、wav削除
+# URLエンコード関数（スラッシュ除外）
+urlencode_path() {
+  local IFS='/'
+  local segments=($1)
+  local encoded_path=""
+  for segment in "${segments[@]}"; do
+    encoded_segment=$(python3 -c "import urllib.parse; print(urllib.parse.quote('''$segment'''))")
+    encoded_path+="$encoded_segment/"
+  done
+  echo "${encoded_path%/}"
+}
+
+# 1. wav → m4a 変換、削除
 find "$BASE_DIR" -type f -name "*.wav" | while read -r wavfile; do
     m4afile="${wavfile%.wav}.m4a"
     ffmpeg -y -i "$wavfile" -vn -acodec aac "$m4afile"
     rm -f "$wavfile"
 done
 
-# 2. RSSファイル生成（親カテゴリ単位）
+# 2. RSS生成（親フォルダ単位）
 for parent in "$BASE_DIR"/*; do
     [ -d "$parent" ] || continue
     PARENT_NAME=$(basename "$parent")
@@ -98,7 +103,9 @@ for parent in "$BASE_DIR"/*; do
 
         find "$parent" -type f -name "*.m4a" | while read -r audio; do
             FILE_NAME=$(basename "$audio")
-            FILE_URL="${GITHUB_URL}/${PARENT_NAME}/$(basename "$(dirname "$audio")")/${FILE_NAME}"
+            REL_PATH="${audio#"$BASE_DIR/"}"
+            ENCODED_PATH=$(urlencode_path "$REL_PATH")
+            FILE_URL="${GITHUB_URL}/${ENCODED_PATH}"
             PUB_DATE=$(date -r "$audio" "+%a, %d %b %Y %H:%M:%S %z")
             echo "<item>"
             echo "<title>${FILE_NAME}</title>"
@@ -112,48 +119,51 @@ for parent in "$BASE_DIR"/*; do
     } > "$RSS_FILE"
 done
 
-# 3. GitHubへpush
+# 3. GitHubアップロード
 cd "$HOME/Library/Mobile Documents/com~apple~CloudDocs/hidecars.github.io" || exit 1
 git add -A
 git commit -m "Auto update podcast and RSS" 2>/dev/null
 git pull --rebase > /dev/null 2>&1
 git push origin main > /dev/null 2>&1
 
-# 4. 完了通知のダイアログ用メッセージ生成
+# 4. 完了通知表示
 echo "✅ Podcast処理 完了！\n\nRSSフィード一覧：" > "$TMPFILE"
 for parent in "$BASE_DIR"/*; do
     [ -d "$parent" ] && PARENT_NAME=$(basename "$parent") && echo "${GITHUB_URL}/${PARENT_NAME}_podcast.xml" >> "$TMPFILE"
 done
 
-# 5. ダイアログ表示（AppleScript経由）
 osascript <<EOF
 display dialog "$(cat "$TMPFILE")" buttons {"OK"} default button "OK" with title "Podcast更新スクリプト" with icon note
 EOF
 
-# 6. 後処理
 rm -f "$TMPFILE"
 exit 0
 
 
 ⸻
 
-📬 使用例と成果物
-	•	infosys_podcast.xml や NotebookLM_podcast.xml が /podcast/ に作成され、
-	•	各RSSファイルは以下のようなURLでアクセス可能：
+🌐 出力されるRSSフィードURLの例
 	•	https://hidecars.github.io/podcast/infosys_podcast.xml
 	•	https://hidecars.github.io/podcast/NotebookLM_podcast.xml
 
-⸻
-
-🧩 今後の拡張アイデア
-	•	RSSの <itunes:...> 拡張対応
-	•	タグ・カテゴリの自動抽出
-	•	Slackやメールで完了通知
+これらのURLをiPhoneのPodcastアプリに登録することで、音声学習コンテンツを隙間時間に再生可能です。
 
 ⸻
 
-🧑‍💻 作成者メモ
-	•	macOS Monterey以降対応確認済
-	•	ffmpeg のPATHは環境により調整可能
-	•	GitHub Pages のCNAME・カスタムドメイン対応も検討可
+📌 注意点
+	•	m4a ファイルやフォルダ名に スペース、日本語、記号 が含まれていても自動でURLエンコードされます。
+	•	git の認証設定（SSHやアクセストークン）は事前に行っておいてください。
+	•	Automatorアプリは 会社と自宅のMacの両方で動作可能です（iCloud共有で同期されている場合）。
 
+⸻
+
+📥 今後の拡張予定
+	•	Podcast_URL.txt を出力し、iPhoneとAirDropで共有
+	•	タグやキーワードによるフィルタRSS
+	•	mp3変換対応やApple Podcast準拠メタデータ付与
+
+⸻
+
+👨‍💻 作成者
+	•	GitHub: @hidecars
+	•	作成日: 2025年6月24日（火）
