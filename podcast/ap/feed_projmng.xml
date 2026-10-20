@@ -11,13 +11,16 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 07:35:48 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 07:44:44 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
-    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></content:encoded>
-    <itunes:summary>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</itunes:summary>
-    <link>https://hidecars.github.io/podcast/ap/feed_projmng.xml</link>
+    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント
+【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。
+【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-projmng.m4a" length="9025906" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07a-projmng</guid>
     <pubDate>Wed, 01 Oct 2025 06:02:00 +0900</pubDate>
@@ -27,10 +30,12 @@
   </item>
   <item>
     <title>令和7年春期 問9 プロジェクトマネジメント｜CCPMを用いたプロジェクトのスケジュール管理</title>
-    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
     <itunes:summary>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理
-学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</itunes:summary>
+【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。
+【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="7571400" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-projmng</guid>

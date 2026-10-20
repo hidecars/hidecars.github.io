@@ -99,6 +99,20 @@ def inline(s):
     return s
 
 
+def figure(src, alt):
+    path = os.path.join(SRC_DIR, src)
+    js = os.path.splitext(path)[0] + ".json"
+    if os.path.exists(js) and (not os.path.exists(path) or os.path.getmtime(js) > os.path.getmtime(path)):
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import make_diagram
+        make_diagram.convert(js)
+    if not os.path.exists(path):
+        return f"<p>（図が見つかりません: {html.escape(src)}）</p>"
+    svg = open(path, encoding="utf-8").read()
+    cap = f"<figcaption>{inline(alt)}</figcaption>" if alt else ""
+    return f"<figure>{svg}{cap}</figure>"
+
+
 def md_to_html(md):
     out, lines, i = [], md.splitlines(), 0
     while i < len(lines):
@@ -126,6 +140,9 @@ def md_to_html(md):
                 items.append(re.sub(r"^\s*([-*・]|\d+[.)])\s+", "", lines[i])); i += 1
             out.append(f"<{tag}>" + "".join(f"<li>{inline(x)}</li>" for x in items) + f"</{tag}>")
             continue
+        m = re.match(r"^!\[(.*?)\]\((.+?)\)\s*$", ln.strip())
+        if m:  # 図：notes_src/img/*.svg をHTMLに埋め込む（画面幅に合わせて縮尺、ダークモード対応）
+            out.append(figure(m.group(2), m.group(1))); i += 1; continue
         if ln.startswith("```"):
             i += 1; buf = []
             while i < len(lines) and not lines[i].startswith("```"):
@@ -148,6 +165,16 @@ h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
 th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
 audio{width:100%;margin:12px 0}li{margin:2px 0}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
 """
 
 
@@ -212,8 +239,8 @@ def build():
                 links.append(f"<a href=\"{html.escape(ep['doc_url'])}\">詳細ノート（Googleドキュメント）</a>")
                 text.append(f"詳細ノート：{ep['doc_url']}")
             if ep["note_url"]:
-                links.append(f"<a href=\"{ep['note_url']}\">学習ノート（Web版）</a>")
-                text.append(f"学習ノート：{ep['note_url']}")
+                links.append(f"<a href=\"{ep['note_url']}\">詳細ページ（Web記事）</a>")
+                text.append(f"詳細ページ：{ep['note_url']}")
             if links:
                 parts.append("<p>" + "<br>".join(links) + "</p>")
             desc_html = "".join(parts).replace("]]>", "]]&gt;")

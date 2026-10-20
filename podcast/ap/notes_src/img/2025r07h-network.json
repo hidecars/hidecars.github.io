@@ -1,0 +1,103 @@
+{
+ "title": "図1 ネットワーク構成（概略）",
+ "rows": [
+  [
+   {
+    "id": "tw",
+    "label": "テレワーク用PC"
+   }
+  ],
+  [
+   {
+    "id": "in",
+    "label": "インターネット"
+   }
+  ],
+  [
+   {
+    "id": "fw",
+    "label": "FW",
+    "sub": "NAPT・SSL-VPN"
+   }
+  ],
+  [
+   {
+    "id": "l2d",
+    "label": "L2SW（DMZ）",
+    "sub": "192.168.11.0/24"
+   },
+   {
+    "id": "l2l",
+    "label": "L2SW（社内LAN）",
+    "sub": "192.168.1.0/24"
+   }
+  ],
+  [
+   {
+    "id": "svr",
+    "label": "プロキシ .31\nDNS .41",
+    "sub": "ファイル .51",
+    "style": "key"
+   },
+   {
+    "id": "dh",
+    "label": "DHCP .11\n無線AP・PC"
+   },
+   {
+    "id": "l3",
+    "label": "L3SW",
+    "sub": "SNMPトラップ"
+   }
+  ],
+  [
+   {
+    "spacer": true
+   },
+   {
+    "spacer": true
+   },
+   {
+    "id": "pr",
+    "label": "プリンタ",
+    "sub": ".21（重複）",
+    "style": "risk"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "tw",
+   "to": "in",
+   "label": "SSL-VPN"
+  },
+  {
+   "from": "in",
+   "to": "fw"
+  },
+  {
+   "from": "fw",
+   "to": "l2d"
+  },
+  {
+   "from": "fw",
+   "to": "l2l"
+  },
+  {
+   "from": "l2d",
+   "to": "svr"
+  },
+  {
+   "from": "l2l",
+   "to": "l3"
+  },
+  {
+   "from": "l2l",
+   "to": "dh"
+  },
+  {
+   "from": "l3",
+   "to": "pr"
+  }
+ ],
+ "note": "障害① IP重複（プリンタ .21）\n障害② キャッシュDNSの不具合\n障害③ ファイルサーバ→社内LANの大量通信\n出典：2025r07h 問5 図1をもとに簡略化"
+}

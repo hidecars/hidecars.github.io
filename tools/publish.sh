@@ -36,15 +36,25 @@ DRY_RUN="${DRY_RUN:-0}"
 cd "$REPO"
 mkdir -p "$INBOX/done" "$EP_DIR" podcast/ap/notes_src
 
+# Chromeのダウンロード先（Googleドライブの「マイドライブ/Download」）も音声の受け口にする。
+# ファイル名が「<ID>.m4a」（例: 2025r07h-network.m4a）のものだけ取り込み、それ以外は触らない。
+DL="${DL:-}"
+if [ -z "$DL" ]; then
+  for d in "$HOME"/Library/CloudStorage/GoogleDrive-*/"マイドライブ"/Download "$HOME"/Library/CloudStorage/GoogleDrive-*/"My Drive"/Download; do
+    [ -d "$d" ] && { DL="$d"; break; }
+  done
+fi
+
 converted=""
-for src in "$INBOX"/*; do
+for src in "$INBOX"/* ${DL:+"$DL"/*}; do
   [ -f "$src" ] || continue
   name="${src##*/}"
   ext="$(echo "${name##*.}" | tr 'A-Z' 'a-z')"
   case "$ext" in wav|m4a|mp3|mp4|aac) ;; *) continue ;; esac
   id="${name%.*}"
   if ! grep -q "^${id}," tools/episodes.csv; then
-    echo "スキップ（episodes.csv に無いID）: $name"; continue
+    [ "${src%/*}" = "$INBOX" ] && echo "スキップ（episodes.csv に無いID）: $name"
+    continue
   fi
   out="$EP_DIR/${id}.m4a"
   echo "変換中: $name -> ${id}.m4a"

@@ -1,0 +1,96 @@
+{
+ "title": "移行後の構成（概略）",
+ "rows": [
+  [
+   {
+    "id": "ei",
+    "label": "営業所PC",
+    "sub": "192.168.1.0/24"
+   },
+   {
+    "id": "hon",
+    "label": "本社PC・業務サーバ",
+    "sub": "L3SW0・L3SW1"
+   }
+  ],
+  [
+   {
+    "id": "r2",
+    "label": "IPsecルータ2（本社）"
+   }
+  ],
+  [
+   {
+    "id": "r1",
+    "label": "IPsecルータ1（BCL-A）",
+    "sub": "172.20.0.0/20"
+   }
+  ],
+  [
+   {
+    "id": "pub",
+    "label": "公開セグメント",
+    "sub": "DNS・プロキシ・Web・中継",
+    "style": "key"
+   },
+   {
+    "id": "in",
+    "label": "内部セグメント",
+    "sub": "メール・内部DNS"
+   }
+  ],
+  [
+   {
+    "id": "igw",
+    "label": "IGW（NAT）"
+   },
+   {
+    "spacer": true
+   }
+  ],
+  [
+   {
+    "id": "net",
+    "label": "インターネット"
+   },
+   {
+    "spacer": true
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "ei",
+   "to": "hon"
+  },
+  {
+   "from": "hon",
+   "to": "r2"
+  },
+  {
+   "from": "r2",
+   "to": "r1",
+   "label": "IPsec",
+   "both": true
+  },
+  {
+   "from": "r1",
+   "to": "pub"
+  },
+  {
+   "from": "r1",
+   "to": "in"
+  },
+  {
+   "from": "pub",
+   "to": "igw",
+   "both": true
+  },
+  {
+   "from": "igw",
+   "to": "net",
+   "both": true
+  }
+ ],
+ "note": "営業所と本社は広域イーサ網で接続\nIGW：200.α.β.2 → 172.20.1.14（メール中継サーバ）\n公開 172.20.1.0/24（.11〜.14）／内部 172.20.2.0/24\n出典：2025r07a 問5 本文・図をもとに簡略化（接続は要確認）"
+}

@@ -1,0 +1,78 @@
+{
+ "title": "システムと部署の関係（概略）",
+ "rows": [
+  [
+   {
+    "id": "eig",
+    "label": "営業部",
+    "sub": "本社・営業所の端末"
+   },
+   {
+    "spacer": true
+   }
+  ],
+  [
+   {
+    "id": "han",
+    "label": "販売管理システム"
+   },
+   {
+    "id": "kou",
+    "label": "工場",
+    "sub": "自動化システム"
+   }
+  ],
+  [
+   {
+    "id": "sei",
+    "label": "生産管理システム",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "sz",
+    "label": "製造部",
+    "sub": "翌日の生産計画案を受け取る"
+   }
+  ],
+  [
+   {
+    "id": "un",
+    "label": "情報システム部 運用課",
+    "sub": "キャパシティ監視・計画",
+    "style": "dash"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "eig",
+   "to": "han",
+   "label": "注文情報"
+  },
+  {
+   "from": "kou",
+   "to": "sei",
+   "label": "生産実績"
+  },
+  {
+   "from": "han",
+   "to": "sei",
+   "label": "Hバッチ"
+  },
+  {
+   "from": "sei",
+   "to": "sz",
+   "label": "Pバッチ"
+  },
+  {
+   "from": "un",
+   "to": "sz",
+   "label": "SLA・需要予測",
+   "dash": true,
+   "both": true
+  }
+ ],
+ "note": "Hバッチ・Pバッチの遅延 → 翌日の生産に影響\n（設問1の焦点）\n出典：2025r07h 問10 本文をもとに簡略化"
+}

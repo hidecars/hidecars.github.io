@@ -1,0 +1,75 @@
+{
+ "title": "攻撃の流れ（概略）",
+ "rows": [
+  [
+   {
+    "id": "att",
+    "label": "侵入者",
+    "style": "risk"
+   }
+  ],
+  [
+   {
+    "id": "vpn",
+    "label": "P社 VPNルータ",
+    "sub": "認証の脆弱性"
+   }
+  ],
+  [
+   {
+    "id": "pcp",
+    "label": "P社 PC-P",
+    "sub": "辞書攻撃でログイン"
+   }
+  ],
+  [
+   {
+    "id": "pcr",
+    "label": "PC-R",
+    "sub": "C社内に設置したP社のPC"
+   }
+  ],
+  [
+   {
+    "id": "pcs",
+    "label": "C社 PC-S",
+    "sub": "リバースブルートフォース"
+   }
+  ],
+  [
+   {
+    "id": "svr",
+    "label": "C社 各サーバ・NAS",
+    "sub": "特権ID取得→ランサムウェア",
+    "style": "key"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "att",
+   "to": "vpn",
+   "label": "VPN接続"
+  },
+  {
+   "from": "vpn",
+   "to": "pcp"
+  },
+  {
+   "from": "pcp",
+   "to": "pcr",
+   "label": "RDP"
+  },
+  {
+   "from": "pcr",
+   "to": "pcs",
+   "label": "ログイン"
+  },
+  {
+   "from": "pcs",
+   "to": "svr",
+   "label": "特権IDで侵入"
+  }
+ ],
+ "note": "C社：中古車販売会社\nP社：業務提携先　U社：セキュリティ会社\n出典：2025r07h 問1 本文をもとに簡略化"
+}
