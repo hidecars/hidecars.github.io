@@ -1,3 +1,0 @@
-Podcast RSS URL 一覧（ファイル名順並び）：
-https://hidecars.github.io/podcast/NotebookLM_podcast.xml
-https://hidecars.github.io/podcast/infosys_podcast.xml
