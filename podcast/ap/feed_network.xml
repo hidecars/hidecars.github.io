@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>応用情報 午後問題 1問1解説（ネットワーク）</title>
+  <link>https://hidecars.github.io/podcast/ap/index.html</link>
+  <atom:link href="https://hidecars.github.io/podcast/ap/feed_network.xml" rel="self" type="application/rss+xml"/>
+  <language>ja</language>
+  <description>応用情報技術者試験の午後問題を1問ずつ解説する学習用Podcast。IPA公開の問題冊子・解答例・採点講評を基に生成AIで作成。</description>
+  <itunes:author>hidecars</itunes:author>
+  <itunes:image href="https://hidecars.github.io/podcast/ap/artwork.jpg"/>
+  <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:block>Yes</itunes:block>
+  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
+
+</channel>
+</rss>

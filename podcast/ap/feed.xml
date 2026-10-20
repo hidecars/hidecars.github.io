@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>応用情報 午後問題 1問1解説</title>
+  <link>https://hidecars.github.io/podcast/ap/index.html</link>
+  <atom:link href="https://hidecars.github.io/podcast/ap/feed.xml" rel="self" type="application/rss+xml"/>
+  <language>ja</language>
+  <description>応用情報技術者試験の午後問題を1問ずつ解説する学習用Podcast。IPA公開の問題冊子・解答例・採点講評を基に生成AIで作成。</description>
+  <itunes:author>hidecars</itunes:author>
+  <itunes:image href="https://hidecars.github.io/podcast/ap/artwork.jpg"/>
+  <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:block>Yes</itunes:block>
+  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
+  <item>
+    <title>令和7年春期 問10 サービスマネジメント｜容量・能力管理</title>
+    <description><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。夜間バッチの遅れが翌日の生産計画に直結する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画</p><p><a href="https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view">詳細ノート（Googleドキュメント）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。夜間バッチの遅れが翌日の生産計画に直結する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画</p><p><a href="https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view">詳細ノート（Googleドキュメント）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理
+【概要】クラウド移行を検討する製造業が題材。夜間バッチの遅れが翌日の生産計画に直結する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。
+【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画
+詳細ノート：https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html</itunes:summary>
+    <link>https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view</link>
+    <enclosure url="https://hidecars.github.io/podcast/ap/episodes/2025r07h-servicemng.m4a" length="8144552" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-servicemng</guid>
+    <pubDate>Tue, 01 Apr 2025 06:03:00 +0900</pubDate>
+    <itunes:duration>00:16:13</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+</channel>
+</rss>

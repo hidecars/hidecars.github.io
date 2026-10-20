@@ -1,0 +1,26 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和7年春期 問10 サービスマネジメント｜容量・能力管理</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+</style></head><body><p class='meta'>2025r07h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和7年春期 問10 サービスマネジメント｜容量・能力管理</h1><audio controls preload='none' src='https://hidecars.github.io/podcast/ap/episodes/2025r07h-servicemng.m4a'></audio><h2>令和7年度春期 午後 問10 サービスマネジメント／容量・能力管理</h2>
+<h3>1. ひとことで</h3>
+<p>クラウド移行を検討する製造業で、キャパシティ監視と計画の基本、インシデント時に業務影響を避ける考え方を問う。</p>
+<h3>2. 状況</h3>
+<ul><li>オンプレミスからクラウドへの移行を検討中。夜間バッチの遅れは翌日の生産計画に直結する。クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。</li></ul>
+<pre>[営業部]--注文情報--&gt;[夜間バッチ／ストレージ]--翌日の生産計画--&gt;[製造部]
+                          |（クラウド移行を検討）
+                    [キャパシティ監視・計画]</pre>
+<h3>3. 設問の狙いとキーワード</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>製造部と営業部で協議する内容</td><td>前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策</td></tr><tr><td>1(2)</td><td>しきい値の設定方法</td><td>例外になるように設定</td></tr><tr><td>2(1)</td><td>イベントとして認識すること</td><td>Sメッセージの出力</td></tr><tr><td>2(2)</td><td>増強後に行うことと理由</td><td>容量を元に戻す／クラウド利用料が加算される</td></tr><tr><td>2(3)</td><td>見積りの根拠</td><td>需要予測に基づくリソース使用量の見積り</td></tr><tr><td>2(4)</td><td>活動の名称</td><td>キャパシティ計画</td></tr></tbody></table></div>
+<h3>4. 解き方の型</h3>
+<ul><li><strong>型1 SLA変更に逃げない</strong>：まず翌日の業務に支障を出さない具体策を考える。</li><li><strong>型2 クラウドは「戻す」までが運用</strong>：一時的に増やしたリソースは元に戻す。費用の視点を持つ。</li></ul>
+<h3>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>キャパシティ計画</td><td>需要予測から将来のリソース量を見積もり、確保する活動</td></tr><tr><td>キャパシティ監視</td><td>リソースの使用状況を継続的に測る活動（補足）</td></tr><tr><td>従量課金</td><td>使ったリソースの量・期間に応じた料金</td></tr><tr><td>しきい値</td><td>監視で異常とみなす基準値</td></tr><tr><td>SLA</td><td>提供者と顧客が合意したサービスレベル</td></tr><tr><td>バッチ処理</td><td>データをまとめて一括で処理する方式</td></tr></tbody></table></div>
+<h3>6. 1分セルフチェック</h3>
+<ul><li>Q1 インシデント時、最初に協議するのはSLA変更か → いいえ、翌日の業務に支障を出さない施策</li><li>Q2 増強したストレージを戻す理由は → クラウド利用料が加算されるから</li><li>Q3 需要予測から将来のリソースを見積もる活動は → キャパシティ計画</li></ul>
+<p>※採点講評：全体の正答率はやや低い。設問1(1)は「SLAの変更を協議する」という解答が散見された。</p></body></html>
