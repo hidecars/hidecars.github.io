@@ -11,7 +11,32 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
-
+  <lastBuildDate>Wed, 21 Oct 2026 07:22:54 +0900</lastBuildDate>
+  <item>
+    <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
+    <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed_infosec.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-infosec.m4a" length="5539813" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-infosec</guid>
+    <pubDate>Wed, 01 Oct 2025 06:00:00 +0900</pubDate>
+    <itunes:duration>00:11:03</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問1 情報セキュリティ｜サイバー攻撃への対策</title>
+    <description><![CDATA[<p>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed_infosec.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-infosec.m4a" length="6541987" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-infosec</guid>
+    <pubDate>Tue, 01 Apr 2025 06:00:00 +0900</pubDate>
+    <itunes:duration>00:13:05</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
 </channel>
 </rss>

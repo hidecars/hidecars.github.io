@@ -11,7 +11,33 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
-
+  <lastBuildDate>Wed, 21 Oct 2026 07:22:54 +0900</lastBuildDate>
+  <item>
+    <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
+    <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed_network.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-network.m4a" length="7340075" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-network</guid>
+    <pubDate>Wed, 01 Oct 2025 06:01:00 +0900</pubDate>
+    <itunes:duration>00:14:39</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問5 ネットワーク｜社内LANの障害対応</title>
+    <description><![CDATA[<p>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-network.m4a" length="9596478" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-network</guid>
+    <pubDate>Tue, 01 Apr 2025 06:01:00 +0900</pubDate>
+    <itunes:duration>00:19:12</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
 </channel>
 </rss>

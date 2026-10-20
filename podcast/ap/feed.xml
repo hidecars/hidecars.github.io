@@ -11,7 +11,86 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 07:22:54 +0900</lastBuildDate>
+  <item>
+    <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
+    <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-sysaudit.m4a" length="6415126" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-sysaudit</guid>
+    <pubDate>Wed, 01 Oct 2025 06:04:00 +0900</pubDate>
+    <itunes:duration>00:12:48</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年秋期 問10 サービスマネジメント｜社内手続を扱うサービスデスク</title>
+    <description><![CDATA[<p>令和7年秋期 午後問10（サービスマネジメント・選択）テーマ：社内手続を扱うサービスデスク</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問10（サービスマネジメント・選択）テーマ：社内手続を扱うサービスデスク</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問10（サービスマネジメント・選択）テーマ：社内手続を扱うサービスデスク</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-servicemng.m4a" length="6718874" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-servicemng</guid>
+    <pubDate>Wed, 01 Oct 2025 06:03:00 +0900</pubDate>
+    <itunes:duration>00:13:25</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
+    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-projmng.m4a" length="9025906" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-projmng</guid>
+    <pubDate>Wed, 01 Oct 2025 06:02:00 +0900</pubDate>
+    <itunes:duration>00:18:01</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
+    <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-network.m4a" length="7340075" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-network</guid>
+    <pubDate>Wed, 01 Oct 2025 06:01:00 +0900</pubDate>
+    <itunes:duration>00:14:39</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
+    <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-infosec.m4a" length="5539813" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-infosec</guid>
+    <pubDate>Wed, 01 Oct 2025 06:00:00 +0900</pubDate>
+    <itunes:duration>00:11:03</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問11 システム監査｜勤務管理に関連するシステムの監査</title>
+    <description><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-sysaudit.m4a" length="7017262" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-sysaudit</guid>
+    <pubDate>Tue, 01 Apr 2025 06:04:00 +0900</pubDate>
+    <itunes:duration>00:14:00</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
   <item>
     <title>令和7年春期 問10 サービスマネジメント｜容量・能力管理</title>
     <description><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。夜間バッチの遅れが翌日の生産計画に直結する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画</p><p><a href="https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view">詳細ノート（Googleドキュメント）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">学習ノート（Web版）</a></p>]]></description>
@@ -22,10 +101,51 @@
 詳細ノート：https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view
 学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html</itunes:summary>
     <link>https://docs.google.com/document/d/1a9ytfUl_UFM_fhId8v0zIDg4DBOa3l42-2AhODE6P7k/view</link>
-    <enclosure url="https://hidecars.github.io/podcast/ap/episodes/2025r07h-servicemng.m4a" length="8144552" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-servicemng.m4a" length="8150429" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-servicemng</guid>
     <pubDate>Tue, 01 Apr 2025 06:03:00 +0900</pubDate>
     <itunes:duration>00:16:13</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問9 プロジェクトマネジメント｜CCPMを用いたプロジェクトのスケジュール管理</title>
+    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="7571400" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-projmng</guid>
+    <pubDate>Tue, 01 Apr 2025 06:02:00 +0900</pubDate>
+    <itunes:duration>00:15:07</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問5 ネットワーク｜社内LANの障害対応</title>
+    <description><![CDATA[<p>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問5（ネットワーク・選択）テーマ：社内LANの障害対応
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-network.m4a" length="9596478" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-network</guid>
+    <pubDate>Tue, 01 Apr 2025 06:01:00 +0900</pubDate>
+    <itunes:duration>00:19:12</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問1 情報セキュリティ｜サイバー攻撃への対策</title>
+    <description><![CDATA[<p>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問1（情報セキュリティ・必須）テーマ：サイバー攻撃への対策</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-infosec.m4a" length="6541987" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-infosec</guid>
+    <pubDate>Tue, 01 Apr 2025 06:00:00 +0900</pubDate>
+    <itunes:duration>00:13:05</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

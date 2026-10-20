@@ -11,7 +11,33 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Tue, 20 Oct 2026 21:57:43 +0900</lastBuildDate>
-
+  <lastBuildDate>Wed, 21 Oct 2026 07:22:54 +0900</lastBuildDate>
+  <item>
+    <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
+    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p>]]></content:encoded>
+    <itunes:summary>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/feed_projmng.xml</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-projmng.m4a" length="9025906" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07a-projmng</guid>
+    <pubDate>Wed, 01 Oct 2025 06:02:00 +0900</pubDate>
+    <itunes:duration>00:18:01</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和7年春期 問9 プロジェクトマネジメント｜CCPMを用いたプロジェクトのスケジュール管理</title>
+    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">学習ノート（Web版）</a></p>]]></content:encoded>
+    <itunes:summary>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理
+学習ノート：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="7571400" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2025r07h-projmng</guid>
+    <pubDate>Tue, 01 Apr 2025 06:02:00 +0900</pubDate>
+    <itunes:duration>00:15:07</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
 </channel>
 </rss>
