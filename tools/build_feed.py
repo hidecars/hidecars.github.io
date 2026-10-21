@@ -270,11 +270,10 @@ def build():
                     label = re.sub(r"^\d+\.\s*", "", h[1])
                     nav += f"<a href='#{h[0]}'>{label}</a>"
                     break
-            nav += "<a href='#top' onclick='document.querySelector(\"audio\").play();return false;'>▶ 音声を再生</a>"
             nav += "</nav>"
             head = (f"<a id='top'></a><p class='meta'>{html.escape(ep['exam'])}｜{html.escape(ep['kind'])}｜"
                     f"<a href='../index.html'>一覧へ</a></p><h1>{html.escape(ep_title(ep))}</h1>"
-                    f"<audio controls preload='none' src='{audio_url(ep['id'])}'></audio>{nav}")
+                    f"{nav}")
             with open(os.path.join(NOTE_DIR, ep["id"] + ".html"), "w", encoding="utf-8") as f:
                 f.write(page(ep_title(ep), head + body))
             ep["note_url"] = f"{SITE}/{BASE}/notes/{ep['id']}.html"
