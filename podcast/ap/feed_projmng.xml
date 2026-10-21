@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 23:42:21 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 23:43:59 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
     <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【状況】<br>・電気機器メーカーF社が、買収したY工場の生産管理システムを開発する（担当はITシステム部開発課）。<br>・一部の工程（要件定義〜実装）は、ユーザー部門と試行錯誤しながら進めるため、アジャイル開発モデルを適用する。</p><p>【決め手キーワード】EVM／バーンダウンチャート／チケット発行</p><p>【設問と解答のキーワード】<br>設問1：アジャイルを適用した要因 → 試行錯誤しながら開発を進める必要がある<br>設問2(1)：EVMで比べる指標a・b → カ EV／キ PV<br>設問2(2)：バーンダウンチャートで当日のタスクと担当を決める目的 → 優先度の高いタスクを3週間で終了させる<br>設問2(3)：外部仕様を変えずに構造を整理する作業c → リファクタリング<br>設問3(1)：5日目時点の遅れ日数d → 1<br>設問3(2)：追加タスクに対してE君が行った作業e → チケットを発行</p><p>【採点講評】設問2(2)と設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></description>
