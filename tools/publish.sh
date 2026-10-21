@@ -88,5 +88,4 @@ fi
 git pull --rebase -q origin main
 git push -q origin main
 
-osascript -e 'display dialog "公開しました。
-RSS: https://hidecars.github.io/podcast/ap/feed.xml" buttons {"OK"} default button 1' >/dev/null 2>&1 || true
+echo "公開しました。RSS: https://hidecars.github.io/podcast/ap/feed.xml"
