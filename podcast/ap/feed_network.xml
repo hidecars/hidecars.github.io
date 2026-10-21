@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 23:43:59 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 07:42:32 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>

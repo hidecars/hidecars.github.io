@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 23:43:59 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 07:42:32 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
     <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／点検の実効性／是正の指導・支援</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
@@ -164,13 +164,13 @@
   </item>
   <item>
     <title>令和7年春期 問11 システム監査｜勤務管理に関連するシステムの監査</title>
-    <description><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】手作業／入力コントロール／勤務形態の組合せ</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】手作業／入力コントロール／勤務形態の組合せ</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査
 【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。
 【状況】
 ・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。
-【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録
+【決め手キーワード】手作業／入力コントロール／勤務形態の組合せ
 【設問と解答のキーワード】
 設問1(1)：誤登録が起きる作業 → 手作業
 設問1(2)：誤登録リスクへの確認点 → 入力コントロール
@@ -184,24 +184,24 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz
 出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-sysaudit.m4a" length="7017262" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-sysaudit.m4a" length="7934248" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-sysaudit</guid>
     <pubDate>Tue, 01 Apr 2025 06:04:00 +0900</pubDate>
-    <itunes:duration>00:14:00</itunes:duration>
+    <itunes:duration>00:15:49</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
     <title>令和7年春期 問10 サービスマネジメント｜容量・能力管理</title>
-    <description><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。バッチの遅れが翌日の生産計画に影響する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【状況】<br>・製造業。オンプレミスのシステムをクラウドサービスへ移行することを検討中。<br>・販売管理→生産管理のHバッチ、生産計画案を作るPバッチが遅れると、翌日の生産に影響する。<br>・クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。</p><p>【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画</p><p>【設問と解答のキーワード】<br>設問1(1)：製造部と営業部で協議する内容 → 前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策<br>設問1(2)：しきい値の設定方法 → 例外になるように設定<br>設問2(1)：イベントとして認識すること → Sメッセージの出力<br>設問2(2)：増強後に行うことと理由 → 容量を元に戻す／クラウド利用料が加算される<br>設問2(3)：見積りの根拠 → 需要予測に基づくリソース使用量の見積り<br>設問2(4)：活動の名称 → キャパシティ計画</p><p>【採点講評】全体の正答率はやや低い。設問1(1)は「SLAの変更を協議する」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。バッチの遅れが翌日の生産計画に影響する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【状況】<br>・製造業。オンプレミスのシステムをクラウドサービスへ移行することを検討中。<br>・販売管理→生産管理のHバッチ、生産計画案を作るPバッチが遅れると、翌日の生産に影響する。<br>・クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。</p><p>【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画</p><p>【設問と解答のキーワード】<br>設問1(1)：製造部と営業部で協議する内容 → 前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策<br>設問1(2)：しきい値の設定方法 → 例外になるように設定<br>設問2(1)：イベントとして認識すること → Sメッセージの出力<br>設問2(2)：増強後に行うことと理由 → 容量を元に戻す／クラウド利用料が加算される<br>設問2(3)：見積りの根拠 → 需要予測に基づくリソース使用量の見積り<br>設問2(4)：活動の名称 → キャパシティ計画</p><p>【採点講評】全体の正答率はやや低い。設問1(1)は「SLAの変更を協議する」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。バッチの遅れが翌日の生産計画に影響する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【状況】<br>・製造業。オンプレミスのシステムをクラウドサービスへ移行することを検討中。<br>・販売管理→生産管理のHバッチ、生産計画案を作るPバッチが遅れると、翌日の生産に影響する。<br>・クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。</p><p>【決め手キーワード】業務影響の回避／容量を元に戻す／キャパシティ計画</p><p>【設問と解答のキーワード】<br>設問1(1)：製造部と営業部で協議する内容 → 前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策<br>設問1(2)：しきい値の設定方法 → 例外になるように設定<br>設問2(1)：イベントとして認識すること → Sメッセージの出力<br>設問2(2)：増強後に行うことと理由 → 容量を元に戻す／クラウド利用料が加算される<br>設問2(3)：見積りの根拠 → 需要予測に基づくリソース使用量の見積り<br>設問2(4)：活動の名称 → キャパシティ計画</p><p>【採点講評】全体の正答率はやや低い。設問1(1)は「SLAの変更を協議する」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理</p><p>【概要】クラウド移行を検討する製造業が題材。バッチの遅れが翌日の生産計画に影響する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。</p><p>【状況】<br>・製造業。オンプレミスのシステムをクラウドサービスへ移行することを検討中。<br>・販売管理→生産管理のHバッチ、生産計画案を作るPバッチが遅れると、翌日の生産に影響する。<br>・クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。</p><p>【決め手キーワード】業務影響の回避／容量を元に戻す／キャパシティ計画</p><p>【設問と解答のキーワード】<br>設問1(1)：製造部と営業部で協議する内容 → 前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策<br>設問1(2)：しきい値の設定方法 → 例外になるように設定<br>設問2(1)：イベントとして認識すること → Sメッセージの出力<br>設問2(2)：増強後に行うことと理由 → 容量を元に戻す／クラウド利用料が加算される<br>設問2(3)：見積りの根拠 → 需要予測に基づくリソース使用量の見積り<br>設問2(4)：活動の名称 → キャパシティ計画</p><p>【採点講評】全体の正答率はやや低い。設問1(1)は「SLAの変更を協議する」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年春期 午後問10（サービスマネジメント・選択）テーマ：容量・能力管理
 【概要】クラウド移行を検討する製造業が題材。バッチの遅れが翌日の生産計画に影響する中で、キャパシティ監視・キャパシティ計画の考え方と、インシデント時にSLA変更に逃げず業務影響を避ける対応を問う。
 【状況】
 ・製造業。オンプレミスのシステムをクラウドサービスへ移行することを検討中。
 ・販売管理→生産管理のHバッチ、生産計画案を作るPバッチが遅れると、翌日の生産に影響する。
 ・クラウドは柔軟に増強できるが、使った分だけ利用料がかかる。
-【決め手キーワード】業務影響の回避（SLA変更ではない）／増強した容量を元に戻す（クラウド利用料）／需要予測に基づくキャパシティ計画
+【決め手キーワード】業務影響の回避／容量を元に戻す／キャパシティ計画
 【設問と解答のキーワード】
 設問1(1)：製造部と営業部で協議する内容 → 前日の注文情報に基づく翌日の生産計画／バッチ遅延の業務影響と対策
 設問1(2)：しきい値の設定方法 → 例外になるように設定
@@ -214,10 +214,10 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html#quiz
 出典：IPA 令和7年度春期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-servicemng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-servicemng.m4a" length="8111594" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-servicemng.m4a" length="7855962" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-servicemng</guid>
     <pubDate>Tue, 01 Apr 2025 06:03:00 +0900</pubDate>
-    <itunes:duration>00:16:13</itunes:duration>
+    <itunes:duration>00:15:41</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
@@ -243,10 +243,10 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html#quiz
 出典：IPA 令和7年度春期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="7571400" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="5107449" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-projmng</guid>
     <pubDate>Tue, 01 Apr 2025 06:02:00 +0900</pubDate>
-    <itunes:duration>00:15:07</itunes:duration>
+    <itunes:duration>00:10:11</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
