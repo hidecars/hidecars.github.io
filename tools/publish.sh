@@ -60,7 +60,7 @@ for src in "$INBOX"/* ${DL:+"$DL"/*}; do
   echo "変換中: $name -> ${id}.m4a"
   ffmpeg -nostdin -y -loglevel error -i "$src" -vn -ac 1 -ar 44100 -c:a aac -b:a "$BITRATE" -movflags +faststart "$out.tmp.m4a"
   mv "$out.tmp.m4a" "$out"
-  mv "$src" "$INBOX/done/"
+  rm -f "$src"   # 変換済みなので元の音声データは削除（inbox / Googleドライブ「Download」とも）
   converted="$converted $id"
 done
 
