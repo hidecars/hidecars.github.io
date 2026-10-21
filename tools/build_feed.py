@@ -113,8 +113,17 @@ def figure(src, alt):
     return f"<figure>{svg}{cap}</figure>"
 
 
+def is_quiz_heading(t):
+    return any(k in t for k in ("クイズ", "セルフチェック"))
+
+
+QA_RE = re.compile(r"^(Q\d*[^→]*?)\s*→\s*(.+)$")
+
+
 def md_to_html(md):
-    out, lines, i = [], md.splitlines(), 0
+    """Markdown→HTML。クイズ見出し（クイズ／セルフチェック）には id='quiz' を付け、
+    その中の「- 問い → 答え」は、タップで答えが開く形（details）にする。"""
+    out, lines, i, in_quiz = [], md.splitlines(), 0, False
     while i < len(lines):
         ln = lines[i].rstrip()
         if not ln.strip():
@@ -122,7 +131,9 @@ def md_to_html(md):
         m = re.match(r"^(#{1,4})\s+(.*)", ln)
         if m:
             lv = len(m.group(1)) + (1 if len(m.group(1)) < 4 else 0)
-            out.append(f"<h{lv}>{inline(m.group(2))}</h{lv}>"); i += 1; continue
+            in_quiz = is_quiz_heading(m.group(2))
+            hid = " id='quiz'" if in_quiz else f" id='s{len(out)}'"
+            out.append(f"<h{lv}{hid}>{inline(m.group(2))}</h{lv}>"); i += 1; continue
         if ln.lstrip().startswith("|"):
             rows = []
             while i < len(lines) and lines[i].lstrip().startswith("|"):
@@ -138,7 +149,15 @@ def md_to_html(md):
             items = []
             while i < len(lines) and re.match(r"^\s*([-*・]|\d+[.)])\s+", lines[i]):
                 items.append(re.sub(r"^\s*([-*・]|\d+[.)])\s+", "", lines[i])); i += 1
-            out.append(f"<{tag}>" + "".join(f"<li>{inline(x)}</li>" for x in items) + f"</{tag}>")
+            if in_quiz and all(QA_RE.match(x) for x in items):
+                qa = []
+                for n, x in enumerate(items, 1):
+                    q, a = QA_RE.match(x).groups()
+                    q = re.sub(r"^Q\d*\s*", "", q).strip()
+                    qa.append(f"<details class='qa'><summary><b>Q{n}</b> {inline(q)}</summary><p>{inline(a)}</p></details>")
+                out.append("".join(qa) + "<p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>")
+            else:
+                out.append(f"<{tag}>" + "".join(f"<li>{inline(x)}</li>" for x in items) + f"</{tag}>")
             continue
         m = re.match(r"^!\[(.*?)\]\((.+?)\)\s*$", ln.strip())
         if m:  # 図：notes_src/img/*.svg をHTMLに埋め込む（画面幅に合わせて縮尺、ダークモード対応）
@@ -165,6 +184,11 @@ h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
 th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
 audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
 :root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
 @media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
 figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
@@ -176,6 +200,35 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
 """
+
+
+def parse_note(md):
+    """Podcast説明欄用に、記事原稿から要点を抜き出す。
+    返す値: point（ひとことで）, situation（状況の箇条書き）, qa（[(設問, 問われていること, キーワード)]）, review（採点講評）"""
+    info = {"point": "", "situation": [], "qa": [], "review": ""}
+    sec = ""
+    for ln in md.splitlines():
+        t = ln.strip()
+        m = re.match(r"^#{2,4}\s+(.*)", t)
+        if m:
+            sec = m.group(1); continue
+        if not t or t.startswith("!["):
+            continue
+        if t.startswith("※採点講評"):
+            info["review"] = t.lstrip("※").replace("採点講評：", "").strip(); continue
+        if ("ひとことで" in sec or "問うこと" in sec) and not info["point"] and not t.startswith(("|", "-")):
+            info["point"] = t
+        elif "状況" in sec and t.startswith("- "):
+            info["situation"].append(t[2:].strip())
+        elif ("設問" in sec or "解答キーワード" in sec) and t.startswith("|"):
+            cells = [c.strip() for c in t.strip("|").split("|")]
+            if len(cells) >= 2 and cells[0] not in ("設問",) and not re.fullmatch(r":?-{2,}:?", cells[0]):
+                info["qa"].append(cells)
+    return info
+
+
+def plain(s):
+    return re.sub(r"\*\*(.+?)\*\*", r"\1", s)
 
 
 def page(title, body):
@@ -203,11 +256,25 @@ def build():
         ep["date"] = pubdate(ep, idx)
         src = os.path.join(SRC_DIR, ep["id"] + ".md")
         ep["note_url"] = ""
+        ep["md"] = {}
         if os.path.exists(src):
-            body = md_to_html(open(src, encoding="utf-8").read())
-            head = (f"<p class='meta'>{html.escape(ep['exam'])}｜{html.escape(ep['kind'])}｜"
+            md = open(src, encoding="utf-8").read()
+            md = re.sub(r"\A\s*# [^\n]*\n", "", md)   # 原稿の題名はページ見出し(h1)と重なるので除く
+            body = md_to_html(md)
+            ep["md"] = parse_note(md)
+            nav = "<nav class='nav'>"
+            if "id='quiz'" in body:
+                nav += "<a class='main' href='#quiz'>▶ クイズに挑戦</a>"
+            for h in re.findall(r"<h[23] id='(s\d+)'>(.*?)</h[23]>", body):
+                if any(k in h[1] for k in ("設問", "核心", "キーワード")):
+                    label = re.sub(r"^\d+\.\s*", "", h[1])
+                    nav += f"<a href='#{h[0]}'>{label}</a>"
+                    break
+            nav += "<a href='#top' onclick='document.querySelector(\"audio\").play();return false;'>▶ 音声を再生</a>"
+            nav += "</nav>"
+            head = (f"<a id='top'></a><p class='meta'>{html.escape(ep['exam'])}｜{html.escape(ep['kind'])}｜"
                     f"<a href='../index.html'>一覧へ</a></p><h1>{html.escape(ep_title(ep))}</h1>"
-                    f"<audio controls preload='none' src='{audio_url(ep['id'])}'></audio>")
+                    f"<audio controls preload='none' src='{audio_url(ep['id'])}'></audio>{nav}")
             with open(os.path.join(NOTE_DIR, ep["id"] + ".html"), "w", encoding="utf-8") as f:
                 f.write(page(ep_title(ep), head + body))
             ep["note_url"] = f"{SITE}/{BASE}/notes/{ep['id']}.html"
@@ -227,22 +294,44 @@ def build():
             head = f"{ep['era']}{ep['season']} 午後{ep['qno']}（{ep['field']}・{ep['kind']}）テーマ：{ep['theme']}"
             # 番組の説明欄（Apple Podcasts等はHTMLの<p><a>を表示）
             parts = [f"<p>{html.escape(head)}</p>"]
+            src_line = f"出典：IPA {ep['era']}度{ep['season']} 応用情報技術者試験 午後 {ep['qno']}（問題冊子・解答例・採点講評）"
             text = [head]
             if ep["summary"]:
                 parts.append(f"<p>【概要】{html.escape(ep['summary'])}</p>")
                 text.append(f"【概要】{ep['summary']}")
+            md = ep.get("md") or {}
+            if md.get("point") and not ep["summary"]:
+                parts.append(f"<p>【この問題が問うこと】{html.escape(plain(md['point']))}</p>")
+                text.append(f"【この問題が問うこと】{plain(md['point'])}")
+            if md.get("situation"):
+                parts.append("<p>【状況】<br>" + "<br>".join("・" + html.escape(plain(x)) for x in md["situation"]) + "</p>")
+                text.append("【状況】\n" + "\n".join("・" + plain(x) for x in md["situation"]))
             if ep["keywords"]:
                 parts.append(f"<p>【決め手キーワード】{html.escape(ep['keywords'])}</p>")
                 text.append(f"【決め手キーワード】{ep['keywords']}")
+            if md.get("qa"):
+                rows = []
+                for c in md["qa"]:
+                    q = c[0] if c[0].startswith("設問") else f"設問{c[0]}"
+                    rows.append(f"{q}：{plain(c[1])} → {plain(c[-1])}" if len(c) >= 3 else f"{q} → {plain(c[-1])}")
+                parts.append("<p>【設問と解答のキーワード】<br>" + "<br>".join(html.escape(r) for r in rows) + "</p>")
+                text.append("【設問と解答のキーワード】\n" + "\n".join(rows))
+            if md.get("review"):
+                parts.append(f"<p>【採点講評】{html.escape(md['review'])}</p>")
+                text.append(f"【採点講評】{md['review']}")
             links = []
             if ep["doc_url"]:
                 links.append(f"<a href=\"{html.escape(ep['doc_url'])}\">詳細ノート（Googleドキュメント）</a>")
                 text.append(f"詳細ノート：{ep['doc_url']}")
             if ep["note_url"]:
                 links.append(f"<a href=\"{ep['note_url']}\">詳細ページ（Web記事）</a>")
+                links.append(f"<a href=\"{ep['note_url']}#quiz\">聴き終えたらクイズへ</a>")
                 text.append(f"詳細ページ：{ep['note_url']}")
+                text.append(f"クイズ：{ep['note_url']}#quiz")
             if links:
                 parts.append("<p>" + "<br>".join(links) + "</p>")
+            parts.append(f"<p>{html.escape(src_line)}</p>")
+            text.append(src_line)
             desc_html = "".join(parts).replace("]]>", "]]&gt;")
             desc_text = "\n".join(text)
             items.append(f"""  <item>

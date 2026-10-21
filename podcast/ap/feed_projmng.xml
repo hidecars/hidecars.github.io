@@ -11,15 +11,28 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 07:44:44 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 21:53:51 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
-    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a></p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【状況】<br>・電気機器メーカーF社が、買収したY工場の生産管理システムを開発する（担当はITシステム部開発課）。<br>・一部の工程（要件定義〜実装）は、ユーザー部門と試行錯誤しながら進めるため、アジャイル開発モデルを適用する。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p>【設問と解答のキーワード】<br>設問1：アジャイルを適用した要因 → 試行錯誤しながら開発を進める必要がある<br>設問2(1)：EVMで比べる指標a・b → カ EV／キ PV<br>設問2(2)：バーンダウンチャートで当日のタスクと担当を決める目的 → 優先度の高いタスクを3週間で終了させる<br>設問2(3)：外部仕様を変えずに構造を整理する作業c → リファクタリング<br>設問3(1)：5日目時点の遅れ日数d → 1<br>設問3(2)：追加タスクに対してE君が行った作業e → チケットを発行</p><p>【採点講評】設問2(2)と設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【状況】<br>・電気機器メーカーF社が、買収したY工場の生産管理システムを開発する（担当はITシステム部開発課）。<br>・一部の工程（要件定義〜実装）は、ユーザー部門と試行錯誤しながら進めるため、アジャイル開発モデルを適用する。</p><p>【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行</p><p>【設問と解答のキーワード】<br>設問1：アジャイルを適用した要因 → 試行錯誤しながら開発を進める必要がある<br>設問2(1)：EVMで比べる指標a・b → カ EV／キ PV<br>設問2(2)：バーンダウンチャートで当日のタスクと担当を決める目的 → 優先度の高いタスクを3週間で終了させる<br>設問2(3)：外部仕様を変えずに構造を整理する作業c → リファクタリング<br>設問3(1)：5日目時点の遅れ日数d → 1<br>設問3(2)：追加タスクに対してE君が行った作業e → チケットを発行</p><p>【採点講評】設問2(2)と設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント
 【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。
+【状況】
+・電気機器メーカーF社が、買収したY工場の生産管理システムを開発する（担当はITシステム部開発課）。
+・一部の工程（要件定義〜実装）は、ユーザー部門と試行錯誤しながら進めるため、アジャイル開発モデルを適用する。
 【決め手キーワード】EVとPV／3週間で終える目的／チケットの発行
-詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html</itunes:summary>
+【設問と解答のキーワード】
+設問1：アジャイルを適用した要因 → 試行錯誤しながら開発を進める必要がある
+設問2(1)：EVMで比べる指標a・b → カ EV／キ PV
+設問2(2)：バーンダウンチャートで当日のタスクと担当を決める目的 → 優先度の高いタスクを3週間で終了させる
+設問2(3)：外部仕様を変えずに構造を整理する作業c → リファクタリング
+設問3(1)：5日目時点の遅れ日数d → 1
+設問3(2)：追加タスクに対してE君が行った作業e → チケットを発行
+【採点講評】設問2(2)と設問3(2)は正答率がやや低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html#quiz
+出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-projmng.m4a" length="9025906" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07a-projmng</guid>
@@ -30,12 +43,25 @@
   </item>
   <item>
     <title>令和7年春期 問9 プロジェクトマネジメント｜CCPMを用いたプロジェクトのスケジュール管理</title>
-    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a></p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【状況】<br>・小売業を営む会社の販売管理システム再構築。加重総和法で提案を選び、CCPMでスケジュールを作成・管理する。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p>【設問と解答のキーワード】<br>設問1(1)：評価結果がそうなった理由 → 費用・要求充足度を重要視<br>設問1(2)：選ぶべき提案 → K<br>設問2(1)：バッファ除去後の日数 → 41<br>設問2(2)：バッファを統合する効果 → バッファを不必要に消費しなくなる<br>設問2(3)：状態の判定 → c エ、d イ<br>設問3(1)：指標値の読み取り → 1<br>設問3(2)：遅延しそうなときの対策 → J3チームの要員を D2 に投入（要員シフト）</p><p>【採点講評】設問3(2)は「スケジュールの延期」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理</p><p>【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。</p><p>【状況】<br>・小売業を営む会社の販売管理システム再構築。加重総和法で提案を選び、CCPMでスケジュールを作成・管理する。</p><p>【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト</p><p>【設問と解答のキーワード】<br>設問1(1)：評価結果がそうなった理由 → 費用・要求充足度を重要視<br>設問1(2)：選ぶべき提案 → K<br>設問2(1)：バッファ除去後の日数 → 41<br>設問2(2)：バッファを統合する効果 → バッファを不必要に消費しなくなる<br>設問2(3)：状態の判定 → c エ、d イ<br>設問3(1)：指標値の読み取り → 1<br>設問3(2)：遅延しそうなときの対策 → J3チームの要員を D2 に投入（要員シフト）</p><p>【採点講評】設問3(2)は「スケジュールの延期」という解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年春期 午後問9（プロジェクトマネジメント・選択）テーマ：CCPMを用いたプロジェクトのスケジュール管理
 【概要】小売業の販売管理システム再構築で、加重総和法による提案選定と、CCPMによるスケジュール作成・管理を問う。遅延時の対策は延期ではなく要員シフト。
+【状況】
+・小売業を営む会社の販売管理システム再構築。加重総和法で提案を選び、CCPMでスケジュールを作成・管理する。
 【決め手キーワード】パーキンソンの法則／バッファの統合／要員シフト
-詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</itunes:summary>
+【設問と解答のキーワード】
+設問1(1)：評価結果がそうなった理由 → 費用・要求充足度を重要視
+設問1(2)：選ぶべき提案 → K
+設問2(1)：バッファ除去後の日数 → 41
+設問2(2)：バッファを統合する効果 → バッファを不必要に消費しなくなる
+設問2(3)：状態の判定 → c エ、d イ
+設問3(1)：指標値の読み取り → 1
+設問3(2)：遅延しそうなときの対策 → J3チームの要員を D2 に投入（要員シフト）
+【採点講評】設問3(2)は「スケジュールの延期」という解答が散見された。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html#quiz
+出典：IPA 令和7年度春期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-projmng.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-projmng.m4a" length="7571400" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-projmng</guid>

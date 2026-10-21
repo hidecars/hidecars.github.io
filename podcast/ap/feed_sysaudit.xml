@@ -11,15 +11,30 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Wed, 21 Oct 2026 07:44:44 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 21:53:51 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
-    <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【決め手キーワード】代替の管理策／是正の指導・支援／各管理表と点検表の照合</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a></p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【決め手キーワード】代替の管理策／是正の指導・支援／各管理表と点検表の照合</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／是正の指導・支援／各管理表と点検表の照合</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／是正の指導・支援／各管理表と点検表の照合</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査
 【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。
+【状況】
+・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。
+・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。
 【決め手キーワード】代替の管理策／是正の指導・支援／各管理表と点検表の照合
-詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html</itunes:summary>
+【設問と解答のキーワード】
+設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用
+設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）
+設問3(1)：是正状況を確認する対象c → 委託先
+設問3(2)：Q社システム部に働きかける組織d → P社システム統括部
+設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援
+設問4(1)：管理表の更新で確認する記録f → 承認の記録
+設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由
+設問5：照合する資料h・i → 各管理表／点検表
+【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz
+出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07a/2025r07a-sysaudit.m4a" length="6415126" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07a-sysaudit</guid>
@@ -30,12 +45,25 @@
   </item>
   <item>
     <title>令和7年春期 問11 システム監査｜勤務管理に関連するシステムの監査</title>
-    <description><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a></p>]]></description>
-    <content:encoded><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a></p>]]></content:encoded>
+    <description><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査</p><p>【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。</p><p>【状況】<br>・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。</p><p>【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録</p><p>【設問と解答のキーワード】<br>設問1(1)：誤登録が起きる作業 → 手作業<br>設問1(2)：誤登録リスクへの確認点 → 入力コントロール<br>設問2(1)：テレワーク対応で確認する対象 → 勤務形態<br>設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ<br>設問3(1)：連携元のシステム → 人事管理<br>設問3(2)：リスクの要因 → 従業員の職種の誤登録<br>設問3(3)：確認する基準の時点 → X年3月末日</p><p>【採点講評】設問1(2)と設問2は正答率がやや低い。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
     <itunes:summary>令和7年春期 午後問11（システム監査・選択）テーマ：勤務管理に関連するシステムの監査
 【概要】小売業W社の内部監査部が、勤務管理システムと関連システム（人事管理・TR管理・PC管理・給与計算）の運用・保守段階を監査する。リスクに対するコントロールの確かめ方を問う。
+【状況】
+・小売業のW社。内部監査部のシステム監査チームが、勤務管理システムと関連システムを監査する。テレワーク対応などの変更がある。
 【決め手キーワード】入力コントロール／勤務形態の一定の組合せ／職種の誤登録
-詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html</itunes:summary>
+【設問と解答のキーワード】
+設問1(1)：誤登録が起きる作業 → 手作業
+設問1(2)：誤登録リスクへの確認点 → 入力コントロール
+設問2(1)：テレワーク対応で確認する対象 → 勤務形態
+設問2(2)：時差確認メッセージの表示条件 → 一定の組合せ
+設問3(1)：連携元のシステム → 人事管理
+設問3(2)：リスクの要因 → 従業員の職種の誤登録
+設問3(3)：確認する基準の時点 → X年3月末日
+【採点講評】設問1(2)と設問2は正答率がやや低い。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html#quiz
+出典：IPA 令和7年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/2025r07h-sysaudit.html</link>
     <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2025r07h/2025r07h-sysaudit.m4a" length="7017262" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-2025r07h-sysaudit</guid>
