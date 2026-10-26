@@ -1,0 +1,64 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和6年秋期 問5 ネットワーク｜セキュアWebゲートウェイサービスの導入</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2024r06a｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和6年秋期 問5 ネットワーク｜セキュアWebゲートウェイサービスの導入</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>NAPT：プライベートIPアドレスとポート番号の組を、グローバルIPアドレスとポート番号の組に相互変換する技術</li><li>URL：Webサイトの位置を示す識別子。接続先IPアドレスだけでなく、URLの内容でも危険なサイトを判別する</li><li>サンドボックス：受け取ったプログラムを隔離された領域で動かし、悪意がないかを確かめる機能</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>E社が自社のプロキシサーバをやめ、クラウド型のセキュアWebゲートウェイ(サービスZ)へ移行する。</li><li>PCからのWeb閲覧は、ソフトCを経由してサービスZ(ip8)へHTTPS(ポート443)で送る構成に変わる。</li><li>E社ルータのNAPTによる送信元IPアドレスの制限は維持し、業務サーバへの直接アクセスも残す。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 444" role="img" aria-label="サービスZ導入後の通信(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">サービスZ導入後の通信(概略)</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="147.5" y="110.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">HTTPS</text>
+<line x1="180.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="115.0" y="214.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">443</text>
+<line x1="180.0" y1="96.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="196.5" y="162.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="175.0" class="dg-lbl" text-anchor="middle">HTTP</text>
+<line x1="93.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">PC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">ソフトC</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">E社 FW</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">サービスZ宛て 443 を許可</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">サービスZ (ip8)</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">安全性を評価・URLを判定</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">業務サーバ</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">直接アクセス</text>
+<rect x="12.0" y="350.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">インターネットのWebサイト</text>
+<text x="12" y="416.0" class="dg-note">ルータのNAPTで送信元IPは ip1 に(SaaSの送信元制限)</text>
+<text x="12" y="432.0" class="dg-note">出典:2024r06a 問5 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>SaaSが送信元IPアドレスでアクセスを制限している</td><td>—（設問1(2)は正答率がやや低かった）</td><td>ルータのNAPTで、内部のPCは外側のIPアドレス(ip1)にまとめて変換される。相手からはip1として見える</td><td>送信元IPアドレスでアクセス制限</td></tr><tr><td>危険なWebサイトを見分ける</td><td>—</td><td>接続先IPアドレスに加えて、URLの内容を確認して判定する（設問2(1)は正答率がやや低かった）</td><td>接続先IPアドレス、URL</td></tr><tr><td>プロキシをやめてFWの許可を変える</td><td>—</td><td>PCからサービスZ(ip8)宛てのHTTPS(443)を許可する。業務サーバは直接通信のままにする</td><td>ip8、443、業務サーバ</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>変換する技術(a)</td><td>NAPT</td></tr><tr><td>1(2)</td><td>SaaSから見た送信元IPアドレス</td><td>ip1</td></tr><tr><td>2(1)</td><td>危険なサイトの判別に使うもの(b)</td><td>URL</td></tr><tr><td>2(2)</td><td>隔離領域でプログラムを動かし確認する機能</td><td>ウ(サンドボックス)</td></tr><tr><td>3(1)</td><td>FWで許可する宛先IPアドレス(c)</td><td>ip8</td></tr><tr><td>3(2)</td><td>直接HTTP通信させる接続先(d)</td><td>業務サーバ</td></tr><tr><td>4</td><td>導入前のFWルールの送信元(e)／TCPポート(f)</td><td>プロキシサーバ または ip3／443</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>NAPT</td><td>プライベートIPとポートを、グローバルIPとポートに相互変換する技術</td></tr><tr><td>サンドボックス</td><td>隔離された領域でプログラムを動かして安全を確かめる機能</td></tr><tr><td>プロキシサーバ</td><td>クライアントの代わりにWebアクセスを中継する機器</td></tr><tr><td>ファイアウォール(FW)</td><td>IPアドレスやポート番号で通信の通過・遮断を制御する装置</td></tr><tr><td>HTTPS</td><td>HTTPをTLSで暗号化して送受信するプロトコル</td></tr><tr><td>URL</td><td>Web上の情報の場所を示す識別子</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> ルータがプライベートIPとポート番号を変換する技術は</summary><p>NAPT</p></details><details class='qa'><summary><b>Q2</b> SaaSから見た、E社の送信元IPアドレスは</summary><p>ip1</p></details><details class='qa'><summary><b>Q3</b> 危険なWebサイトの判別で、接続先IPアドレスのほかに確認する重要な情報は</summary><p>URL</p></details><details class='qa'><summary><b>Q4</b> サービスZの導入後、FWで許可する宛先IPアドレスは</summary><p>ip8</p></details><details class='qa'><summary><b>Q5</b> サービスZとの通信で使うTCPのポート番号は</summary><p>443</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問1(2)と設問2(1)は正答率がやや低かった。全体の正答率は高かった。</p></body></html>

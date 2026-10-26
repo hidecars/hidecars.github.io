@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Mon, 26 Oct 2026 22:48:34 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 23:01:25 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
     <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p><p>【概要】産業機械メーカーZ社のグループ全体を題材に、ビジネスとソフトウェアの2つのサプライチェーン攻撃への技術的な対処と、情報管理の基本原則（need-to-know）を問う。</p><p>【状況】<br>・産業機械メーカーZ社の情報システム部（B部長・T主任）が、子会社を含むグループ全体の対策を検討する。<br>・共通業務システムは内部ネットワークのセグメントGにあり、子会社はインターネットVPN経由で使う。</p><p>【決め手キーワード】境界防御／SIEM／SBOM</p><p>【設問と解答のキーワード】<br>設問1 a：空欄（解答群から選択） → ク 境界防御<br>設問1 b：空欄（解答群から選択） → ウ need-to-know<br>設問1 d：空欄（解答群から選択） → カ SIEM<br>設問1 e：空欄（解答群から選択） → オ SBOM<br>設問2 c：空欄（5字以内） → 初期<br>設問3(1)：施策として適切でないもの → ウ 個別業務システムを全てセグメントGへ移し各社が引き続き管理<br>設問3(2)：内部不正の抑止につながる理由 → 不正の発覚リスクが高いことが心理的障壁になる<br>設問3(3)：脆弱性対策の観点での懸念 → 脆弱性発見時に影響範囲を迅速に判断できない</p><p>【採点講評】設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
@@ -70,6 +70,37 @@
     <guid isPermaLink="false">ap-v2-2025r07h-infosec</guid>
     <pubDate>Tue, 01 Apr 2025 06:00:00 +0900</pubDate>
     <itunes:duration>00:10:18</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年秋期 問1 情報セキュリティ｜Webサイトのセキュリティ</title>
+    <description><![CDATA[<p>令和6年秋期 午後問1（情報セキュリティ・必須）テーマ：Webサイトのセキュリティ</p><p>【概要】ECサイトのペネトレーションテストの結果を題材に、パスワードのハッシュ化、SQLインジェクション対策(プレースホルダ)、ペッパーなどによる多層防御を問う。</p><p>【状況】<br>・ECサイトのペネトレーションテストで、SQLインジェクションの脆弱性が見つかり、会員テーブル(パスワードのハッシュ値)が漏えいするおそれが分かった。<br>・ハッシュ値が漏えいしたときの影響と、ハッシュ値からパスワードを割り出す攻撃(レインボーテーブル攻撃など)への対策を検討する。<br>・プレースホルダに加え、ソルト・ペッパー・ストレッチング・パスワード長の拡大を組み合わせた多層防御を考える。</p><p>【決め手キーワード】多層防御／プレースホルダ／ペッパー</p><p>【設問と解答のキーワード】<br>設問1：ハッシュ化して保存する利点 → ハッシュ値からパスワードの割出しは難しい<br>設問2：漏えいで直接侵害される要素 → 機密性<br>設問3 a・b：空欄(解答群から選択) → a オ／b カ<br>設問4：選択問題 → イ<br>設問5：仮に破られても他の対策で防ぐ考え方 → 多層防御<br>設問6(1)：ペッパーで攻撃が困難になる理由 → 会員テーブルの窃取だけではペッパーを得ることができないから<br>設問6(2)：6字から10字にしたときのパターンの増加倍率(c) → 70の4乗(70^4)</p><p>【採点講評】設問1・設問2は正答率がやや高かった。設問2では、情報セキュリティの3要素ではない誤った解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年秋期 午後問1（情報セキュリティ・必須）テーマ：Webサイトのセキュリティ</p><p>【概要】ECサイトのペネトレーションテストの結果を題材に、パスワードのハッシュ化、SQLインジェクション対策(プレースホルダ)、ペッパーなどによる多層防御を問う。</p><p>【状況】<br>・ECサイトのペネトレーションテストで、SQLインジェクションの脆弱性が見つかり、会員テーブル(パスワードのハッシュ値)が漏えいするおそれが分かった。<br>・ハッシュ値が漏えいしたときの影響と、ハッシュ値からパスワードを割り出す攻撃(レインボーテーブル攻撃など)への対策を検討する。<br>・プレースホルダに加え、ソルト・ペッパー・ストレッチング・パスワード長の拡大を組み合わせた多層防御を考える。</p><p>【決め手キーワード】多層防御／プレースホルダ／ペッパー</p><p>【設問と解答のキーワード】<br>設問1：ハッシュ化して保存する利点 → ハッシュ値からパスワードの割出しは難しい<br>設問2：漏えいで直接侵害される要素 → 機密性<br>設問3 a・b：空欄(解答群から選択) → a オ／b カ<br>設問4：選択問題 → イ<br>設問5：仮に破られても他の対策で防ぐ考え方 → 多層防御<br>設問6(1)：ペッパーで攻撃が困難になる理由 → 会員テーブルの窃取だけではペッパーを得ることができないから<br>設問6(2)：6字から10字にしたときのパターンの増加倍率(c) → 70の4乗(70^4)</p><p>【採点講評】設問1・設問2は正答率がやや高かった。設問2では、情報セキュリティの3要素ではない誤った解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年秋期 午後問1（情報セキュリティ・必須）テーマ：Webサイトのセキュリティ
+【概要】ECサイトのペネトレーションテストの結果を題材に、パスワードのハッシュ化、SQLインジェクション対策(プレースホルダ)、ペッパーなどによる多層防御を問う。
+【状況】
+・ECサイトのペネトレーションテストで、SQLインジェクションの脆弱性が見つかり、会員テーブル(パスワードのハッシュ値)が漏えいするおそれが分かった。
+・ハッシュ値が漏えいしたときの影響と、ハッシュ値からパスワードを割り出す攻撃(レインボーテーブル攻撃など)への対策を検討する。
+・プレースホルダに加え、ソルト・ペッパー・ストレッチング・パスワード長の拡大を組み合わせた多層防御を考える。
+【決め手キーワード】多層防御／プレースホルダ／ペッパー
+【設問と解答のキーワード】
+設問1：ハッシュ化して保存する利点 → ハッシュ値からパスワードの割出しは難しい
+設問2：漏えいで直接侵害される要素 → 機密性
+設問3 a・b：空欄(解答群から選択) → a オ／b カ
+設問4：選択問題 → イ
+設問5：仮に破られても他の対策で防ぐ考え方 → 多層防御
+設問6(1)：ペッパーで攻撃が困難になる理由 → 会員テーブルの窃取だけではペッパーを得ることができないから
+設問6(2)：6字から10字にしたときのパターンの増加倍率(c) → 70の4乗(70^4)
+【採点講評】設問1・設問2は正答率がやや高かった。設問2では、情報セキュリティの3要素ではない誤った解答が散見された。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html#quiz
+出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06a-infosec.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06a/2024r06a-infosec.m4a" length="8992930" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06a-infosec</guid>
+    <pubDate>Tue, 01 Oct 2024 06:00:00 +0900</pubDate>
+    <itunes:duration>00:17:58</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

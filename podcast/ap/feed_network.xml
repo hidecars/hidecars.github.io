@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Mon, 26 Oct 2026 22:48:34 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 23:01:25 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
@@ -69,6 +69,37 @@
     <guid isPermaLink="false">ap-v2-2025r07h-network</guid>
     <pubDate>Tue, 01 Apr 2025 06:01:00 +0900</pubDate>
     <itunes:duration>00:13:28</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年秋期 問5 ネットワーク｜セキュアWebゲートウェイサービスの導入</title>
+    <description><![CDATA[<p>令和6年秋期 午後問5（ネットワーク・選択）テーマ：セキュアWebゲートウェイサービスの導入</p><p>【概要】プロキシからクラウド型のセキュアWebゲートウェイへの移行を題材に、NAPTによる送信元IPアドレスの制限、URLでの安全性の判定、FWの許可ルールの変更を問う。</p><p>【状況】<br>・E社が自社のプロキシサーバをやめ、クラウド型のセキュアWebゲートウェイ(サービスZ)へ移行する。<br>・PCからのWeb閲覧は、ソフトCを経由してサービスZ(ip8)へHTTPS(ポート443)で送る構成に変わる。<br>・E社ルータのNAPTによる送信元IPアドレスの制限は維持し、業務サーバへの直接アクセスも残す。</p><p>【決め手キーワード】NAPT／URL／サンドボックス</p><p>【設問と解答のキーワード】<br>設問1(1)：変換する技術(a) → NAPT<br>設問1(2)：SaaSから見た送信元IPアドレス → ip1<br>設問2(1)：危険なサイトの判別に使うもの(b) → URL<br>設問2(2)：隔離領域でプログラムを動かし確認する機能 → ウ(サンドボックス)<br>設問3(1)：FWで許可する宛先IPアドレス(c) → ip8<br>設問3(2)：直接HTTP通信させる接続先(d) → 業務サーバ<br>設問4：導入前のFWルールの送信元(e)／TCPポート(f) → プロキシサーバ または ip3／443</p><p>【採点講評】設問1(2)と設問2(1)は正答率がやや低かった。全体の正答率は高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年秋期 午後問5（ネットワーク・選択）テーマ：セキュアWebゲートウェイサービスの導入</p><p>【概要】プロキシからクラウド型のセキュアWebゲートウェイへの移行を題材に、NAPTによる送信元IPアドレスの制限、URLでの安全性の判定、FWの許可ルールの変更を問う。</p><p>【状況】<br>・E社が自社のプロキシサーバをやめ、クラウド型のセキュアWebゲートウェイ(サービスZ)へ移行する。<br>・PCからのWeb閲覧は、ソフトCを経由してサービスZ(ip8)へHTTPS(ポート443)で送る構成に変わる。<br>・E社ルータのNAPTによる送信元IPアドレスの制限は維持し、業務サーバへの直接アクセスも残す。</p><p>【決め手キーワード】NAPT／URL／サンドボックス</p><p>【設問と解答のキーワード】<br>設問1(1)：変換する技術(a) → NAPT<br>設問1(2)：SaaSから見た送信元IPアドレス → ip1<br>設問2(1)：危険なサイトの判別に使うもの(b) → URL<br>設問2(2)：隔離領域でプログラムを動かし確認する機能 → ウ(サンドボックス)<br>設問3(1)：FWで許可する宛先IPアドレス(c) → ip8<br>設問3(2)：直接HTTP通信させる接続先(d) → 業務サーバ<br>設問4：導入前のFWルールの送信元(e)／TCPポート(f) → プロキシサーバ または ip3／443</p><p>【採点講評】設問1(2)と設問2(1)は正答率がやや低かった。全体の正答率は高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年秋期 午後問5（ネットワーク・選択）テーマ：セキュアWebゲートウェイサービスの導入
+【概要】プロキシからクラウド型のセキュアWebゲートウェイへの移行を題材に、NAPTによる送信元IPアドレスの制限、URLでの安全性の判定、FWの許可ルールの変更を問う。
+【状況】
+・E社が自社のプロキシサーバをやめ、クラウド型のセキュアWebゲートウェイ(サービスZ)へ移行する。
+・PCからのWeb閲覧は、ソフトCを経由してサービスZ(ip8)へHTTPS(ポート443)で送る構成に変わる。
+・E社ルータのNAPTによる送信元IPアドレスの制限は維持し、業務サーバへの直接アクセスも残す。
+【決め手キーワード】NAPT／URL／サンドボックス
+【設問と解答のキーワード】
+設問1(1)：変換する技術(a) → NAPT
+設問1(2)：SaaSから見た送信元IPアドレス → ip1
+設問2(1)：危険なサイトの判別に使うもの(b) → URL
+設問2(2)：隔離領域でプログラムを動かし確認する機能 → ウ(サンドボックス)
+設問3(1)：FWで許可する宛先IPアドレス(c) → ip8
+設問3(2)：直接HTTP通信させる接続先(d) → 業務サーバ
+設問4：導入前のFWルールの送信元(e)／TCPポート(f) → プロキシサーバ または ip3／443
+【採点講評】設問1(2)と設問2(1)は正答率がやや低かった。全体の正答率は高かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html#quiz
+出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06a-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06a/2024r06a-network.m4a" length="8834677" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06a-network</guid>
+    <pubDate>Tue, 01 Oct 2024 06:01:00 +0900</pubDate>
+    <itunes:duration>00:17:40</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
