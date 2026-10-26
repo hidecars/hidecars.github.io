@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 22 Oct 2026 07:53:42 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 22:48:34 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
     <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p><p>【概要】産業機械メーカーZ社のグループ全体を題材に、ビジネスとソフトウェアの2つのサプライチェーン攻撃への技術的な対処と、情報管理の基本原則（need-to-know）を問う。</p><p>【状況】<br>・産業機械メーカーZ社の情報システム部（B部長・T主任）が、子会社を含むグループ全体の対策を検討する。<br>・共通業務システムは内部ネットワークのセグメントGにあり、子会社はインターネットVPN経由で使う。</p><p>【決め手キーワード】境界防御／SIEM／SBOM</p><p>【設問と解答のキーワード】<br>設問1 a：空欄（解答群から選択） → ク 境界防御<br>設問1 b：空欄（解答群から選択） → ウ need-to-know<br>設問1 d：空欄（解答群から選択） → カ SIEM<br>設問1 e：空欄（解答群から選択） → オ SBOM<br>設問2 c：空欄（5字以内） → 初期<br>設問3(1)：施策として適切でないもの → ウ 個別業務システムを全てセグメントGへ移し各社が引き続き管理<br>設問3(2)：内部不正の抑止につながる理由 → 不正の発覚リスクが高いことが心理的障壁になる<br>設問3(3)：脆弱性対策の観点での懸念 → 脆弱性発見時に影響範囲を迅速に判断できない</p><p>【採点講評】設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
@@ -70,6 +70,38 @@
     <guid isPermaLink="false">ap-v2-2025r07h-infosec</guid>
     <pubDate>Tue, 01 Apr 2025 06:00:00 +0900</pubDate>
     <itunes:duration>00:10:18</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年春期 問1 情報セキュリティ｜リモート環境のセキュリティ対策</title>
+    <description><![CDATA[<p>令和6年春期 午後問1（情報セキュリティ・必須）テーマ：リモート環境のセキュリティ対策</p><p>【概要】学校のハイブリッド授業と従業員のテレワークに対応するため、境界型防御からゼロトラストへ移行する場面を題材に、SIEMによるログの集約、EDRによる端末の保護、多要素認証を問う。</p><p>【状況】<br>・生徒からのハイブリッド型授業の要望と、従業員からのテレワーク勤務の要望に応える環境を整える。機器の保守終了(EOL)も近づいている。<br>・課題は、パッチ適用の判断の遅れ、境界型防御の限界、インシデントを迅速に検知する仕組みがないこと。<br>・ゼロトラストの考え方でSaaSを利用し、貸与PC・IDaaS・SIEM・EDRを導入する。</p><p>【決め手キーワード】ゼロトラスト／SIEM／EDR</p><p>【設問と解答のキーワード】<br>設問1：境界型防御で防げる攻撃 → イ（許可していない通信による内部への侵入）<br>設問2(1)：いかなる通信も信頼しない考え方（a） → ゼロトラスト<br>設問2(2)：SaaS利用で不要になる作業 → セキュリティパッチ提供の調査及び適用の判断<br>設問3(1)：設定する対策 → URLフィルタリング／業務上不要なサイトへの接続禁止<br>設問3(2)：ログを集約する目的 → セキュリティインシデントの発生を迅速に検知するため<br>設問3(3)：適切な組合せ → ア、ウ<br>設問4(1)：認証に関する選択 → ア<br>設問4(2)：認証方式（b） → 多要素認証（2要素認証も可）</p><p>【採点講評】設問2(1)は正答率が低かった。設問3(2)は正答率が高く、SIEMの理解がうかがえた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年春期 午後問1（情報セキュリティ・必須）テーマ：リモート環境のセキュリティ対策</p><p>【概要】学校のハイブリッド授業と従業員のテレワークに対応するため、境界型防御からゼロトラストへ移行する場面を題材に、SIEMによるログの集約、EDRによる端末の保護、多要素認証を問う。</p><p>【状況】<br>・生徒からのハイブリッド型授業の要望と、従業員からのテレワーク勤務の要望に応える環境を整える。機器の保守終了(EOL)も近づいている。<br>・課題は、パッチ適用の判断の遅れ、境界型防御の限界、インシデントを迅速に検知する仕組みがないこと。<br>・ゼロトラストの考え方でSaaSを利用し、貸与PC・IDaaS・SIEM・EDRを導入する。</p><p>【決め手キーワード】ゼロトラスト／SIEM／EDR</p><p>【設問と解答のキーワード】<br>設問1：境界型防御で防げる攻撃 → イ（許可していない通信による内部への侵入）<br>設問2(1)：いかなる通信も信頼しない考え方（a） → ゼロトラスト<br>設問2(2)：SaaS利用で不要になる作業 → セキュリティパッチ提供の調査及び適用の判断<br>設問3(1)：設定する対策 → URLフィルタリング／業務上不要なサイトへの接続禁止<br>設問3(2)：ログを集約する目的 → セキュリティインシデントの発生を迅速に検知するため<br>設問3(3)：適切な組合せ → ア、ウ<br>設問4(1)：認証に関する選択 → ア<br>設問4(2)：認証方式（b） → 多要素認証（2要素認証も可）</p><p>【採点講評】設問2(1)は正答率が低かった。設問3(2)は正答率が高く、SIEMの理解がうかがえた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年春期 午後問1（情報セキュリティ・必須）テーマ：リモート環境のセキュリティ対策
+【概要】学校のハイブリッド授業と従業員のテレワークに対応するため、境界型防御からゼロトラストへ移行する場面を題材に、SIEMによるログの集約、EDRによる端末の保護、多要素認証を問う。
+【状況】
+・生徒からのハイブリッド型授業の要望と、従業員からのテレワーク勤務の要望に応える環境を整える。機器の保守終了(EOL)も近づいている。
+・課題は、パッチ適用の判断の遅れ、境界型防御の限界、インシデントを迅速に検知する仕組みがないこと。
+・ゼロトラストの考え方でSaaSを利用し、貸与PC・IDaaS・SIEM・EDRを導入する。
+【決め手キーワード】ゼロトラスト／SIEM／EDR
+【設問と解答のキーワード】
+設問1：境界型防御で防げる攻撃 → イ（許可していない通信による内部への侵入）
+設問2(1)：いかなる通信も信頼しない考え方（a） → ゼロトラスト
+設問2(2)：SaaS利用で不要になる作業 → セキュリティパッチ提供の調査及び適用の判断
+設問3(1)：設定する対策 → URLフィルタリング／業務上不要なサイトへの接続禁止
+設問3(2)：ログを集約する目的 → セキュリティインシデントの発生を迅速に検知するため
+設問3(3)：適切な組合せ → ア、ウ
+設問4(1)：認証に関する選択 → ア
+設問4(2)：認証方式（b） → 多要素認証（2要素認証も可）
+【採点講評】設問2(1)は正答率が低かった。設問3(2)は正答率が高く、SIEMの理解がうかがえた。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html#quiz
+出典：IPA 令和6年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06h-infosec.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06h/2024r06h-infosec.m4a" length="6411849" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06h-infosec</guid>
+    <pubDate>Mon, 01 Apr 2024 06:00:00 +0900</pubDate>
+    <itunes:duration>00:12:48</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

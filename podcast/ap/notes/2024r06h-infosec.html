@@ -1,0 +1,69 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和6年春期 問1 情報セキュリティ｜リモート環境のセキュリティ対策</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2024r06h｜必須｜<a href='../index.html'>一覧へ</a></p><h1>令和6年春期 問1 情報セキュリティ｜リモート環境のセキュリティ対策</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>ゼロトラスト：社内・社外を問わず、いかなる通信も信頼しないセキュリティの考え方</li><li>SIEM：複数機器のログを一元的に集約・相関分析し、インシデントを迅速に検知する仕組み</li><li>EDR：端末での不審な挙動を検知し、ネットワーク遮断やプロセス終了を行う対策</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>生徒からのハイブリッド型授業の要望と、従業員からのテレワーク勤務の要望に応える環境を整える。機器の保守終了(EOL)も近づいている。</li><li>課題は、パッチ適用の判断の遅れ、境界型防御の限界、インシデントを迅速に検知する仕組みがないこと。</li><li>ゼロトラストの考え方でSaaSを利用し、貸与PC・IDaaS・SIEM・EDRを導入する。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 458" role="img" aria-label="リモート環境の構成(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">リモート環境の構成(概略)</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="77.0" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="93.0" y="123.0" class="dg-lbl" text-anchor="middle">認証</text>
+<line x1="93.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="251.0" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="267.0" y="123.0" class="dg-lbl" text-anchor="middle">授業</text>
+<line x1="267.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="251.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="267.0" y="227.0" class="dg-lbl" text-anchor="middle">ログ</text>
+<line x1="267.0" y1="304.0" x2="267.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">従業員</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">貸与PC</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">生徒</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">自宅PC</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">IDaaS</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">SSO認証</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">T社クラウド</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">Web会議・ストレージ・メール</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">SIEM</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">ログを集約・相関分析</text>
+<rect x="186.0" y="350.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="377.0" class="dg-txt" text-anchor="middle">管理者</text>
+<text x="267.0" y="399.0" class="dg-sub" text-anchor="middle">異常検知アラート</text>
+<text x="12" y="430.0" class="dg-note">貸与PCにはEDRを導入(端末遮断・プロセス停止)</text>
+<text x="12" y="446.0" class="dg-note">出典:2024r06h 問1 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>境界型防御の限界に対応する</td><td>—（設問2(1)は正答率が低かった）</td><td>境界の内側を信頼する考えをやめ、すべての通信を信頼しない「ゼロトラスト」へ移行する</td><td>いかなる通信も信頼しない</td></tr><tr><td>インシデントを迅速に見つけたい</td><td>—</td><td>各機器のログを一元的に集めて相関分析する（SIEM）。設問3(2)は正答率が高かった</td><td>セキュリティインシデントの発生を迅速に検知する</td></tr><tr><td>未知の攻撃を端末で止めたい</td><td>—</td><td>パターンマッチングで防げないゼロデイ攻撃には、端末の挙動を見るEDRで遮断・停止する</td><td>ゼロデイ攻撃、ファイルレスマルウェア</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1</td><td>境界型防御で防げる攻撃</td><td>イ（許可していない通信による内部への侵入）</td></tr><tr><td>2(1)</td><td>いかなる通信も信頼しない考え方（a）</td><td>ゼロトラスト</td></tr><tr><td>2(2)</td><td>SaaS利用で不要になる作業</td><td>セキュリティパッチ提供の調査及び適用の判断</td></tr><tr><td>3(1)</td><td>設定する対策</td><td>URLフィルタリング／業務上不要なサイトへの接続禁止</td></tr><tr><td>3(2)</td><td>ログを集約する目的</td><td>セキュリティインシデントの発生を迅速に検知するため</td></tr><tr><td>3(3)</td><td>適切な組合せ</td><td>ア、ウ</td></tr><tr><td>4(1)</td><td>認証に関する選択</td><td>ア</td></tr><tr><td>4(2)</td><td>認証方式（b）</td><td>多要素認証（2要素認証も可）</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>ゼロトラスト</td><td>すべての通信を信頼せず、常に確認するセキュリティモデル</td></tr><tr><td>境界型防御</td><td>社内と外部の境界で守る考え方</td></tr><tr><td>SIEM</td><td>ログを集約・相関分析して異常を検知する仕組み</td></tr><tr><td>EDR</td><td>端末の不審な挙動を検知し、遮断・停止する対策</td></tr><tr><td>IDaaS</td><td>ID管理やシングルサインオンをクラウドで提供するサービス</td></tr><tr><td>多要素認証</td><td>異なる種類の要素（知識・所持など）を組み合わせて本人確認する方式</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 境界型防御の限界に対応する、すべての通信を信頼しない考え方は</summary><p>ゼロトラスト</p></details><details class='qa'><summary><b>Q2</b> 複数機器のログを集約・相関分析し、インシデントを迅速に検知する仕組みは</summary><p>SIEM</p></details><details class='qa'><summary><b>Q3</b> SaaS移行で不要になったパッチ管理の作業は</summary><p>セキュリティパッチ提供の調査及び適用の判断</p></details><details class='qa'><summary><b>Q4</b> ゼロデイ攻撃などを検知したとき、EDRが行う対処は</summary><p>端末をネットワークから遮断し、不審なプロセスを終了する</p></details><details class='qa'><summary><b>Q5</b> IDとパスワードに、スマホのワンタイムパスワードを組み合わせる認証方式は</summary><p>多要素認証（2要素認証）</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問2(1)は正答率が低かった。設問3(2)は正答率が高く、SIEMの理解がうかがえた。</p></body></html>

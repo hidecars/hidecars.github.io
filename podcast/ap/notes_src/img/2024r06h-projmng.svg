@@ -1,0 +1,30 @@
+<svg class="dg" viewBox="0 0 360 340" role="img" aria-label="いちご栽培IoTサービス(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">いちご栽培IoTサービス(概略)</text>
+<line x1="93.0" y1="82.0" x2="93.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="60.5" y="96.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="93.0" y="109.0" class="dg-lbl" text-anchor="middle">環境データ</text>
+<line x1="267.0" y1="82.0" x2="267.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="234.5" y="96.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="267.0" y="109.0" class="dg-lbl" text-anchor="middle">気象データ</text>
+<line x1="174.0" y1="157.0" x2="186.0" y2="157.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="186.0" x2="93.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="200.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="213.0" class="dg-lbl" text-anchor="middle">制御</text>
+<line x1="186.0" y1="254.0" x2="174.0" y2="254.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="245.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="258.0" class="dg-lbl" text-anchor="middle">設定</text>
+<rect x="12.0" y="38.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">Kセンサー</text>
+<rect x="186.0" y="38.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">外部気象サービス</text>
+<rect x="12.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="155.0" class="dg-txt" text-anchor="middle">S機器</text>
+<text x="93.0" y="177.0" class="dg-sub" text-anchor="middle">環境データを集める</text>
+<rect x="186.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="155.0" class="dg-txt" text-anchor="middle">A社 AI分析SaaS</text>
+<text x="267.0" y="177.0" class="dg-sub" text-anchor="middle">最適な制御パラメータ</text>
+<rect x="12.0" y="232.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="259.0" class="dg-txt" text-anchor="middle">栽培装置</text>
+<rect x="186.0" y="232.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="259.0" class="dg-txt" text-anchor="middle">農家</text>
+<text x="267.0" y="281.0" class="dg-sub" text-anchor="middle">タブレット・ガイド機能</text>
+<text x="12" y="312.0" class="dg-note">関係者:P農業組合・W社(IoT)・A社(SaaS)</text>
+<text x="12" y="328.0" class="dg-note">出典:2024r06h 問9 をもとに簡略化</text>
+</svg>

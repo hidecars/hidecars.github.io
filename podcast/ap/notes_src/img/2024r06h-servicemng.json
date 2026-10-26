@@ -1,0 +1,11 @@
+{"title":"テレワークのサポート体制(概略)",
+ "rows":[
+  [{"id":"sal","label":"営業員","sub":"貸与タブレット"}],
+  [{"id":"init","label":"初期サポート窓口","sub":"開発課(初期のみ)","style":"dash"},{"id":"sd","label":"サービスデスク","sub":"SPOC","style":"key"}],
+  [{"id":"dev","label":"開発課","sub":"専門部署"},{"id":"ops","label":"運用課","sub":"配信用サーバ"}]],
+ "edges":[
+  {"from":"sal","to":"init","label":"問合せ"},
+  {"from":"sal","to":"sd","label":"問合せ"},
+  {"from":"sd","to":"dev","label":"エスカレーション"},
+  {"from":"ops","to":"sal","label":"OSパッチを自動展開"}],
+ "note":"初期サポート終了時:内容の引継ぎ・対応内容の確認が完了\n出典:2024r06h 問10 をもとに簡略化"}

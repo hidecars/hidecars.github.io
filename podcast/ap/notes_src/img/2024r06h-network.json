@@ -1,0 +1,13 @@
+{"title":"IoT情報提供システム(概略)",
+ "rows":[
+  [{"id":"iot","label":"IoT機器","sub":"10,000台・1分ごと"},{"id":"pc","label":"保守用PC・利用者PC"}],
+  [{"id":"fw","label":"FW","sub":"スループット・コネクション数","style":"key"}],
+  [{"id":"col","label":"データ収集用サーバ","sub":"負荷を分散(LB)"},{"id":"ana","label":"データ分析用サーバ"}],
+  [{"spacer":true},{"id":"inf","label":"情報提供用サーバ"}]],
+ "edges":[
+  {"from":"iot","to":"fw","label":"MQTT"},
+  {"from":"pc","to":"fw"},
+  {"from":"fw","to":"col"},
+  {"from":"fw","to":"ana"},
+  {"from":"ana","to":"inf"}],
+ "note":"S社クラウド内:収集 → 分析 → 提供\n通信が集中するボトルネック=FW\n出典:2024r06h 問5 をもとに簡略化"}

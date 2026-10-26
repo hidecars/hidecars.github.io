@@ -1,0 +1,12 @@
+{"title":"サービスZ導入後の通信(概略)",
+ "rows":[
+  [{"id":"pc","label":"PC","sub":"ソフトC"}],
+  [{"id":"fw","label":"E社 FW","sub":"サービスZ宛て 443 を許可","style":"key"}],
+  [{"id":"z","label":"サービスZ (ip8)","sub":"安全性を評価・URLを判定"},{"id":"srv","label":"業務サーバ","sub":"直接アクセス"}],
+  [{"id":"web","label":"インターネットのWebサイト"}]],
+ "edges":[
+  {"from":"pc","to":"fw","label":"HTTPS"},
+  {"from":"fw","to":"z","label":"443"},
+  {"from":"pc","to":"srv","label":"HTTP"},
+  {"from":"z","to":"web"}],
+ "note":"ルータのNAPTで送信元IPは ip1 に(SaaSの送信元制限)\n出典:2024r06a 問5 をもとに簡略化"}

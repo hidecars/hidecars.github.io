@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 22 Oct 2026 07:53:42 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 22:48:34 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
     <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／点検の実効性／是正の指導・支援</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
@@ -69,6 +69,38 @@
     <guid isPermaLink="false">ap-v2-2025r07h-sysaudit</guid>
     <pubDate>Tue, 01 Apr 2025 06:04:00 +0900</pubDate>
     <itunes:duration>00:15:49</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年春期 問11 システム監査｜支払管理システムの監査</title>
+    <description><![CDATA[<p>令和6年春期 午後問11（システム監査・選択）テーマ：支払管理システムの監査</p><p>【概要】業務パッケージを使った支払管理システムを題材に、標準機能と規程のずれを補う手作業のコントロール、承認の時期、データの一貫性の監査を問う。</p><p>【状況】<br>・V社は、債務管理システムから、業務パッケージを使った支払管理システムへ移行した。<br>・パッケージの標準機能と自社の規程のずれを、手作業のコントロールで補っている。<br>・調達実績データと支払予定データが一致しない問題があり、コントロールの妥当性とデータの一貫性を監査で確かめる。</p><p>【決め手キーワード】業務パッケージ選定／調達用支払先／減額の支払申請入力</p><p>【設問と解答のキーワード】<br>設問1 a：承認を得る段階 → 業務パッケージ選定<br>設問1 b：承認する主体 → リスク委員会の承認<br>設問1 c：取込を保留したデータを置く場所 → 保留ファイル<br>設問1 d：追加の確認が必要になる場合 → 一定額を超過する場合<br>設問2 e：振込データ作成前の確認 → 証ひょう類に不備がないかのチェック<br>設問3 f：項番 → 3<br>設問4 g：データの差異が起きる別の原因 → 調達用支払先<br>設問4 h：重複支払を防ぐ入力 → 減額の支払申請入力</p><p>【採点講評】設問1のaとbは正答率がやや低かった。設問4のgは正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年春期 午後問11（システム監査・選択）テーマ：支払管理システムの監査</p><p>【概要】業務パッケージを使った支払管理システムを題材に、標準機能と規程のずれを補う手作業のコントロール、承認の時期、データの一貫性の監査を問う。</p><p>【状況】<br>・V社は、債務管理システムから、業務パッケージを使った支払管理システムへ移行した。<br>・パッケージの標準機能と自社の規程のずれを、手作業のコントロールで補っている。<br>・調達実績データと支払予定データが一致しない問題があり、コントロールの妥当性とデータの一貫性を監査で確かめる。</p><p>【決め手キーワード】業務パッケージ選定／調達用支払先／減額の支払申請入力</p><p>【設問と解答のキーワード】<br>設問1 a：承認を得る段階 → 業務パッケージ選定<br>設問1 b：承認する主体 → リスク委員会の承認<br>設問1 c：取込を保留したデータを置く場所 → 保留ファイル<br>設問1 d：追加の確認が必要になる場合 → 一定額を超過する場合<br>設問2 e：振込データ作成前の確認 → 証ひょう類に不備がないかのチェック<br>設問3 f：項番 → 3<br>設問4 g：データの差異が起きる別の原因 → 調達用支払先<br>設問4 h：重複支払を防ぐ入力 → 減額の支払申請入力</p><p>【採点講評】設問1のaとbは正答率がやや低かった。設問4のgは正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年春期 午後問11（システム監査・選択）テーマ：支払管理システムの監査
+【概要】業務パッケージを使った支払管理システムを題材に、標準機能と規程のずれを補う手作業のコントロール、承認の時期、データの一貫性の監査を問う。
+【状況】
+・V社は、債務管理システムから、業務パッケージを使った支払管理システムへ移行した。
+・パッケージの標準機能と自社の規程のずれを、手作業のコントロールで補っている。
+・調達実績データと支払予定データが一致しない問題があり、コントロールの妥当性とデータの一貫性を監査で確かめる。
+【決め手キーワード】業務パッケージ選定／調達用支払先／減額の支払申請入力
+【設問と解答のキーワード】
+設問1 a：承認を得る段階 → 業務パッケージ選定
+設問1 b：承認する主体 → リスク委員会の承認
+設問1 c：取込を保留したデータを置く場所 → 保留ファイル
+設問1 d：追加の確認が必要になる場合 → 一定額を超過する場合
+設問2 e：振込データ作成前の確認 → 証ひょう類に不備がないかのチェック
+設問3 f：項番 → 3
+設問4 g：データの差異が起きる別の原因 → 調達用支払先
+設問4 h：重複支払を防ぐ入力 → 減額の支払申請入力
+【採点講評】設問1のaとbは正答率がやや低かった。設問4のgは正答率がやや低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html#quiz
+出典：IPA 令和6年度春期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06h-sysaudit.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06h/2024r06h-sysaudit.m4a" length="10119726" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06h-sysaudit</guid>
+    <pubDate>Mon, 01 Apr 2024 06:04:00 +0900</pubDate>
+    <itunes:duration>00:20:13</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

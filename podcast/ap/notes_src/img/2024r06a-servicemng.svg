@@ -1,0 +1,19 @@
+<svg class="dg" viewBox="0 0 360 356" role="img" aria-label="サービスデスクの立上げ(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">サービスデスクの立上げ(概略)</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="120.0" y="96.0" width="120" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="109.0" class="dg-lbl" text-anchor="middle">問合せ・サービス要求</text>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="131.0" y="200.0" width="98" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="213.0" class="dg-lbl" text-anchor="middle">エスカレーション</text>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">営業員</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">サービスデスク</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">一次受付け・標準変更</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">サービス課</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">二次対応・通常変更</text>
+<text x="12" y="312.0" class="dg-note">サービス課 → サービスデスク:ノウハウ集・ドキュメントを移管(スキルトランスファー)</text>
+<text x="12" y="328.0" class="dg-note">指標:一次解決率</text>
+<text x="12" y="344.0" class="dg-note">出典:2024r06a 問10 をもとに簡略化</text>
+</svg>

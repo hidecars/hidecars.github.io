@@ -1,0 +1,64 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和6年春期 問11 システム監査｜支払管理システムの監査</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2024r06h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和6年春期 問11 システム監査｜支払管理システムの監査</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>業務パッケージ選定：自社の規程に合わない標準機能を使うときは、採用を決める前の「選定」の段階で、リスク委員会の承認を得る</li><li>調達用支払先：調達管理システムとの連携専用に登録された支払先。誤って別の支払に使うと、データの不一致が起きる</li><li>減額の支払申請入力：支払予定データを直接直せないので、重複支払を防ぐため手作業で行う減額の入力</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>V社は、債務管理システムから、業務パッケージを使った支払管理システムへ移行した。</li><li>パッケージの標準機能と自社の規程のずれを、手作業のコントロールで補っている。</li><li>調達実績データと支払予定データが一致しない問題があり、コントロールの妥当性とデータの一貫性を監査で確かめる。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 340" role="img" aria-label="支払管理のデータの流れ(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">支払管理のデータの流れ(概略)</text>
+<line x1="93.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="109.5" y="110.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">自動連携</text>
+<line x1="267.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="174.5" y="110.0" width="98" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="123.0" class="dg-lbl" text-anchor="middle">追加・減額の申請</text>
+<line x1="180.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="104.0" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">仕訳データ</text>
+<line x1="180.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="191.0" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="227.0" class="dg-lbl" text-anchor="middle">振込データ</text>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">調達管理システム</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">調達実績データ・半月ごと</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">工場管理部</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">手作業の申請入力</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">支払管理システム</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">支払予定データ</text>
+<rect x="12.0" y="246.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">会計システム</text>
+<rect x="186.0" y="246.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">銀行</text>
+<text x="12" y="312.0" class="dg-note">監査の着眼点:パッケージ採用の承認時期、手作業コントロール、データの一貫性</text>
+<text x="12" y="328.0" class="dg-note">出典:2024r06h 問11 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>パッケージの標準機能が規程に合わない</td><td>開発・設計の段階で承認を得る（設問1のa・bは正答率がやや低かった）</td><td>リスクを踏まえ、採用を決める前の「業務パッケージ選定」の段階で、リスク委員会の承認を得る</td><td>業務パッケージ選定、リスク委員会の承認</td></tr><tr><td>データが一致しない原因を探す</td><td>手入力ミスや通信エラーとみなす（設問4のgは正答率がやや低かった）</td><td>連携専用の「調達用支払先」を、一般の支払申請で誤って使った可能性を読み取る</td><td>調達用支払先</td></tr><tr><td>支払予定データを直せない</td><td>—</td><td>次回の取込の前に、手作業で「減額の支払申請入力」を行い、重複支払を防ぐ</td><td>減額の支払申請入力</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1 a</td><td>承認を得る段階</td><td>業務パッケージ選定</td></tr><tr><td>1 b</td><td>承認する主体</td><td>リスク委員会の承認</td></tr><tr><td>1 c</td><td>取込を保留したデータを置く場所</td><td>保留ファイル</td></tr><tr><td>1 d</td><td>追加の確認が必要になる場合</td><td>一定額を超過する場合</td></tr><tr><td>2 e</td><td>振込データ作成前の確認</td><td>証ひょう類に不備がないかのチェック</td></tr><tr><td>3 f</td><td>項番</td><td>3</td></tr><tr><td>4 g</td><td>データの差異が起きる別の原因</td><td>調達用支払先</td></tr><tr><td>4 h</td><td>重複支払を防ぐ入力</td><td>減額の支払申請入力</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>保留ファイル</td><td>エラーではないが取り込めなかったデータを一時的に置くファイル</td></tr><tr><td>調達用支払先</td><td>調達管理システムとの連携専用に登録した支払先</td></tr><tr><td>減額の支払申請入力</td><td>支払額を減らすために、手作業で行う申請の入力</td></tr><tr><td>利用者ID更新ログ</td><td>ユーザーIDの登録・変更・削除の履歴(監査証跡)</td></tr><tr><td>パスワードポリシー</td><td>パスワードの複雑さや有効期間などを定めたルール</td></tr><tr><td>予備調査</td><td>本調査の前に、対象業務の現状をつかむ調査</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> パッケージの標準機能が規程に合わないとき、承認を得る段階は</summary><p>業務パッケージ選定(採用を決める前)</p></details><details class='qa'><summary><b>Q2</b> その承認をする主体は</summary><p>リスク委員会</p></details><details class='qa'><summary><b>Q3</b> 重複支払を防ぐため、追加の支払申請の後に手作業で行う入力は</summary><p>減額の支払申請入力</p></details><details class='qa'><summary><b>Q4</b> 取込でエラーではないが保留されたデータを置くファイルは</summary><p>保留ファイル</p></details><details class='qa'><summary><b>Q5</b> 誤って使うと調達実績データとの不一致の原因になる支払先は</summary><p>調達用支払先</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問1のaとbは正答率がやや低かった。設問4のgは正答率がやや低かった。</p></body></html>

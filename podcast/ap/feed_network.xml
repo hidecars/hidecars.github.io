@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 22 Oct 2026 07:53:42 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 22:48:34 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
@@ -69,6 +69,37 @@
     <guid isPermaLink="false">ap-v2-2025r07h-network</guid>
     <pubDate>Tue, 01 Apr 2025 06:01:00 +0900</pubDate>
     <itunes:duration>00:13:28</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年春期 問5 ネットワーク｜クラウドサービスを活用した情報提供システムの構築</title>
+    <description><![CDATA[<p>令和6年春期 午後問5（ネットワーク・選択）テーマ：クラウドサービスを活用した情報提供システムの構築</p><p>【概要】全国のIoT機器から気象データを集めるシステムを題材に、IoT向けの通信プロトコル(MQTT)と、FWの処理遅延対策としてのスループット・コネクション数、ロードバランサーによるスケールアウトを問う。</p><p>【状況】<br>・L社が、全国10,000台のIoT機器から気象データを集め、S社のクラウドで分析・提供する新システムを作る。<br>・IoT機器から1分ごとにデータが送られ、データ収集用サーバへ通信が集中する。機器や利用者が増えると、FWなどで処理遅延が起こるおそれがある。<br>・通信を最小限だけ許可するFWのルールを設計し、負荷分散と性能指標の管理を行う。</p><p>【決め手キーワード】MQTT／スループット／コネクション数</p><p>【設問と解答のキーワード】<br>設問1(1)：1時間当たりの最大データ量 → 300(Mバイト)<br>設問1(2)：IoT機器向けのプロトコル → MQTT<br>設問2(1)：FWルールの送信元・宛先(a〜c) → a 200.a.b.13／b 200.c.d.101／c TCP/443<br>設問2(2)：適用されるFWルールの項番 → 4、7<br>設問3(1)：通信が集中するボトルネックの機器(d) → FW<br>設問3(2)：管理する2つの性能指標(e・f) → e ウ(スループット)／f ア(コネクション数)<br>設問3(3)：スケールアウトに必要な機能 → エ(ロードバランサー)</p><p>【採点講評】設問1(2)は正答率が低かった。設問3(2)は正答率が高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年春期 午後問5（ネットワーク・選択）テーマ：クラウドサービスを活用した情報提供システムの構築</p><p>【概要】全国のIoT機器から気象データを集めるシステムを題材に、IoT向けの通信プロトコル(MQTT)と、FWの処理遅延対策としてのスループット・コネクション数、ロードバランサーによるスケールアウトを問う。</p><p>【状況】<br>・L社が、全国10,000台のIoT機器から気象データを集め、S社のクラウドで分析・提供する新システムを作る。<br>・IoT機器から1分ごとにデータが送られ、データ収集用サーバへ通信が集中する。機器や利用者が増えると、FWなどで処理遅延が起こるおそれがある。<br>・通信を最小限だけ許可するFWのルールを設計し、負荷分散と性能指標の管理を行う。</p><p>【決め手キーワード】MQTT／スループット／コネクション数</p><p>【設問と解答のキーワード】<br>設問1(1)：1時間当たりの最大データ量 → 300(Mバイト)<br>設問1(2)：IoT機器向けのプロトコル → MQTT<br>設問2(1)：FWルールの送信元・宛先(a〜c) → a 200.a.b.13／b 200.c.d.101／c TCP/443<br>設問2(2)：適用されるFWルールの項番 → 4、7<br>設問3(1)：通信が集中するボトルネックの機器(d) → FW<br>設問3(2)：管理する2つの性能指標(e・f) → e ウ(スループット)／f ア(コネクション数)<br>設問3(3)：スケールアウトに必要な機能 → エ(ロードバランサー)</p><p>【採点講評】設問1(2)は正答率が低かった。設問3(2)は正答率が高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年春期 午後問5（ネットワーク・選択）テーマ：クラウドサービスを活用した情報提供システムの構築
+【概要】全国のIoT機器から気象データを集めるシステムを題材に、IoT向けの通信プロトコル(MQTT)と、FWの処理遅延対策としてのスループット・コネクション数、ロードバランサーによるスケールアウトを問う。
+【状況】
+・L社が、全国10,000台のIoT機器から気象データを集め、S社のクラウドで分析・提供する新システムを作る。
+・IoT機器から1分ごとにデータが送られ、データ収集用サーバへ通信が集中する。機器や利用者が増えると、FWなどで処理遅延が起こるおそれがある。
+・通信を最小限だけ許可するFWのルールを設計し、負荷分散と性能指標の管理を行う。
+【決め手キーワード】MQTT／スループット／コネクション数
+【設問と解答のキーワード】
+設問1(1)：1時間当たりの最大データ量 → 300(Mバイト)
+設問1(2)：IoT機器向けのプロトコル → MQTT
+設問2(1)：FWルールの送信元・宛先(a〜c) → a 200.a.b.13／b 200.c.d.101／c TCP/443
+設問2(2)：適用されるFWルールの項番 → 4、7
+設問3(1)：通信が集中するボトルネックの機器(d) → FW
+設問3(2)：管理する2つの性能指標(e・f) → e ウ(スループット)／f ア(コネクション数)
+設問3(3)：スケールアウトに必要な機能 → エ(ロードバランサー)
+【採点講評】設問1(2)は正答率が低かった。設問3(2)は正答率が高かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html#quiz
+出典：IPA 令和6年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06h-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06h/2024r06h-network.m4a" length="6644838" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06h-network</guid>
+    <pubDate>Mon, 01 Apr 2024 06:01:00 +0900</pubDate>
+    <itunes:duration>00:13:16</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

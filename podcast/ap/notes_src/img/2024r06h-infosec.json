@@ -1,0 +1,13 @@
+{"title":"リモート環境の構成(概略)",
+ "rows":[
+  [{"id":"emp","label":"従業員","sub":"貸与PC"},{"id":"stu","label":"生徒","sub":"自宅PC"}],
+  [{"id":"ida","label":"IDaaS","sub":"SSO認証"},{"id":"cl","label":"T社クラウド","sub":"Web会議・ストレージ・メール","style":"key"}],
+  [{"spacer":true},{"id":"siem","label":"SIEM","sub":"ログを集約・相関分析","style":"key"}],
+  [{"spacer":true},{"id":"adm","label":"管理者","sub":"異常検知アラート"}]],
+ "edges":[
+  {"from":"emp","to":"ida","label":"認証"},
+  {"from":"emp","to":"cl"},
+  {"from":"stu","to":"cl","label":"授業"},
+  {"from":"cl","to":"siem","label":"ログ"},
+  {"from":"siem","to":"adm"}],
+ "note":"貸与PCにはEDRを導入(端末遮断・プロセス停止)\n出典:2024r06h 問1 をもとに簡略化"}
