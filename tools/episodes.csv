@@ -149,3 +149,11 @@ id,exam,era,season,qno,field,field_code,kind,theme
 2025r07h-projmng,2025r07h,令和7年,春期,問9,プロジェクトマネジメント,projmng,選択,CCPMを用いたプロジェクトのスケジュール管理
 2025r07h-servicemng,2025r07h,令和7年,春期,問10,サービスマネジメント,servicemng,選択,容量・能力管理
 2025r07h-sysaudit,2025r07h,令和7年,春期,問11,システム監査,sysaudit,選択,勤務管理に関連するシステムの監査
+extra-pubkey,extra,,,,早わかり・暗号,pubkey,早わかり,公開鍵暗号と共通鍵暗号 4パターンと鍵の数
+extra-gl-sec1,extra,,,,用語集・情報セキュリティ①,glsec1,用語集,情報セキュリティ用語① 守りの考え方と検知・認証
+extra-gl-sec2,extra,,,,用語集・情報セキュリティ②,glsec2,用語集,情報セキュリティ用語② 部品表・バックアップ・調査・設定
+extra-gl-network,extra,,,,用語集・ネットワーク,glnetwork,用語集,ネットワーク用語9語 HTTP/3からIEEE 802.1Xまで
+extra-gl-projmng,extra,,,,用語集・プロジェクトマネジメント,glprojmng,用語集,プロジェクトマネジメント用語7語 PMBOK第7版からEVMまで
+extra-gl-servicemng,extra,,,,用語集・サービスマネジメント,glservicemng,用語集,サービスマネジメント用語6語 ITIL 4からSLAまで
+extra-gl-sysaudit,extra,,,,用語集・システム監査,glsysaudit,用語集,システム監査用語4語 基準改訂・生成AI・アジャイル・監査手続
+extra-gl-sysdev,extra,,,,用語集・情報システム開発,glsysdev,用語集,開発・その他用語6語 DevSecOpsから取適法まで
