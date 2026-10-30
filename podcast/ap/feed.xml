@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Mon, 26 Oct 2026 23:02:19 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 22:36:23 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
     <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／点検の実効性／是正の指導・支援</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
@@ -308,6 +308,38 @@
     <guid isPermaLink="false">ap-v2-2025r07h-infosec</guid>
     <pubDate>Tue, 01 Apr 2025 06:00:00 +0900</pubDate>
     <itunes:duration>00:10:18</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和6年秋期 問11 システム監査｜チャットボット導入における開発計画の監査</title>
+    <description><![CDATA[<p>令和6年秋期 午後問11（システム監査・選択）テーマ：チャットボット導入における開発計画の監査</p><p>【概要】AIを応用したチャットボットの導入を題材に、学習用とテスト用データの分離、手作業入力、目標レベルの設定と本番移行の判断、受入テストの監査を問う。</p><p>【状況】<br>・W社が、AIを応用した新しいチャットボット(新CB)を導入する。現行のCBは、季節性のある製品への問合せ対応が不十分で、受入テストに顧客サービス部が参加せず混乱した。<br>・新CBはPoCでの回答満足率を指標にして、開発計画を立てている。<br>・監査人は、類義語DBの整備にかかるサーバの処理時間と、テスト結果のずれに対するコントロールが適切かを監査する。</p><p>【決め手キーワード】テスト用データの分離／手作業入力／受入テスト</p><p>【設問と解答のキーワード】<br>設問1(1) a：テスト用データとは別に用意するデータ → 学習<br>設問1(1) b：類義語DB整備のための機能 → 手作業入力<br>設問1(2) c：評価項目に対して設定する内容 → 目標レベル<br>設問1(3) d：不具合発見時に原因特定・再発防止のために行うこと → レビュー<br>設問2(1) e：処理時間の遅れに関する確認事項 → イ(性能要件)<br>設問2(2) f：問合せ数に偏りがあり、学習用データが不足しやすい製品 → 季節性のある製品<br>設問2(2) g：効果の見込みを評価したあとの工程 → 本番移行<br>設問2(2) h：過去の混乱を防ぐための計画 → 受入テスト</p><p>【採点講評】設問1(2)のcは、評価項目そのものを書いた解答が散見された。設問2(2)のgは正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和6年秋期 午後問11（システム監査・選択）テーマ：チャットボット導入における開発計画の監査</p><p>【概要】AIを応用したチャットボットの導入を題材に、学習用とテスト用データの分離、手作業入力、目標レベルの設定と本番移行の判断、受入テストの監査を問う。</p><p>【状況】<br>・W社が、AIを応用した新しいチャットボット(新CB)を導入する。現行のCBは、季節性のある製品への問合せ対応が不十分で、受入テストに顧客サービス部が参加せず混乱した。<br>・新CBはPoCでの回答満足率を指標にして、開発計画を立てている。<br>・監査人は、類義語DBの整備にかかるサーバの処理時間と、テスト結果のずれに対するコントロールが適切かを監査する。</p><p>【決め手キーワード】テスト用データの分離／手作業入力／受入テスト</p><p>【設問と解答のキーワード】<br>設問1(1) a：テスト用データとは別に用意するデータ → 学習<br>設問1(1) b：類義語DB整備のための機能 → 手作業入力<br>設問1(2) c：評価項目に対して設定する内容 → 目標レベル<br>設問1(3) d：不具合発見時に原因特定・再発防止のために行うこと → レビュー<br>設問2(1) e：処理時間の遅れに関する確認事項 → イ(性能要件)<br>設問2(2) f：問合せ数に偏りがあり、学習用データが不足しやすい製品 → 季節性のある製品<br>設問2(2) g：効果の見込みを評価したあとの工程 → 本番移行<br>設問2(2) h：過去の混乱を防ぐための計画 → 受入テスト</p><p>【採点講評】設問1(2)のcは、評価項目そのものを書いた解答が散見された。設問2(2)のgは正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和6年秋期 午後問11（システム監査・選択）テーマ：チャットボット導入における開発計画の監査
+【概要】AIを応用したチャットボットの導入を題材に、学習用とテスト用データの分離、手作業入力、目標レベルの設定と本番移行の判断、受入テストの監査を問う。
+【状況】
+・W社が、AIを応用した新しいチャットボット(新CB)を導入する。現行のCBは、季節性のある製品への問合せ対応が不十分で、受入テストに顧客サービス部が参加せず混乱した。
+・新CBはPoCでの回答満足率を指標にして、開発計画を立てている。
+・監査人は、類義語DBの整備にかかるサーバの処理時間と、テスト結果のずれに対するコントロールが適切かを監査する。
+【決め手キーワード】テスト用データの分離／手作業入力／受入テスト
+【設問と解答のキーワード】
+設問1(1) a：テスト用データとは別に用意するデータ → 学習
+設問1(1) b：類義語DB整備のための機能 → 手作業入力
+設問1(2) c：評価項目に対して設定する内容 → 目標レベル
+設問1(3) d：不具合発見時に原因特定・再発防止のために行うこと → レビュー
+設問2(1) e：処理時間の遅れに関する確認事項 → イ(性能要件)
+設問2(2) f：問合せ数に偏りがあり、学習用データが不足しやすい製品 → 季節性のある製品
+設問2(2) g：効果の見込みを評価したあとの工程 → 本番移行
+設問2(2) h：過去の混乱を防ぐための計画 → 受入テスト
+【採点講評】設問1(2)のcは、評価項目そのものを書いた解答が散見された。設問2(2)のgは正答率がやや低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html#quiz
+出典：IPA 令和6年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2024r06a-sysaudit.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2024r06a/2024r06a-sysaudit.m4a" length="8234125" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2024r06a-sysaudit</guid>
+    <pubDate>Tue, 01 Oct 2024 06:04:00 +0900</pubDate>
+    <itunes:duration>00:16:27</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

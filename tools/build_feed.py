@@ -78,6 +78,8 @@ def hms(sec):
 def pubdate(ep, index):
     """試験回の古い順に並ぶよう、試験回コードから疑似日付を作る（新しい回ほど新しい日付）。
     例: 2025r07h -> 2025-04-01, 2025r07a -> 2025-10-01。同一回内は分野順に1分ずつずらす。"""
+    if ep["exam"].startswith("extra"):   # 早わかり・用語集（過去問ではない補助教材）
+        return datetime(2026, 10, 30, 6, 0, tzinfo=JST) + timedelta(minutes=index)
     y = int(ep["exam"][:4])
     m = 4 if ep["exam"].endswith("h") else 10
     base = datetime(y, m, 1, 6, 0, tzinfo=JST)
@@ -237,7 +239,13 @@ def page(title, body):
             f"<title>{html.escape(title)}</title><style>{PAGE_CSS}</style></head><body>{body}</body></html>")
 
 
+def is_extra(ep):
+    return ep["exam"].startswith("extra")
+
+
 def ep_title(ep):
+    if is_extra(ep):
+        return f"【{ep['field']}】{ep['theme']}"
     return f"{ep['era']}{ep['season']} {ep['qno']} {ep['field']}｜{ep['theme']}"
 
 
@@ -290,10 +298,13 @@ def build():
         art = f"{SITE}/{BASE}/artwork.jpg"
         items = []
         for ep in sorted(eps, key=lambda e: e["date"], reverse=True):
-            head = f"{ep['era']}{ep['season']} 午後{ep['qno']}（{ep['field']}・{ep['kind']}）テーマ：{ep['theme']}"
+            head = (f"【{ep['field']}】{ep['theme']}（{ep['kind']}）" if is_extra(ep)
+                    else f"{ep['era']}{ep['season']} 午後{ep['qno']}（{ep['field']}・{ep['kind']}）テーマ：{ep['theme']}")
             # 番組の説明欄（Apple Podcasts等はHTMLの<p><a>を表示）
             parts = [f"<p>{html.escape(head)}</p>"]
-            src_line = f"出典：IPA {ep['era']}度{ep['season']} 応用情報技術者試験 午後 {ep['qno']}（問題冊子・解答例・採点講評）"
+            src_line = ("出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る"
+                        if is_extra(ep) else
+                        f"出典：IPA {ep['era']}度{ep['season']} 応用情報技術者試験 午後 {ep['qno']}（問題冊子・解答例・採点講評）")
             text = [head]
             if ep["summary"]:
                 parts.append(f"<p>【概要】{html.escape(ep['summary'])}</p>")
@@ -373,9 +384,11 @@ def build():
 
     # 一覧ページ
     rows = []
-    for ep in sorted(have, key=lambda e: (e["exam"], FIELD_ORDER.index(e["field_code"]))):
+    def _ord(e):
+        return FIELD_ORDER.index(e["field_code"]) if e["field_code"] in FIELD_ORDER else len(FIELD_ORDER)
+    for ep in sorted(have, key=lambda e: (e["exam"], _ord(e))):
         note = f"<a href='notes/{ep['id']}.html'>ノート</a>" if ep["note_url"] else "－"
-        rows.append(f"<tr><td>{ep['exam']}</td><td>{ep['qno']}</td><td>{html.escape(ep['field'])}</td>"
+        rows.append(f"<tr><td>{'補助教材' if is_extra(ep) else ep['exam']}</td><td>{ep['qno'] or '－'}</td><td>{html.escape(ep['field'])}</td>"
                     f"<td>{html.escape(ep['theme'])}</td><td>{hms(ep['dur'])}</td><td>{note}</td></tr>")
     feeds = "".join(f"<li><a href='feed_{fc}.xml'>{FIELD_NAME[fc]}</a></li>" for fc in FIELD_ORDER)
     body = (f"<h1>{SHOW_TITLE}</h1><p class='meta'>公開 {len(have)} 本／最終更新 "
