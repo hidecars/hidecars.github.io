@@ -11,7 +11,68 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Fri, 30 Oct 2026 22:52:55 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 23:05:03 +0900</lastBuildDate>
+  <item>
+    <title>【用語集・ネットワーク】ネットワーク用語9語 HTTP/3からIEEE 802.1Xまで</title>
+    <description><![CDATA[<p>【用語集・ネットワーク】ネットワーク用語9語 HTTP/3からIEEE 802.1Xまで（用語集）</p><p>【概要】応用情報の午前・午後で押さえたいネットワークの用語9語（HTTP/3、TLS 1.3、SASE／ZTNA、SWG、Wi-Fi 6E／Wi-Fi 7／WPA3、IPv6、MQTT、SNMPトラップ、IEEE 802.1X）を、意味・ポイント・午後での問われ方・出題実績の順に確認する。</p><p>【状況】<br>・シラバス強化用語集（2026/10/30版）のうち「ネットワーク」の9語を扱う。<br>・令和8年度からCBT方式（科目A=午前、科目B=午後）。シラバスはVer.7.2。<br>・使い方：まず「ひとこと」を声に出して読み、「午後での問われ方」を確認する。</p><p>【決め手キーワード】HTTP/3（QUIC）：UDP上で動く／SNMPトラップ：機器から自発的に通知／IEEE 802.1X：接続時に端末を認証</p><p>【設問と解答のキーワード】<br>設問HTTP/3（QUIC）：「TCPではなくUDPを使う」点が問われやすい。FWでUDP 443番を許可する必要がある、という形でも出る。 → 今回の資料内では出題を確認できていない<br>設問TLS 1.3：Webサーバの設定変更や古い端末の非対応の話題で出やすい。 → 今回の資料内では出題を確認できていない<br>設問SASE／ZTNA：「VPNと比べた利点」 → 社内ネットワーク全体へ入れない、アクセスをアプリ単位で制御できる。 → 今回の資料内では出題を確認できていない<br>設問SWG：「テレワーク端末も社内と同じWeb検査を受けられる」点を書く。 → R6秋 午後問5（テーマ：セキュアWebゲートウェイサービスの導入）<br>設問Wi-Fi 6E／Wi-Fi 7／WPA3：選択肢の正誤（周波数帯、暗号化方式の組合せ）として出やすい。 → 今回の資料内では出題を確認できていない<br>設問IPv6（IPoE）：回線の速度低下の原因と対策の文脈で出る。 → 今回の資料内では出題を確認できていない<br>設問MQTT：ブローカーの役割、トピック、通信量が少ない点が問われる。 → 今回の資料内では出題を確認できていない<br>設問SNMPトラップ：「通知機能の名称と条件」の記述で出た（R7春 午後問5：トラフィック量が800Mビット/秒を超える）。 → R7春 午後問5（設問3 正答率が低かった）<br>設問IEEE 802.1X：「無許可の端末を接続させない対策」として空欄補充で出る。 → R7春 午後問5（設問1）プロジェクトマネジメント</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・ネットワーク】ネットワーク用語9語 HTTP/3からIEEE 802.1Xまで（用語集）</p><p>【概要】応用情報の午前・午後で押さえたいネットワークの用語9語（HTTP/3、TLS 1.3、SASE／ZTNA、SWG、Wi-Fi 6E／Wi-Fi 7／WPA3、IPv6、MQTT、SNMPトラップ、IEEE 802.1X）を、意味・ポイント・午後での問われ方・出題実績の順に確認する。</p><p>【状況】<br>・シラバス強化用語集（2026/10/30版）のうち「ネットワーク」の9語を扱う。<br>・令和8年度からCBT方式（科目A=午前、科目B=午後）。シラバスはVer.7.2。<br>・使い方：まず「ひとこと」を声に出して読み、「午後での問われ方」を確認する。</p><p>【決め手キーワード】HTTP/3（QUIC）：UDP上で動く／SNMPトラップ：機器から自発的に通知／IEEE 802.1X：接続時に端末を認証</p><p>【設問と解答のキーワード】<br>設問HTTP/3（QUIC）：「TCPではなくUDPを使う」点が問われやすい。FWでUDP 443番を許可する必要がある、という形でも出る。 → 今回の資料内では出題を確認できていない<br>設問TLS 1.3：Webサーバの設定変更や古い端末の非対応の話題で出やすい。 → 今回の資料内では出題を確認できていない<br>設問SASE／ZTNA：「VPNと比べた利点」 → 社内ネットワーク全体へ入れない、アクセスをアプリ単位で制御できる。 → 今回の資料内では出題を確認できていない<br>設問SWG：「テレワーク端末も社内と同じWeb検査を受けられる」点を書く。 → R6秋 午後問5（テーマ：セキュアWebゲートウェイサービスの導入）<br>設問Wi-Fi 6E／Wi-Fi 7／WPA3：選択肢の正誤（周波数帯、暗号化方式の組合せ）として出やすい。 → 今回の資料内では出題を確認できていない<br>設問IPv6（IPoE）：回線の速度低下の原因と対策の文脈で出る。 → 今回の資料内では出題を確認できていない<br>設問MQTT：ブローカーの役割、トピック、通信量が少ない点が問われる。 → 今回の資料内では出題を確認できていない<br>設問SNMPトラップ：「通知機能の名称と条件」の記述で出た（R7春 午後問5：トラフィック量が800Mビット/秒を超える）。 → R7春 午後問5（設問3 正答率が低かった）<br>設問IEEE 802.1X：「無許可の端末を接続させない対策」として空欄補充で出る。 → R7春 午後問5（設問1）プロジェクトマネジメント</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></content:encoded>
+    <itunes:summary>【用語集・ネットワーク】ネットワーク用語9語 HTTP/3からIEEE 802.1Xまで（用語集）
+【概要】応用情報の午前・午後で押さえたいネットワークの用語9語（HTTP/3、TLS 1.3、SASE／ZTNA、SWG、Wi-Fi 6E／Wi-Fi 7／WPA3、IPv6、MQTT、SNMPトラップ、IEEE 802.1X）を、意味・ポイント・午後での問われ方・出題実績の順に確認する。
+【状況】
+・シラバス強化用語集（2026/10/30版）のうち「ネットワーク」の9語を扱う。
+・令和8年度からCBT方式（科目A=午前、科目B=午後）。シラバスはVer.7.2。
+・使い方：まず「ひとこと」を声に出して読み、「午後での問われ方」を確認する。
+【決め手キーワード】HTTP/3（QUIC）：UDP上で動く／SNMPトラップ：機器から自発的に通知／IEEE 802.1X：接続時に端末を認証
+【設問と解答のキーワード】
+設問HTTP/3（QUIC）：「TCPではなくUDPを使う」点が問われやすい。FWでUDP 443番を許可する必要がある、という形でも出る。 → 今回の資料内では出題を確認できていない
+設問TLS 1.3：Webサーバの設定変更や古い端末の非対応の話題で出やすい。 → 今回の資料内では出題を確認できていない
+設問SASE／ZTNA：「VPNと比べた利点」 → 社内ネットワーク全体へ入れない、アクセスをアプリ単位で制御できる。 → 今回の資料内では出題を確認できていない
+設問SWG：「テレワーク端末も社内と同じWeb検査を受けられる」点を書く。 → R6秋 午後問5（テーマ：セキュアWebゲートウェイサービスの導入）
+設問Wi-Fi 6E／Wi-Fi 7／WPA3：選択肢の正誤（周波数帯、暗号化方式の組合せ）として出やすい。 → 今回の資料内では出題を確認できていない
+設問IPv6（IPoE）：回線の速度低下の原因と対策の文脈で出る。 → 今回の資料内では出題を確認できていない
+設問MQTT：ブローカーの役割、トピック、通信量が少ない点が問われる。 → 今回の資料内では出題を確認できていない
+設問SNMPトラップ：「通知機能の名称と条件」の記述で出た（R7春 午後問5：トラフィック量が800Mビット/秒を超える）。 → R7春 午後問5（設問3 正答率が低かった）
+設問IEEE 802.1X：「無許可の端末を接続させない対策」として空欄補充で出る。 → R7春 午後問5（設問1）プロジェクトマネジメント
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz
+出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-network.m4a" length="6659632" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-network</guid>
+    <pubDate>Fri, 30 Oct 2026 08:33:00 +0900</pubDate>
+    <itunes:duration>00:13:18</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数</title>
+    <description><![CDATA[<p>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）</p><p>【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n</p><p>【設問と解答のキーワード】<br>設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵<br>設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値<br>設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）<br>設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから<br>設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）<br>設問Q6：デジタル署名で実現できない要素 → 機密性</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></description>
+    <content:encoded><![CDATA[<p>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）</p><p>【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n</p><p>【設問と解答のキーワード】<br>設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵<br>設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値<br>設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）<br>設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから<br>設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）<br>設問Q6：デジタル署名で実現できない要素 → 機密性</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></content:encoded>
+    <itunes:summary>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）
+【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。
+【状況】
+・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。
+・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。
+・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。
+【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n
+【設問と解答のキーワード】
+設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵
+設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値
+設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）
+設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから
+設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）
+設問Q6：デジタル署名で実現できない要素 → 機密性
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz
+出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-pubkey.m4a" length="9953259" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-pubkey</guid>
+    <pubDate>Fri, 30 Oct 2026 08:30:00 +0900</pubDate>
+    <itunes:duration>00:19:53</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
   <item>
     <title>令和7年秋期 問11 システム監査｜情報システムのアクセス管理状況の点検に関する監査</title>
     <description><![CDATA[<p>令和7年秋期 午後問11（システム監査・選択）テーマ：情報システムのアクセス管理状況の点検に関する監査</p><p>【概要】持株会社P社がグループ各社に行わせるアクセス管理の点検について、点検が形骸化せず実効性があるかを確かめる監査手続を問う。</p><p>【状況】<br>・持株会社P社のシステム統括部が、グループ各社（Q社・R社・S社など）のアクセス管理を半年ごとに点検させている。<br>・P社内部監査部のシステム監査チームが、その点検の実効性を監査する。</p><p>【決め手キーワード】代替の管理策／点検の実効性／是正の指導・支援</p><p>【設問と解答のキーワード】<br>設問1：規程の管理策が適用できない場合の点検ポイントa → 代替の管理策の適用<br>設問2：S社をサンプルに含める理由b → エ 点検（形骸化のおそれ）<br>設問3(1)：是正状況を確認する対象c → 委託先<br>設問3(2)：Q社システム部に働きかける組織d → P社システム統括部<br>設問3(3)：働きかけの内容e → 是正を進めるよう指導、支援<br>設問4(1)：管理表の更新で確認する記録f → 承認の記録<br>設問4(2)：インタビューで確かめる内容g → 更新の内容及び理由<br>設問5：照合する資料h・i → 各管理表／点検表</p><p>【採点講評】設問3(3)は正答率が低く、設問5はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問11（問題冊子・解答例・採点講評）</p>]]></description>
