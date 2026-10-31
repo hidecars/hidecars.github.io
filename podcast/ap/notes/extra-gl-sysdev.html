@@ -1,0 +1,37 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報システム開発】開発・その他用語6語 DevSecOpsから取適法まで</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報システム開発】開発・その他用語6語 DevSecOpsから取適法まで</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>IaC：構成をコードで記述して自動構築</li><li>リファクタリング：仕様を変えず内部を整理</li><li>取適法：下請法を改正・改称</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>シラバス強化用語集（2026/10/30版）のうち「情報システム開発」の6語を扱う。</li><li>令和8年度からCBT方式（科目A=午前、科目B=午後）。シラバスはVer.7.2。</li><li>使い方：まず「ひとこと」を声に出して読み、「午後での問われ方」を確認する。</li></ul>
+<h3 id='s4'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>ひとこと</th><th>ポイント</th></tr></thead><tbody><tr><td>DevSecOps／CI/CD</td><td>CI/CDは、コードの統合・テスト・リリースを自動で継続的に行う仕組み。DevSecOpsはそこにセキュリティ検査を組み込む考え方。</td><td>脆弱性検査を開発の後工程ではなく早い段階（シフトレフト）で自動実行する。</td></tr><tr><td>マイクロサービス</td><td>システムを小さな独立したサービスに分け、Web APIで連携させる構成。</td><td>サービスごとに開発・更新・拡張ができる。反面、通信の増加や障害の切り分けが難しくなる。</td></tr><tr><td>コンテナ（Docker／Kubernetes）</td><td>アプリと実行環境をまとめて動かす軽量な仮想化。Kubernetesは多数のコンテナを管理する仕組み。</td><td>OSを共有するので、仮想マシンより起動が速く軽い。</td></tr><tr><td>IaC</td><td>サーバやネットワークの構成をコード（設定ファイル）で記述し、自動で構築する手法。</td><td>同じ環境を何度でも正確に作れる。構成の変更履歴もコードとして管理できる。</td></tr><tr><td>リファクタリング</td><td>外部から見た動作（仕様）を変えずに、プログラムの内部構造を整理すること。</td><td>機能追加はしない。読みやすさ・保守しやすさを上げる。</td></tr><tr><td>中小受託取引適正化法（取適法）</td><td>下請法を改正・改称した法律。シラバスVer.7.2で「下請法」から置き換わった。</td><td>委託する側（大企業など）が、受託する中小企業に不当な代金の減額や支払遅延をすることを禁じる。</td></tr></tbody></table></div>
+<h3 id='s6'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>DevSecOps／CI/CD</td><td>「リリースのたびに手作業で検査する問題点」の改善策として書ける。</td><td>今回の資料内では出題を確認できていない</td></tr><tr><td>マイクロサービス</td><td>利点と欠点の両方が選択肢に出る。</td><td>R6秋 午前問47</td></tr><tr><td>コンテナ（Docker／Kubernetes）</td><td>仮想マシン（ハイパーバイザ型）との違いが問われる。</td><td>R4秋 午前問12、R3秋 午前問14</td></tr><tr><td>IaC</td><td>「手作業の構築による設定ミス」の対策として書ける。</td><td>R7秋 午前問12、R5秋 午前問14</td></tr><tr><td>リファクタリング</td><td>名称を答える空欄補充で出た（R7秋 午後問9）。</td><td>R7秋 午後問9、R3秋 午前問48、H27秋 午前問49</td></tr><tr><td>中小受託取引適正化法（取適法）</td><td>法務分野の午前で、旧「下請法」の問題が新しい名称で出る可能性がある（要確認）。</td><td>シラバスVer.7.2（2026/01/08公開）で追加</td></tr></tbody></table></div>
+<h3 id='s8'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>DevSecOps／CI/CD</td><td>CI/CDは、コードの統合・テスト・リリースを自動で継続的に行う仕組み。DevSecOpsはそこにセキュリティ検査を組み込む考え方。</td></tr><tr><td>マイクロサービス</td><td>システムを小さな独立したサービスに分け、Web APIで連携させる構成。</td></tr><tr><td>コンテナ（Docker／Kubernetes）</td><td>アプリと実行環境をまとめて動かす軽量な仮想化。Kubernetesは多数のコンテナを管理する仕組み。</td></tr><tr><td>IaC</td><td>サーバやネットワークの構成をコード（設定ファイル）で記述し、自動で構築する手法。</td></tr><tr><td>リファクタリング</td><td>外部から見た動作（仕様）を変えずに、プログラムの内部構造を整理すること。</td></tr><tr><td>中小受託取引適正化法（取適法）</td><td>下請法を改正・改称した法律。シラバスVer.7.2で「下請法」から置き換わった。</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> DevSecOps／CI/CDとは</summary><p>CI/CDは、コードの統合・テスト・リリースを自動で継続的に行う仕組み。DevSecOpsはそこにセキュリティ検査を組み込む考え方。</p></details><details class='qa'><summary><b>Q2</b> マイクロサービスとは</summary><p>システムを小さな独立したサービスに分け、Web APIで連携させる構成。</p></details><details class='qa'><summary><b>Q3</b> コンテナ（Docker／Kubernetes）とは</summary><p>アプリと実行環境をまとめて動かす軽量な仮想化。Kubernetesは多数のコンテナを管理する仕組み。</p></details><details class='qa'><summary><b>Q4</b> IaCとは</summary><p>サーバやネットワークの構成をコード（設定ファイル）で記述し、自動で構築する手法。</p></details><details class='qa'><summary><b>Q5</b> リファクタリングとは</summary><p>外部から見た動作（仕様）を変えずに、プログラムの内部構造を整理すること。</p></details><details class='qa'><summary><b>Q6</b> 中小受託取引適正化法（取適法）とは</summary><p>下請法を改正・改称した法律。シラバスVer.7.2で「下請法」から置き換わった。</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※出題実績は、手元のIPA問題冊子・解答例（平成24年〜令和7年）で確認できたものに限る。「今回の資料内では出題を確認できていない」用語の今後の出題は予想である。</p></body></html>

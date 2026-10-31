@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Fri, 30 Oct 2026 23:28:28 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 19:32:18 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問10 サービスマネジメント｜社内手続を扱うサービスデスク</title>
     <description><![CDATA[<p>令和7年秋期 午後問10（サービスマネジメント・選択）テーマ：社内手続を扱うサービスデスク</p><p>【概要】通信会社J社の社内向けサービスデスクとFAQ運用を題材に、SPOC・SLA（可用性）・エスカレーション・自己解決率の改善を問う。</p><p>【状況】<br>・通信会社J社の情報システム部運用課が、社内手続の問合せを受けるサービスデスク（SD）を運営する。<br>・ポータル（Pサービス）のセルフヘルプでFAQを検索でき、その記録がFログに残る。</p><p>【決め手キーワード】SPOC／エスカレーション／問合せ自己解決率</p><p>【設問と解答のキーワード】<br>設問1(1)：窓口の一本化を表す機能名a → SPOC<br>設問2(1)：利用可能時間の割合を表すSLA項目b → 可用性（稼働率）<br>設問2(2)：1か月（22営業日）の許容停止時間c → 158（分）<br>設問3(1)：問合せの分類で割り当てる属性d → 優先度<br>設問3(2)：手順書で答えられないときの手続e → エスカレーション<br>設問4(1)：FAQ登録の優先度を付ける分析方法 → 疑問が解決しなかった問合せの発生頻度<br>設問4(2)：突き合わせるデータ項目f・g → 入力されたキーワード／問合せキーワード</p><p>【採点講評】設問1は正答率が低かった。設問4(2)は本文にない項目を書いた解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問10（問題冊子・解答例・採点講評）</p>]]></description>
