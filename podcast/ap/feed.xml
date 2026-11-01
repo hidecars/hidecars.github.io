@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Mon, 02 Nov 2026 06:48:18 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 06:57:55 +0900</lastBuildDate>
   <item>
     <title>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法</title>
     <description><![CDATA[<p>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマとシラバス改訂の新用語1つ（アジャイル開発とスクラム、UMLの図、テスト技法、信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、中小受託取引適正化法）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】優先順位はプロダクトオーナー／下位の代わり＝スタブ／強度は高く・結合度は低く</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
@@ -41,10 +41,10 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysaudit.m4a" length="6667083" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysaudit.m4a" length="5468390" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-sysaudit-r2</guid>
     <pubDate>Sun, 01 Nov 2026 08:36:00 +0900</pubDate>
-    <itunes:duration>00:13:17</itunes:duration>
+    <itunes:duration>00:10:55</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
@@ -59,10 +59,10 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-servicemng.m4a" length="5672161" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-servicemng.m4a" length="6317571" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-servicemng-r2</guid>
     <pubDate>Sun, 01 Nov 2026 08:35:00 +0900</pubDate>
-    <itunes:duration>00:11:17</itunes:duration>
+    <itunes:duration>00:12:35</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
@@ -77,10 +77,10 @@
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-projmng.m4a" length="6314967" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-projmng.m4a" length="10400073" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-projmng-r2</guid>
     <pubDate>Sun, 01 Nov 2026 08:34:00 +0900</pubDate>
-    <itunes:duration>00:12:36</itunes:duration>
+    <itunes:duration>00:20:45</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
