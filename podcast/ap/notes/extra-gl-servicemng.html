@@ -1,4 +1,4 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・サービスマネジメント】サービスマネジメント用語6語 ITIL 4からSLAまで</title><style>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA</title><style>
 :root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
 body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
@@ -22,16 +22,26 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
-</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・サービスマネジメント】サービスマネジメント用語6語 ITIL 4からSLAまで</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
-<ul><li>SPOC：問合せ窓口を一つにする</li><li>標準変更：事前承認済みの低リスク変更</li><li>稼働率：直列は掛け算、並列は1−(1−A)(1−B)</li></ul>
-<h3 id='s2'>2. 状況</h3>
-<ul><li>シラバス強化用語集（2026/10/30版）のうち「サービスマネジメント」の6語を扱う。</li><li>令和8年度からCBT方式（科目A=午前、科目B=午後）。シラバスはVer.7.2。</li><li>使い方：まず「ひとこと」を声に出して読み、「午後での問われ方」を確認する。</li></ul>
-<h3 id='s4'>3. 分野の核心</h3>
-<div class='tw'><table><thead><tr><th>用語</th><th>ひとこと</th><th>ポイント</th></tr></thead><tbody><tr><td>ITIL 4</td><td>ITサービスマネジメントのベストプラクティス集の最新版。</td><td>中心は「サービスバリューシステム（SVS）」で、価値を生むための34のプラクティスを定めている。</td></tr><tr><td>SPOC</td><td>利用者からの問合せ窓口を一つにまとめること。サービスデスクの基本の役割。</td><td>利用者はどこに聞けばよいか迷わない。受付・記録・振り分けを一か所で行える。</td></tr><tr><td>標準変更</td><td>事前に承認された、リスクが低く手順の決まった変更。都度の承認は不要。</td><td>通常変更は都度の評価・承認、緊急変更は迅速な承認が必要。3種類を区別する。</td></tr><tr><td>AIOps</td><td>AIや機械学習で、監視データの分析や障害の予兆検知など運用を自動化すること。</td><td>大量のアラートから重要なものを絞る、異常の傾向をつかむ、といった使い方をする。</td></tr><tr><td>稼働率の計算</td><td>直列は掛け算、並列は 1−（1−A）×（1−B）。</td><td>クラウドを複数組み合わせると、直列部分で全体の稼働率が下がる。</td></tr><tr><td>SLA</td><td>サービス提供者と利用者が合意したサービスの水準（稼働率、応答時間など）。</td><td>障害が起きても、SLAを安易に変えるのではなく、業務への影響を避ける対策を考える。</td></tr></tbody></table></div>
-<h3 id='s6'>4. 解答キーワード一覧</h3>
-<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>ITIL 4</td><td>古い過去問は ITIL v3（ライフサイクル段階）の用語。新しい問題は「プラクティス」「価値」の用語で確認する。</td><td>H30秋 午前問55・R1秋 午前問55-56（ITIL v3の用語）</td></tr><tr><td>SPOC</td><td>名称をアルファベットで答える空欄補充で出た（R7秋 午後問10 設問1 正答率が低かった）。</td><td>R7秋 午後問10</td></tr><tr><td>標準変更</td><td>「どの変更を事前承認にできるか」 → 手順が確立し、リスクが低く、頻繁に行うもの。</td><td>今回の資料内では出題を確認できていない</td></tr><tr><td>AIOps</td><td>チャットボットやFAQ（自己解決）と同様に、運用負荷の軽減策として出やすい。</td><td>今回の資料内では出題を確認できていない</td></tr><tr><td>稼働率の計算</td><td>SLAの許容停止時間の計算も出る（R7秋 午後問10：22営業日で158分）。</td><td>R7秋 午後問10、R6秋 午前問14ほか</td></tr><tr><td>SLA</td><td>「SLAの変更を協議する」は誤答例（R7春 午後問10 採点講評）。</td><td>R7春 午後問10、R6春 午前問56システム監査</td></tr></tbody></table></div>
-<h3 id='s8'>5. 用語</h3>
-<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>ITIL 4</td><td>ITサービスマネジメントのベストプラクティス集の最新版。</td></tr><tr><td>SPOC</td><td>利用者からの問合せ窓口を一つにまとめること。サービスデスクの基本の役割。</td></tr><tr><td>標準変更</td><td>事前に承認された、リスクが低く手順の決まった変更。都度の承認は不要。</td></tr><tr><td>AIOps</td><td>AIや機械学習で、監視データの分析や障害の予兆検知など運用を自動化すること。</td></tr><tr><td>稼働率の計算</td><td>直列は掛け算、並列は 1−（1−A）×（1−B）。</td></tr><tr><td>SLA</td><td>サービス提供者と利用者が合意したサービスの水準（稼働率、応答時間など）。</td></tr></tbody></table></div>
-<h3 id='quiz'>6. 思い出しクイズ</h3>
-<details class='qa'><summary><b>Q1</b> ITIL 4とは</summary><p>ITサービスマネジメントのベストプラクティス集の最新版。</p></details><details class='qa'><summary><b>Q2</b> SPOCとは</summary><p>利用者からの問合せ窓口を一つにまとめること。サービスデスクの基本の役割。</p></details><details class='qa'><summary><b>Q3</b> 標準変更とは</summary><p>事前に承認された、リスクが低く手順の決まった変更。都度の承認は不要。</p></details><details class='qa'><summary><b>Q4</b> AIOpsとは</summary><p>AIや機械学習で、監視データの分析や障害の予兆検知など運用を自動化すること。</p></details><details class='qa'><summary><b>Q5</b> 稼働率の計算とは</summary><p>直列は掛け算、並列は 1−（1−A）×（1−B）。</p></details><details class='qa'><summary><b>Q6</b> SLAとは</summary><p>サービス提供者と利用者が合意したサービスの水準（稼働率、応答時間など）。</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
-<p>※出題実績は、手元のIPA問題冊子・解答例（平成24年〜令和7年）で確認できたものに限る。「今回の資料内では出題を確認できていない」用語の今後の出題は予想である。</p></body></html>
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s3'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>インシデント管理と問題管理</td><td>15回中7回</td><td>R3秋・R4秋・R7秋</td></tr><tr><td>2</td><td>可用性（稼働率）の計算</td><td>15回中5回</td><td>R5秋・R7秋</td></tr><tr><td>3</td><td>バックアップ（フル・差分・増分）</td><td>15回中6回</td><td>R3秋・R5秋</td></tr><tr><td>4</td><td>RPO・RTO・RLO</td><td>15回中3回</td><td>R6秋</td></tr><tr><td>5</td><td>サービスレベル管理と是正処置</td><td>15回中7回</td><td>R5秋・R6秋・R6春</td></tr></tbody></table></div>
+<h3 id='s3'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s4'>1. インシデント管理と問題管理</h4>
+<p>インシデント管理は、サービスをできるだけ早く元に戻す活動。問題管理は、インシデントの根本原因を突き止めて、再発を防ぐ活動。</p>
+<ul><li>インシデント管理：回避策（ワークアラウンド）を使ってでも、まずサービスを復旧させる。</li><li>問題管理：根本原因を特定する。根本原因が特定されているか、回避策がある問題を「既知の誤り」として記録する。恒久的な解決は変更管理を通して実施する。</li><li>問題管理は、インシデントが起きる前の予防的な活動（傾向分析）も含む。</li><li>FTA（故障の木解析）：望ましくない事象を頂点に置き、その原因を木の形で下へ分解して分析する（R7秋）。</li><li>誤り：「問題管理の目的は、サービスを迅速に復旧すること」は誤り。それはインシデント管理。</li></ul>
+<h4 id='s7'>2. 可用性（稼働率）の計算</h4>
+<p>稼働率は、全体の時間のうちサービスが使える時間の割合。</p>
+<ul><li>稼働率＝MTBF÷（MTBF＋MTTR）。MTBFは平均故障間隔、MTTRは平均修復時間。</li><li>直列（どちらも動く必要がある）：稼働率A×稼働率B。</li><li>並列（どちらか一方が動けばよい）：1−（1−A）×（1−B）。</li><li>許容停止時間＝サービス提供時間×（1−目標稼働率）。</li><li>誤り：並列を「A＋B」と足す誤り。</li></ul>
+<h4 id='s10'>3. バックアップ（フル・差分・増分）</h4>
+<p>バックアップの方式は3つ。復元に必要なものと、1回の取得量が違う。</p>
+<ul><li>フルバックアップ：全データを毎回取る。復元はそれ1つで済む。</li><li>差分バックアップ：前回のフルバックアップ以降に変わったデータを取る。日がたつほど量が増える。復元は「フル＋最新の差分1つ」。</li><li>増分バックアップ：前回のバックアップ（フルでも増分でも）以降に変わったデータを取る。量は少ない。復元は「フル＋それ以降のすべての増分」で、時間がかかる。</li><li>誤り：差分と増分の取り違え。「前回のフル以降」が差分、「前回のバックアップ以降」が増分。</li></ul>
+<h4 id='s13'>4. RPO・RTO・RLO</h4>
+<p>サービスやデータを復旧するときの3つの目標。</p>
+<ul><li>RPO（目標復旧時点）：どの時点のデータまで戻すか。例：障害の1時間前までのデータを復旧する。</li><li>RTO（目標復旧時間）：障害からどれだけの時間で復旧するか。例：4時間以内に再開する。</li><li>RLO（目標復旧レベル）：どの水準まで復旧するか。例：通常の50%の処理能力で再開する。</li><li>RPOを短くするには、バックアップの取得間隔を短くする。</li><li>誤り：RPOとRTOの取り違え。RPOは「データの時点」、RTOは「かかる時間」。</li></ul>
+<h4 id='s16'>5. サービスレベル管理と是正処置</h4>
+<p>サービスレベル管理は、顧客とサービスの目標（SLA）を合意し、実績を監視・報告・レビューする活動。</p>
+<ul><li>SLA：サービス提供者と顧客の間で合意した、サービスの内容と目標値（稼働率、応答時間など）。</li><li>サービスレベル管理の活動：目標に対する実績を監視し、顧客に報告し、定期的にレビューする（R6春）。</li><li>是正処置：不適合の原因を取り除き、再発を防ぐ処置（R5秋）。</li><li>修正：見つかった不適合そのものを取り除く処置。是正処置とは別。</li><li>誤り：是正処置と修正の取り違え。「原因を除去して再発防止」が是正処置。</li></ul>
+<h3 id='s19'>3. 数値例</h3>
+<ul><li>例1：稼働率0.9の装置2台。直列は0.9×0.9＝0.81。並列は1−0.1×0.1＝0.99。</li><li>例2：30日×24時間＝720時間のサービスで、目標稼働率99.5%。許容停止時間は720×0.005＝3.6時間。</li><li>例3：MTBF 450時間、MTTR 50時間。稼働率は450÷500＝0.9。</li><li>例：日曜にフル、月〜水に差分を取り、木曜朝に障害。復元に使うのは「日曜のフル＋水曜の差分」の2つ。増分なら「日曜のフル＋月・火・水の増分」の4つ。</li></ul>
+<h3 id='quiz'>4. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 根本原因を特定し再発を防ぐプロセスは</summary><p>問題管理</p></details><details class='qa'><summary><b>Q2</b> 根本原因が特定されているか回避策がある問題を何という</summary><p>既知の誤り</p></details><details class='qa'><summary><b>Q3</b> 望ましくない事象から原因を木の形で分解する手法は</summary><p>FTA</p></details><details class='qa'><summary><b>Q4</b> 稼働率0.9の装置を2台並列にした稼働率は</summary><p>0.99</p></details><details class='qa'><summary><b>Q5</b> MTBF 900時間、MTTR 100時間の稼働率は</summary><p>0.9</p></details><details class='qa'><summary><b>Q6</b> 720時間で目標99%のとき許容停止時間は</summary><p>7.2時間</p></details><details class='qa'><summary><b>Q7</b> 差分バックアップの復元に必要なものは</summary><p>フル＋最新の差分1つ</p></details><details class='qa'><summary><b>Q8</b> 前回のバックアップ以降の変更だけを取る方式は</summary><p>増分バックアップ</p></details><details class='qa'><summary><b>Q9</b> 差分と増分で、毎回の取得量が日ごとに増えるのは</summary><p>差分</p></details><details class='qa'><summary><b>Q10</b> 「障害発生の1時間前のデータまで戻す」はどの指標</summary><p>RPO</p></details><details class='qa'><summary><b>Q11</b> 「4時間以内にサービスを再開する」はどの指標</summary><p>RTO</p></details><details class='qa'><summary><b>Q12</b> 「通常の50%の能力で再開する」はどの指標</summary><p>RLO</p></details><details class='qa'><summary><b>Q13</b> 不適合の原因を除去し再発を防ぐ処置は</summary><p>是正処置</p></details><details class='qa'><summary><b>Q14</b> サービスの目標値を顧客と合意した文書は</summary><p>SLA</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

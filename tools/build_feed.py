@@ -78,6 +78,8 @@ def hms(sec):
 def pubdate(ep, index):
     """試験回の古い順に並ぶよう、試験回コードから疑似日付を作る（新しい回ほど新しい日付）。
     例: 2025r07h -> 2025-04-01, 2025r07a -> 2025-10-01。同一回内は分野順に1分ずつずらす。"""
+    if ep["id"].startswith("extra-gl-"):   # 用語集 第2版（2026/11/01 再作成）
+        return datetime(2026, 11, 1, 6, 0, tzinfo=JST) + timedelta(minutes=index)
     if ep["exam"].startswith("extra"):   # 早わかり・用語集（過去問ではない補助教材）
         return datetime(2026, 10, 30, 6, 0, tzinfo=JST) + timedelta(minutes=index)
     y = int(ep["exam"][:4])
@@ -302,7 +304,9 @@ def build():
                     else f"{ep['era']}{ep['season']} 午後{ep['qno']}（{ep['field']}・{ep['kind']}）テーマ：{ep['theme']}")
             # 番組の説明欄（Apple Podcasts等はHTMLの<p><a>を表示）
             parts = [f"<p>{html.escape(head)}</p>"]
-            src_line = ("出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る"
+            src_line = ("出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数"
+                        if ep["id"].startswith("extra-gl-") else
+                        "出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る"
                         if is_extra(ep) else
                         f"出典：IPA {ep['era']}度{ep['season']} 応用情報技術者試験 午後 {ep['qno']}（問題冊子・解答例・採点講評）")
             text = [head]
@@ -351,7 +355,7 @@ def build():
     <itunes:summary>{html.escape(desc_text)}</itunes:summary>
     <link>{html.escape(ep['doc_url'] or ep['note_url'] or self_url)}</link>
     <enclosure url="{audio_url(ep['id'])}" length="{ep['size']}" type="audio/x-m4a"/>
-    <guid isPermaLink="false">ap-v2-{ep['id']}</guid>
+    <guid isPermaLink="false">ap-v2-{ep['id']}{"-r2" if ep["id"].startswith("extra-gl-") else ""}</guid>
     <pubDate>{format_datetime(ep['date'])}</pubDate>
     <itunes:duration>{hms(ep['dur'])}</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
