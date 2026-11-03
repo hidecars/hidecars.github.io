@@ -1,0 +1,18 @@
+{
+  "type": "pipeline-test",
+  "episode": "2026-11-03",
+  "note": "編成デスク読み取り→GitHub push の疎通確認用。実際のニュース原稿ではありません。",
+  "settings": { "durationMin": 20, "minTopics": 7, "maxTopics": 10 },
+  "categories": [
+    { "id": "politics",  "name": "政治・経済",          "priority": 3 },
+    { "id": "tech",      "name": "テクノロジー・AI",    "priority": 3 },
+    { "id": "business",  "name": "ビジネス・業界",      "priority": 2 },
+    { "id": "marketing", "name": "マーケティング・SNS", "priority": 2 }
+  ],
+  "excludedCategories": ["sports"],
+  "likedArticleIds": ["sample-01"],
+  "script": [
+    { "section": "opening", "text": "(テスト)2026年11月3日、火曜日の朝ニュースです。" },
+    { "section": "closing", "text": "(テスト)以上、本日のニュースでした。" }
+  ]
+}
