@@ -1,0 +1,10 @@
+{"title":"S/MIMEによるメール送信(概略)",
+ "rows":[
+  [{"id":"s","label":"送信者","sub":"秘密鍵で署名"}],
+  [{"id":"m","label":"メール","sub":"署名+暗号化","style":"key"},{"id":"ca","label":"CA","sub":"証明書を発行","style":"dash"}],
+  [{"id":"r","label":"受信者","sub":"自分の秘密鍵で復号"}]],
+ "edges":[
+  {"from":"s","to":"m","label":"受信者の公開鍵で暗号化"},
+  {"from":"m","to":"r","label":"改ざん検知"},
+  {"from":"ca","to":"r","label":"CAの公開鍵で検証"}],
+ "note":"PPAP:誤送信するとパスワードも同じ相手に届く\n出典:2023r05a 問1 をもとに簡略化"}

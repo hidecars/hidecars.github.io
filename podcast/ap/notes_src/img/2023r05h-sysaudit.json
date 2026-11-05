@@ -1,0 +1,11 @@
+{"title":"工場在庫管理の監査(概略)",
+ "rows":[
+  [{"id":"au","label":"内部監査室","sub":"監査を実施"}],
+  [{"id":"inv","label":"工場在庫管理システム","sub":"出庫は自動生成","style":"key"},{"id":"pu","label":"購買管理システム","sub":"入荷データ"}],
+  [{"id":"pc","label":"現場PC","sub":"ログイン放置・他人のID","style":"risk"},{"id":"cs","label":"CSV","sub":"手作業の入力","style":"dash"}]],
+ "edges":[
+  {"from":"au","to":"inv","label":"監査手続"},
+  {"from":"pu","to":"cs"},
+  {"from":"cs","to":"inv","label":"手入力"},
+  {"from":"pc","to":"inv","label":"操作"}],
+ "note":"確かめること:手作業の統制、実地棚卸リストと在庫データ、他人の利用者ID\n出典:2023r05h 問11 をもとに簡略化"}

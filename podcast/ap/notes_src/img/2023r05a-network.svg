@@ -1,0 +1,27 @@
+<svg class="dg" viewBox="0 0 360 354" role="img" aria-label="広報サーバとメール送信(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">広報サーバとメール送信(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="49.0" y="110.0" width="175" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">受信 192.168.1.10</text>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="60.5" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="93.0" y="227.0" class="dg-lbl" text-anchor="middle">中継を依頼</text>
+<line x1="174.0" y1="275.0" x2="186.0" y2="275.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="266.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="279.0" class="dg-lbl" text-anchor="middle">送信</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">広報PC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">メーラで送受信</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">広報サーバ</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">Web・SMTP・POP</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">FW1</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">ポート転送・NAPT</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box dash"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">ISP N社</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">OP25B・中継サーバ</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">他ドメイン</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">送信先</text>
+<text x="12" y="326.0" class="dg-note">送信許可はネットワークアドレス(192.168.0.0)で指定</text>
+<text x="12" y="342.0" class="dg-note">出典:2023r05a 問5 をもとに簡略化</text>
+</svg>

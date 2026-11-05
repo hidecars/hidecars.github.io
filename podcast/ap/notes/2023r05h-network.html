@@ -1,0 +1,66 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和5年春期 問5 ネットワーク｜Webサイトの増設</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2023r05h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和5年春期 問5 ネットワーク｜Webサイトの増設</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>デフォルトルート：宛先が不定のパケット(インターネット宛てなど)の転送先を、1つにまとめて書いた経路</li><li>ゾーン転送：DNSが管理する領域(ゾーン)の情報を、プライマリDNSからセカンダリDNSへコピーすること</li><li>TTL：DNSの応答をキャッシュしておく時間。切替え前に小さくしておくと、変更が早く行き渡る</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>F社のデータセンターbにあるWebサイトbで、WebAPサーバbの処理能力が足りず、顧客から応答遅延の苦情が増えた。</li><li>対策として、c-DCに同じ構成のWebサイトcを増設し、DNSラウンドロビンで負荷を分散する。</li><li>設問は、現行の経路、アクセス先のFQDN、DNSの設定、メンテナンス時の顧客への影響を問う。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 444" role="img" aria-label="Webサイト増設後の構成(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">Webサイト増設後の構成(概略)</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="96.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="109.0" class="dg-lbl" text-anchor="middle">名前解決</text>
+<line x1="180.0" y1="186.0" x2="93.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="267.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="174.0" y1="365.0" x2="186.0" y2="365.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="147.5" y="356.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="369.0" class="dg-lbl" text-anchor="middle">ゾーン転送</text>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">顧客</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">DNSラウンドロビン</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">同じFQDNに複数のIP</text>
+<rect x="12.0" y="232.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="259.0" class="dg-txt" text-anchor="middle">Webサイトb</text>
+<text x="93.0" y="281.0" class="dg-sub" text-anchor="middle">b-DC(既存)</text>
+<rect x="186.0" y="232.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="259.0" class="dg-txt" text-anchor="middle">Webサイトc</text>
+<text x="267.0" y="281.0" class="dg-sub" text-anchor="middle">c-DC(増設)</text>
+<rect x="12.0" y="336.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="363.0" class="dg-txt" text-anchor="middle">DNSサーバb</text>
+<text x="93.0" y="385.0" class="dg-sub" text-anchor="middle">ゾーンを管理</text>
+<rect x="186.0" y="336.0" width="162.0" height="58" rx="8" class="dg-box dash"/>
+<text x="267.0" y="363.0" class="dg-txt" text-anchor="middle">DNSサーバc</text>
+<text x="267.0" y="385.0" class="dg-sub" text-anchor="middle">ゾーン転送で同期</text>
+<text x="12" y="416.0" class="dg-note">メンテナンス前:TTLを小さくし、ログイン中の利用者がいないことを確認</text>
+<text x="12" y="432.0" class="dg-note">出典:2023r05h 問5 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>宛先が不定のパケットの行き先</td><td>—（設問1(1)は正答率がやや低かった）</td><td>デフォルトルートが指すネクストホップ(FWf)へ送る。経路表に1つにまとめて書いてある</td><td>デフォルトルート</td></tr><tr><td>DNSサーバ間で情報をそろえる</td><td>—（設問3(1)のcは正答率が低かった）</td><td>ゾーンの情報をプライマリからセカンダリへコピーするのがゾーン転送</td><td>ゾーン</td></tr><tr><td>WebAPサーバの停止を伴うメンテナンス</td><td>—（設問3(3)は正答率が低かった）</td><td>DNSのキャッシュが更新されても、更新前からログインしている顧客は影響を受ける。停止前にログイン中の利用者がいないことを確認する</td><td>ログイン中の利用者</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>デフォルトルートのネクストホップ機器</td><td>FWf</td></tr><tr><td>1(2)</td><td>運用PCからDNSサーバbまでの経由機器</td><td>L3SW、FWb、L2SWb</td></tr><tr><td>2(1) a</td><td>顧客と同じアクセス先の公開用FQDN</td><td>miap.example.jp</td></tr><tr><td>2(2)</td><td>広域イーサ網経由のアクセス先FQDN</td><td>apb.f-sha.example.lan</td></tr><tr><td>3(1) b</td><td>運用PCに登録する代替のDNSサーバ</td><td>DNSサーバc</td></tr><tr><td>3(1) c</td><td>DNSサーバ間で情報をコピーする仕組み</td><td>ゾーン</td></tr><tr><td>3(1) d</td><td>事前に小さくするレコードの属性</td><td>TTL</td></tr><tr><td>3(2)</td><td>Webサイトを1つ停止したときの顧客への影響</td><td>システムの応答速度が低下することがある</td></tr><tr><td>3(3)</td><td>WebAPサーバ停止前に確認すること</td><td>ログイン中の利用者がいないこと</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>DNSラウンドロビン</td><td>1つのFQDNに複数のIPアドレスを登録し、順番に返して負荷を分散する方式</td></tr><tr><td>FQDN</td><td>ホスト名とドメイン名をすべて書いた名前</td></tr><tr><td>デフォルトルート</td><td>経路表にない宛先へ送るときの、既定の転送先</td></tr><tr><td>ゾーン</td><td>DNSサーバが管理する名前の範囲</td></tr><tr><td>TTL</td><td>DNSの応答をキャッシュしてよい時間</td></tr><tr><td>L3SW</td><td>IPアドレスで経路を判断して転送するスイッチ</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 宛先が不定のパケットの転送先を1つにまとめた経路は</summary><p>デフォルトルート</p></details><details class='qa'><summary><b>Q2</b> プライマリDNSからセカンダリDNSへ、ゾーンの情報をコピーすることは</summary><p>ゾーン転送</p></details><details class='qa'><summary><b>Q3</b> 切替え前に小さい値へ変えておくDNSレコードの属性は</summary><p>TTL</p></details><details class='qa'><summary><b>Q4</b> WebAPサーバを1台止めたとき、顧客に起きることは</summary><p>応答速度が低下することがある</p></details><details class='qa'><summary><b>Q5</b> WebAPサーバを止める前に確認することは</summary><p>ログイン中の利用者がいないこと</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問1(1)は正答率がやや低く、デフォルトルートが宛先不定のパケットの転送先をまとめた経路であることの理解が問われた。設問3(1)のcと3(3)は正答率が低かった。</p></body></html>

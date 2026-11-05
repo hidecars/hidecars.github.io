@@ -1,0 +1,10 @@
+{"title":"システム移行プロジェクトの体制(概略)",
+ "rows":[
+  [{"id":"sc","label":"ステアリングコミッティ","sub":"重要な意思決定を承認","style":"key"}],
+  [{"id":"pm","label":"PM","sub":"移行計画・判定基準書"}],
+  [{"id":"old","label":"販売支援システム","sub":"オンプレミス","style":"dash"},{"id":"new","label":"IaaS","sub":"一括移行","style":"key"}]],
+ "edges":[
+  {"from":"pm","to":"sc","label":"承認依頼"},
+  {"from":"pm","to":"old"},
+  {"from":"old","to":"new","label":"移行"}],
+ "note":"P社:本店と30拠点。営業日の業務停止を避ける\n出典:2023r05h 問9 をもとに簡略化"}

@@ -1,0 +1,25 @@
+<svg class="dg" viewBox="0 0 360 354" role="img" aria-label="デジタル金融サービス開発の体制(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">デジタル金融サービス開発の体制(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="174.0" y1="171.0" x2="186.0" y2="171.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="186.0" y1="268.0" x2="174.0" y2="268.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="136.5" y="259.0" width="87" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="272.0" class="dg-lbl" text-anchor="middle">機械学習の支援</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">B役員</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">6か月以内のリリース</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">C課長(PM)</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">アジャイル・PoC</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">D主任</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">プロダクトオーナー</text>
+<rect x="12.0" y="246.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">開発メンバー</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box dash"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">ベンダー</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">準委任契約で技術支援</text>
+<text x="12" y="326.0" class="dg-note">ベンダー選定:評価項目で比較(定着化と使用性が最高点)</text>
+<text x="12" y="342.0" class="dg-note">出典:2023r05a 問9 をもとに簡略化</text>
+</svg>

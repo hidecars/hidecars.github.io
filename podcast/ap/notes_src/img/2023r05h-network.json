@@ -1,0 +1,12 @@
+{"title":"Webサイト増設後の構成(概略)",
+ "rows":[
+  [{"id":"cu","label":"顧客"}],
+  [{"id":"dns","label":"DNSラウンドロビン","sub":"同じFQDNに複数のIP","style":"key"}],
+  [{"id":"b","label":"Webサイトb","sub":"b-DC(既存)"},{"id":"c","label":"Webサイトc","sub":"c-DC(増設)","style":"key"}],
+  [{"id":"d1","label":"DNSサーバb","sub":"ゾーンを管理"},{"id":"d2","label":"DNSサーバc","sub":"ゾーン転送で同期","style":"dash"}]],
+ "edges":[
+  {"from":"cu","to":"dns","label":"名前解決"},
+  {"from":"dns","to":"b"},
+  {"from":"dns","to":"c"},
+  {"from":"d1","to":"d2","label":"ゾーン転送"}],
+ "note":"メンテナンス前:TTLを小さくし、ログイン中の利用者がいないことを確認\n出典:2023r05h 問5 をもとに簡略化"}

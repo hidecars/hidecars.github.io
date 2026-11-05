@@ -1,0 +1,10 @@
+{"title":"マルウェア感染とその対策(概略)",
+ "rows":[
+  [{"id":"z","label":"Z社","sub":"セキュリティ支援会社"},{"id":"r","label":"R社","sub":"旅行代理店"}],
+  [{"id":"pc","label":"PC-S","sub":"ランサムウェア感染","style":"risk"},{"id":"edr","label":"EDR","sub":"不審な挙動を監視","style":"key"}],
+  [{"id":"bk","label":"バックアップ媒体","sub":"PCから切り離して保管","style":"key"},{"id":"cs","label":"CSIRT","sub":"対応体制・手順","style":"dash"}]],
+ "edges":[
+  {"from":"z","to":"r","label":"評価"},
+  {"from":"r","to":"pc"},
+  {"from":"pc","to":"bk","label":"被害を防ぐ"}],
+ "note":"課題:検知対策、対応体制・手順、社員教育\n出典:2023r05h 問1 をもとに簡略化"}

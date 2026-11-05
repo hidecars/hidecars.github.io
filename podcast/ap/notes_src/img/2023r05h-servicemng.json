@@ -1,0 +1,11 @@
+{"title":"クラウド利用の構成(概略)",
+ "rows":[
+  [{"id":"acc","label":"経理部","sub":"勤務体制を変更"},{"id":"m","label":"M社","sub":"クラウド事業者"}],
+  [{"id":"s","label":"Sサービス","sub":"会計系SaaS・計画停止あり","style":"risk"},{"id":"i","label":"Iサービス","sub":"IaaS(東日本→西日本に切替)","style":"key"}],
+  [{"id":"l","label":"L社","sub":"基幹系をIaaSへ移行"},{"id":"bk","label":"バックアップ","sub":"遠隔地保管を続ける","style":"key"}]],
+ "edges":[
+  {"from":"acc","to":"s","label":"利用"},
+  {"from":"m","to":"i","label":"提供"},
+  {"from":"l","to":"i","label":"移行"},
+  {"from":"l","to":"bk"}],
+ "note":"SLA:計画停止時間とサービス回復までの最大時間を合意\n出典:2023r05h 問10 をもとに簡略化"}

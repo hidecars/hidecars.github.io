@@ -1,0 +1,10 @@
+{"title":"新システムのサービス提供体制(概略)",
+ "rows":[
+  [{"id":"sa","label":"販売部","sub":"SLAを合意","style":"key"}],
+  [{"id":"sv","label":"サービス課","sub":"サービス提供者"}],
+  [{"id":"dev","label":"開発課・運用課","sub":"内部供給者","style":"key"},{"id":"y","label":"Y社","sub":"サービスデスク(外部)","style":"dash"}]],
+ "edges":[
+  {"from":"sa","to":"sv","label":"SLA"},
+  {"from":"sv","to":"dev","label":"目標を合意"},
+  {"from":"sv","to":"y","label":"契約書"}],
+ "note":"開始直後の問合せ急増はFAQ掲載で抑える\n出典:2023r05a 問10 をもとに簡略化"}

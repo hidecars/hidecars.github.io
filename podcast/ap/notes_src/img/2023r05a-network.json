@@ -1,0 +1,10 @@
+{"title":"広報サーバとメール送信(概略)",
+ "rows":[
+  [{"id":"pc","label":"広報PC","sub":"メーラで送受信"}],
+  [{"id":"sv","label":"広報サーバ","sub":"Web・SMTP・POP","style":"key"},{"id":"fw","label":"FW1","sub":"ポート転送・NAPT"}],
+  [{"id":"isp","label":"ISP N社","sub":"OP25B・中継サーバ","style":"dash"},{"id":"ot","label":"他ドメイン","sub":"送信先"}]],
+ "edges":[
+  {"from":"pc","to":"sv","label":"受信 192.168.1.10"},
+  {"from":"sv","to":"isp","label":"中継を依頼"},
+  {"from":"isp","to":"ot","label":"送信"}],
+ "note":"送信許可はネットワークアドレス(192.168.0.0)で指定\n出典:2023r05a 問5 をもとに簡略化"}
