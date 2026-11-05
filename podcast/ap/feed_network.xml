@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 05 Nov 2026 22:16:36 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 22:32:55 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
@@ -131,6 +131,38 @@
     <guid isPermaLink="false">ap-v2-2024r06h-network</guid>
     <pubDate>Mon, 01 Apr 2024 06:01:00 +0900</pubDate>
     <itunes:duration>00:13:16</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和5年秋期 問5 ネットワーク｜メールサーバの構築</title>
+    <description><![CDATA[<p>令和5年秋期 午後問5（ネットワーク・選択）テーマ：メールサーバの構築</p><p>【概要】新ブランドの広報用メールサーバの構築を題材に、DNSによるFQDNとIPアドレスの対応、OP25Bと中継サーバ、送信を許可するネットワークアドレスを問う。</p><p>【状況】<br>・アパレル会社のL社が、新ブランドの広報のため、プロジェクトルームに広報サーバ(Web・SMTP・POP)を構築した。<br>・NAPTやDNSを設定してテストしたところ、POP3の受信エラーと、ISPのN社によるOP25Bで他ドメイン宛てのメール送信の失敗が起きた。<br>・設問は、FW1のポート転送、DNSの設定、メーラの設定、OP25Bが防ぐ脅威、不正な送信を防ぐネットワークアドレスを問う。</p><p>【決め手キーワード】DNSによるFQDNとIPアドレスの対応／OP25Bと中継サーバ／ネットワーク部とホスト部</p><p>【設問と解答のキーワード】<br>設問1 a：FW1のポート転送の設定項目 → オ(宛先)<br>設問1 b：HTTPSのポート番号 → エ(443)<br>設問2 c：DNSに登録する名前 → serv(またはwww)<br>設問2 d：DNSに登録するIPアドレス → w.x.y.z<br>設問3(1)：メーラの設定の変更 → 受信メールサーバ → 192.168.1.10<br>設問3(2)：OP25Bで軽減できる脅威 → エ(スパムメールの送信に広報サーバが利用される)<br>設問3(3)：広報サーバに行う設定 → N社のメールサーバを中継サーバとしてメールを送信する設定<br>設問4 e：送信を許可するネットワークアドレス → 192.168.0.0</p><p>【採点講評】設問3(1)は正答率が低く、FQDNとIPアドレスの対応関係やDNSが使うポート番号が問われた。設問4も正答率が低く、端末のIPアドレスを答えた解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和5年秋期 午後問5（ネットワーク・選択）テーマ：メールサーバの構築</p><p>【概要】新ブランドの広報用メールサーバの構築を題材に、DNSによるFQDNとIPアドレスの対応、OP25Bと中継サーバ、送信を許可するネットワークアドレスを問う。</p><p>【状況】<br>・アパレル会社のL社が、新ブランドの広報のため、プロジェクトルームに広報サーバ(Web・SMTP・POP)を構築した。<br>・NAPTやDNSを設定してテストしたところ、POP3の受信エラーと、ISPのN社によるOP25Bで他ドメイン宛てのメール送信の失敗が起きた。<br>・設問は、FW1のポート転送、DNSの設定、メーラの設定、OP25Bが防ぐ脅威、不正な送信を防ぐネットワークアドレスを問う。</p><p>【決め手キーワード】DNSによるFQDNとIPアドレスの対応／OP25Bと中継サーバ／ネットワーク部とホスト部</p><p>【設問と解答のキーワード】<br>設問1 a：FW1のポート転送の設定項目 → オ(宛先)<br>設問1 b：HTTPSのポート番号 → エ(443)<br>設問2 c：DNSに登録する名前 → serv(またはwww)<br>設問2 d：DNSに登録するIPアドレス → w.x.y.z<br>設問3(1)：メーラの設定の変更 → 受信メールサーバ → 192.168.1.10<br>設問3(2)：OP25Bで軽減できる脅威 → エ(スパムメールの送信に広報サーバが利用される)<br>設問3(3)：広報サーバに行う設定 → N社のメールサーバを中継サーバとしてメールを送信する設定<br>設問4 e：送信を許可するネットワークアドレス → 192.168.0.0</p><p>【採点講評】設問3(1)は正答率が低く、FQDNとIPアドレスの対応関係やDNSが使うポート番号が問われた。設問4も正答率が低く、端末のIPアドレスを答えた解答が散見された。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和5年秋期 午後問5（ネットワーク・選択）テーマ：メールサーバの構築
+【概要】新ブランドの広報用メールサーバの構築を題材に、DNSによるFQDNとIPアドレスの対応、OP25Bと中継サーバ、送信を許可するネットワークアドレスを問う。
+【状況】
+・アパレル会社のL社が、新ブランドの広報のため、プロジェクトルームに広報サーバ(Web・SMTP・POP)を構築した。
+・NAPTやDNSを設定してテストしたところ、POP3の受信エラーと、ISPのN社によるOP25Bで他ドメイン宛てのメール送信の失敗が起きた。
+・設問は、FW1のポート転送、DNSの設定、メーラの設定、OP25Bが防ぐ脅威、不正な送信を防ぐネットワークアドレスを問う。
+【決め手キーワード】DNSによるFQDNとIPアドレスの対応／OP25Bと中継サーバ／ネットワーク部とホスト部
+【設問と解答のキーワード】
+設問1 a：FW1のポート転送の設定項目 → オ(宛先)
+設問1 b：HTTPSのポート番号 → エ(443)
+設問2 c：DNSに登録する名前 → serv(またはwww)
+設問2 d：DNSに登録するIPアドレス → w.x.y.z
+設問3(1)：メーラの設定の変更 → 受信メールサーバ → 192.168.1.10
+設問3(2)：OP25Bで軽減できる脅威 → エ(スパムメールの送信に広報サーバが利用される)
+設問3(3)：広報サーバに行う設定 → N社のメールサーバを中継サーバとしてメールを送信する設定
+設問4 e：送信を許可するネットワークアドレス → 192.168.0.0
+【採点講評】設問3(1)は正答率が低く、FQDNとIPアドレスの対応関係やDNSが使うポート番号が問われた。設問4も正答率が低く、端末のIPアドレスを答えた解答が散見された。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html#quiz
+出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2023r05a-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2023r05a/2023r05a-network.m4a" length="9081447" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2023r05a-network</guid>
+    <pubDate>Sun, 01 Oct 2023 06:01:00 +0900</pubDate>
+    <itunes:duration>00:18:07</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

@@ -1,0 +1,61 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和5年秋期 問1 情報セキュリティ｜電子メールのセキュリティ対策</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2023r05a｜必須｜<a href='../index.html'>一覧へ</a></p><h1>令和5年秋期 問1 情報セキュリティ｜電子メールのセキュリティ対策</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>PPAP方式の問題点：本文メールを誤送信すると、パスワードも同じ相手に届く。パスワードは別の手段で伝える</li><li>S/MIME：電子署名で改ざんを検知し、暗号化で盗聴を防ぐ。どの手順でどの鍵を使うかを押さえる</li><li>共通鍵暗号と公開鍵暗号の使い分け：本文の暗号化・復号には、処理が速い共通鍵暗号を使う</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>卸売会社のK社は、過去の誤送信事故のあと、ZIP添付とパスワードの別メール送信(PPAP方式)を導入した。</li><li>政府の廃止方針や、宛先を確認しない送信、同じ経路でパスワードを送ることによる盗聴リスクなどの問題が表に出た。</li><li>一時的な運用改善を行いつつ、S/MIMEの導入で暗号化と改ざん防止を実現する。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="S/MIMEによるメール送信(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">S/MIMEによるメール送信(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="71.0" y="110.0" width="131" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">受信者の公開鍵で暗号化</text>
+<line x1="93.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="104.0" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">改ざん検知</text>
+<line x1="267.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="169.0" y="214.0" width="109" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="227.0" class="dg-lbl" text-anchor="middle">CAの公開鍵で検証</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">送信者</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">秘密鍵で署名</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">メール</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">署名+暗号化</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box dash"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">CA</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">証明書を発行</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">受信者</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">自分の秘密鍵で復号</text>
+<text x="12" y="326.0" class="dg-note">PPAP:誤送信するとパスワードも同じ相手に届く</text>
+<text x="12" y="342.0" class="dg-note">出典:2023r05a 問1 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>PPAP方式で誤送信したとき</td><td>—（設問1(1)は正答率がやや高かった）</td><td>本文メールを誤送信すると、パスワードも誤送信した相手に届く。盗聴を減らすには、パスワードを電話や携帯メールなど別の手段で伝える</td><td>DPW(パスワード)</td></tr><tr><td>S/MIMEで署名・暗号化する</td><td>—（設問2(2)は正答率が平均的）</td><td>署名は送信者の秘密鍵で作り、送信者の公開鍵で検証する。暗号化は受信者の公開鍵、復号は受信者の秘密鍵。「どの手順でどの鍵か」まで理解する</td><td>送信者の秘密鍵、受信者の公開鍵</td></tr><tr><td>本文の暗号化に共通鍵暗号を使う</td><td>—（設問2(3)は正答率が低かった）</td><td>共通鍵暗号は、暗号化と復号の処理速度が速い。公開鍵暗号は処理が複雑</td><td>暗号化と復号の処理速度</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>誤送信時の情報漏えいの問題</td><td>本文メールを誤送信すると、DPWも誤送信した相手に届く</td></tr><tr><td>1(2)</td><td>盗聴リスクを下げる運用改善</td><td>DPWを、電話や携帯メールなど異なる手段で伝える</td></tr><tr><td>2(1)</td><td>改ざんが検知される手順</td><td>1.6</td></tr><tr><td>2(2) a</td><td>手順1.2の鍵</td><td>カ(送信者の秘密鍵)</td></tr><tr><td>2(2) b</td><td>手順1.4の鍵</td><td>オ(送信者の公開鍵)</td></tr><tr><td>2(2) c</td><td>手順2.2の鍵</td><td>ウ(受信者の公開鍵)</td></tr><tr><td>2(2) d</td><td>手順2.4の鍵</td><td>エ(受信者の秘密鍵)</td></tr><tr><td>2(3)</td><td>共通鍵暗号を使う理由</td><td>暗号化と復号の処理速度が速い</td></tr><tr><td>3</td><td>証明書の検証に必要な鍵</td><td>ア(CAの公開鍵)</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>PPAP</td><td>パスワード付きZIPを添付し、パスワードを別メールで送る方式</td></tr><tr><td>S/MIME</td><td>メールに電子署名と暗号化を付ける方式</td></tr><tr><td>電子署名</td><td>送信者の秘密鍵で作り、改ざんと本人性を確かめる仕組み</td></tr><tr><td>共通鍵暗号</td><td>暗号化と復号に同じ鍵を使う方式。処理が速い</td></tr><tr><td>公開鍵暗号</td><td>公開鍵と秘密鍵の対を使う方式。処理が複雑</td></tr><tr><td>CA</td><td>認証局。電子証明書を発行する機関</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> PPAPで本文メールを誤送信すると、何も一緒に届くか</summary><p>パスワード(DPW)</p></details><details class='qa'><summary><b>Q2</b> パスワードの盗聴リスクを下げる運用改善は</summary><p>電話や携帯メールなど別の手段で伝える</p></details><details class='qa'><summary><b>Q3</b> 電子署名を作るときに使う鍵は</summary><p>送信者の秘密鍵</p></details><details class='qa'><summary><b>Q4</b> 共通鍵暗号を使う理由は</summary><p>暗号化と復号の処理速度が速い</p></details><details class='qa'><summary><b>Q5</b> 証明書の検証に必要な鍵は</summary><p>CAの公開鍵</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問2(2)は正答率が平均的で、どの手順でどの鍵が使われるかまでの理解が求められた。設問2(3)は正答率が低かった。設問3は正答率がやや高かった。</p></body></html>

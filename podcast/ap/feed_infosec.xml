@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 05 Nov 2026 22:16:36 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 22:32:55 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
     <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p><p>【概要】産業機械メーカーZ社のグループ全体を題材に、ビジネスとソフトウェアの2つのサプライチェーン攻撃への技術的な対処と、情報管理の基本原則（need-to-know）を問う。</p><p>【状況】<br>・産業機械メーカーZ社の情報システム部（B部長・T主任）が、子会社を含むグループ全体の対策を検討する。<br>・共通業務システムは内部ネットワークのセグメントGにあり、子会社はインターネットVPN経由で使う。</p><p>【決め手キーワード】境界防御／SIEM／SBOM</p><p>【設問と解答のキーワード】<br>設問1 a：空欄（解答群から選択） → ク 境界防御<br>設問1 b：空欄（解答群から選択） → ウ need-to-know<br>設問1 d：空欄（解答群から選択） → カ SIEM<br>設問1 e：空欄（解答群から選択） → オ SBOM<br>設問2 c：空欄（5字以内） → 初期<br>設問3(1)：施策として適切でないもの → ウ 個別業務システムを全てセグメントGへ移し各社が引き続き管理<br>設問3(2)：内部不正の抑止につながる理由 → 不正の発覚リスクが高いことが心理的障壁になる<br>設問3(3)：脆弱性対策の観点での懸念 → 脆弱性発見時に影響範囲を迅速に判断できない</p><p>【採点講評】設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
@@ -133,6 +133,39 @@
     <guid isPermaLink="false">ap-v2-2024r06h-infosec</guid>
     <pubDate>Mon, 01 Apr 2024 06:00:00 +0900</pubDate>
     <itunes:duration>00:12:48</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和5年秋期 問1 情報セキュリティ｜電子メールのセキュリティ対策</title>
+    <description><![CDATA[<p>令和5年秋期 午後問1（情報セキュリティ・必須）テーマ：電子メールのセキュリティ対策</p><p>【概要】PPAP方式の運用上の問題点と、代替策としてのS/MIMEを題材に、パスワードの扱い、電子署名と暗号化に使う鍵、共通鍵暗号を使う理由を問う。</p><p>【状況】<br>・卸売会社のK社は、過去の誤送信事故のあと、ZIP添付とパスワードの別メール送信(PPAP方式)を導入した。<br>・政府の廃止方針や、宛先を確認しない送信、同じ経路でパスワードを送ることによる盗聴リスクなどの問題が表に出た。<br>・一時的な運用改善を行いつつ、S/MIMEの導入で暗号化と改ざん防止を実現する。</p><p>【決め手キーワード】PPAP方式の問題点／S/MIME／共通鍵暗号と公開鍵暗号の使い分け</p><p>【設問と解答のキーワード】<br>設問1(1)：誤送信時の情報漏えいの問題 → 本文メールを誤送信すると、DPWも誤送信した相手に届く<br>設問1(2)：盗聴リスクを下げる運用改善 → DPWを、電話や携帯メールなど異なる手段で伝える<br>設問2(1)：改ざんが検知される手順 → 1.6<br>設問2(2) a：手順1.2の鍵 → カ(送信者の秘密鍵)<br>設問2(2) b：手順1.4の鍵 → オ(送信者の公開鍵)<br>設問2(2) c：手順2.2の鍵 → ウ(受信者の公開鍵)<br>設問2(2) d：手順2.4の鍵 → エ(受信者の秘密鍵)<br>設問2(3)：共通鍵暗号を使う理由 → 暗号化と復号の処理速度が速い<br>設問3：証明書の検証に必要な鍵 → ア(CAの公開鍵)</p><p>【採点講評】設問2(2)は正答率が平均的で、どの手順でどの鍵が使われるかまでの理解が求められた。設問2(3)は正答率が低かった。設問3は正答率がやや高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和5年秋期 午後問1（情報セキュリティ・必須）テーマ：電子メールのセキュリティ対策</p><p>【概要】PPAP方式の運用上の問題点と、代替策としてのS/MIMEを題材に、パスワードの扱い、電子署名と暗号化に使う鍵、共通鍵暗号を使う理由を問う。</p><p>【状況】<br>・卸売会社のK社は、過去の誤送信事故のあと、ZIP添付とパスワードの別メール送信(PPAP方式)を導入した。<br>・政府の廃止方針や、宛先を確認しない送信、同じ経路でパスワードを送ることによる盗聴リスクなどの問題が表に出た。<br>・一時的な運用改善を行いつつ、S/MIMEの導入で暗号化と改ざん防止を実現する。</p><p>【決め手キーワード】PPAP方式の問題点／S/MIME／共通鍵暗号と公開鍵暗号の使い分け</p><p>【設問と解答のキーワード】<br>設問1(1)：誤送信時の情報漏えいの問題 → 本文メールを誤送信すると、DPWも誤送信した相手に届く<br>設問1(2)：盗聴リスクを下げる運用改善 → DPWを、電話や携帯メールなど異なる手段で伝える<br>設問2(1)：改ざんが検知される手順 → 1.6<br>設問2(2) a：手順1.2の鍵 → カ(送信者の秘密鍵)<br>設問2(2) b：手順1.4の鍵 → オ(送信者の公開鍵)<br>設問2(2) c：手順2.2の鍵 → ウ(受信者の公開鍵)<br>設問2(2) d：手順2.4の鍵 → エ(受信者の秘密鍵)<br>設問2(3)：共通鍵暗号を使う理由 → 暗号化と復号の処理速度が速い<br>設問3：証明書の検証に必要な鍵 → ア(CAの公開鍵)</p><p>【採点講評】設問2(2)は正答率が平均的で、どの手順でどの鍵が使われるかまでの理解が求められた。設問2(3)は正答率が低かった。設問3は正答率がやや高かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和5年秋期 午後問1（情報セキュリティ・必須）テーマ：電子メールのセキュリティ対策
+【概要】PPAP方式の運用上の問題点と、代替策としてのS/MIMEを題材に、パスワードの扱い、電子署名と暗号化に使う鍵、共通鍵暗号を使う理由を問う。
+【状況】
+・卸売会社のK社は、過去の誤送信事故のあと、ZIP添付とパスワードの別メール送信(PPAP方式)を導入した。
+・政府の廃止方針や、宛先を確認しない送信、同じ経路でパスワードを送ることによる盗聴リスクなどの問題が表に出た。
+・一時的な運用改善を行いつつ、S/MIMEの導入で暗号化と改ざん防止を実現する。
+【決め手キーワード】PPAP方式の問題点／S/MIME／共通鍵暗号と公開鍵暗号の使い分け
+【設問と解答のキーワード】
+設問1(1)：誤送信時の情報漏えいの問題 → 本文メールを誤送信すると、DPWも誤送信した相手に届く
+設問1(2)：盗聴リスクを下げる運用改善 → DPWを、電話や携帯メールなど異なる手段で伝える
+設問2(1)：改ざんが検知される手順 → 1.6
+設問2(2) a：手順1.2の鍵 → カ(送信者の秘密鍵)
+設問2(2) b：手順1.4の鍵 → オ(送信者の公開鍵)
+設問2(2) c：手順2.2の鍵 → ウ(受信者の公開鍵)
+設問2(2) d：手順2.4の鍵 → エ(受信者の秘密鍵)
+設問2(3)：共通鍵暗号を使う理由 → 暗号化と復号の処理速度が速い
+設問3：証明書の検証に必要な鍵 → ア(CAの公開鍵)
+【採点講評】設問2(2)は正答率が平均的で、どの手順でどの鍵が使われるかまでの理解が求められた。設問2(3)は正答率が低かった。設問3は正答率がやや高かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html#quiz
+出典：IPA 令和5年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2023r05a-infosec.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2023r05a/2023r05a-infosec.m4a" length="9862612" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2023r05a-infosec</guid>
+    <pubDate>Sun, 01 Oct 2023 06:00:00 +0900</pubDate>
+    <itunes:duration>00:19:40</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
