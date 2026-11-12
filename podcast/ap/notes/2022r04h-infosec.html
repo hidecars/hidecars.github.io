@@ -1,0 +1,63 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和4年春期 問1 情報セキュリティ｜通信販売サイトのセキュリティインシデント対応</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2022r04h｜必須｜<a href='../index.html'>一覧へ</a></p><h1>令和4年春期 問1 情報セキュリティ｜通信販売サイトのセキュリティインシデント対応</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>不要なサービスの停止：サーバで不要なサービスが動いていると悪用される。最低限必要なものを除いて停止する</li><li>ゼロデイ攻撃への暫定対策：修正プログラムが公開される前の脆弱性を突かれる攻撃。回避策を調べて暫定対策を判断する</li><li>SIEM：ログを統合管理し、相関分析をリアルタイムに行って、インシデントを早く見つける仕組み</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>文房具・オフィス家具製造販売のR社の通信販売サイトで、CMSの脆弱性を突かれ、サイトの改ざんと不適切なサイトへの誘導が起きた。</li><li>WAFの更新で過検知が出てシグネチャの更新を止めていたこと、サイトを閉鎖するルールがないこと、改ざんの検知が遅れたこと、ログの相関分析に時間がかかったことが課題になった。</li><li>再発防止策の立案と、攻撃を受けたあとの対処を問う。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="通信販売サイトの構成と対策(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">通信販売サイトの構成と対策(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="110.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">ゼロデイ攻撃</text>
+<line x1="174.0" y1="171.0" x2="186.0" y2="171.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">ログ</text>
+<line x1="174.0" y1="268.0" x2="186.0" y2="268.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">攻撃者</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">CMSの脆弱性を突く</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">WAF</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">過検知に注意</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">CMSサーバ</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">通信販売サイト</text>
+<rect x="12.0" y="246.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">ログサーバ</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">SIEM</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">相関分析で早期検知</text>
+<text x="12" y="326.0" class="dg-note">不要なサービスは停止。サイト閉鎖のルールも整備</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04h 問1 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>サーバで不要なサービスが動いている</td><td>—（設問1は正答率がやや低かった）</td><td>サイバー攻撃で悪用されるため、最低限必要なものを除いて停止する</td><td>サービス</td></tr><tr><td>修正プログラムが公開されていない脆弱性を突かれる</td><td>—</td><td>ゼロデイ攻撃。回避策を調べて、暫定対策を実施するか判断する。WAFは過検知に注意する</td><td>ゼロデイ攻撃、過検知</td></tr><tr><td>ログから侵入を早く見つけたい</td><td>—（設問4(5)は正答率が低かった）</td><td>SIEMでログを統合管理し、相関分析をリアルタイムに行う。検知の早期化と分析時間の短縮ができる</td><td>SIEM、ログ</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1 a</td><td>停止・管理の対象(空欄)</td><td>サービス</td></tr><tr><td>2 b</td><td>攻撃を防ぐ仕組み(空欄)</td><td>WAF</td></tr><tr><td>3</td><td>管理すべき内容</td><td>イ、ウ(バージョン、名称)</td></tr><tr><td>4(1)</td><td>修正プログラムの公開前を突く攻撃</td><td>ゼロデイ攻撃</td></tr><tr><td>4(2)</td><td>暫定対策の判断に必要な対応</td><td>ウ(脆弱性の回避策の調査)</td></tr><tr><td>4(3) c</td><td>WAF更新を止めた原因(空欄)</td><td>ア(過検知)</td></tr><tr><td>4(4) d</td><td>対応する組織(空欄)</td><td>インシデント対応チーム</td></tr><tr><td>4(5)</td><td>ログの相関分析を行うシステム</td><td>SIEM</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>ゼロデイ攻撃</td><td>修正プログラムの公開前の脆弱性を突く攻撃</td></tr><tr><td>WAF</td><td>Webアプリケーションへの攻撃を防ぐ装置・仕組み</td></tr><tr><td>過検知</td><td>正常な通信を攻撃と誤って検知すること</td></tr><tr><td>SIEM</td><td>ログを集めて相関分析し、異常を検知する仕組み</td></tr><tr><td>CMS</td><td>Webサイトのコンテンツを管理するソフトウェア</td></tr><tr><td>インシデント対応チーム</td><td>セキュリティ事故に対応する組織</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> サーバで不要なサービスはどうするか</summary><p>最低限必要なものを除いて停止する</p></details><details class='qa'><summary><b>Q2</b> 修正プログラムの公開前の脆弱性を突く攻撃は</summary><p>ゼロデイ攻撃</p></details><details class='qa'><summary><b>Q3</b> WAFのシグネチャ更新を止めた原因は</summary><p>過検知</p></details><details class='qa'><summary><b>Q4</b> ログを統合管理し、相関分析をリアルタイムに行う仕組みは</summary><p>SIEM</p></details><details class='qa'><summary><b>Q5</b> インシデントに対応する組織は</summary><p>インシデント対応チーム</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問1は正答率がやや低く、不要なサービスの停止の重要性が問われた。設問4(5)は正答率が低く、SIEMの役割の理解が求められた。</p></body></html>

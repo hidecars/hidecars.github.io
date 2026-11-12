@@ -1,0 +1,61 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和4年春期 問5 ネットワーク｜ネットワークの構成変更</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2022r04h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和4年春期 問5 ネットワーク｜ネットワークの構成変更</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>トンネリングと送信元IPアドレス：IPsecルータ間でトンネリングしても、パケットの送信元IPアドレスは変わらない</li><li>経路表のネクストホップ：宛先ごとの転送先を経路表で決める。q-SaaS宛ては、IPsecルータ1をネクストホップにする</li><li>FWへの通信負荷の集中を避ける：SaaS宛ての通信をプロキシやFWに通さず、直接つなぐ経路にする</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>中堅商社のP社は、ISサーバを廃止してGサービス(q-SaaS)を導入した。その後、時間帯によって通信速度が落ちるようになった。</li><li>原因は、FWのセッション数が増えて、負荷が集中したことだった。</li><li>q-SaaS宛ての通信を、プロキシサーバやFWを通らずに直接アクセスさせる経路へ変更し、負荷を減らす。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="SaaS利用時の通信経路(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">SaaS利用時の通信経路(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="110.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">トンネリング</text>
+<line x1="93.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="214.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">直接アクセス</text>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="202.0" y="110.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="123.0" class="dg-lbl" text-anchor="middle">変更前</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">営業所のNPC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">送信元IPアドレス</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">IPsecルータ1</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">q-SaaS宛てのネクストホップ</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">FW・プロキシ</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">負荷が集中</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">q-SaaS</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">Gサービス</text>
+<text x="12" y="326.0" class="dg-note">q-SaaS宛てをFWに通さず、IPsecルータ1へ向ける経路を追加</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04h 問5 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>営業所のPCからの通信の送信元IPアドレス</td><td>送信元をIPsecルータ1または2と答える(設問1(1)で散見)</td><td>IPsecルータ1と2の間でトンネリングが行われるため、送信元IPアドレスは変わらない。送信元は営業所のNPC</td><td>トンネリング、送信元IPアドレス</td></tr><tr><td>新しい経路を追加する</td><td>—（設問3(1)は正答率がやや低かった）</td><td>経路表の内容を理解する。q-SaaS宛ての通信のネクストホップが、IPsecルータ1になる経路を追加する</td><td>経路表、ネクストホップ</td></tr><tr><td>表の空欄(通信の宛先と送信元)を考える</td><td>—（設問3(2)のeは正答率が低かった）</td><td>本文のネットワーク構成と通信内容から、dはq-SaaS、eは営業所LANと導く</td><td>営業所LAN</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>宛先IPアドレスが示す機器</td><td>プロキシサーバ</td></tr><tr><td>1(1)</td><td>送信元IPアドレスが示す機器</td><td>営業所のNPC</td></tr><tr><td>1(2)</td><td>外出先からWebアクセスするときの経由機器</td><td>ルータ、FW、プロキシサーバ</td></tr><tr><td>1(3) a〜c</td><td>表1の機器・サーバ</td><td>a 外部DNSサーバ、b プロキシサーバ、c 社内DNSサーバ</td></tr><tr><td>2</td><td>削除するFQDNをもつ機器</td><td>ISサーバ</td></tr><tr><td>3(1)</td><td>新たに追加する経路</td><td>q-SaaS宛ての通信のネクストホップがIPsecルータ1となる経路</td></tr><tr><td>3(2) d・e</td><td>表2の空欄</td><td>d q-SaaS、e 営業所LAN</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>NPC</td><td>ネットワークに接続するPC</td></tr><tr><td>プロキシサーバ</td><td>Webアクセスを代理で行うサーバ</td></tr><tr><td>IPsecルータ</td><td>IPsecで拠点間に安全なトンネルをつくるルータ</td></tr><tr><td>ネクストホップ</td><td>経路表で示す、次に転送する先の機器</td></tr><tr><td>SaaS</td><td>ソフトウェアをインターネット経由で利用するサービス</td></tr><tr><td>FQDN</td><td>ホスト名とドメイン名をすべて書いた名前</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> IPsecルータ間でトンネリングしても変わらないものは</summary><p>送信元IPアドレス</p></details><details class='qa'><summary><b>Q2</b> 営業所のPCの通信の送信元として答えるのは</summary><p>営業所のNPC</p></details><details class='qa'><summary><b>Q3</b> q-SaaS宛ての通信のネクストホップは</summary><p>IPsecルータ1</p></details><details class='qa'><summary><b>Q4</b> FWの負荷集中を避けるため、SaaS宛ての通信をどうするか</summary><p>プロキシやFWを通さずに直接つなぐ</p></details><details class='qa'><summary><b>Q5</b> 設問2で、削除するFQDNをもつ機器は</summary><p>ISサーバ</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問1(1)の送信元は正答率がやや低く、IPsecルータと答える解答が散見された。設問3(1)は正答率がやや低く、設問3(2)のeは正答率が低かった。</p></body></html>

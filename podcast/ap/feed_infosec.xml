@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Fri, 06 Nov 2026 20:58:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 23:05:36 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
     <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p><p>【概要】産業機械メーカーZ社のグループ全体を題材に、ビジネスとソフトウェアの2つのサプライチェーン攻撃への技術的な対処と、情報管理の基本原則（need-to-know）を問う。</p><p>【状況】<br>・産業機械メーカーZ社の情報システム部（B部長・T主任）が、子会社を含むグループ全体の対策を検討する。<br>・共通業務システムは内部ネットワークのセグメントGにあり、子会社はインターネットVPN経由で使う。</p><p>【決め手キーワード】境界防御／SIEM／SBOM</p><p>【設問と解答のキーワード】<br>設問1 a：空欄（解答群から選択） → ク 境界防御<br>設問1 b：空欄（解答群から選択） → ウ need-to-know<br>設問1 d：空欄（解答群から選択） → カ SIEM<br>設問1 e：空欄（解答群から選択） → オ SBOM<br>設問2 c：空欄（5字以内） → 初期<br>設問3(1)：施策として適切でないもの → ウ 個別業務システムを全てセグメントGへ移し各社が引き続き管理<br>設問3(2)：内部不正の抑止につながる理由 → 不正の発覚リスクが高いことが心理的障壁になる<br>設問3(3)：脆弱性対策の観点での懸念 → 脆弱性発見時に影響範囲を迅速に判断できない</p><p>【採点講評】設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
@@ -199,6 +199,38 @@
     <guid isPermaLink="false">ap-v2-2023r05h-infosec</guid>
     <pubDate>Sat, 01 Apr 2023 06:00:00 +0900</pubDate>
     <itunes:duration>00:14:57</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和4年春期 問1 情報セキュリティ｜通信販売サイトのセキュリティインシデント対応</title>
+    <description><![CDATA[<p>令和4年春期 午後問1（情報セキュリティ・必須）テーマ：通信販売サイトのセキュリティインシデント対応</p><p>【概要】通信販売サイトがCMSの脆弱性を突かれ改ざんされた事例を題材に、不要なサービスの停止、ゼロデイ攻撃への暫定対策、SIEMによる早期検知を問う。</p><p>【状況】<br>・文房具・オフィス家具製造販売のR社の通信販売サイトで、CMSの脆弱性を突かれ、サイトの改ざんと不適切なサイトへの誘導が起きた。<br>・WAFの更新で過検知が出てシグネチャの更新を止めていたこと、サイトを閉鎖するルールがないこと、改ざんの検知が遅れたこと、ログの相関分析に時間がかかったことが課題になった。<br>・再発防止策の立案と、攻撃を受けたあとの対処を問う。</p><p>【決め手キーワード】不要なサービスの停止／ゼロデイ攻撃への暫定対策／SIEM</p><p>【設問と解答のキーワード】<br>設問1 a：停止・管理の対象(空欄) → サービス<br>設問2 b：攻撃を防ぐ仕組み(空欄) → WAF<br>設問3：管理すべき内容 → イ、ウ(バージョン、名称)<br>設問4(1)：修正プログラムの公開前を突く攻撃 → ゼロデイ攻撃<br>設問4(2)：暫定対策の判断に必要な対応 → ウ(脆弱性の回避策の調査)<br>設問4(3) c：WAF更新を止めた原因(空欄) → ア(過検知)<br>設問4(4) d：対応する組織(空欄) → インシデント対応チーム<br>設問4(5)：ログの相関分析を行うシステム → SIEM</p><p>【採点講評】設問1は正答率がやや低く、不要なサービスの停止の重要性が問われた。設問4(5)は正答率が低く、SIEMの役割の理解が求められた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和4年春期 午後問1（情報セキュリティ・必須）テーマ：通信販売サイトのセキュリティインシデント対応</p><p>【概要】通信販売サイトがCMSの脆弱性を突かれ改ざんされた事例を題材に、不要なサービスの停止、ゼロデイ攻撃への暫定対策、SIEMによる早期検知を問う。</p><p>【状況】<br>・文房具・オフィス家具製造販売のR社の通信販売サイトで、CMSの脆弱性を突かれ、サイトの改ざんと不適切なサイトへの誘導が起きた。<br>・WAFの更新で過検知が出てシグネチャの更新を止めていたこと、サイトを閉鎖するルールがないこと、改ざんの検知が遅れたこと、ログの相関分析に時間がかかったことが課題になった。<br>・再発防止策の立案と、攻撃を受けたあとの対処を問う。</p><p>【決め手キーワード】不要なサービスの停止／ゼロデイ攻撃への暫定対策／SIEM</p><p>【設問と解答のキーワード】<br>設問1 a：停止・管理の対象(空欄) → サービス<br>設問2 b：攻撃を防ぐ仕組み(空欄) → WAF<br>設問3：管理すべき内容 → イ、ウ(バージョン、名称)<br>設問4(1)：修正プログラムの公開前を突く攻撃 → ゼロデイ攻撃<br>設問4(2)：暫定対策の判断に必要な対応 → ウ(脆弱性の回避策の調査)<br>設問4(3) c：WAF更新を止めた原因(空欄) → ア(過検知)<br>設問4(4) d：対応する組織(空欄) → インシデント対応チーム<br>設問4(5)：ログの相関分析を行うシステム → SIEM</p><p>【採点講評】設問1は正答率がやや低く、不要なサービスの停止の重要性が問われた。設問4(5)は正答率が低く、SIEMの役割の理解が求められた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和4年春期 午後問1（情報セキュリティ・必須）テーマ：通信販売サイトのセキュリティインシデント対応
+【概要】通信販売サイトがCMSの脆弱性を突かれ改ざんされた事例を題材に、不要なサービスの停止、ゼロデイ攻撃への暫定対策、SIEMによる早期検知を問う。
+【状況】
+・文房具・オフィス家具製造販売のR社の通信販売サイトで、CMSの脆弱性を突かれ、サイトの改ざんと不適切なサイトへの誘導が起きた。
+・WAFの更新で過検知が出てシグネチャの更新を止めていたこと、サイトを閉鎖するルールがないこと、改ざんの検知が遅れたこと、ログの相関分析に時間がかかったことが課題になった。
+・再発防止策の立案と、攻撃を受けたあとの対処を問う。
+【決め手キーワード】不要なサービスの停止／ゼロデイ攻撃への暫定対策／SIEM
+【設問と解答のキーワード】
+設問1 a：停止・管理の対象(空欄) → サービス
+設問2 b：攻撃を防ぐ仕組み(空欄) → WAF
+設問3：管理すべき内容 → イ、ウ(バージョン、名称)
+設問4(1)：修正プログラムの公開前を突く攻撃 → ゼロデイ攻撃
+設問4(2)：暫定対策の判断に必要な対応 → ウ(脆弱性の回避策の調査)
+設問4(3) c：WAF更新を止めた原因(空欄) → ア(過検知)
+設問4(4) d：対応する組織(空欄) → インシデント対応チーム
+設問4(5)：ログの相関分析を行うシステム → SIEM
+【採点講評】設問1は正答率がやや低く、不要なサービスの停止の重要性が問われた。設問4(5)は正答率が低く、SIEMの役割の理解が求められた。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html#quiz
+出典：IPA 令和4年度春期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2022r04h-infosec.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2022r04h/2022r04h-infosec.m4a" length="7684981" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2022r04h-infosec</guid>
+    <pubDate>Fri, 01 Apr 2022 06:00:00 +0900</pubDate>
+    <itunes:duration>00:15:21</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

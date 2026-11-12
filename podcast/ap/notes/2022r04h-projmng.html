@@ -1,0 +1,60 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和4年春期 問9 プロジェクトマネジメント｜販売システムの再構築プロジェクトにおける調達とリスク</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2022r04h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和4年春期 問9 プロジェクトマネジメント｜販売システムの再構築プロジェクトにおける調達とリスク</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>請負契約と準委任契約：請負は成果物の完成責任を問える。派遣労働者を発注者が選定・指揮すると、労働者派遣法に抵触するおそれがある</li><li>要求事項の提出期限の合意：プロトタイピングでは要求が膨らみやすい。提出時期と件数の上限を、利用部門と合意する</li><li>中間成果物の品質レビュー：請負では完成まで品質を確認できない。契約に条項を足し、作業の途中で品質レビューを行う</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>衣料品製造・ネット販売のD社が、販売システムを再構築する。営業部門と、システム部のE課長、F君が関わり、外部委託先のZ社がいる。</li><li>要件定義では、労働者派遣法に抵触する条件の是正と、営業部門との認識の共有が必要になった。</li><li>Z社との契約(準委任・請負)の選び方と、仕様の手戻り、製造品質の不良、動作確認するブラウザの制限という3つのリスクへの対応が課題。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="販売システム再構築の関係(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">販売システム再構築の関係(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="76.5" y="110.0" width="120" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">外部設計に基づく製造</text>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="82.0" y="214.0" width="109" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">品質レビューで対処</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">D社</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">営業部門・システム部</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">Z社</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">外部委託先(請負)</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">Y社</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">業務系システム保守</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">3つのリスク</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">仕様手戻り・品質不良・ブラウザ制限</text>
+<text x="12" y="326.0" class="dg-note">要求事項の提出期限を合意。作業の途中で品質レビュー</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04h 問9 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>外部委託の契約形態を選ぶ</td><td>—</td><td>合意した外部設計に基づく製造は、請負ならZ社に完成責任を問える。派遣労働者をF君が選定する条件は、労働者派遣法に抵触する</td><td>完成責任、検収、著作権</td></tr><tr><td>要求が膨らむ(プロトタイピング)</td><td>—（設問3(1)は正答率がやや低かった）</td><td>要求事項の提出時期と、対応件数の上限を利用部門と合意する。限られた期間で、要求を正確に最大限取り込む</td><td>提出期限</td></tr><tr><td>製造品質が不安</td><td>—（設問3(2)は正答率が低かった）</td><td>請負では、契約に条項がなければ、完成まで品質を確認する権利がない。受注者と合意のうえ契約に条項を足し、作業の途中で品質レビューを行う</td><td>品質レビュー</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1(1)</td><td>労働者派遣法に抵触する条件</td><td>(d)(F君が事前に候補者と面接して評価し、派遣労働者を選定する)</td></tr><tr><td>1(2)</td><td>下線の図の一般的な名称</td><td>ユースケース図</td></tr><tr><td>2(1)</td><td>契約締結時のD社の立場</td><td>イ(合意した外部設計に基づく製造は、Z社に完成責任を問える)</td></tr><tr><td>2(2) a</td><td>成果物の確認(空欄)</td><td>検収</td></tr><tr><td>2(2) b</td><td>権利の扱い(空欄)</td><td>著作権</td></tr><tr><td>3(1) c</td><td>要求事項について合意する内容</td><td>提出期限</td></tr><tr><td>3(2)</td><td>追加すべき品質管理タスク</td><td>作業の途中で品質レビューを行う</td></tr><tr><td>3(3)</td><td>サービス開始前に公表する情報</td><td>上位2種類以外のブラウザでは問題が生じる場合があること</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>請負契約</td><td>成果物の完成を約束する契約</td></tr><tr><td>準委任契約</td><td>成果物ではなく、業務の遂行を委託する契約</td></tr><tr><td>労働者派遣法</td><td>派遣労働者の就業条件などを定めた法律</td></tr><tr><td>ユースケース図</td><td>システムの利用者と機能の関係を表す図</td></tr><tr><td>プロトタイピング</td><td>試作品を見せて、要求を確かめながら進める手法</td></tr><tr><td>検収</td><td>納品された成果物が要件を満たすか確認して受け入れること</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 成果物の完成責任をZ社に問えるのは、どの契約か</summary><p>請負契約</p></details><details class='qa'><summary><b>Q2</b> プロトタイピングで要求が膨らむとき、利用部門と合意するのは</summary><p>要求事項の提出期限(と件数の上限)</p></details><details class='qa'><summary><b>Q3</b> 請負で品質を確認するため、作業の途中で行うことは</summary><p>品質レビュー</p></details><details class='qa'><summary><b>Q4</b> システムの利用者と機能の関係を表す図は</summary><p>ユースケース図</p></details><details class='qa'><summary><b>Q5</b> サービス開始前に公表する、ブラウザの情報は</summary><p>上位2種類以外のブラウザでは問題が生じる場合があること</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問3(1)は正答率がやや低く、要求事項の提出時期や件数の上限を利用部門と合意する対応が問われた。設問3(2)は正答率が低く、請負では完成まで品質を確認できないことの理解が求められた。</p></body></html>

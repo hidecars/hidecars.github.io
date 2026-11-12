@@ -1,0 +1,65 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和4年春期 問10 サービスマネジメント｜インシデント管理と問題管理</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2022r04h｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和4年春期 問10 サービスマネジメント｜インシデント管理と問題管理</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>階層的エスカレーション：解決目標時間に間に合わないときは、上位の担当者や管理者へ報告して判断を仰ぐ</li><li>既知の誤りと回避策：運用課が主体で既知の誤りを調べ、回避策を適用すれば、機能的エスカレーションの待機時間を減らせる</li><li>根本原因と解決策が特定された未解決の問題：回避策だけでは再発は止まらない。根本原因と解決策が分かっている未解決の問題を優先して解決する</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>公益法人の団体Xで、業務日報や情報共有をするWシステムの日締処理が異常停止した。</li><li>運用課のL君が階層的エスカレーションをせず、解決目標時間を超過した。</li><li>運用課の機能的エスカレーション前の手順、技術課との合意文書、問題管理での回避策の記録、再発防止の根本原因の解決が課題になった。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="インシデント対応の流れ(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">インシデント対応の流れ(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="110.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">インシデント</text>
+<line x1="174.0" y1="171.0" x2="186.0" y2="171.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="162.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="175.0" class="dg-lbl" text-anchor="middle">必要なら</text>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="55.0" y="214.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="93.0" y="227.0" class="dg-lbl" text-anchor="middle">目標時間前に</text>
+<line x1="267.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">Wシステム</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">日締処理が異常停止</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">運用課</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">既知の誤り・回避策を調査</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">技術課</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">機能的エスカレーション先</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box dash"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">上位の管理者</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">階層的エスカレーション</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">問題管理</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">根本原因と解決策</text>
+<text x="12" y="326.0" class="dg-note">回避策だけでなく、根本原因の解決まで進める</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04h 問10 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>解決目標時間を超えそう</td><td>—</td><td>手順に従って、階層的エスカレーションを行う。行わなかったのが問題点</td><td>階層的エスカレーション</td></tr><tr><td>機能的エスカレーションで待ち時間が出る</td><td>—（設問2(2)は正答率が低かった）</td><td>運用課が主体的に、既知の誤りを調査して回避策を見つける。解決担当者だけで解決を試みる手順を、エスカレーションの前に追加する</td><td>既知の誤り、回避策</td></tr><tr><td>再発インシデントを止めたい</td><td>抽出条件を「回避策がある」とする(設問3(1)で多かった)</td><td>回避策があっても、根本原因と解決策が特定されていなければ、再発は解消しない。条件は、根本原因と解決策が特定されている未解決の問題</td><td>根本原因、解決策</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1 a</td><td>表2の空欄</td><td>ア(RFC)</td></tr><tr><td>1 b</td><td>技術課と運用課の取り決め(空欄)</td><td>オ(合意文書)</td></tr><tr><td>2(1)</td><td>手順に即していない問題点</td><td>L君が階層的エスカレーションを行わなかった</td></tr><tr><td>2(2)</td><td>手順に追加する内容</td><td>既知の誤りを調査し、回避策を見つける／解決担当者だけでインシデントの解決を試みる</td></tr><tr><td>3(1)</td><td>抽出する問題の条件</td><td>根本原因と解決策が特定されている未解決な問題</td></tr><tr><td>3(2) c</td><td>空欄</td><td>運用課だけでインシデントを解決する</td></tr><tr><td>3(3)</td><td>プロアクティブな活動</td><td>イ(インシデントの傾向を分析して、将来のインシデントを予防する方策を立案する)</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>インシデント管理</td><td>サービスの中断を、素早く回復させる活動</td></tr><tr><td>問題管理</td><td>インシデントの根本原因を見つけ、再発を防ぐ活動</td></tr><tr><td>階層的エスカレーション</td><td>上位の管理者へ報告して、判断や資源を求めること</td></tr><tr><td>機能的エスカレーション</td><td>より専門的な担当部署へ、解決を引き継ぐこと</td></tr><tr><td>既知の誤り</td><td>根本原因が分かっている問題。回避策があることが多い</td></tr><tr><td>RFC</td><td>変更要求</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 解決目標時間に間に合わないとき、L君が行わなかったことは</summary><p>階層的エスカレーション</p></details><details class='qa'><summary><b>Q2</b> 機能的エスカレーションの前に、運用課が行うことは</summary><p>既知の誤りを調査して、回避策を見つける</p></details><details class='qa'><summary><b>Q3</b> 再発を防ぐために優先して解決する問題は</summary><p>根本原因と解決策が特定されている未解決の問題</p></details><details class='qa'><summary><b>Q4</b> 回避策だけで、再発の問題は解決するか</summary><p>解決しない(根本原因の解決が必要)</p></details><details class='qa'><summary><b>Q5</b> 将来のインシデントを予防する活動は</summary><p>プロアクティブな活動(傾向の分析)</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問2(2)は正答率が低く、運用課が既知の誤りを調査して回避策を適用する時間短縮が問われた。設問3(1)も正答率が低く、「回避策」を条件にした解答が多かった。</p></body></html>

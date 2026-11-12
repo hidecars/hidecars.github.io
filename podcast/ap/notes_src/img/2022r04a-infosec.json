@@ -1,0 +1,11 @@
+{"title":"マルウェアXへの対応(概略)",
+ "rows":[
+  [{"id":"cc","label":"C&Cサーバ","sub":"攻撃者の指示","style":"risk"}],
+  [{"id":"pc","label":"感染PC","sub":"ICMPエコー要求を連続送信","style":"risk"},{"id":"edr","label":"EDR","sub":"ログを保存・分析","style":"key"}],
+  [{"id":"iso","label":"隔離","sub":"内部探索を防ぐ","style":"key"},{"id":"host","label":"社内のホスト","sub":"稼働中かを探られる"}]],
+ "edges":[
+  {"from":"cc","to":"pc","label":"指示"},
+  {"from":"pc","to":"host","label":"探索"},
+  {"from":"pc","to":"edr","label":"挙動"},
+  {"from":"edr","to":"iso"}],
+ "note":"対策:感染PCの隔離、EDRのログ分析で被害を解明\n出典:2022r04a 問1 をもとに簡略化"}

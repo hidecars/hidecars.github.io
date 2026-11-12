@@ -1,0 +1,27 @@
+<svg class="dg" viewBox="0 0 360 354" role="img" aria-label="テレワーク環境の監査(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">テレワーク環境の監査(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="109.5" y="110.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">監査手続</text>
+<line x1="174.0" y1="171.0" x2="186.0" y2="171.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="136.5" y="162.0" width="87" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="175.0" class="dg-lbl" text-anchor="middle">終了届・紛失届</text>
+<line x1="93.0" y1="246.0" x2="267.0" y2="200.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">システム監査チーム</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">点検の実効性を検証</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">各部のシステム管理者</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">セキュリティ点検・利用者管理</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">システム部</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">紛失の届出を受ける</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">貸与PC</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">紛失・不適切なWi-Fi</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">システムリスク管理部門</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">是正状況をモニタリング</text>
+<text x="12" y="326.0" class="dg-note">確かめること:異動・退職と終了届、紛失日と届出日、是正状況</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04a 問11 をもとに簡略化</text>
+</svg>

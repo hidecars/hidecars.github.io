@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Fri, 06 Nov 2026 20:58:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 23:05:36 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
@@ -196,6 +196,37 @@
     <guid isPermaLink="false">ap-v2-2023r05h-network</guid>
     <pubDate>Sat, 01 Apr 2023 06:01:00 +0900</pubDate>
     <itunes:duration>00:15:21</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和4年春期 問5 ネットワーク｜ネットワークの構成変更</title>
+    <description><![CDATA[<p>令和4年春期 午後問5（ネットワーク・選択）テーマ：ネットワークの構成変更</p><p>【概要】SaaS導入後にFWへ通信負荷が集中した場面を題材に、トンネリングと送信元IPアドレス、経路表のネクストホップ、負荷集中を避ける経路変更を問う。</p><p>【状況】<br>・中堅商社のP社は、ISサーバを廃止してGサービス(q-SaaS)を導入した。その後、時間帯によって通信速度が落ちるようになった。<br>・原因は、FWのセッション数が増えて、負荷が集中したことだった。<br>・q-SaaS宛ての通信を、プロキシサーバやFWを通らずに直接アクセスさせる経路へ変更し、負荷を減らす。</p><p>【決め手キーワード】トンネリングと送信元IPアドレス／経路表のネクストホップ／FWへの通信負荷の集中回避</p><p>【設問と解答のキーワード】<br>設問1(1)：宛先IPアドレスが示す機器 → プロキシサーバ<br>設問1(1)：送信元IPアドレスが示す機器 → 営業所のNPC<br>設問1(2)：外出先からWebアクセスするときの経由機器 → ルータ、FW、プロキシサーバ<br>設問1(3) a〜c：表1の機器・サーバ → a 外部DNSサーバ、b プロキシサーバ、c 社内DNSサーバ<br>設問2：削除するFQDNをもつ機器 → ISサーバ<br>設問3(1)：新たに追加する経路 → q-SaaS宛ての通信のネクストホップがIPsecルータ1となる経路<br>設問3(2) d・e：表2の空欄 → d q-SaaS、e 営業所LAN</p><p>【採点講評】設問1(1)の送信元は正答率がやや低く、IPsecルータと答える解答が散見された。設問3(1)は正答率がやや低く、設問3(2)のeは正答率が低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和4年春期 午後問5（ネットワーク・選択）テーマ：ネットワークの構成変更</p><p>【概要】SaaS導入後にFWへ通信負荷が集中した場面を題材に、トンネリングと送信元IPアドレス、経路表のネクストホップ、負荷集中を避ける経路変更を問う。</p><p>【状況】<br>・中堅商社のP社は、ISサーバを廃止してGサービス(q-SaaS)を導入した。その後、時間帯によって通信速度が落ちるようになった。<br>・原因は、FWのセッション数が増えて、負荷が集中したことだった。<br>・q-SaaS宛ての通信を、プロキシサーバやFWを通らずに直接アクセスさせる経路へ変更し、負荷を減らす。</p><p>【決め手キーワード】トンネリングと送信元IPアドレス／経路表のネクストホップ／FWへの通信負荷の集中回避</p><p>【設問と解答のキーワード】<br>設問1(1)：宛先IPアドレスが示す機器 → プロキシサーバ<br>設問1(1)：送信元IPアドレスが示す機器 → 営業所のNPC<br>設問1(2)：外出先からWebアクセスするときの経由機器 → ルータ、FW、プロキシサーバ<br>設問1(3) a〜c：表1の機器・サーバ → a 外部DNSサーバ、b プロキシサーバ、c 社内DNSサーバ<br>設問2：削除するFQDNをもつ機器 → ISサーバ<br>設問3(1)：新たに追加する経路 → q-SaaS宛ての通信のネクストホップがIPsecルータ1となる経路<br>設問3(2) d・e：表2の空欄 → d q-SaaS、e 営業所LAN</p><p>【採点講評】設問1(1)の送信元は正答率がやや低く、IPsecルータと答える解答が散見された。設問3(1)は正答率がやや低く、設問3(2)のeは正答率が低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和4年春期 午後問5（ネットワーク・選択）テーマ：ネットワークの構成変更
+【概要】SaaS導入後にFWへ通信負荷が集中した場面を題材に、トンネリングと送信元IPアドレス、経路表のネクストホップ、負荷集中を避ける経路変更を問う。
+【状況】
+・中堅商社のP社は、ISサーバを廃止してGサービス(q-SaaS)を導入した。その後、時間帯によって通信速度が落ちるようになった。
+・原因は、FWのセッション数が増えて、負荷が集中したことだった。
+・q-SaaS宛ての通信を、プロキシサーバやFWを通らずに直接アクセスさせる経路へ変更し、負荷を減らす。
+【決め手キーワード】トンネリングと送信元IPアドレス／経路表のネクストホップ／FWへの通信負荷の集中回避
+【設問と解答のキーワード】
+設問1(1)：宛先IPアドレスが示す機器 → プロキシサーバ
+設問1(1)：送信元IPアドレスが示す機器 → 営業所のNPC
+設問1(2)：外出先からWebアクセスするときの経由機器 → ルータ、FW、プロキシサーバ
+設問1(3) a〜c：表1の機器・サーバ → a 外部DNSサーバ、b プロキシサーバ、c 社内DNSサーバ
+設問2：削除するFQDNをもつ機器 → ISサーバ
+設問3(1)：新たに追加する経路 → q-SaaS宛ての通信のネクストホップがIPsecルータ1となる経路
+設問3(2) d・e：表2の空欄 → d q-SaaS、e 営業所LAN
+【採点講評】設問1(1)の送信元は正答率がやや低く、IPsecルータと答える解答が散見された。設問3(1)は正答率がやや低く、設問3(2)のeは正答率が低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html#quiz
+出典：IPA 令和4年度春期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2022r04h-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2022r04h/2022r04h-network.m4a" length="9748801" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2022r04h-network</guid>
+    <pubDate>Fri, 01 Apr 2022 06:01:00 +0900</pubDate>
+    <itunes:duration>00:19:27</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

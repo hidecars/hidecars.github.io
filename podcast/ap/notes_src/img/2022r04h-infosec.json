@@ -1,0 +1,11 @@
+{"title":"通信販売サイトの構成と対策(概略)",
+ "rows":[
+  [{"id":"atk","label":"攻撃者","sub":"CMSの脆弱性を突く","style":"risk"}],
+  [{"id":"waf","label":"WAF","sub":"過検知に注意","style":"key"},{"id":"cms","label":"CMSサーバ","sub":"通信販売サイト"}],
+  [{"id":"log","label":"ログサーバ"},{"id":"siem","label":"SIEM","sub":"相関分析で早期検知","style":"key"}]],
+ "edges":[
+  {"from":"atk","to":"waf","label":"ゼロデイ攻撃"},
+  {"from":"waf","to":"cms"},
+  {"from":"cms","to":"log","label":"ログ"},
+  {"from":"log","to":"siem"}],
+ "note":"不要なサービスは停止。サイト閉鎖のルールも整備\n出典:2022r04h 問1 をもとに簡略化"}

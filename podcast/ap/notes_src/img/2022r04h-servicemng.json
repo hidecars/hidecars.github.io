@@ -1,0 +1,11 @@
+{"title":"インシデント対応の流れ(概略)",
+ "rows":[
+  [{"id":"w","label":"Wシステム","sub":"日締処理が異常停止","style":"risk"}],
+  [{"id":"op","label":"運用課","sub":"既知の誤り・回避策を調査","style":"key"},{"id":"tech","label":"技術課","sub":"機能的エスカレーション先"}],
+  [{"id":"boss","label":"上位の管理者","sub":"階層的エスカレーション","style":"dash"},{"id":"pm","label":"問題管理","sub":"根本原因と解決策","style":"key"}]],
+ "edges":[
+  {"from":"w","to":"op","label":"インシデント"},
+  {"from":"op","to":"tech","label":"必要なら"},
+  {"from":"op","to":"boss","label":"目標時間前に"},
+  {"from":"tech","to":"pm"}],
+ "note":"回避策だけでなく、根本原因の解決まで進める\n出典:2022r04h 問10 をもとに簡略化"}

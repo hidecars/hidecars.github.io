@@ -1,0 +1,26 @@
+<svg class="dg" viewBox="0 0 360 354" role="img" aria-label="与信チェック追加と運用への影響(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">与信チェック追加と運用への影響(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="60.5" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="93.0" y="227.0" class="dg-lbl" text-anchor="middle">ジョブ追加</text>
+<line x1="267.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="174.0" y1="275.0" x2="186.0" y2="275.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">営業部</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">受注時の与信チェック</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">受注システム</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">与信管理サブシステム・DB</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">M社</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">委託先の要員</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">運用</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">確認作業の工数が増加</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">運用費予算</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">工数増加10%超で超過</text>
+<text x="12" y="326.0" class="dg-note">成果:売掛金の回収率を高める(測定可能な指標)</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04a 問10 をもとに簡略化</text>
+</svg>

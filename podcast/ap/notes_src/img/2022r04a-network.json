@@ -1,0 +1,10 @@
+{"title":"テレワークの通信経路(概略)",
+ "rows":[
+  [{"id":"pc","label":"テレワークPC","sub":"証明書+ワンタイムパスワード"}],
+  [{"id":"vpn","label":"本社VPNサーバ","sub":"認証サーバと連携","style":"key"},{"id":"utm","label":"営業所のUTM","sub":"許可する接続先を絞る","style":"key"}],
+  [{"id":"web","label":"Web会議サービス","sub":"通信が集中","style":"risk"},{"id":"hq","label":"本社の回線","sub":"帯域が不足","style":"risk"}]],
+ "edges":[
+  {"from":"pc","to":"vpn","label":"認証"},
+  {"from":"utm","to":"web","label":"許可"},
+  {"from":"web","to":"hq","label":"全通信"}],
+ "note":"UTMはWeb会議サービスと本社VPNサーバだけを許可\n出典:2022r04a 問5 をもとに簡略化"}

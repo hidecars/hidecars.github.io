@@ -1,0 +1,10 @@
+{"title":"SaaS利用時の通信経路(概略)",
+ "rows":[
+  [{"id":"npc","label":"営業所のNPC","sub":"送信元IPアドレス"}],
+  [{"id":"r1","label":"IPsecルータ1","sub":"q-SaaS宛てのネクストホップ","style":"key"},{"id":"fw","label":"FW・プロキシ","sub":"負荷が集中","style":"risk"}],
+  [{"id":"q","label":"q-SaaS","sub":"Gサービス"}]],
+ "edges":[
+  {"from":"npc","to":"r1","label":"トンネリング"},
+  {"from":"r1","to":"q","label":"直接アクセス"},
+  {"from":"npc","to":"fw","label":"変更前"}],
+ "note":"q-SaaS宛てをFWに通さず、IPsecルータ1へ向ける経路を追加\n出典:2022r04h 問5 をもとに簡略化"}
