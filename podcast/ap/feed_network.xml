@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 12 Nov 2026 23:05:36 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 23:25:29 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問5 ネットワーク｜クラウドサービスへの移行</title>
     <description><![CDATA[<p>令和7年秋期 午後問5（ネットワーク・選択）テーマ：クラウドサービスへの移行</p><p>【概要】社内サーバをクラウド上の専用環境へ移す題材で、DHCP・DNS・NAT・経路制御の基本を問う。移行後もPCの操作は変わらない点がポイント。</p><p>【状況】<br>・A社は、DMZと社内のサーバの多くを、B社のクラウド上のA社専用環境（BCL-A）へ移す。<br>・移行後もPCの操作と業務の運用は変わらない。本社とBCL-AはIPsecルータで結ぶ。</p><p>【決め手キーワード】オープンリレー防止／IGW／IPsecルータ</p><p>【設問と解答のキーワード】<br>設問1(1)：営業所PCのデフォルトゲートウェイの機器 → L3SW0<br>設問1(2)：メール中継サーバで防ぐ処理 → 社外から来た社外宛てメールの中継（オープンリレー）<br>設問1(3)：表1の空欄a・b・c → Webサーバ／外部DNSサーバ／プロキシサーバ<br>設問2(1)：IGW通過前後の宛先IPアドレス → 200.α.β.2 → 172.20.1.14<br>設問2(2)：IPsecルータ1が転送するパケットの送信元 → 192.168.1.0/24、172.16.128.0/20<br>設問2(3)：経路変更が必要になる移行サーバ → プロキシ・メール・内部DNSサーバ</p><p>【採点講評】設問1(2)は正答率が低く、設問2(2)はやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
@@ -196,6 +196,40 @@
     <guid isPermaLink="false">ap-v2-2023r05h-network</guid>
     <pubDate>Sat, 01 Apr 2023 06:01:00 +0900</pubDate>
     <itunes:duration>00:15:21</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和4年秋期 問5 ネットワーク｜テレワーク環境への移行</title>
+    <description><![CDATA[<p>令和4年秋期 午後問5（ネットワーク・選択）テーマ：テレワーク環境への移行</p><p>【概要】テレワークへの移行を題材に、証明書とワンタイムパスワードによる認証、Web会議サービスの通信帯域の計算、UTMで許可する接続先を問う。</p><p>【状況】<br>・HP制作会社のW社は、回線の増強工事に2か月かかるなか、テレワークへの移行を進めた。<br>・Web会議サービスの通信が集中して回線帯域が足りなくなり、応答遅延や映像・音声の中断が頻発した。<br>・営業所のUTMを使ったアクセス設定などで通信量を抑え、トラブルに対処する。</p><p>【決め手キーワード】証明書とワンタイムパスワード／通信帯域の計算／UTMで許可する接続先</p><p>【設問と解答のキーワード】<br>設問1 a：遠隔操作で使う暗号化機能 → カ(TLS)<br>設問1 b：暗号化通信のプロトコル → イ(HTTPS)<br>設問1 c：拠点間通信の暗号化機能 → ウ(IPsec)<br>設問2(1)：証明書が必要なサーバ → Webサーバ、本社VPNサーバ<br>設問2(2) d：一定時間有効なパスワード → ワンタイムパスワード<br>設問2(3) e：内部PCのログインの認証先 → 認証サーバ<br>設問3(1)：通信量増大の要因 → イ(Web会議サービスのすべての通信が本社のインターネット接続回線を通る)<br>設問3(2) f：1人当たりの換算通信帯域 → 1.6<br>設問3(2) g：使用帯域の計算結果(空欄) → 192<br>設問3(3)：UTMが許可する接続先 → Web会議サービス、本社VPNサーバ</p><p>【採点講評】設問2(1)は正答率が低く、第一段階の認証の流れから証明書を使うサーバを読み取ることが求められた。設問3(1)(2)は正答率がやや高く、トラブルの要因や帯域の計算はよく理解されていた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和4年秋期 午後問5（ネットワーク・選択）テーマ：テレワーク環境への移行</p><p>【概要】テレワークへの移行を題材に、証明書とワンタイムパスワードによる認証、Web会議サービスの通信帯域の計算、UTMで許可する接続先を問う。</p><p>【状況】<br>・HP制作会社のW社は、回線の増強工事に2か月かかるなか、テレワークへの移行を進めた。<br>・Web会議サービスの通信が集中して回線帯域が足りなくなり、応答遅延や映像・音声の中断が頻発した。<br>・営業所のUTMを使ったアクセス設定などで通信量を抑え、トラブルに対処する。</p><p>【決め手キーワード】証明書とワンタイムパスワード／通信帯域の計算／UTMで許可する接続先</p><p>【設問と解答のキーワード】<br>設問1 a：遠隔操作で使う暗号化機能 → カ(TLS)<br>設問1 b：暗号化通信のプロトコル → イ(HTTPS)<br>設問1 c：拠点間通信の暗号化機能 → ウ(IPsec)<br>設問2(1)：証明書が必要なサーバ → Webサーバ、本社VPNサーバ<br>設問2(2) d：一定時間有効なパスワード → ワンタイムパスワード<br>設問2(3) e：内部PCのログインの認証先 → 認証サーバ<br>設問3(1)：通信量増大の要因 → イ(Web会議サービスのすべての通信が本社のインターネット接続回線を通る)<br>設問3(2) f：1人当たりの換算通信帯域 → 1.6<br>設問3(2) g：使用帯域の計算結果(空欄) → 192<br>設問3(3)：UTMが許可する接続先 → Web会議サービス、本社VPNサーバ</p><p>【採点講評】設問2(1)は正答率が低く、第一段階の認証の流れから証明書を使うサーバを読み取ることが求められた。設問3(1)(2)は正答率がやや高く、トラブルの要因や帯域の計算はよく理解されていた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和4年秋期 午後問5（ネットワーク・選択）テーマ：テレワーク環境への移行
+【概要】テレワークへの移行を題材に、証明書とワンタイムパスワードによる認証、Web会議サービスの通信帯域の計算、UTMで許可する接続先を問う。
+【状況】
+・HP制作会社のW社は、回線の増強工事に2か月かかるなか、テレワークへの移行を進めた。
+・Web会議サービスの通信が集中して回線帯域が足りなくなり、応答遅延や映像・音声の中断が頻発した。
+・営業所のUTMを使ったアクセス設定などで通信量を抑え、トラブルに対処する。
+【決め手キーワード】証明書とワンタイムパスワード／通信帯域の計算／UTMで許可する接続先
+【設問と解答のキーワード】
+設問1 a：遠隔操作で使う暗号化機能 → カ(TLS)
+設問1 b：暗号化通信のプロトコル → イ(HTTPS)
+設問1 c：拠点間通信の暗号化機能 → ウ(IPsec)
+設問2(1)：証明書が必要なサーバ → Webサーバ、本社VPNサーバ
+設問2(2) d：一定時間有効なパスワード → ワンタイムパスワード
+設問2(3) e：内部PCのログインの認証先 → 認証サーバ
+設問3(1)：通信量増大の要因 → イ(Web会議サービスのすべての通信が本社のインターネット接続回線を通る)
+設問3(2) f：1人当たりの換算通信帯域 → 1.6
+設問3(2) g：使用帯域の計算結果(空欄) → 192
+設問3(3)：UTMが許可する接続先 → Web会議サービス、本社VPNサーバ
+【採点講評】設問2(1)は正答率が低く、第一段階の認証の流れから証明書を使うサーバを読み取ることが求められた。設問3(1)(2)は正答率がやや高く、トラブルの要因や帯域の計算はよく理解されていた。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html#quiz
+出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問5（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2022r04a-network.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2022r04a/2022r04a-network.m4a" length="10089171" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2022r04a-network</guid>
+    <pubDate>Sat, 01 Oct 2022 06:01:00 +0900</pubDate>
+    <itunes:duration>00:20:08</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

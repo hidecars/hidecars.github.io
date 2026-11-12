@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 12 Nov 2026 23:05:36 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 23:25:29 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問9 プロジェクトマネジメント｜ソフトウェア開発モデルが混在するプロジェクトのマネジメント</title>
     <description><![CDATA[<p>令和7年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：ソフトウェア開発モデルが混在するプロジェクトのマネジメント</p><p>【概要】電気機器メーカーF社の生産管理システム開発で、ウォーターフォールとアジャイルを混在させたプロジェクトの計画と、EVM・バーンダウンチャートによる進捗管理を問う。</p><p>【状況】<br>・電気機器メーカーF社が、買収したY工場の生産管理システムを開発する（担当はITシステム部開発課）。<br>・一部の工程（要件定義〜実装）は、ユーザー部門と試行錯誤しながら進めるため、アジャイル開発モデルを適用する。</p><p>【決め手キーワード】EVM／バーンダウンチャート／チケット発行</p><p>【設問と解答のキーワード】<br>設問1：アジャイルを適用した要因 → 試行錯誤しながら開発を進める必要がある<br>設問2(1)：EVMで比べる指標a・b → カ EV／キ PV<br>設問2(2)：バーンダウンチャートで当日のタスクと担当を決める目的 → 優先度の高いタスクを3週間で終了させる<br>設問2(3)：外部仕様を変えずに構造を整理する作業c → リファクタリング<br>設問3(1)：5日目時点の遅れ日数d → 1<br>設問3(2)：追加タスクに対してE君が行った作業e → チケットを発行</p><p>【採点講評】設問2(2)と設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></description>
@@ -193,6 +193,36 @@
     <guid isPermaLink="false">ap-v2-2023r05h-projmng</guid>
     <pubDate>Sat, 01 Apr 2023 06:02:00 +0900</pubDate>
     <itunes:duration>00:18:03</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和4年秋期 問9 プロジェクトマネジメント｜プロジェクトのリスクマネジメント</title>
+    <description><![CDATA[<p>令和4年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：プロジェクトのリスクマネジメント</p><p>【概要】AI機能をもつシステム開発のリスクマネジメントを題材に、RBS、有識者の参画、デシジョンツリーと期待値による対応策の評価を問う。</p><p>【状況】<br>・機械部品を製造販売するK社が、AI機能をもつ新生産計画システムを、ベンダーのT社と開発している。<br>・要件定義のクリティカルパスであるAI処理時間の検証で、10月にT社への問合せが増え、遅延するリスクが出た。<br>・契約変更や、M君の講習の受講などの対策案をデシジョンツリーで評価し、追加コストを最小にする。リスクの特定は継続する。</p><p>【決め手キーワード】RBS／有識者の参画／デシジョンツリーと期待値</p><p>【設問と解答のキーワード】<br>設問1 a：リスクを分類する構造 → RBS<br>設問2(1)：現状の方法でAIのリスクを特定できない理由 → AIに知見のあるT社が参画していないから<br>設問2(2) b：原因と候補を整理する手法 → ウ<br>設問3(1) c：契約変更したときの遅延 → 遅延なし<br>設問3(2)：期待値が最小になる対応の項番と期待値 → 項番2、期待値80<br>設問4：リスク管理に追加すべき活動 → プロジェクトの進捗に従ってリスクの特定を継続して行う</p><p>【採点講評】設問1は正答率が低く、RBSの理解が問われた。設問3(2)は正答率がやや低く、計算式は複雑ではないので落ち着いて計算することが求められた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和4年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：プロジェクトのリスクマネジメント</p><p>【概要】AI機能をもつシステム開発のリスクマネジメントを題材に、RBS、有識者の参画、デシジョンツリーと期待値による対応策の評価を問う。</p><p>【状況】<br>・機械部品を製造販売するK社が、AI機能をもつ新生産計画システムを、ベンダーのT社と開発している。<br>・要件定義のクリティカルパスであるAI処理時間の検証で、10月にT社への問合せが増え、遅延するリスクが出た。<br>・契約変更や、M君の講習の受講などの対策案をデシジョンツリーで評価し、追加コストを最小にする。リスクの特定は継続する。</p><p>【決め手キーワード】RBS／有識者の参画／デシジョンツリーと期待値</p><p>【設問と解答のキーワード】<br>設問1 a：リスクを分類する構造 → RBS<br>設問2(1)：現状の方法でAIのリスクを特定できない理由 → AIに知見のあるT社が参画していないから<br>設問2(2) b：原因と候補を整理する手法 → ウ<br>設問3(1) c：契約変更したときの遅延 → 遅延なし<br>設問3(2)：期待値が最小になる対応の項番と期待値 → 項番2、期待値80<br>設問4：リスク管理に追加すべき活動 → プロジェクトの進捗に従ってリスクの特定を継続して行う</p><p>【採点講評】設問1は正答率が低く、RBSの理解が問われた。設問3(2)は正答率がやや低く、計算式は複雑ではないので落ち着いて計算することが求められた。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和4年秋期 午後問9（プロジェクトマネジメント・選択）テーマ：プロジェクトのリスクマネジメント
+【概要】AI機能をもつシステム開発のリスクマネジメントを題材に、RBS、有識者の参画、デシジョンツリーと期待値による対応策の評価を問う。
+【状況】
+・機械部品を製造販売するK社が、AI機能をもつ新生産計画システムを、ベンダーのT社と開発している。
+・要件定義のクリティカルパスであるAI処理時間の検証で、10月にT社への問合せが増え、遅延するリスクが出た。
+・契約変更や、M君の講習の受講などの対策案をデシジョンツリーで評価し、追加コストを最小にする。リスクの特定は継続する。
+【決め手キーワード】RBS／有識者の参画／デシジョンツリーと期待値
+【設問と解答のキーワード】
+設問1 a：リスクを分類する構造 → RBS
+設問2(1)：現状の方法でAIのリスクを特定できない理由 → AIに知見のあるT社が参画していないから
+設問2(2) b：原因と候補を整理する手法 → ウ
+設問3(1) c：契約変更したときの遅延 → 遅延なし
+設問3(2)：期待値が最小になる対応の項番と期待値 → 項番2、期待値80
+設問4：リスク管理に追加すべき活動 → プロジェクトの進捗に従ってリスクの特定を継続して行う
+【採点講評】設問1は正答率が低く、RBSの理解が問われた。設問3(2)は正答率がやや低く、計算式は複雑ではないので落ち着いて計算することが求められた。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html#quiz
+出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問9（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2022r04a-projmng.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2022r04a/2022r04a-projmng.m4a" length="9590008" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2022r04a-projmng</guid>
+    <pubDate>Sat, 01 Oct 2022 06:02:00 +0900</pubDate>
+    <itunes:duration>00:19:07</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

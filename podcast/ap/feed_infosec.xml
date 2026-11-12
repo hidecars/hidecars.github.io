@@ -11,7 +11,7 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 12 Nov 2026 23:05:36 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 23:25:29 +0900</lastBuildDate>
   <item>
     <title>令和7年秋期 問1 情報セキュリティ｜企業グループのセキュリティ対策</title>
     <description><![CDATA[<p>令和7年秋期 午後問1（情報セキュリティ・必須）テーマ：企業グループのセキュリティ対策</p><p>【概要】産業機械メーカーZ社のグループ全体を題材に、ビジネスとソフトウェアの2つのサプライチェーン攻撃への技術的な対処と、情報管理の基本原則（need-to-know）を問う。</p><p>【状況】<br>・産業機械メーカーZ社の情報システム部（B部長・T主任）が、子会社を含むグループ全体の対策を検討する。<br>・共通業務システムは内部ネットワークのセグメントGにあり、子会社はインターネットVPN経由で使う。</p><p>【決め手キーワード】境界防御／SIEM／SBOM</p><p>【設問と解答のキーワード】<br>設問1 a：空欄（解答群から選択） → ク 境界防御<br>設問1 b：空欄（解答群から選択） → ウ need-to-know<br>設問1 d：空欄（解答群から選択） → カ SIEM<br>設問1 e：空欄（解答群から選択） → オ SBOM<br>設問2 c：空欄（5字以内） → 初期<br>設問3(1)：施策として適切でないもの → ウ 個別業務システムを全てセグメントGへ移し各社が引き続き管理<br>設問3(2)：内部不正の抑止につながる理由 → 不正の発覚リスクが高いことが心理的障壁になる<br>設問3(3)：脆弱性対策の観点での懸念 → 脆弱性発見時に影響範囲を迅速に判断できない</p><p>【採点講評】設問3(2)は正答率がやや低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2025r07a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和7年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
@@ -199,6 +199,40 @@
     <guid isPermaLink="false">ap-v2-2023r05h-infosec</guid>
     <pubDate>Sat, 01 Apr 2023 06:00:00 +0900</pubDate>
     <itunes:duration>00:14:57</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>令和4年秋期 問1 情報セキュリティ｜マルウェアへの対応策</title>
+    <description><![CDATA[<p>令和4年秋期 午後問1（情報セキュリティ・必須）テーマ：マルウェアへの対応策</p><p>【概要】巧妙化したマルウェアへの対応を題材に、ICMPエコー要求の連続送信の検知、感染PCの隔離、EDRのログ分析による被害の解明を問う。</p><p>【状況】<br>・IT製品卸売のP社は、社外で多発するマルウェアXに対し、現行の対策ソフトやSPF、週1回のログ検査では検知・防止が難しい。<br>・パッチ適用とログ検査を速め、侵入の早期発見、侵入後の活動の抑止、被害の把握のためにEDRを導入し、対応策を整える。<br>・設問は、機器の役割、踏み台攻撃、ネットワーク探索、侵入の検知と被害の解明を問う。</p><p>【決め手キーワード】ICMPエコー要求の連続送信／感染PCの隔離／EDRのログ分析</p><p>【設問と解答のキーワード】<br>設問1(1) a：通信を許可・遮断する機器 → ア(FW)<br>設問1(1) b：ドメイン認証を行う機器 → ケ(メール中継サーバ)<br>設問1(1) c：パッチを配布する機器 → ク(配布サーバ)<br>設問1(2)：踏み台にされる攻撃 → ア(DNSリフレクション攻撃)<br>設問2(1)：探索で得られる情報 → 稼働中のホストのIPアドレス<br>設問2(2)：SYN送信の目的 → ウ(攻撃対象のサービスの稼働状態を知るため)<br>設問2(3)：SPFで発見できない理由 → ア(送信者のドメインが詐称されたものでない)<br>設問3(1)：侵入を疑う検知事象 → ICMPエコー要求パケットの連続した送信<br>設問3(2)：内部探索を防ぐ緊急措置 → マルウェアに感染したPCを隔離する<br>設問3(3)：被害を早期に解明する実施事項 → EDRが保存するログの分析</p><p>【採点講評】設問1は正答率が高かった。設問2(1)は正答率がやや低く、ICMPエコー要求がホストの稼働確認に使われることの理解が問われた。設問3(1)は正答率が低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></description>
+    <content:encoded><![CDATA[<p>令和4年秋期 午後問1（情報セキュリティ・必須）テーマ：マルウェアへの対応策</p><p>【概要】巧妙化したマルウェアへの対応を題材に、ICMPエコー要求の連続送信の検知、感染PCの隔離、EDRのログ分析による被害の解明を問う。</p><p>【状況】<br>・IT製品卸売のP社は、社外で多発するマルウェアXに対し、現行の対策ソフトやSPF、週1回のログ検査では検知・防止が難しい。<br>・パッチ適用とログ検査を速め、侵入の早期発見、侵入後の活動の抑止、被害の把握のためにEDRを導入し、対応策を整える。<br>・設問は、機器の役割、踏み台攻撃、ネットワーク探索、侵入の検知と被害の解明を問う。</p><p>【決め手キーワード】ICMPエコー要求の連続送信／感染PCの隔離／EDRのログ分析</p><p>【設問と解答のキーワード】<br>設問1(1) a：通信を許可・遮断する機器 → ア(FW)<br>設問1(1) b：ドメイン認証を行う機器 → ケ(メール中継サーバ)<br>設問1(1) c：パッチを配布する機器 → ク(配布サーバ)<br>設問1(2)：踏み台にされる攻撃 → ア(DNSリフレクション攻撃)<br>設問2(1)：探索で得られる情報 → 稼働中のホストのIPアドレス<br>設問2(2)：SYN送信の目的 → ウ(攻撃対象のサービスの稼働状態を知るため)<br>設問2(3)：SPFで発見できない理由 → ア(送信者のドメインが詐称されたものでない)<br>設問3(1)：侵入を疑う検知事象 → ICMPエコー要求パケットの連続した送信<br>設問3(2)：内部探索を防ぐ緊急措置 → マルウェアに感染したPCを隔離する<br>設問3(3)：被害を早期に解明する実施事項 → EDRが保存するログの分析</p><p>【採点講評】設問1は正答率が高かった。設問2(1)は正答率がやや低く、ICMPエコー要求がホストの稼働確認に使われることの理解が問われた。設問3(1)は正答率が低かった。</p><p><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html#quiz">聴き終えたらクイズへ</a></p><p>出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</p>]]></content:encoded>
+    <itunes:summary>令和4年秋期 午後問1（情報セキュリティ・必須）テーマ：マルウェアへの対応策
+【概要】巧妙化したマルウェアへの対応を題材に、ICMPエコー要求の連続送信の検知、感染PCの隔離、EDRのログ分析による被害の解明を問う。
+【状況】
+・IT製品卸売のP社は、社外で多発するマルウェアXに対し、現行の対策ソフトやSPF、週1回のログ検査では検知・防止が難しい。
+・パッチ適用とログ検査を速め、侵入の早期発見、侵入後の活動の抑止、被害の把握のためにEDRを導入し、対応策を整える。
+・設問は、機器の役割、踏み台攻撃、ネットワーク探索、侵入の検知と被害の解明を問う。
+【決め手キーワード】ICMPエコー要求の連続送信／感染PCの隔離／EDRのログ分析
+【設問と解答のキーワード】
+設問1(1) a：通信を許可・遮断する機器 → ア(FW)
+設問1(1) b：ドメイン認証を行う機器 → ケ(メール中継サーバ)
+設問1(1) c：パッチを配布する機器 → ク(配布サーバ)
+設問1(2)：踏み台にされる攻撃 → ア(DNSリフレクション攻撃)
+設問2(1)：探索で得られる情報 → 稼働中のホストのIPアドレス
+設問2(2)：SYN送信の目的 → ウ(攻撃対象のサービスの稼働状態を知るため)
+設問2(3)：SPFで発見できない理由 → ア(送信者のドメインが詐称されたものでない)
+設問3(1)：侵入を疑う検知事象 → ICMPエコー要求パケットの連続した送信
+設問3(2)：内部探索を防ぐ緊急措置 → マルウェアに感染したPCを隔離する
+設問3(3)：被害を早期に解明する実施事項 → EDRが保存するログの分析
+【採点講評】設問1は正答率が高かった。設問2(1)は正答率がやや低く、ICMPエコー要求がホストの稼働確認に使われることの理解が問われた。設問3(1)は正答率が低かった。
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html#quiz
+出典：IPA 令和4年度秋期 応用情報技術者試験 午後 問1（問題冊子・解答例・採点講評）</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/2022r04a-infosec.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-2022r04a/2022r04a-infosec.m4a" length="7546453" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-2022r04a-infosec</guid>
+    <pubDate>Sat, 01 Oct 2022 06:00:00 +0900</pubDate>
+    <itunes:duration>00:15:03</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

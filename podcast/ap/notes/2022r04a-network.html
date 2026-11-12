@@ -1,0 +1,64 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>令和4年秋期 問5 ネットワーク｜テレワーク環境への移行</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>2022r04a｜選択｜<a href='../index.html'>一覧へ</a></p><h1>令和4年秋期 問5 ネットワーク｜テレワーク環境への移行</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>証明書とワンタイムパスワード：リモートアクセスの認証では、2種類の証明書と、一定時間だけ有効なワンタイムパスワードを使う</li><li>通信帯域の計算：Web会議サービスの通信が増えると、本社の回線帯域が足りなくなる。1人当たりの帯域と同時利用の割合で見積もる</li><li>UTMで許可する接続先：営業所のUTMでは、Web会議サービスと本社VPNサーバへの接続だけを許可し、通信量を抑える</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>HP制作会社のW社は、回線の増強工事に2か月かかるなか、テレワークへの移行を進めた。</li><li>Web会議サービスの通信が集中して回線帯域が足りなくなり、応答遅延や映像・音声の中断が頻発した。</li><li>営業所のUTMを使ったアクセス設定などで通信量を抑え、トラブルに対処する。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="テレワークの通信経路(概略)" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">テレワークの通信経路(概略)</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="120.5" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">認証</text>
+<line x1="267.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">許可</text>
+<line x1="174.0" y1="275.0" x2="186.0" y2="275.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="158.5" y="266.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="279.0" class="dg-lbl" text-anchor="middle">全通信</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">テレワークPC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">証明書+ワンタイムパスワード</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">本社VPNサーバ</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">認証サーバと連携</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">営業所のUTM</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">許可する接続先を絞る</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">Web会議サービス</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">通信が集中</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">本社の回線</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">帯域が不足</text>
+<text x="12" y="326.0" class="dg-note">UTMはWeb会議サービスと本社VPNサーバだけを許可</text>
+<text x="12" y="342.0" class="dg-note">出典:2022r04a 問5 をもとに簡略化</text>
+</svg></figure>
+<h3 id='s5'>3. 分野の核心</h3>
+<div class='tw'><table><thead><tr><th>場面</th><th>ありがちな誤答</th><th>正解の考え方</th><th>根拠になる本文の言葉</th></tr></thead><tbody><tr><td>リモートアクセスの認証</td><td>—（設問2(1)は正答率が低かった）</td><td>第一段階の認証の流れから、2種類の証明書が必要なサーバを読み取る。Webサーバと本社VPNサーバ。ワンタイムパスワードで認証する</td><td>証明書、ワンタイムパスワード</td></tr><tr><td>回線が足りない</td><td>—（設問3(1)(2)は正答率がやや高かった）</td><td>Web会議サービスの通信がすべて本社のインターネット接続回線を通ることが原因。1人当たりの帯域を、同時利用の割合で見積もる</td><td>本社のインターネット接続回線、帯域</td></tr><tr><td>営業所のUTMで通信を絞る</td><td>—</td><td>Web会議サービスと本社VPNサーバに限って許可する</td><td>UTM、アクセス許可</td></tr></tbody></table></div>
+<h3 id='s7'>4. 解答キーワード一覧</h3>
+<div class='tw'><table><thead><tr><th>設問</th><th>問われていること</th><th>決め手のキーワード</th></tr></thead><tbody><tr><td>1 a</td><td>遠隔操作で使う暗号化機能</td><td>カ(TLS)</td></tr><tr><td>1 b</td><td>暗号化通信のプロトコル</td><td>イ(HTTPS)</td></tr><tr><td>1 c</td><td>拠点間通信の暗号化機能</td><td>ウ(IPsec)</td></tr><tr><td>2(1)</td><td>証明書が必要なサーバ</td><td>Webサーバ、本社VPNサーバ</td></tr><tr><td>2(2) d</td><td>一定時間有効なパスワード</td><td>ワンタイムパスワード</td></tr><tr><td>2(3) e</td><td>内部PCのログインの認証先</td><td>認証サーバ</td></tr><tr><td>3(1)</td><td>通信量増大の要因</td><td>イ(Web会議サービスのすべての通信が本社のインターネット接続回線を通る)</td></tr><tr><td>3(2) f</td><td>1人当たりの換算通信帯域</td><td>1.6</td></tr><tr><td>3(2) g</td><td>使用帯域の計算結果(空欄)</td><td>192</td></tr><tr><td>3(3)</td><td>UTMが許可する接続先</td><td>Web会議サービス、本社VPNサーバ</td></tr></tbody></table></div>
+<h3 id='s9'>5. 用語</h3>
+<div class='tw'><table><thead><tr><th>用語</th><th>一言の意味</th></tr></thead><tbody><tr><td>UTM</td><td>ファイアウォールなど複数のセキュリティ機能をまとめた機器</td></tr><tr><td>VPN</td><td>公衆回線上に、安全な専用回線のような通信をつくる技術</td></tr><tr><td>ワンタイムパスワード</td><td>一度、一定時間だけ有効なパスワード</td></tr><tr><td>TLS</td><td>通信を暗号化するプロトコル</td></tr><tr><td>HTTPS</td><td>TLSでHTTP通信を暗号化したプロトコル</td></tr><tr><td>IPsec</td><td>IPのレベルで通信を暗号化する仕組み</td></tr></tbody></table></div>
+<h3 id='quiz'>6. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 一定時間だけ有効な認証用パスワードは</summary><p>ワンタイムパスワード</p></details><details class='qa'><summary><b>Q2</b> 証明書が必要なサーバは</summary><p>Webサーバと本社VPNサーバ</p></details><details class='qa'><summary><b>Q3</b> 内部PCのログインの認証先は</summary><p>認証サーバ</p></details><details class='qa'><summary><b>Q4</b> 通信量が増えた要因は</summary><p>Web会議サービスのすべての通信が本社のインターネット接続回線を通ること</p></details><details class='qa'><summary><b>Q5</b> UTMが許可する接続先は</summary><p>Web会議サービスと本社VPNサーバ</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p>
+<p>※採点講評：設問2(1)は正答率が低く、第一段階の認証の流れから証明書を使うサーバを読み取ることが求められた。設問3(1)(2)は正答率がやや高く、トラブルの要因や帯域の計算はよく理解されていた。</p></body></html>
