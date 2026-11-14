@@ -1,0 +1,20 @@
+<svg class="dg" viewBox="0 0 360 428" role="img" aria-label="デジタル署名" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">デジタル署名</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="180.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="147.5" y="304.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="317.0" class="dg-lbl" text-anchor="middle">文書＋署名</text>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">文書</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">ハッシュ値を作る</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">文書が1文字変われば値も変わる</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">Aの秘密鍵で署名</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">署名＝自分の秘密鍵</text>
+<rect x="12.0" y="336.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="363.0" class="dg-txt" text-anchor="middle">Bが Aの公開鍵で検証</text>
+<text x="180.0" y="385.0" class="dg-sub" text-anchor="middle">文書のハッシュ値と一致すれば本物</text>
+<text x="12" y="416.0" class="dg-note">できる：本人確認・改ざん検知・否認防止／できない：機密性</text>
+</svg>

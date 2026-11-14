@@ -1,0 +1,17 @@
+<svg class="dg" viewBox="0 0 360 212" role="img" aria-label="HTTP/2まで と HTTP/3" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">HTTP/2まで と HTTP/3</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">HTTP/2まで</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">TCP＋TLSで接続（手順が多い）</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">HTTP/3</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">UDP上のQUIC（TLS 1.3相当を内蔵）</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">1つの遅れが他を止めやすい</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">接続が速く、遅れが他に響きにくい</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">FWでUDP 443番を許可</text>
+</svg>

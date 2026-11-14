@@ -1,0 +1,19 @@
+<svg class="dg" viewBox="0 0 360 406" role="img" aria-label="エラー埋込み法" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">エラー埋込み法</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="180.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="304.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="317.0" class="dg-lbl" text-anchor="middle">割り戻す</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">既知のエラーを埋め込む</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">例：48個</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">テストで見つかった数</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">埋込み 36個／元から 54個</text>
+<rect x="12.0" y="246.0" width="336.0" height="44" rx="8" class="dg-box key"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">埋込みの発見率＝36÷48＝0.75</text>
+<rect x="12.0" y="336.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="363.0" class="dg-txt" text-anchor="middle">推定総数＝54÷0.75＝72個</text>
+<text x="180.0" y="385.0" class="dg-sub" text-anchor="middle">残り＝72−54＝18個</text>
+</svg>

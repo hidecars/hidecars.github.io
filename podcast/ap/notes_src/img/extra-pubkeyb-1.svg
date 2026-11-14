@@ -1,0 +1,23 @@
+<svg class="dg" viewBox="0 0 360 310" role="img" aria-label="鍵の数（n人が相互に通信）" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">鍵の数（n人が相互に通信）</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="186.0" x2="93.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="186.0" x2="267.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">共通鍵</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">n(n−1)÷2 本</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">公開鍵</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">2n 本（1人2本）</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">50人 → 1,225本</text>
+<rect x="186.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">50人 → 100本</text>
+<rect x="12.0" y="232.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="259.0" class="dg-txt" text-anchor="middle">100人 → 4,950本</text>
+<rect x="186.0" y="232.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="259.0" class="dg-txt" text-anchor="middle">100人 → 200本</text>
+<text x="12" y="298.0" class="dg-note">公開鍵方式の鍵の数をnと答えるのは誤り</text>
+</svg>

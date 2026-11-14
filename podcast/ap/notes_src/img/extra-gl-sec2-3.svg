@@ -1,0 +1,26 @@
+<svg class="dg" viewBox="0 0 360 338" role="img" aria-label="情報セキュリティの3要素＋4つの特性" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">情報セキュリティの3要素＋4つの特性</text>
+<rect x="12.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="64.0" y="65.0" class="dg-txt" text-anchor="middle">機密性</text>
+<text x="64.0" y="87.0" class="dg-sub" text-anchor="middle">見せない</text>
+<rect x="128.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">完全性</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">正確・完全</text>
+<rect x="244.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="296.0" y="65.0" class="dg-txt" text-anchor="middle">可用性</text>
+<text x="296.0" y="87.0" class="dg-sub" text-anchor="middle">使いたいとき使える</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">真正性</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">本物</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">責任追跡性</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">誰が追える</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">否認防止</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">やっていないと言わせない</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">信頼性</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">行動と結果が一貫</text>
+<text x="12" y="326.0" class="dg-note">上段＝基本の3要素／中・下段＝追加の4特性</text>
+</svg>

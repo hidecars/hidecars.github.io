@@ -1,0 +1,48 @@
+{
+ "title": "何を検査するか：FW と WAF",
+ "rows": [
+  [
+   {
+    "id": "i",
+    "label": "インターネットからの通信"
+   }
+  ],
+  [
+   {
+    "id": "fw",
+    "label": "ファイアウォール",
+    "sub": "IPアドレスとポート番号だけで制御",
+    "style": "dash"
+   }
+  ],
+  [
+   {
+    "id": "waf",
+    "label": "WAF",
+    "sub": "HTTPの中身を検査（SQLi・XSS）",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "w",
+    "label": "Webアプリケーション"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "i",
+   "to": "fw"
+  },
+  {
+   "from": "fw",
+   "to": "waf"
+  },
+  {
+   "from": "waf",
+   "to": "w"
+  }
+ ],
+ "note": "根本対策：プレースホルダ（SQLi）／エスケープ（XSS）"
+}

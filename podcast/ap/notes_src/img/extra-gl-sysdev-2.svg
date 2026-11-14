@@ -1,0 +1,26 @@
+<svg class="dg" viewBox="0 0 360 316" role="img" aria-label="UMLの図の分類" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">UMLの図の分類</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">構造を表す</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">クラス図／オブジェクト図</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">振る舞いを表す</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">ユースケース／シーケンス／アクティビティ／ステートマシン</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">クラス図</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">クラスの関係・多重度</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">シーケンス図</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">メッセージを時間順に</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">オブジェクト図</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">ある時点のインスタンス間</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">アクティビティ図</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">処理の流れ・分岐・並行</text>
+</svg>

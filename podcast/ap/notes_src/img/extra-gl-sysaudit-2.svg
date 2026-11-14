@@ -1,0 +1,17 @@
+<svg class="dg" viewBox="0 0 360 234" role="img" aria-label="確かめたいこと → 技法" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">確かめたいこと → 技法</text>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">ウォークスルー法</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">プロセスをたどる</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">インタビュー法</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">関係者に聞く</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">突合・照合法</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">記録を突き合わせる</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">テストデータ法</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">用意したデータを処理</text>
+<text x="12" y="222.0" class="dg-note">網羅性＝漏れ・重複なし／正確性＝内容が正しい</text>
+</svg>

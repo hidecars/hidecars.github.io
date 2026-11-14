@@ -1,0 +1,22 @@
+<svg class="dg" viewBox="0 0 360 324" role="img" aria-label="DNSキャッシュポイズニング" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">DNSキャッシュポイズニング</text>
+<line x1="180.0" y1="82.0" x2="93.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="104.0" y="96.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="109.0" class="dg-lbl" text-anchor="middle">問い合わせ</text>
+<line x1="186.0" y1="157.0" x2="174.0" y2="157.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="148.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="161.0" class="dg-lbl" text-anchor="middle">偽の応答</text>
+<line x1="93.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="115.0" y="200.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="213.0" class="dg-lbl" text-anchor="middle">誤誘導</text>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">利用者のPC</text>
+<rect x="12.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="155.0" class="dg-txt" text-anchor="middle">キャッシュDNSサーバ</text>
+<text x="93.0" y="177.0" class="dg-sub" text-anchor="middle">偽の応答を覚えてしまう</text>
+<rect x="186.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="155.0" class="dg-txt" text-anchor="middle">攻撃者</text>
+<text x="267.0" y="177.0" class="dg-sub" text-anchor="middle">偽の応答を送る</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">偽のサイト</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">IPアドレスが書き換わる</text>
+<text x="12" y="312.0" class="dg-note">対策：送信元ポートのランダム化／DNSSEC（署名で検証）／再帰問合せを社内に限定</text>
+</svg>

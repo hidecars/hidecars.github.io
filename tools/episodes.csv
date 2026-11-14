@@ -149,11 +149,19 @@ id,exam,era,season,qno,field,field_code,kind,theme
 2025r07h-projmng,2025r07h,令和7年,春期,問9,プロジェクトマネジメント,projmng,選択,CCPMを用いたプロジェクトのスケジュール管理
 2025r07h-servicemng,2025r07h,令和7年,春期,問10,サービスマネジメント,servicemng,選択,容量・能力管理
 2025r07h-sysaudit,2025r07h,令和7年,春期,問11,システム監査,sysaudit,選択,勤務管理に関連するシステムの監査
-extra-pubkey,extra,,,,早わかり・暗号,pubkey,早わかり,公開鍵暗号と共通鍵暗号 4パターンと鍵の数
-extra-gl-sec1,extra,,,,用語集・情報セキュリティ①,glsec1,用語集,情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃
-extra-gl-sec2,extra,,,,用語集・情報セキュリティ②,glsec2,用語集,情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM
-extra-gl-network,extra,,,,用語集・ネットワーク,glnetwork,用語集,ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化
-extra-gl-projmng,extra,,,,用語集・プロジェクトマネジメント,glprojmng,用語集,プロジェクトマネジメント用語6テーマ PMBOK・日程計算・短縮技法・EVM・リスク・WBS
-extra-gl-servicemng,extra,,,,用語集・サービスマネジメント,glservicemng,用語集,サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA
-extra-gl-sysaudit,extra,,,,用語集・システム監査,glsysaudit,用語集,システム監査用語5テーマ 独立性・監査手続・フォローアップ・IT統制・監査調書
-extra-gl-sysdev,extra,,,,用語集・情報システム開発,glsysdev,用語集,開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法
+extra-gl-sec1,extra,,,,用語集・情報セキュリティ①,glsec1,用語集,証明書の失効・送信元認証・DNS
+extra-gl-sec2,extra,,,,用語集・情報セキュリティ②,glsec2,用語集,脆弱性対応・ハードウェア対策・特性
+extra-gl-sec1b,extra,,,,用語集・情報セキュリティ③,glsec1b,用語集,認証・パスワード攻撃・ゼロトラスト
+extra-gl-sec2b,extra,,,,用語集・情報セキュリティ④,glsec2b,用語集,Web防御・可視化・ランサムウェア対応
+extra-gl-network,extra,,,,用語集・ネットワーク①,glnetwork,用語集,TCP/UDP・CIDR・伝送時間・ビット誤り率
+extra-gl-networkb,extra,,,,用語集・ネットワーク②,glnetworkb,用語集,ARP・NAPT・冗長化・新しい通信技術
+extra-gl-projmng,extra,,,,用語集・プロジェクトマネジメント①,glprojmng,用語集,PMBOK・クリティカルパス・スケジュール短縮
+extra-gl-projmngb,extra,,,,用語集・プロジェクトマネジメント②,glprojmngb,用語集,EVM・リスク・WBS・アジャイルの管理
+extra-gl-servicemng,extra,,,,用語集・サービスマネジメント①,glservicemng,用語集,問題管理・稼働率・バックアップ
+extra-gl-servicemngb,extra,,,,用語集・サービスマネジメント②,glservicemngb,用語集,RPO/RTO・SLA・ITIL 4・SPOC
+extra-gl-sysaudit,extra,,,,用語集・システム監査①,glsysaudit,用語集,基準・独立性・手続・フォローアップ
+extra-gl-sysauditb,extra,,,,用語集・システム監査②,glsysauditb,用語集,統制・調書・新しい監査テーマ
+extra-gl-sysdev,extra,,,,用語集・システム開発①,glsysdev,用語集,アジャイル・UML・テスト技法
+extra-gl-sysdevb,extra,,,,用語集・システム開発②,glsysdevb,用語集,信頼度成長曲線・モジュール設計・新しい開発手法
+extra-pubkey,extra,,,,早わかり・暗号①,pubkey,早わかり,共通鍵・公開鍵・デジタル署名・ハイブリッド暗号
+extra-pubkeyb,extra,,,,早わかり・暗号②,pubkeyb,早わかり,鍵の数・PKI・ひっかけ

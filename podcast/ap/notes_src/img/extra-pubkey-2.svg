@@ -1,0 +1,18 @@
+<svg class="dg" viewBox="0 0 360 340" role="img" aria-label="公開鍵暗号" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">公開鍵暗号</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="158.5" y="110.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">暗号化</text>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="200.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="213.0" class="dg-lbl" text-anchor="middle">復号</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">Aさん（送信者）</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">Bの公開鍵で暗号化</text>
+<rect x="12.0" y="142.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">暗号文</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">Bさん（受信者）</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">Bの秘密鍵で復号</text>
+<text x="12" y="312.0" class="dg-note">暗号化＝相手（B）の公開鍵／復号＝自分（B）の秘密鍵</text>
+<text x="12" y="328.0" class="dg-note">代表例：RSA・楕円曲線暗号（ECC）／遅い</text>
+</svg>

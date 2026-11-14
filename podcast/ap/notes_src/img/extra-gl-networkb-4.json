@@ -1,0 +1,39 @@
+{
+ "title": "HTTP/2まで と HTTP/3",
+ "rows": [
+  [
+   {
+    "id": "o",
+    "label": "HTTP/2まで",
+    "sub": "TCP＋TLSで接続（手順が多い）"
+   },
+   {
+    "id": "n",
+    "label": "HTTP/3",
+    "sub": "UDP上のQUIC（TLS 1.3相当を内蔵）",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "o1",
+    "label": "1つの遅れが他を止めやすい"
+   },
+   {
+    "id": "n1",
+    "label": "接続が速く、遅れが他に響きにくい",
+    "sub": "FWでUDP 443番を許可"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "o",
+   "to": "o1"
+  },
+  {
+   "from": "n",
+   "to": "n1"
+  }
+ ]
+}

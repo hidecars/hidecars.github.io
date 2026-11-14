@@ -1,0 +1,57 @@
+{
+ "title": "EVM：PV・EV・AC から指標へ",
+ "rows": [
+  [
+   {
+    "id": "pv",
+    "label": "PV 計画価値",
+    "sub": "今日までに終える予定"
+   },
+   {
+    "id": "ev",
+    "label": "EV 出来高",
+    "sub": "実際に終えた作業の予算",
+    "style": "key"
+   },
+   {
+    "id": "ac",
+    "label": "AC 実コスト",
+    "sub": "実際にかかった費用"
+   }
+  ],
+  [
+   {
+    "id": "sv",
+    "label": "進捗：SV＝EV−PV",
+    "sub": "SPI＝EV÷PV"
+   },
+   {
+    "id": "cv",
+    "label": "コスト：CV＝EV−AC",
+    "sub": "CPI＝EV÷AC"
+   }
+  ],
+  [
+   {
+    "id": "eac",
+    "label": "EAC＝BAC÷CPI",
+    "sub": "完成時総コストの見積り"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "ev",
+   "to": "sv"
+  },
+  {
+   "from": "ev",
+   "to": "cv"
+  },
+  {
+   "from": "cv",
+   "to": "eac"
+  }
+ ],
+ "note": "進捗はEVとPV／コストはEVとAC／式は必ずEVが先"
+}

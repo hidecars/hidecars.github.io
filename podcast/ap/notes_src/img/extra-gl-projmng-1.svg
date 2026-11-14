@@ -1,0 +1,17 @@
+<svg class="dg" viewBox="0 0 360 250" role="img" aria-label="PMBOKガイドの構成" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">PMBOKガイドの構成</text>
+<line x1="174.0" y1="67.0" x2="186.0" y2="67.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="58.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="71.0" class="dg-lbl" text-anchor="middle">改訂</text>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">第6版まで</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">10の知識エリア＋5つのプロセス群</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">第7版（2021年）</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">12の原則＋8つのパフォーマンス領域</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box dash"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">プログラムマネジメント</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">関連する複数のプロジェクトをまとめて管理</text>
+<text x="12" y="222.0" class="dg-note">8領域：ステークホルダー・チーム・開発アプローチ・計画・</text>
+<text x="12" y="238.0" class="dg-note">プロジェクト作業・デリバリー・測定・不確かさ</text>
+</svg>

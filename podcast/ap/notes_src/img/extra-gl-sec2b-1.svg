@@ -1,0 +1,18 @@
+<svg class="dg" viewBox="0 0 360 414" role="img" aria-label="何を検査するか：FW と WAF" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">何を検査するか：FW と WAF</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="180.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">インターネットからの通信</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box dash"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">ファイアウォール</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">IPアドレスとポート番号だけで制御</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">WAF</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">HTTPの中身を検査（SQLi・XSS）</text>
+<rect x="12.0" y="336.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="363.0" class="dg-txt" text-anchor="middle">Webアプリケーション</text>
+<text x="12" y="402.0" class="dg-note">根本対策：プレースホルダ（SQLi）／エスケープ（XSS）</text>
+</svg>

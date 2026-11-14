@@ -1,0 +1,13 @@
+<svg class="dg" viewBox="0 0 360 234" role="img" aria-label="パスキー（FIDO2）のログイン" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">パスキー（FIDO2）のログイン</text>
+<line x1="180.0" y1="142.0" x2="180.0" y2="96.0" class="dg-edge" marker-end="url(#ah)" marker-start="url(#ah)"/>
+<rect x="98.0" y="110.0" width="164" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">①乱数を送る ②署名して返す</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">利用者の端末</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">生体認証で秘密鍵を使う（鍵は端末の外に出ない）</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">サーバ</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">登録済みの公開鍵で署名を検証</text>
+<text x="12" y="222.0" class="dg-note">パスワードを送らない → フィッシング・使い回しに強い</text>
+</svg>

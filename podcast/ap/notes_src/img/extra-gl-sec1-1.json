@@ -1,0 +1,56 @@
+{
+ "title": "証明書の失効確認：CRL と OCSP",
+ "rows": [
+  [
+   {
+    "id": "ca",
+    "label": "認証局（CA）",
+    "sub": "証明書を失効させる",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "crl",
+    "label": "CRL",
+    "sub": "失効した証明書の一覧（署名つき）"
+   },
+   {
+    "id": "ocsp",
+    "label": "OCSP",
+    "sub": "オンラインで1枚ずつ回答"
+   }
+  ],
+  [
+   {
+    "id": "u",
+    "label": "確認する側",
+    "sub": "サイトやソフトを使う人"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "ca",
+   "to": "crl",
+   "label": "発行"
+  },
+  {
+   "from": "ca",
+   "to": "ocsp",
+   "label": "回答"
+  },
+  {
+   "from": "crl",
+   "to": "u",
+   "label": "取得して照合"
+  },
+  {
+   "from": "u",
+   "to": "ocsp",
+   "label": "問い合わせ",
+   "dash": true
+  }
+ ],
+ "note": "CRLに載るのは、有効期限内に失効させた証明書だけ"
+}

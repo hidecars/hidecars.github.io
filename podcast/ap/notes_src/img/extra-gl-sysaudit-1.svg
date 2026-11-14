@@ -1,0 +1,22 @@
+<svg class="dg" viewBox="0 0 360 442" role="img" aria-label="監査の流れと役割" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">監査の流れと役割</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">提案</text>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="318.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="331.0" class="dg-lbl" text-anchor="middle">実施状況</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">監査人</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">独立した立場で点検・評価・助言</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">監査報告</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">改善提案を示す</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">監査対象部門</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">改善を実施する（責任はここ）</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">フォローアップ</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">監査人が実施状況を確認</text>
+<text x="12" y="430.0" class="dg-note">監査人は自分で改善しない（独立性を保つ）</text>
+</svg>

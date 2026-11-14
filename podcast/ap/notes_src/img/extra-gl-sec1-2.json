@@ -1,0 +1,52 @@
+{
+ "title": "送信元ドメイン認証",
+ "rows": [
+  [
+   {
+    "id": "s",
+    "label": "送信側ドメイン",
+    "sub": "DNSに SPF／公開鍵／DMARC方針を登録",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "m",
+    "label": "送信メールサーバ",
+    "sub": "DKIM署名を付けて送る"
+   }
+  ],
+  [
+   {
+    "id": "r",
+    "label": "受信メールサーバ",
+    "sub": "SPF=IP照合 / DKIM=署名検証"
+   }
+  ],
+  [
+   {
+    "id": "d",
+    "label": "DMARC",
+    "sub": "失敗なら 何もしない／隔離／拒否",
+    "style": "risk"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "s",
+   "to": "m"
+  },
+  {
+   "from": "m",
+   "to": "r",
+   "label": "メール"
+  },
+  {
+   "from": "r",
+   "to": "d",
+   "label": "検証結果"
+  }
+ ],
+ "note": "SPF＝IPで照合　DKIM＝署名で検証　DMARC＝失敗時の扱いを宣言"
+}

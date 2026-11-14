@@ -1,0 +1,63 @@
+{
+ "title": "脆弱性対応の用語：誰の何か",
+ "rows": [
+  [
+   {
+    "id": "o",
+    "label": "組織",
+    "sub": "CSIRT＝社内の事故／PSIRT＝自社製品の穴",
+    "style": "key"
+   }
+  ],
+  [
+   {
+    "id": "v",
+    "label": "脆弱性",
+    "sub": "見つかった穴"
+   }
+  ],
+  [
+   {
+    "id": "cve",
+    "label": "CVE",
+    "sub": "識別番号"
+   },
+   {
+    "id": "cvss",
+    "label": "CVSS",
+    "sub": "深刻度の数値"
+   }
+  ],
+  [
+   {
+    "id": "jvn",
+    "label": "JVN",
+    "sub": "日本の情報サイト（JPCERT/CC・IPA）",
+    "style": "dash"
+   }
+  ]
+ ],
+ "edges": [
+  {
+   "from": "o",
+   "to": "v",
+   "label": "対応"
+  },
+  {
+   "from": "v",
+   "to": "cve",
+   "label": "番号を付ける"
+  },
+  {
+   "from": "v",
+   "to": "cvss",
+   "label": "評価"
+  },
+  {
+   "from": "cve",
+   "to": "jvn",
+   "label": "情報を探す",
+   "dash": true
+  }
+ ]
+}
