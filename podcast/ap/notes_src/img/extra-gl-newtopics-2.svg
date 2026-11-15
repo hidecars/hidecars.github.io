@@ -1,0 +1,16 @@
+<svg class="dg" viewBox="0 0 360 386" role="img" aria-label="RAG：検索した文書を添えて答えさせる" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">RAG：検索した文書を添えて答えさせる</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="172.0" x2="180.0" y2="218.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="262.0" x2="180.0" y2="308.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">質問</text>
+<rect x="12.0" y="128.0" width="336.0" height="44" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">社内文書などを検索</text>
+<rect x="12.0" y="218.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="245.0" class="dg-txt" text-anchor="middle">質問＋検索結果をAIに渡す</text>
+<rect x="12.0" y="308.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="335.0" class="dg-txt" text-anchor="middle">根拠のある回答</text>
+<text x="12" y="374.0" class="dg-note">再学習は不要。ハルシネーションを減らせるが、ゼロにはならない</text>
+</svg>

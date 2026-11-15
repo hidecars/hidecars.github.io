@@ -165,3 +165,4 @@ extra-gl-sysdev,extra,,,,用語集・システム開発①,glsysdev,用語集,�
 extra-gl-sysdevb,extra,,,,用語集・システム開発②,glsysdevb,用語集,信頼度成長曲線・モジュール設計・新しい開発手法
 extra-pubkey,extra,,,,早わかり・暗号①,pubkey,早わかり,共通鍵・公開鍵・デジタル署名・ハイブリッド暗号
 extra-pubkeyb,extra,,,,早わかり・暗号②,pubkeyb,早わかり,鍵の数・PKI・ひっかけ
+extra-gl-newtopics,extra,,,,用語集・新傾向トピックス,glnew,用語集,AI・ポスト量子暗号・FinOps などの新用語

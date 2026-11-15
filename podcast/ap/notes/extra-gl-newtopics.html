@@ -1,0 +1,96 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と位置づけ</h3>
+<p>最近の試験で話題になる新しい用語のうち、まだ他の回で扱っていないものを「概念だけ」押さえる回。細かい数値や条文は覚えなくてよい。「何のための仕組みか」を一言で言えれば十分。出題の見込みは当方で確認できていないので、学習時間を使いすぎないこと。分からない用語が選択肢に出たら、消去法で解く。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>一言で</th></tr></thead><tbody><tr><td>1</td><td>AI事業者ガイドライン</td><td>AIの開発者・提供者・利用者それぞれの責任の指針</td></tr><tr><td>2</td><td>広島AIプロセス</td><td>生成AIの国際的なルール作り（G7）</td></tr><tr><td>3</td><td>AIアライメントとRLHF・ガードレール</td><td>AIを人間の意図に合わせる</td></tr><tr><td>4</td><td>ハルシネーションとRAG</td><td>もっともらしい誤りと、その対策</td></tr><tr><td>5</td><td>プロンプトインジェクション・データポイズニング・敵対的攻撃</td><td>AIに対する三つの攻撃</td></tr><tr><td>6</td><td>ポスト量子暗号（PQC）</td><td>量子計算機でも破られにくい公開鍵暗号</td></tr><tr><td>7</td><td>能動的サイバー防御</td><td>攻撃を受ける前から兆候を見つけて対処する</td></tr><tr><td>8</td><td>FinOps</td><td>クラウド費用の可視化と最適化</td></tr><tr><td>9</td><td>プラットフォームエンジニアリング（IDP）</td><td>開発者向けの共通基盤を用意する</td></tr></tbody></table></div>
+<p>SBOM、ゼロトラスト、中小受託取引適正化法は、別の回（情報セキュリティ④・①、システム開発②）で扱っている。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. AI事業者ガイドラインと広島AIプロセス</h4>
+<p>AI事業者ガイドラインは、日本の総務省と経済産業省がまとめた、AIを事業で使うときの指針。法律ではなく、守ることが期待される考え方の整理。</p>
+<figure><svg class="dg" viewBox="0 0 360 130" role="img" aria-label="AI事業者ガイドラインの三つの主体" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">AI事業者ガイドラインの三つの主体</text>
+<line x1="116.0" y1="67.0" x2="128.0" y2="67.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="232.0" y1="67.0" x2="244.0" y2="67.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="64.0" y="65.0" class="dg-txt" text-anchor="middle">AI開発者</text>
+<text x="64.0" y="87.0" class="dg-sub" text-anchor="middle">AIを作る</text>
+<rect x="128.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">AI提供者</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">AIを組み込んだサービスを提供する</text>
+<rect x="244.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box"/>
+<text x="296.0" y="65.0" class="dg-txt" text-anchor="middle">AI利用者</text>
+<text x="296.0" y="87.0" class="dg-sub" text-anchor="middle">業務などで使う</text>
+<text x="12" y="118.0" class="dg-note">共通：人間中心・安全性・公平性・プライバシー・セキュリティ・透明性・説明責任</text>
+</svg><figcaption>AI事業者ガイドラインの三つの主体</figcaption></figure>
+<ul><li>主体は三つ：AI開発者（AIを作る）、AI提供者（AIを組み込んだサービスを提供する）、AI利用者（業務などで使う）。それぞれに求める行動を整理している。</li><li>共通の考え方の例：人間中心、安全性、公平性、プライバシー保護、セキュリティ確保、透明性、説明責任。</li><li>広島AIプロセス：2023年のG7広島サミットで立ち上がった、生成AIなど高度なAIの国際的なルール作りの枠組み。国際指針と行動規範をまとめた。</li><li>誤り：AI事業者ガイドラインを「罰則つきの法律」と考えるのは誤り。ガイドラインは指針。</li><li>誤り：広島AIプロセスを日本国内だけの制度と考えるのは誤り。G7を中心とした国際的な枠組み。</li></ul>
+<h4 id='s9'>2. AIアライメントとRLHF・ガードレール</h4>
+<p>AIアライメントは、AIの出力や振る舞いを、人間の意図や価値観に合わせること。</p>
+<ul><li>RLHF（人間のフィードバックによる強化学習）：人間がAIの回答を評価し、その評価を学習に使って、望ましい回答に近づける方法。</li><li>ガードレール：不適切な入力や出力を検知して制限する仕組み。危険な指示への回答を止める、個人情報を出力させない、など。</li><li>覚え方：RLHFは「学習のときに人間が教える」、ガードレールは「利用のときに外側から止める」。</li></ul>
+<h4 id='s12'>3. ハルシネーションとRAG</h4>
+<p>ハルシネーションは、生成AIが事実でないことを、もっともらしく答えてしまう現象。</p>
+<figure><svg class="dg" viewBox="0 0 360 386" role="img" aria-label="RAG：検索した文書を添えて答えさせる" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">RAG：検索した文書を添えて答えさせる</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="172.0" x2="180.0" y2="218.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="262.0" x2="180.0" y2="308.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">質問</text>
+<rect x="12.0" y="128.0" width="336.0" height="44" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">社内文書などを検索</text>
+<rect x="12.0" y="218.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="245.0" class="dg-txt" text-anchor="middle">質問＋検索結果をAIに渡す</text>
+<rect x="12.0" y="308.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="335.0" class="dg-txt" text-anchor="middle">根拠のある回答</text>
+<text x="12" y="374.0" class="dg-note">再学習は不要。ハルシネーションを減らせるが、ゼロにはならない</text>
+</svg><figcaption>RAGの流れ</figcaption></figure>
+<ul><li>RAG（検索拡張生成）：質問に関係する社内文書などを先に検索し、その内容を添えてAIに答えさせる方法。根拠のある文書に基づいて答えさせるので、ハルシネーションを減らせる。最新情報や社内情報にも対応しやすい。</li><li>補足：RAGでAIを作り直し（再学習）する必要はない。文書を入れ替えれば、答えも変わる。</li><li>誤り：RAGを「AIの再学習」と考えるのは誤り。検索した文書を添えるだけ。</li><li>誤り：RAGでハルシネーションが「完全になくなる」と考えるのは誤り。減らせるが、ゼロにはならない。</li></ul>
+<h4 id='s16'>4. AIに対する三つの攻撃</h4>
+<div class='tw'><table><thead><tr><th>攻撃</th><th>何をするか</th><th>狙う場面</th></tr></thead><tbody><tr><td>プロンプトインジェクション</td><td>悪意のある指示を入力や参照文書に仕込み、AIの本来の指示を上書きさせる</td><td>利用時</td></tr><tr><td>データポイズニング</td><td>学習データに悪意のあるデータを混ぜ、AIの判断をゆがめる</td><td>学習時</td></tr><tr><td>敵対的攻撃（敵対的サンプル）</td><td>人間には分からない微小な変化を入力に加え、AIに誤認識させる</td><td>利用時</td></tr></tbody></table></div>
+<ul><li>見分け方：「学習データに混ぜる」はデータポイズニング。「入力に指示を仕込む」はプロンプトインジェクション。「見た目はほぼ同じ画像で誤認識させる」は敵対的攻撃。</li><li>対策の例：入力と出力の検査（ガードレール）、学習データの出どころの確認、AIに与える権限を最小限にする。</li><li>誤り：プロンプトインジェクションとSQLインジェクションの取り違え。前者はAIへの指示を上書きする攻撃で、後者はデータベースへの問合せを細工する攻撃。</li></ul>
+<h4 id='s19'>5. ポスト量子暗号（PQC）</h4>
+<p>量子計算機が実用になると、素因数分解や離散対数の問題を速く解けるようになり、RSAや楕円曲線暗号のような公開鍵暗号が破られるおそれがある。ポスト量子暗号は、量子計算機でも破られにくいとされる新しい公開鍵暗号。</p>
+<ul><li>狙い：今の公開鍵暗号を、量子計算機にも強い方式へ置き換えていく。</li><li>補足：「今は解読できない通信を盗んで保存しておき、将来解読する」という攻撃が心配されている。そのため、実用になる前から移行の準備を進める。</li><li>補足：共通鍵暗号（AESなど）は、鍵を長くすることで対処しやすい。影響が大きいのは公開鍵暗号。</li><li>誤り：ポスト量子暗号は「量子計算機を使う暗号」ではない。普通のコンピュータで動く、量子計算機に強い暗号。</li><li>似た用語：量子鍵配送は、量子の性質を使って鍵を安全に共有する技術。ポスト量子暗号とは別のもの。</li></ul>
+<h4 id='s22'>6. 能動的サイバー防御</h4>
+<p>攻撃を受けてから対応するのではなく、攻撃の兆候を平時から検知し、被害が出る前に無害化する考え方。日本では、2025年に関連する法律が成立し、官民の連携や通信情報の分析、攻撃元への対処の仕組みが整えられていく。制度の細かい内容は変わりうるので、詳細は最新の公式情報で確認する。</p>
+<ul><li>覚え方：「受け身の守り」ではなく「先回りする守り」。</li><li>誤り：能動的サイバー防御を「攻撃された相手への報復」と考えるのは誤り。目的は被害の未然防止。</li></ul>
+<h4 id='s25'>7. FinOpsとプラットフォームエンジニアリング</h4>
+<figure><svg class="dg" viewBox="0 0 360 130" role="img" aria-label="FinOps と プラットフォームエンジニアリング" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">FinOps と プラットフォームエンジニアリング</text>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">FinOps</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">お金：クラウド費用を可視化し、最適化</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">プラットフォームエンジニアリング</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">開発者：共通基盤（IDP）をセルフサービスで提供</text>
+<text x="12" y="118.0" class="dg-note">FinOps＝費用／プラットフォームエンジニアリング＝開発の使いやすさ</text>
+</svg><figcaption>FinOpsとプラットフォームエンジニアリングの違い</figcaption></figure>
+<ul><li>FinOps：クラウドの利用費用を可視化し、財務・開発・運用が協力して、費用対効果を最適化する取り組み。単なる値引き交渉ではなく、継続的な運用の考え方。</li><li>プラットフォームエンジニアリング：開発者が使う共通の基盤を、専任のチームが用意して提供する取り組み。その基盤をIDP（内部開発者プラットフォーム）と呼ぶ。開発者は、環境の構築やデプロイを、セルフサービスで素早く行える。</li><li>覚え方：FinOpsは「お金」、プラットフォームエンジニアリングは「開発者の使いやすさ」。</li><li>誤り：FinOpsを「クラウドを使わず費用を削る」ことと考えるのは誤り。使い方を最適化する。</li></ul>
+<h3 id='s28'>3. 取り違えやすい組み合わせ</h3>
+<ul><li>RLHF（学習で人間が教える）と ガードレール（利用時に外から止める）</li><li>RAG（検索した文書を添える）と 再学習（モデルを作り直す）</li><li>データポイズニング（学習データを汚す）と プロンプトインジェクション（入力で指示を上書き）</li><li>ポスト量子暗号（普通の計算機で動く）と 量子鍵配送（量子の性質で鍵を配る）</li><li>FinOps（費用）と プラットフォームエンジニアリング（開発の共通基盤）</li></ul>
+<h3 id='quiz'>4. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> AI事業者ガイドラインが示す三つの主体は</summary><p>AI開発者・AI提供者・AI利用者</p></details><details class='qa'><summary><b>Q2</b> G7広島サミットで立ち上がった、生成AIの国際的なルール作りは</summary><p>広島AIプロセス</p></details><details class='qa'><summary><b>Q3</b> AIの振る舞いを人間の意図や価値観に合わせることは</summary><p>AIアライメント</p></details><details class='qa'><summary><b>Q4</b> 人間の評価を使ってAIを学習させる方法は</summary><p>RLHF</p></details><details class='qa'><summary><b>Q5</b> 不適切な入力や出力を検知して制限する仕組みは</summary><p>ガードレール</p></details><details class='qa'><summary><b>Q6</b> 生成AIがもっともらしい誤りを答える現象は</summary><p>ハルシネーション</p></details><details class='qa'><summary><b>Q7</b> 関連文書を検索して添え、回答の根拠を持たせる方法は</summary><p>RAG</p></details><details class='qa'><summary><b>Q8</b> 学習データに悪意のあるデータを混ぜる攻撃は</summary><p>データポイズニング</p></details><details class='qa'><summary><b>Q9</b> 入力に仕込んだ指示でAIの本来の指示を上書きさせる攻撃は</summary><p>プロンプトインジェクション</p></details><details class='qa'><summary><b>Q10</b> 微小な変化を加えてAIを誤認識させる攻撃は</summary><p>敵対的攻撃</p></details><details class='qa'><summary><b>Q11</b> 量子計算機でも破られにくい公開鍵暗号は</summary><p>ポスト量子暗号</p></details><details class='qa'><summary><b>Q12</b> 量子計算機で特に影響が大きいのは共通鍵暗号か公開鍵暗号か</summary><p>公開鍵暗号</p></details><details class='qa'><summary><b>Q13</b> 攻撃の兆候を平時から検知して、被害の前に無害化する考え方は</summary><p>能動的サイバー防御</p></details><details class='qa'><summary><b>Q14</b> クラウド費用を可視化して最適化する取り組みは</summary><p>FinOps</p></details><details class='qa'><summary><b>Q15</b> 開発者向けの共通基盤を提供する取り組みと、その基盤の名前は</summary><p>プラットフォームエンジニアリング、IDP</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

@@ -11,7 +11,25 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Sun, 15 Nov 2026 09:23:20 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 21:28:13 +0900</lastBuildDate>
+  <item>
+    <title>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語</title>
+    <description><![CDATA[<p>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語（用語集）</p><p>【概要】AI事業者ガイドライン、広島AIプロセス、AIアライメント、ハルシネーションとRAG、AIへの三つの攻撃、ポスト量子暗号、能動的サイバー防御、FinOps、プラットフォームエンジニアリングを、概念だけ確認する。</p><p>【決め手キーワード】データポイズニング＝学習データ・プロンプトインジェクション＝入力の指示／RAG＝検索して添える／ポスト量子暗号は公開鍵が対象</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語（用語集）</p><p>【概要】AI事業者ガイドライン、広島AIプロセス、AIアライメント、ハルシネーションとRAG、AIへの三つの攻撃、ポスト量子暗号、能動的サイバー防御、FinOps、プラットフォームエンジニアリングを、概念だけ確認する。</p><p>【決め手キーワード】データポイズニング＝学習データ・プロンプトインジェクション＝入力の指示／RAG＝検索して添える／ポスト量子暗号は公開鍵が対象</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・新傾向トピックス】AI・ポスト量子暗号・FinOps などの新用語（用語集）
+【概要】AI事業者ガイドライン、広島AIプロセス、AIアライメント、ハルシネーションとRAG、AIへの三つの攻撃、ポスト量子暗号、能動的サイバー防御、FinOps、プラットフォームエンジニアリングを、概念だけ確認する。
+【決め手キーワード】データポイズニング＝学習データ・プロンプトインジェクション＝入力の指示／RAG＝検索して添える／ポスト量子暗号は公開鍵が対象
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-newtopics.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-newtopics.m4a" length="9499295" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-newtopics-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:46:00 +0900</pubDate>
+    <itunes:duration>00:18:59</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
   <item>
     <title>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法</title>
     <description><![CDATA[<p>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法（用語集）</p><p>【概要】信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、取適法に加えて、DevSecOps/CI/CD、マイクロサービスとコンテナ、IaCとリファクタリングを確認する。</p><p>【決め手キーワード】強度は高く・結合度は低く／埋込み発見率で割り戻す／コンテナはOSを共有</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
