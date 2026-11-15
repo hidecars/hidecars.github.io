@@ -1,0 +1,87 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【早わかり・暗号②】鍵の数・PKI・ひっかけ</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜早わかり｜<a href='../index.html'>一覧へ</a></p><h1>【早わかり・暗号②】鍵の数・PKI・ひっかけ</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s0'>覚えるキーワード3つ</a></nav><h3 id='s0'>1. 覚えるキーワード3つ</h3>
+<ul><li>鍵の数は共通鍵 n(n−1)/2、公開鍵 2n：100人なら 4,950本と200本</li><li>公開鍵の持ち主は、認証局（CA）が出すデジタル証明書で保証する（PKI）</li><li>失効の確認はCRLまたはOCSP</li></ul>
+<h3 id='s2'>2. 状況</h3>
+<ul><li>応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。前編の4パターンの続き。</li><li>後編は、鍵の数の計算、公開鍵の持ち主を保証するPKI、ひっかけ問題を図と手順で確かめる。</li></ul>
+<h3 id='s4'>3. 鍵の数の計算</h3>
+<p>共通鍵は、通信する2人ごとに1本が要る。公開鍵は、1人が自分用に2本（公開鍵と秘密鍵）持つ。</p>
+<figure><svg class="dg" viewBox="0 0 360 310" role="img" aria-label="鍵の数（n人が相互に通信）" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">鍵の数（n人が相互に通信）</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="186.0" x2="93.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="186.0" x2="267.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">共通鍵</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">n(n−1)÷2 本</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">公開鍵</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">2n 本（1人2本）</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">50人 → 1,225本</text>
+<rect x="186.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">50人 → 100本</text>
+<rect x="12.0" y="232.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="259.0" class="dg-txt" text-anchor="middle">100人 → 4,950本</text>
+<rect x="186.0" y="232.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="259.0" class="dg-txt" text-anchor="middle">100人 → 200本</text>
+<text x="12" y="298.0" class="dg-note">公開鍵方式の鍵の数をnと答えるのは誤り</text>
+</svg><figcaption>鍵の数：n人が相互に通信するとき</figcaption></figure>
+<ul><li>共通鍵：人数nのとき、2人の組み合わせの数。n(n−1)÷2。</li><li>公開鍵：1人2本なので、2n。</li><li>誤り：公開鍵方式の鍵の数を「n」と答えるのは誤り。1人に公開鍵と秘密鍵の2本があるので2n。</li><li>補足：人数が増えると、共通鍵の数は人数の二乗に近い勢いで増える。公開鍵は人数に比例して増えるだけ。</li></ul>
+<div class='tw'><table><thead><tr><th>人数 n</th><th>共通鍵 n(n−1)÷2</th><th>公開鍵 2n</th></tr></thead><tbody><tr><td>2</td><td>1</td><td>4</td></tr><tr><td>3</td><td>3</td><td>6</td></tr><tr><td>4</td><td>6</td><td>8</td></tr><tr><td>5</td><td>10</td><td>10</td></tr><tr><td>10</td><td>45</td><td>20</td></tr><tr><td>50</td><td>1,225</td><td>100</td></tr><tr><td>100</td><td>4,950</td><td>200</td></tr></tbody></table></div>
+<p>計算の例：50人なら、50×49÷2＝1,225本（共通鍵）、2×50＝100本（公開鍵）。100人なら、100×99÷2＝4,950本と、200本。</p>
+<h3 id='s10'>4. PKIと認証局（CA）</h3>
+<p>公開鍵は誰でも作って配れる。そのため「この公開鍵は本当にBのものか」を保証する仕組みが要る。それがPKI（公開鍵基盤）。保証するのが認証局（CA）で、保証の書類がデジタル証明書。</p>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="デジタル証明書の発行と検証" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">デジタル証明書の発行と検証</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">申請</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">発行</text>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="318.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="331.0" class="dg-lbl" text-anchor="middle">提示</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">Bさん</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">自分の公開鍵を申請</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">認証局（CA）</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">CAの秘密鍵で署名して証明書を発行</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">デジタル証明書</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">Bの公開鍵＋CAの署名</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">Aさん</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">CAの公開鍵で署名を検証→Bの公開鍵は本物</text>
+<text x="12" y="430.0" class="dg-note">失効の確認：CRL（一覧を取得）／OCSP（オンライン問い合わせ）</text>
+</svg><figcaption>デジタル証明書の発行と検証の流れ</figcaption></figure>
+<ul><li>認証局（CA）は、「この公開鍵はBのもの」という内容に、CAの秘密鍵で署名してデジタル証明書を発行する。</li><li>証明書を受け取った人は、CAの公開鍵で署名を検証する。検証できれば、証明書の内容（Bの公開鍵）が本物だと分かる。</li><li>失効の確認：証明書を使う前に、失効していないかを調べる。方法は、失効した証明書の一覧（CRL）を取得して照合するか、OCSPでオンラインに問い合わせる。</li><li>補足：デジタル証明書には、持ち主の名前、持ち主の公開鍵、有効期限、発行者（CA）の署名が入っている。</li></ul>
+<div class='tw'><table><thead><tr><th>確認したいこと</th><th>使うもの</th></tr></thead><tbody><tr><td>公開鍵が本人のものか</td><td>CAが発行したデジタル証明書</td></tr><tr><td>証明書が本物か</td><td>CAの公開鍵で、証明書のCAの署名を検証</td></tr><tr><td>証明書が失効していないか</td><td>CRLまたはOCSP</td></tr></tbody></table></div>
+<h3 id='s15'>5. ひっかけポイント</h3>
+<ul><li>「秘密鍵で暗号化」とあったら、デジタル署名のこと（本人確認）。</li><li>公開鍵方式の鍵の数をnと答えるのは誤り。2n。</li><li>署名は文書ではなく、ハッシュ値に対して行う。</li><li>デジタル署名では機密性は実現できない。</li><li>「公開鍵暗号のほうが安全だからTLSで使う」は誤り。公開鍵暗号は遅いので、鍵の受け渡しだけに使い、本文は速い共通鍵で暗号化する。</li></ul>
+<h3 id='quiz'>6. 確認問題（記事のクイズ）</h3>
+<details class='qa'><summary><b>Q1</b> 50人が共通鍵暗号で相互に通信するときの鍵の数は</summary><p>1,225本（50×49÷2）</p></details><details class='qa'><summary><b>Q2</b> 同じ50人が公開鍵方式を使うときの鍵の数は</summary><p>100本（2×50）</p></details><details class='qa'><summary><b>Q3</b> 100人の共通鍵の数は</summary><p>4,950本</p></details><details class='qa'><summary><b>Q4</b> 公開鍵方式の鍵の数を表す式は</summary><p>2n</p></details><details class='qa'><summary><b>Q5</b> 公開鍵が本人のものだと保証する仕組みは</summary><p>PKI（認証局CAが発行するデジタル証明書）</p></details><details class='qa'><summary><b>Q6</b> デジタル証明書の署名を検証するのに使う鍵は</summary><p>CAの公開鍵</p></details><details class='qa'><summary><b>Q7</b> 証明書が失効していないかをオンラインで確認するのは</summary><p>OCSP</p></details><details class='qa'><summary><b>Q8</b> 失効した証明書の一覧は</summary><p>CRL</p></details><details class='qa'><summary><b>Q9</b> デジタル署名で実現できない要素は</summary><p>機密性</p></details><details class='qa'><summary><b>Q10</b> TLSで本文を共通鍵で暗号化する理由は</summary><p>処理が速いから</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

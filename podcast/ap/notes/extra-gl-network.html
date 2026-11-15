@@ -1,4 +1,4 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化</title><style>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率</title><style>
 :root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
 body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
@@ -22,29 +22,116 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
-</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s3'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
-<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。</p>
-<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>TCPとUDP</td><td>15回中9回</td><td>R3秋・R4秋・R5秋・R7秋</td></tr><tr><td>2</td><td>サブネットとCIDRの計算</td><td>15回中8回</td><td>R3秋・R4秋・R5秋・R7秋</td></tr><tr><td>3</td><td>伝送時間と回線速度の計算</td><td>15回中7回</td><td>R5秋・R6秋・R7秋</td></tr><tr><td>4</td><td>ARPとNAPT</td><td>15回中8回</td><td>R3秋・R5秋・R6秋</td></tr><tr><td>5</td><td>ビット誤り率の計算</td><td>15回中4回</td><td>R6春・R7秋</td></tr><tr><td>6</td><td>冗長化とループ防止（VRRP・スパニングツリー）</td><td>15回中2回</td><td>R6春・R7秋</td></tr></tbody></table></div>
-<h3 id='s3'>2. 核心：用語ごとの判断ルール</h3>
-<h4 id='s4'>1. TCPとUDP</h4>
-<p>どちらもトランスポート層のプロトコル。TCPはコネクション型で信頼性を確保する。UDPはコネクションレスで、確認応答も順序制御もしない。</p>
-<ul><li>TCPのヘッダーにあって、UDPのヘッダーにないもの：シーケンス番号、確認応答番号、ウィンドウサイズ。（R3秋・R7秋に同じ問い）</li><li>両方にあるもの：送信元・宛先ポート番号、チェックサム。</li><li>UDPを使う例：DNSの問合せ、DHCP、SNMP、NTP、音声通話（VoIP）。</li><li>データ転送用（20番）と制御用（21番）で別のポートを使うのはFTP。</li><li>誤り：「ポート番号はTCPにしかない」は誤り。UDPにもある。</li></ul>
-<h4 id='s7'>2. サブネットとCIDRの計算</h4>
-<p>CIDRは、クラスA〜Cの区分にとらわれず、ネットワーク部の長さを「/ビット数」で自由に決める方式。</p>
-<ul><li>ネットワークアドレス：IPアドレスとサブネットマスクのAND。</li><li>ブロードキャストアドレス：ホスト部のビットをすべて1にしたもの。</li><li>割り当てられるホスト数：2のホスト部ビット数乗 − 2（ネットワークアドレスとブロードキャストアドレスを除く）。</li><li>誤り：ホスト数を「2のn乗」と答えるのは誤り。2を引く。</li></ul>
-<h4 id='s10'>3. 伝送時間と回線速度の計算</h4>
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、計算を図と手順で押さえるテーマを前半にまとめた。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>TCPとUDP</td><td>15回中9回</td><td>R3秋・R4秋・R5秋・R7秋</td></tr><tr><td>2</td><td>サブネットとCIDRの計算</td><td>15回中8回</td><td>R3秋・R4秋・R5秋・R7秋</td></tr><tr><td>3</td><td>伝送時間と回線速度の計算</td><td>15回中7回</td><td>R5秋・R6秋・R7秋</td></tr><tr><td>4</td><td>ビット誤り率の計算</td><td>15回中4回</td><td>R6春・R7秋</td></tr></tbody></table></div>
+<p>音声では、ビットの並びや式は読み上げず、手順を言葉で説明する。数字を目で追いたいところは、この記事の図と表を開きながら聞くとよい。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. TCPとUDP</h4>
+<p>どちらもトランスポート層のプロトコルで、「どのアプリケーションに渡すか」をポート番号で区別する。TCPはコネクション型で、信頼性を確保する。UDPはコネクションレスで、確認応答も順序制御もしない。</p>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="TCP と UDP" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">TCP と UDP</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="304.0" x2="93.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="186.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="290.0" x2="267.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">TCP</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">①SYN（接続したい）</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">UDP</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">接続を作らない</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">②SYN+ACK</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">（いいよ）</text>
+<rect x="186.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">いきなり送る</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">③ACK＋データ</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">シーケンス番号つき</text>
+<rect x="186.0" y="246.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">確認応答なし</text>
+<rect x="12.0" y="350.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="377.0" class="dg-txt" text-anchor="middle">確認応答・再送</text>
+<text x="93.0" y="399.0" class="dg-sub" text-anchor="middle">ウィンドウサイズで調整</text>
+<rect x="186.0" y="350.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="377.0" class="dg-txt" text-anchor="middle">順序制御・再送なし</text>
+<text x="267.0" y="399.0" class="dg-sub" text-anchor="middle">DNS・VoIPなど</text>
+<text x="12" y="430.0" class="dg-note">シーケンス番号・確認応答番号・ウィンドウサイズはTCPだけ</text>
+</svg><figcaption>TCPとUDPの違い（コネクションの作り方と信頼性）</figcaption></figure>
+<ul><li>TCPのヘッダーにあって、UDPのヘッダーにないもの：シーケンス番号、確認応答番号、ウィンドウサイズ。（R3秋・R7秋に同じ問い）</li><li>両方にあるもの：送信元・宛先ポート番号、チェックサム。</li><li>補足：TCPは通信の前に、SYN→SYN+ACK→ACKの3段階のやり取り（3ウェイハンドシェイク）でコネクションを作る。確認応答が返ってこなければ再送する。この「確認」と「順序の管理」のために、シーケンス番号と確認応答番号がある。</li><li>補足：ウィンドウサイズは「確認応答を待たずに続けて送ってよい量」で、受信側の余裕に合わせて送る速さを調整する。</li><li>UDPを使う例：DNSの問合せ、DHCP、SNMP、NTP、音声通話（VoIP）。少しの欠落より、遅れないことが大事な用途に向く。</li><li>データ転送用（20番）と制御用（21番）で別のポートを使うのはFTP。</li><li>誤り：「ポート番号はTCPにしかない」は誤り。UDPにもある。</li><li>誤り：「UDPは確認応答で信頼性を確保する」は誤り。信頼性の確保はTCPの役割。</li></ul>
+<div class='tw'><table><thead><tr><th>ヘッダーの項目</th><th>TCP</th><th>UDP</th></tr></thead><tbody><tr><td>送信元ポート番号・宛先ポート番号</td><td>ある</td><td>ある</td></tr><tr><td>チェックサム</td><td>ある</td><td>ある</td></tr><tr><td>シーケンス番号</td><td>ある</td><td>ない</td></tr><tr><td>確認応答番号</td><td>ある</td><td>ない</td></tr><tr><td>ウィンドウサイズ</td><td>ある</td><td>ない</td></tr></tbody></table></div>
+<h4 id='s10'>2. サブネットとCIDRの計算</h4>
+<p>CIDRは、クラスA〜Cの区分にとらわれず、ネットワーク部の長さを「/ビット数」で自由に決める方式。IPアドレスは32ビットで、先頭から「/ビット数」までがネットワーク部、残りがホスト部になる。</p>
+<ul><li>ネットワークアドレス：IPアドレスとサブネットマスクのAND（両方が1のビットだけ1）。ホスト部がすべて0になる。</li><li>ブロードキャストアドレス：ホスト部のビットをすべて1にしたもの。</li><li>割り当てられるホスト数：2のホスト部ビット数乗 −2（ネットワークアドレスとブロードキャストアドレスを除く）。</li><li>誤り：ホスト数を「2のn乗」と答えるのは誤り。2を引く。</li><li>近道：マスクが途中のオクテットにかかるときは、「区切りの大きさ」で考える。区切りの大きさは、256からそのオクテットのマスクの値を引いたもの。/29なら256−248＝8。アドレスを区切りの倍数に切り捨てるとネットワークアドレス、区切りの終わりがブロードキャストアドレス。</li></ul>
+<div class='tw'><table><thead><tr><th>表記</th><th>サブネットマスク</th><th>ホスト部のビット数</th><th>使えるホスト数</th><th>区切りの大きさ</th></tr></thead><tbody><tr><td>/24</td><td>255.255.255.0</td><td>8</td><td>254</td><td>256</td></tr><tr><td>/25</td><td>255.255.255.128</td><td>7</td><td>126</td><td>128</td></tr><tr><td>/26</td><td>255.255.255.192</td><td>6</td><td>62</td><td>64</td></tr><tr><td>/27</td><td>255.255.255.224</td><td>5</td><td>30</td><td>32</td></tr><tr><td>/28</td><td>255.255.255.240</td><td>4</td><td>14</td><td>16</td></tr><tr><td>/29</td><td>255.255.255.248</td><td>3</td><td>6</td><td>8</td></tr><tr><td>/30</td><td>255.255.255.252</td><td>2</td><td>2</td><td>4</td></tr></tbody></table></div>
+<h4 id='s14'>3. 伝送時間と回線速度の計算</h4>
 <p>伝送時間＝送るデータ量（ビット）÷（回線速度×伝送効率）。</p>
-<ul><li>バイトはビットに直す。1バイト＝8ビット。</li><li>伝送効率が示されたら、回線速度に掛けてから割る。</li><li>誤り：バイトをビットに直し忘れて、答えが8分の1になる誤り。</li></ul>
-<h4 id='s13'>4. ARPとNAPT</h4>
-<p>ARPは、IPアドレスからMACアドレスを調べるプロトコル。NAPTは、IPアドレスとポート番号を変換して、複数の端末が1つのグローバルIPアドレスを共有する仕組み。</p>
-<ul><li>ARPは、知りたいIPアドレスをブロードキャストで問い合わせ、該当する機器がMACアドレスを返す。</li><li>同じLANの機器のMACアドレスを調べるコマンドは arp（R6秋）。</li><li>NAPTのルータが社内から外へ送るとき書き換えるのは、送信元IPアドレスと送信元ポート番号。（R3秋・R5秋に同じ問い）</li><li>誤り：「NAPTは宛先IPアドレスを書き換える」は誤り（外へ送るときは送信元を書き換える）。</li><li>誤り：「ARPはMACアドレスからIPアドレスを調べる」は逆で誤り。</li></ul>
-<h4 id='s16'>5. ビット誤り率の計算</h4>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="伝送時間の計算手順" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">伝送時間の計算手順</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">データ量</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">バイト</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">×8 でビットに直す</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">ここを忘れると1/8</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">÷（回線速度×伝送効率）</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">効率が示されたら先に掛ける</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">伝送時間</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">秒</text>
+<text x="12" y="430.0" class="dg-note">例：1Mバイト→800万ビット→÷5秒＝160万ビット/秒</text>
+</svg><figcaption>伝送時間の計算手順</figcaption></figure>
+<ul><li>バイトはビットに直す。1バイト＝8ビット。</li><li>伝送効率が示されたら、回線速度に掛けてから割る。</li><li>補足：回線速度の「M」は、断りがなければ100万（10の6乗）として計算する。100Mビット/秒は1億ビット/秒。</li><li>誤り：バイトをビットに直し忘れて、答えが8分の1になる誤り。</li><li>逆向きの問い（制限時間内に送りたい）は、データ量（ビット）÷時間で、必要な速度が出る。</li></ul>
+<h4 id='s18'>4. ビット誤り率の計算</h4>
 <p>ビット誤り率は、送ったビットのうち誤るビットの割合。</p>
-<ul><li>1パケットが誤る確率 ≒ 1パケットのビット数 × ビット誤り率（誤り率が十分小さいとき）。</li><li>誤りを含むパケット数 ≒ パケット数 × 1パケットが誤る確率。</li><li>誤り：%の換算ミス。0.0001%＝0.000001（100万分の1）。</li></ul>
-<h4 id='s19'>6. 冗長化とループ防止（VRRP・スパニングツリー）</h4>
-<p>VRRPはルータを冗長化するプロトコル。スパニングツリープロトコル（STP）はレイヤー2スイッチのループを防ぐプロトコル。</p>
-<ul><li>VRRP：複数のルータで1つの仮想IPアドレスを共有し、稼働中のルータが故障したら待機中のルータが引き継ぐ（R6春）。</li><li>STP：複数の経路があるレイヤー2ネットワークで、一部のポートを止めてフレームのループを防ぐ（R7秋）。</li><li>誤り：「ルータの冗長化」にSTPを選ぶ誤り。ルータはVRRP、L2スイッチのループはSTP。</li></ul>
-<h3 id='s22'>3. 数値例</h3>
-<ul><li>例1（R4秋と同じ形）：192.168.16.40/29。ホスト部は3ビットで、8個ごとの区切り。ネットワークアドレスは192.168.16.40、ブロードキャストアドレスは192.168.16.47、使えるホストは.41〜.46の6個。</li><li>例2（R5秋と同じ形）：172.30.123.45、マスク255.255.252.0。第3オクテットは123を4の倍数に切り捨てて120。ネットワークアドレスは172.30.120.0。</li><li>例1（R5秋と同じ形）：100Mビット/秒のLANで、1,000バイトの電文を1,000件送る。1,000×1,000×8＝800万ビット。800万÷1億＝0.08秒。</li><li>例2（R6秋と同じ形）：1Mバイトを5秒以内に送る。800万ビット÷5秒＝160万ビット/秒。1.6Mビット/秒以上の回線を選ぶ。</li><li>例（R6春とR7秋に同じ数値で出題）：ビット誤り率0.0001%、1,500バイトのパケットを10,000個送る。1パケットは1,500×8＝12,000ビット。0.0001%は100万分の1。1パケットが誤る確率は12,000÷100万＝0.012。誤りを含むパケットは10,000×0.012＝約120個。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 524" role="img" aria-label="ビット誤り率 → 誤りパケット数" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">ビット誤り率 → 誤りパケット数</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="408.0" x2="180.0" y2="454.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">1パケットのバイト数</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">例 1,500バイト</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">×8 ＝ ビット数</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">例 12,000ビット</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">×ビット誤り率</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">％は100で割る。0.0001％＝100万分の1</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">＝ 1パケットが誤る確率</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">例 0.012</text>
+<rect x="12.0" y="454.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="481.0" class="dg-txt" text-anchor="middle">×パケット数 ＝ 誤りパケット数</text>
+<text x="180.0" y="503.0" class="dg-sub" text-anchor="middle">例 10,000個 → 約120個</text>
+</svg><figcaption>ビット誤り率から誤りパケット数を出す手順</figcaption></figure>
+<ul><li>1パケットが誤る確率 ≒ 1パケットのビット数 × ビット誤り率（誤り率が十分小さいとき）。</li><li>誤りを含むパケット数 ≒ パケット数 × 1パケットが誤る確率。</li><li>誤り：%の換算ミス。0.0001%＝0.000001（100万分の1）。</li><li>補足：％を小数にするときは、100で割る。0.0001％を100で割ると0.000001。</li></ul>
+<h3 id='s22'>3. 数値例（手順つき）</h3>
+<h4 id='s23'>例1：192.168.16.40/29（R4秋と同じ形）</h4>
+<p>第4オクテットの40を2進数にすると00101000。/29のマスクは第4オクテットが11111000（248）。</p>
+<div class='tw'><table><thead><tr><th>項目</th><th>第4オクテットの2進数</th><th>10進数</th></tr></thead><tbody><tr><td>IPアドレス</td><td>0 0 1 0 1 0 0 0</td><td>40</td></tr><tr><td>マスク（/29）</td><td>1 1 1 1 1 0 0 0</td><td>248</td></tr><tr><td>AND＝ネットワークアドレス</td><td>0 0 1 0 1 0 0 0</td><td>40</td></tr><tr><td>ホスト部を全部1＝ブロードキャスト</td><td>0 0 1 0 1 1 1 1</td><td>47</td></tr></tbody></table></div>
+<p>使えるホストは.41〜.46の6個（2の3乗−2）。</p>
+<h4 id='s27'>例2：172.30.123.45、マスク255.255.252.0（R5秋と同じ形）</h4>
+<p>マスクは/22。ホスト部は10ビット。第3オクテットにマスクがかかる（252）ので、区切りの大きさは256−252＝4。</p>
+<div class='tw'><table><thead><tr><th>項目</th><th>第3オクテットの2進数</th><th>10進数</th></tr></thead><tbody><tr><td>IPアドレス</td><td>0 1 1 1 1 0 1 1</td><td>123</td></tr><tr><td>マスク</td><td>1 1 1 1 1 1 0 0</td><td>252</td></tr><tr><td>AND</td><td>0 1 1 1 1 0 0 0</td><td>120</td></tr></tbody></table></div>
+<p>ネットワークアドレスは172.30.120.0。ブロードキャストは172.30.123.255。使えるホストは2の10乗−2＝1,022個。</p>
+<h4 id='s31'>例3：伝送時間（R5秋と同じ形）</h4>
+<p>100Mビット/秒のLANで、1,000バイトの電文を1,000件送る。1,000×1,000×8＝800万ビット。800万÷1億＝0.08秒。</p>
+<h4 id='s33'>例4：必要な回線速度（R6秋と同じ形）</h4>
+<p>1Mバイトを5秒以内に送る。1,000,000×8＝800万ビット。800万÷5秒＝160万ビット/秒。1.6Mビット/秒以上の回線を選ぶ。</p>
+<h4 id='s35'>例5：ビット誤り率（R6春とR7秋に同じ数値で出題）</h4>
+<p>ビット誤り率0.0001%、1,500バイトのパケットを10,000個送る。</p>
+<ol><li>1パケットは1,500×8＝12,000ビット。</li><li>0.0001%は100万分の1。</li><li>1パケットが誤る確率は12,000÷100万＝0.012。</li><li>誤りを含むパケットは10,000×0.012＝約120個。</li></ol>
 <h3 id='quiz'>4. 思い出しクイズ</h3>
-<details class='qa'><summary><b>Q1</b> UDPのヘッダーになく、TCPのヘッダーにある情報は</summary><p>シーケンス番号（確認応答番号、ウィンドウサイズ）</p></details><details class='qa'><summary><b>Q2</b> 確認応答も順序制御もしないプロトコルは</summary><p>UDP</p></details><details class='qa'><summary><b>Q3</b> データ転送用と制御用でポートが分かれているプロトコルは</summary><p>FTP</p></details><details class='qa'><summary><b>Q4</b> /29で使えるホストアドレスの数は</summary><p>6個（8−2）</p></details><details class='qa'><summary><b>Q5</b> 192.168.16.40/29のブロードキャストアドレスは</summary><p>192.168.16.47</p></details><details class='qa'><summary><b>Q6</b> 172.30.123.45、マスク255.255.252.0のネットワークアドレスは</summary><p>172.30.120.0</p></details><details class='qa'><summary><b>Q7</b> 100Mビット/秒で8Mバイトを送る時間は（効率100%）</summary><p>0.64秒（6,400万÷1億）</p></details><details class='qa'><summary><b>Q8</b> 1Mバイトを5秒以内に送るのに必要な最低速度は</summary><p>1.6Mビット/秒</p></details><details class='qa'><summary><b>Q9</b> 伝送時間の計算でまずすることは</summary><p>バイトをビットに直す（×8）</p></details><details class='qa'><summary><b>Q10</b> IPアドレスからMACアドレスを調べるプロトコルは</summary><p>ARP</p></details><details class='qa'><summary><b>Q11</b> NAPTのルータが外向きの通信で書き換える2つは</summary><p>送信元IPアドレスと送信元ポート番号</p></details><details class='qa'><summary><b>Q12</b> ARPの問合せはユニキャストかブロードキャストか</summary><p>ブロードキャスト</p></details><details class='qa'><summary><b>Q13</b> 0.0001%を小数で表すと</summary><p>0.000001（100万分の1）</p></details><details class='qa'><summary><b>Q14</b> 1,500バイトのパケットは何ビットか</summary><p>12,000ビット</p></details><details class='qa'><summary><b>Q15</b> 誤り率0.0001%で1,500バイトを10,000個送ると、誤りを含むパケットは約何個</summary><p>約120個</p></details><details class='qa'><summary><b>Q16</b> ルータを冗長化するプロトコルは</summary><p>VRRP</p></details><details class='qa'><summary><b>Q17</b> L2スイッチのフレームのループを防ぐプロトコルは</summary><p>スパニングツリープロトコル（STP）</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>
+<details class='qa'><summary><b>Q1</b> UDPのヘッダーになく、TCPのヘッダーにある情報は</summary><p>シーケンス番号（確認応答番号、ウィンドウサイズ）</p></details><details class='qa'><summary><b>Q2</b> 確認応答も順序制御もしないプロトコルは</summary><p>UDP</p></details><details class='qa'><summary><b>Q3</b> データ転送用と制御用でポートが分かれているプロトコルは</summary><p>FTP</p></details><details class='qa'><summary><b>Q4</b> TCPがコネクションを作る3段階のやり取りは</summary><p>3ウェイハンドシェイク（SYN、SYN+ACK、ACK）</p></details><details class='qa'><summary><b>Q5</b> /29で使えるホストアドレスの数は</summary><p>6個（8−2）</p></details><details class='qa'><summary><b>Q6</b> 192.168.16.40/29のブロードキャストアドレスは</summary><p>192.168.16.47</p></details><details class='qa'><summary><b>Q7</b> 172.30.123.45、マスク255.255.252.0のネットワークアドレスは</summary><p>172.30.120.0</p></details><details class='qa'><summary><b>Q8</b> マスク255.255.252.0の区切りの大きさは</summary><p>4（256−252）</p></details><details class='qa'><summary><b>Q9</b> 100Mビット/秒で8Mバイトを送る時間は（効率100%）</summary><p>0.64秒（6,400万÷1億）</p></details><details class='qa'><summary><b>Q10</b> 1Mバイトを5秒以内に送るのに必要な最低速度は</summary><p>1.6Mビット/秒</p></details><details class='qa'><summary><b>Q11</b> 伝送時間の計算でまずすることは</summary><p>バイトをビットに直す（×8）</p></details><details class='qa'><summary><b>Q12</b> 0.0001%を小数で表すと</summary><p>0.000001（100万分の1）</p></details><details class='qa'><summary><b>Q13</b> 1,500バイトのパケットは何ビットか</summary><p>12,000ビット</p></details><details class='qa'><summary><b>Q14</b> 誤り率0.0001%で1,500バイトを10,000個送ると、誤りを含むパケットは約何個</summary><p>約120個</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

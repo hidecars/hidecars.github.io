@@ -1,4 +1,4 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA</title><style>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ</title><style>
 :root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
 body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
@@ -22,26 +22,87 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
-</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s3'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
-<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。</p>
-<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>インシデント管理と問題管理</td><td>15回中7回</td><td>R3秋・R4秋・R7秋</td></tr><tr><td>2</td><td>可用性（稼働率）の計算</td><td>15回中5回</td><td>R5秋・R7秋</td></tr><tr><td>3</td><td>バックアップ（フル・差分・増分）</td><td>15回中6回</td><td>R3秋・R5秋</td></tr><tr><td>4</td><td>RPO・RTO・RLO</td><td>15回中3回</td><td>R6秋</td></tr><tr><td>5</td><td>サービスレベル管理と是正処置</td><td>15回中7回</td><td>R5秋・R6秋・R6春</td></tr></tbody></table></div>
-<h3 id='s3'>2. 核心：用語ごとの判断ルール</h3>
-<h4 id='s4'>1. インシデント管理と問題管理</h4>
-<p>インシデント管理は、サービスをできるだけ早く元に戻す活動。問題管理は、インシデントの根本原因を突き止めて、再発を防ぐ活動。</p>
-<ul><li>インシデント管理：回避策（ワークアラウンド）を使ってでも、まずサービスを復旧させる。</li><li>問題管理：根本原因を特定する。根本原因が特定されているか、回避策がある問題を「既知の誤り」として記録する。恒久的な解決は変更管理を通して実施する。</li><li>問題管理は、インシデントが起きる前の予防的な活動（傾向分析）も含む。</li><li>FTA（故障の木解析）：望ましくない事象を頂点に置き、その原因を木の形で下へ分解して分析する（R7秋）。</li><li>誤り：「問題管理の目的は、サービスを迅速に復旧すること」は誤り。それはインシデント管理。</li></ul>
-<h4 id='s7'>2. 可用性（稼働率）の計算</h4>
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、取り違えやすい用語と、計算の手順を図で押さえる3テーマ。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>インシデント管理と問題管理</td><td>15回中7回</td><td>R3秋・R4秋・R7秋</td></tr><tr><td>2</td><td>可用性（稼働率）の計算</td><td>15回中5回</td><td>R5秋・R7秋</td></tr><tr><td>3</td><td>バックアップ（フル・差分・増分）</td><td>15回中6回</td><td>R3秋・R5秋</td></tr></tbody></table></div>
+<p>音声では、図や式は読み上げず、考え方を言葉で説明する。数字を目で追いたいところは、この記事の図と表を開きながら聞くとよい。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. インシデント管理と問題管理</h4>
+<p>インシデント管理は、サービスをできるだけ早く元に戻す活動。問題管理は、インシデントの根本原因を突き止めて、再発を防ぐ活動。「止まったサービスを戻す」のと「二度と止まらないようにする」のは別の活動、という区別が問われる。</p>
+<figure><svg class="dg" viewBox="0 0 360 406" role="img" aria-label="インシデント管理と問題管理" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">インシデント管理と問題管理</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="200.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="213.0" class="dg-lbl" text-anchor="middle">原因調査</text>
+<line x1="180.0" y1="290.0" x2="93.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="267.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box risk"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">障害（インシデント）発生</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">インシデント管理</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">回避策を使ってでも、まず復旧</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">問題管理</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">根本原因を特定して再発を防ぐ</text>
+<rect x="12.0" y="336.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="363.0" class="dg-txt" text-anchor="middle">既知の誤り</text>
+<text x="93.0" y="385.0" class="dg-sub" text-anchor="middle">原因判明 or 回避策あり</text>
+<rect x="186.0" y="336.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="363.0" class="dg-txt" text-anchor="middle">変更管理</text>
+<text x="267.0" y="385.0" class="dg-sub" text-anchor="middle">恒久対策を実施</text>
+</svg><figcaption>インシデント管理と問題管理の流れ</figcaption></figure>
+<ul><li>インシデント管理：回避策（ワークアラウンド）を使ってでも、まずサービスを復旧させる。</li><li>問題管理：根本原因を特定する。根本原因が特定されているか、回避策がある問題を「既知の誤り」として記録する。恒久的な解決は変更管理を通して実施する。</li><li>問題管理は、インシデントが起きる前の予防的な活動（傾向分析）も含む。</li><li>FTA（故障の木解析）：望ましくない事象を頂点に置き、その原因を木の形で下へ分解して分析する（R7秋）。</li><li>補足：たとえば、水漏れで床がぬれたら、まず雑巾で拭いて使えるようにする（インシデント管理）。その後、元の水道管を直す（問題管理）。</li><li>誤り：「問題管理の目的は、サービスを迅速に復旧すること」は誤り。それはインシデント管理。</li></ul>
+<h4 id='s9'>2. 可用性（稼働率）の計算</h4>
 <p>稼働率は、全体の時間のうちサービスが使える時間の割合。</p>
-<ul><li>稼働率＝MTBF÷（MTBF＋MTTR）。MTBFは平均故障間隔、MTTRは平均修復時間。</li><li>直列（どちらも動く必要がある）：稼働率A×稼働率B。</li><li>並列（どちらか一方が動けばよい）：1−（1−A）×（1−B）。</li><li>許容停止時間＝サービス提供時間×（1−目標稼働率）。</li><li>誤り：並列を「A＋B」と足す誤り。</li></ul>
-<h4 id='s10'>3. バックアップ（フル・差分・増分）</h4>
+<figure><svg class="dg" viewBox="0 0 360 414" role="img" aria-label="稼働率：直列と並列（装置2台・各0.9）" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">稼働率：直列と並列（装置2台・各0.9）</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="174.0" y1="164.0" x2="186.0" y2="164.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="169.5" y="155.0" width="21" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="168.0" class="dg-lbl" text-anchor="middle">→</text>
+<line x1="180.0" y1="290.0" x2="93.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">直列</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">両方動く必要：0.9×0.9＝0.81</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">装置A 0.9</text>
+<rect x="186.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">装置B 0.9</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">並列</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">どちらか動けばよい：1−0.1×0.1＝0.99</text>
+<rect x="12.0" y="336.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="363.0" class="dg-txt" text-anchor="middle">装置A 0.9</text>
+<rect x="186.0" y="336.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="267.0" y="363.0" class="dg-txt" text-anchor="middle">装置B 0.9</text>
+<text x="12" y="402.0" class="dg-note">稼働率＝MTBF÷(MTBF＋MTTR)</text>
+</svg><figcaption>直列と並列の稼働率</figcaption></figure>
+<ul><li>稼働率＝MTBF÷（MTBF＋MTTR）。MTBFは平均故障間隔、MTTRは平均修復時間。</li><li>直列（どちらも動く必要がある）：稼働率A×稼働率B。</li><li>並列（どちらか一方が動けばよい）：1−（1−A）×（1−B）。</li><li>許容停止時間＝サービス提供時間×（1−目標稼働率）。</li><li>補足：並列は「両方止まる確率」を1から引くと考える。装置1台が止まる確率は 1−稼働率。</li><li>誤り：並列を「A＋B」と足す誤り。</li></ul>
+<div class='tw'><table><thead><tr><th>構成</th><th>稼働率0.9の装置2台</th><th>考え方</th></tr></thead><tbody><tr><td>直列</td><td>0.9×0.9＝0.81</td><td>両方動く必要があるので下がる</td></tr><tr><td>並列</td><td>1−0.1×0.1＝0.99</td><td>両方止まったときだけ止まるので上がる</td></tr></tbody></table></div>
+<h4 id='s14'>3. バックアップ（フル・差分・増分）</h4>
 <p>バックアップの方式は3つ。復元に必要なものと、1回の取得量が違う。</p>
-<ul><li>フルバックアップ：全データを毎回取る。復元はそれ1つで済む。</li><li>差分バックアップ：前回のフルバックアップ以降に変わったデータを取る。日がたつほど量が増える。復元は「フル＋最新の差分1つ」。</li><li>増分バックアップ：前回のバックアップ（フルでも増分でも）以降に変わったデータを取る。量は少ない。復元は「フル＋それ以降のすべての増分」で、時間がかかる。</li><li>誤り：差分と増分の取り違え。「前回のフル以降」が差分、「前回のバックアップ以降」が増分。</li></ul>
-<h4 id='s13'>4. RPO・RTO・RLO</h4>
-<p>サービスやデータを復旧するときの3つの目標。</p>
-<ul><li>RPO（目標復旧時点）：どの時点のデータまで戻すか。例：障害の1時間前までのデータを復旧する。</li><li>RTO（目標復旧時間）：障害からどれだけの時間で復旧するか。例：4時間以内に再開する。</li><li>RLO（目標復旧レベル）：どの水準まで復旧するか。例：通常の50%の処理能力で再開する。</li><li>RPOを短くするには、バックアップの取得間隔を短くする。</li><li>誤り：RPOとRTOの取り違え。RPOは「データの時点」、RTOは「かかる時間」。</li></ul>
-<h4 id='s16'>5. サービスレベル管理と是正処置</h4>
-<p>サービスレベル管理は、顧客とサービスの目標（SLA）を合意し、実績を監視・報告・レビューする活動。</p>
-<ul><li>SLA：サービス提供者と顧客の間で合意した、サービスの内容と目標値（稼働率、応答時間など）。</li><li>サービスレベル管理の活動：目標に対する実績を監視し、顧客に報告し、定期的にレビューする（R6春）。</li><li>是正処置：不適合の原因を取り除き、再発を防ぐ処置（R5秋）。</li><li>修正：見つかった不適合そのものを取り除く処置。是正処置とは別。</li><li>誤り：是正処置と修正の取り違え。「原因を除去して再発防止」が是正処置。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 316" role="img" aria-label="バックアップ3方式と復元" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">バックアップ3方式と復元</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">フル</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">全部。復元はこれ1つ</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">差分</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">前回のフル以降。復元＝フル＋最新の差分</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">増分</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">前回のバックアップ以降。復元＝フル＋全部の増分</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">取得量・復元時間のちがい</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">差分は日ごとに増える／増分は少ないが復元に手間</text>
+</svg><figcaption>3つのバックアップ方式と復元に必要なもの</figcaption></figure>
+<ul><li>フルバックアップ：全データを毎回取る。復元はそれ1つで済む。</li><li>差分バックアップ：前回のフルバックアップ以降に変わったデータを取る。日がたつほど量が増える。復元は「フル＋最新の差分1つ」。</li><li>増分バックアップ：前回のバックアップ（フルでも増分でも）以降に変わったデータを取る。量は少ない。復元は「フル＋それ以降のすべての増分」で、時間がかかる。</li><li>補足：覚え方は、差分＝「フルとの差」（毎回フルから見た違い）、増分＝「前回からの増えた分」。</li><li>誤り：差分と増分の取り違え。「前回のフル以降」が差分、「前回のバックアップ以降」が増分。</li></ul>
+<div class='tw'><table><thead><tr><th>日</th><th>日曜</th><th>月曜</th><th>火曜</th><th>水曜</th><th>木曜朝に障害 → 復元に使うもの</th></tr></thead><tbody><tr><td>差分方式</td><td>フル</td><td>月の分</td><td>月＋火の分</td><td>月＋火＋水の分</td><td>日曜のフル＋水曜の差分（2つ）</td></tr><tr><td>増分方式</td><td>フル</td><td>月の分</td><td>火の分</td><td>水の分</td><td>日曜のフル＋月・火・水の増分（4つ）</td></tr></tbody></table></div>
 <h3 id='s19'>3. 数値例</h3>
-<ul><li>例1：稼働率0.9の装置2台。直列は0.9×0.9＝0.81。並列は1−0.1×0.1＝0.99。</li><li>例2：30日×24時間＝720時間のサービスで、目標稼働率99.5%。許容停止時間は720×0.005＝3.6時間。</li><li>例3：MTBF 450時間、MTTR 50時間。稼働率は450÷500＝0.9。</li><li>例：日曜にフル、月〜水に差分を取り、木曜朝に障害。復元に使うのは「日曜のフル＋水曜の差分」の2つ。増分なら「日曜のフル＋月・火・水の増分」の4つ。</li></ul>
+<ul><li>例1：稼働率0.9の装置2台。直列は0.9×0.9＝0.81。並列は1−0.1×0.1＝0.99。</li><li>例2：30日×24時間＝720時間のサービスで、目標稼働率99.5%。許容停止時間は720×0.005＝3.6時間。</li><li>例3：MTBF 450時間、MTTR 50時間。稼働率は450÷500＝0.9。</li><li>例4：日曜にフル、月〜水に差分を取り、木曜朝に障害。復元に使うのは「日曜のフル＋水曜の差分」の2つ。増分なら「日曜のフル＋月・火・水の増分」の4つ。</li></ul>
 <h3 id='quiz'>4. 思い出しクイズ</h3>
-<details class='qa'><summary><b>Q1</b> 根本原因を特定し再発を防ぐプロセスは</summary><p>問題管理</p></details><details class='qa'><summary><b>Q2</b> 根本原因が特定されているか回避策がある問題を何という</summary><p>既知の誤り</p></details><details class='qa'><summary><b>Q3</b> 望ましくない事象から原因を木の形で分解する手法は</summary><p>FTA</p></details><details class='qa'><summary><b>Q4</b> 稼働率0.9の装置を2台並列にした稼働率は</summary><p>0.99</p></details><details class='qa'><summary><b>Q5</b> MTBF 900時間、MTTR 100時間の稼働率は</summary><p>0.9</p></details><details class='qa'><summary><b>Q6</b> 720時間で目標99%のとき許容停止時間は</summary><p>7.2時間</p></details><details class='qa'><summary><b>Q7</b> 差分バックアップの復元に必要なものは</summary><p>フル＋最新の差分1つ</p></details><details class='qa'><summary><b>Q8</b> 前回のバックアップ以降の変更だけを取る方式は</summary><p>増分バックアップ</p></details><details class='qa'><summary><b>Q9</b> 差分と増分で、毎回の取得量が日ごとに増えるのは</summary><p>差分</p></details><details class='qa'><summary><b>Q10</b> 「障害発生の1時間前のデータまで戻す」はどの指標</summary><p>RPO</p></details><details class='qa'><summary><b>Q11</b> 「4時間以内にサービスを再開する」はどの指標</summary><p>RTO</p></details><details class='qa'><summary><b>Q12</b> 「通常の50%の能力で再開する」はどの指標</summary><p>RLO</p></details><details class='qa'><summary><b>Q13</b> 不適合の原因を除去し再発を防ぐ処置は</summary><p>是正処置</p></details><details class='qa'><summary><b>Q14</b> サービスの目標値を顧客と合意した文書は</summary><p>SLA</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>
+<details class='qa'><summary><b>Q1</b> 根本原因を特定し再発を防ぐプロセスは</summary><p>問題管理</p></details><details class='qa'><summary><b>Q2</b> まず復旧を優先し、回避策も使うプロセスは</summary><p>インシデント管理</p></details><details class='qa'><summary><b>Q3</b> 根本原因が特定されているか回避策がある問題を何という</summary><p>既知の誤り</p></details><details class='qa'><summary><b>Q4</b> 望ましくない事象から原因を木の形で分解する手法は</summary><p>FTA</p></details><details class='qa'><summary><b>Q5</b> 稼働率0.9の装置を2台並列にした稼働率は</summary><p>0.99</p></details><details class='qa'><summary><b>Q6</b> 稼働率0.9の装置を2台直列にした稼働率は</summary><p>0.81</p></details><details class='qa'><summary><b>Q7</b> MTBF 900時間、MTTR 100時間の稼働率は</summary><p>0.9</p></details><details class='qa'><summary><b>Q8</b> 720時間で目標99%のとき許容停止時間は</summary><p>7.2時間</p></details><details class='qa'><summary><b>Q9</b> 差分バックアップの復元に必要なものは</summary><p>フル＋最新の差分1つ</p></details><details class='qa'><summary><b>Q10</b> 前回のバックアップ以降の変更だけを取る方式は</summary><p>増分バックアップ</p></details><details class='qa'><summary><b>Q11</b> 差分と増分で、毎回の取得量が日ごとに増えるのは</summary><p>差分</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM</title><style>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性</title><style>
 :root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
 body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
@@ -22,24 +22,95 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
-</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s3'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
-<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。</p>
-<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>CSIRT・PSIRT・JVN・CVE・CVSS</td><td>15回中8回</td><td>R3秋・R4秋・R5秋・R6秋・R6春・R7秋</td></tr><tr><td>2</td><td>サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート</td><td>15回中7回</td><td>R3秋・R4秋・R5秋・R6春・R7秋</td></tr><tr><td>3</td><td>JIS Q 27000の情報セキュリティの特性</td><td>15回中5回</td><td>R3秋・R5秋・R7秋</td></tr><tr><td>4</td><td>WAFとWebアプリケーションへの攻撃・ファジング</td><td>15回中11回</td><td>R3秋・R4秋・R6春</td></tr><tr><td>5</td><td>SBOMとCSPM（R6秋・R7秋に連続出題）</td><td>15回中2回</td><td>R6秋・R7秋</td></tr></tbody></table></div>
-<h3 id='s3'>2. 核心：用語ごとの判断ルール</h3>
-<h4 id='s4'>1. CSIRT・PSIRT・JVN・CVE・CVSS</h4>
-<p>脆弱性とインシデントに対応する組織と、脆弱性情報の共通の呼び方・評価方法。</p>
-<ul><li>CSIRT：組織内で発生したセキュリティインシデントに対応するチーム。</li><li>PSIRT：自社が開発・販売する製品の脆弱性に対応するチーム。「自社製品の脆弱性」と出たらPSIRT。</li><li>JVN：日本で使われているソフトウェア製品の脆弱性情報と対策を公開するポータルサイト。JPCERT/CCとIPAが共同で運営する。</li><li>CVE：個々の脆弱性に付ける一意の識別番号（CVE-年-連番）。</li><li>CVSS：脆弱性の深刻度を数値で評価する方法。過去問では「基本評価基準・現状評価基準・環境評価基準の三つ」で出題された（CVSS v3の区分）。</li><li>誤り：CVEとCVSSの取り違え。CVEは「識別番号」、CVSSは「深刻度の評価」。</li></ul>
-<h4 id='s7'>2. サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート</h4>
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、用語どうしの取り違えを防ぐために「誰の何か」を整理する3テーマ。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>CSIRT・PSIRT・JVN・CVE・CVSS</td><td>15回中8回</td><td>R3秋・R4秋・R5秋・R6秋・R6春・R7秋</td></tr><tr><td>2</td><td>サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート</td><td>15回中7回</td><td>R3秋・R4秋・R5秋・R6春・R7秋</td></tr><tr><td>3</td><td>JIS Q 27000の情報セキュリティの特性</td><td>15回中5回</td><td>R3秋・R5秋・R7秋</td></tr></tbody></table></div>
+<p>音声では、図の矢印は読み上げず流れを言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. CSIRT・PSIRT・JVN・CVE・CVSS</h4>
+<p>脆弱性とインシデントに対応する組織と、脆弱性情報の共通の呼び方・評価方法。5つとも英字3〜4文字で紛らわしいので、「組織」「情報サイト」「識別番号」「評価方法」の4種類に分けて覚える。</p>
+<figure><svg class="dg" viewBox="0 0 360 420" role="img" aria-label="脆弱性対応の用語：誰の何か" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">脆弱性対応の用語：誰の何か</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">対応</text>
+<line x1="180.0" y1="200.0" x2="93.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="214.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">番号を付ける</text>
+<line x1="180.0" y1="200.0" x2="267.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="207.5" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="227.0" class="dg-lbl" text-anchor="middle">評価</text>
+<line x1="93.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge dash" marker-end="url(#ah)"/>
+<rect x="104.0" y="318.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="331.0" class="dg-lbl" text-anchor="middle">情報を探す</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">組織</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">CSIRT＝社内の事故／PSIRT＝自社製品の穴</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">脆弱性</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">見つかった穴</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">CVE</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">識別番号</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">CVSS</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">深刻度の数値</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box dash"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">JVN</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">日本の情報サイト（JPCERT/CC・IPA）</text>
+</svg><figcaption>脆弱性対応に出てくる5つの用語（誰の何か）</figcaption></figure>
+<ul><li>CSIRT：組織内で発生したセキュリティインシデントに対応するチーム。</li><li>PSIRT：自社が開発・販売する製品の脆弱性に対応するチーム。「自社製品の脆弱性」と出たらPSIRT。</li><li>JVN：日本で使われているソフトウェア製品の脆弱性情報と対策を公開するポータルサイト。JPCERT/CCとIPAが共同で運営する。</li><li>CVE：個々の脆弱性に付ける一意の識別番号（CVE-年-連番）。</li><li>CVSS：脆弱性の深刻度を数値で評価する方法。過去問では「基本評価基準・現状評価基準・環境評価基準の三つ」で出題された（CVSS v3の区分）。</li><li>補足：CVEで「どの脆弱性か」を特定し、CVSSで「どれくらい危ないか」を数値にし、JVNで日本語の情報を調べる。自社の中ではCSIRTが事故に、PSIRTが自社製品の穴に対応する。</li><li>誤り：CVEとCVSSの取り違え。CVEは「識別番号」、CVSSは「深刻度の評価」。</li></ul>
+<h4 id='s9'>2. サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート</h4>
 <p>機器の物理的な性質を突く攻撃と、それを防ぐハードウェア側の対策。</p>
-<ul><li>サイドチャネル攻撃：暗号処理中の処理時間・消費電力・電磁波などを測定し、秘密鍵などの内部情報を推測する。</li><li>耐タンパ性：内部の情報を不正に読み出されにくい性質。例：ICカードを分解しようとすると内部の情報が消える仕組み。</li><li>TPM：鍵の生成・保管と暗号処理を行うセキュリティチップ。鍵をチップの外に出さない。</li><li>セキュアブート：起動時にOSのローダーなどのデジタル署名を検証し、改ざんされたソフトウェアを起動させない。</li><li>誤り：「ネットワークを盗聴して鍵を得る」はサイドチャネル攻撃ではない。サイドチャネルは「処理時間・消費電力・電磁波」の測定。</li></ul>
-<h4 id='s10'>3. JIS Q 27000の情報セキュリティの特性</h4>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="起動の信頼の連鎖とサイドチャネル" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">起動の信頼の連鎖とサイドチャネル</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="110.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">鍵・署名</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="350.0" x2="180.0" y2="96.0" class="dg-edge dash" marker-end="url(#ah)"/>
+<rect x="164.0" y="214.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">狙う</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">TPM</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">鍵を外に出さず保管</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">セキュアブート</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">起動時にOSローダーの署名を検証</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">OS・ソフト</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">改ざんされていなければ起動</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">サイドチャネル攻撃</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">処理時間・消費電力・電磁波から鍵を推測</text>
+<text x="12" y="430.0" class="dg-note">防ぐ性質＝耐タンパ性（分解・読み出しに強い）</text>
+</svg><figcaption>起動時の信頼の連鎖（TPMとセキュアブート）とサイドチャネル攻撃</figcaption></figure>
+<ul><li>サイドチャネル攻撃：暗号処理中の処理時間・消費電力・電磁波などを測定し、秘密鍵などの内部情報を推測する。暗号の数式を破るのではなく、「機械の様子」から推測する。</li><li>耐タンパ性：内部の情報を不正に読み出されにくい性質。例：ICカードを分解しようとすると内部の情報が消える仕組み。</li><li>TPM：鍵の生成・保管と暗号処理を行うセキュリティチップ。鍵をチップの外に出さない。</li><li>セキュアブート：起動時にOSのローダーなどのデジタル署名を検証し、改ざんされたソフトウェアを起動させない。</li><li>誤り：「ネットワークを盗聴して鍵を得る」はサイドチャネル攻撃ではない。サイドチャネルは「処理時間・消費電力・電磁波」の測定。</li></ul>
+<h4 id='s13'>3. JIS Q 27000の情報セキュリティの特性</h4>
 <p>JIS Q 27000:2019の情報セキュリティの定義では、機密性・完全性・可用性の3要素に加えて、真正性・責任追跡性・否認防止・信頼性の4つの特性が挙げられている。</p>
-<ul><li>機密性：認可されていない個人・エンティティ・プロセスに、情報を使用させず、開示しない特性。</li><li>完全性：正確さ及び完全さの特性。</li><li>可用性：認可されたエンティティが要求したときに、アクセス及び使用が可能である特性。</li><li>真正性：エンティティは、それが主張するとおりのものであるという特性。</li><li>信頼性：意図する行動と結果が一貫しているという特性。</li><li>否認防止：主張された事象又は処置の発生、及びそれを引き起こしたエンティティを証明する能力。</li><li>責任追跡性：ある活動を誰が行ったかを、後から追跡できること。</li><li>誤り：真正性と信頼性の取り違え。「主張するとおり」は真正性、「意図する行動と結果が一貫」は信頼性。</li></ul>
-<h4 id='s13'>4. WAFとWebアプリケーションへの攻撃・ファジング</h4>
-<p>WAFは、Webアプリケーションへの通信の中身を検査し、攻撃を遮断する仕組み。</p>
-<ul><li>WAFが防げる攻撃：SQLインジェクション、クロスサイトスクリプティング（XSS）など、HTTPの中身に攻撃が含まれるもの。</li><li>ファイアウォールはIPアドレスとポート番号で通信を制御する。HTTPの中身は見ない。</li><li>SQLインジェクション：入力欄にSQL文の一部を入れて、データベースを不正に操作する。対策はプレースホルダ（バインド機構）。</li><li>XSS：Webページに悪意のあるスクリプトを埋め込み、閲覧者のブラウザで実行させる。対策は出力時のエスケープ処理。</li><li>ファジング：予期しないデータ（ファズ）を大量に入力して、ソフトウェアの脆弱性を見つける検査手法。</li><li>誤り：「WAFはIPアドレスとポート番号だけで通信を制御する」は誤り。それはファイアウォール。WAFはHTTPの中身を検査する。</li></ul>
-<h4 id='s16'>5. SBOMとCSPM（R6秋・R7秋に連続出題）</h4>
-<p>ソフトウェアとクラウドの「中身と設定」を把握・管理するための新しい仕組み。</p>
-<ul><li>SBOM（ソフトウェア部品表）：ソフトウェアを構成するコンポーネント（OSSを含む）の名前・バージョン・依存関係・ライセンスの一覧。新しい脆弱性が公表されたとき、影響を受ける製品をすぐ特定できる。</li><li>CSPM：クラウドサービスの設定を継続的に点検し、設定ミスや設定の不備を検出して是正する仕組み。</li><li>似た用語：CASBは、社員のクラウドサービス利用を可視化・制御する仕組み。</li><li>誤り：SBOMとCSPMの取り違え。部品の一覧はSBOM、クラウドの設定点検はCSPM。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="情報セキュリティの3要素＋4つの特性" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">情報セキュリティの3要素＋4つの特性</text>
+<rect x="12.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="64.0" y="65.0" class="dg-txt" text-anchor="middle">機密性</text>
+<text x="64.0" y="87.0" class="dg-sub" text-anchor="middle">見せない</text>
+<rect x="128.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">完全性</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">正確・完全</text>
+<rect x="244.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="296.0" y="65.0" class="dg-txt" text-anchor="middle">可用性</text>
+<text x="296.0" y="87.0" class="dg-sub" text-anchor="middle">使いたいとき使える</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">真正性</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">本物</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">責任追跡性</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">誰が追える</text>
+<rect x="12.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="273.0" class="dg-txt" text-anchor="middle">否認防止</text>
+<text x="93.0" y="295.0" class="dg-sub" text-anchor="middle">やっていないと言わせない</text>
+<rect x="186.0" y="246.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="273.0" class="dg-txt" text-anchor="middle">信頼性</text>
+<text x="267.0" y="295.0" class="dg-sub" text-anchor="middle">行動と結果が一貫</text>
+<text x="12" y="326.0" class="dg-note">上段＝基本の3要素／中・下段＝追加の4特性</text>
+</svg><figcaption>情報セキュリティの3要素と4つの特性</figcaption></figure>
+<ul><li>機密性：認可されていない個人・エンティティ・プロセスに、情報を使用させず、開示しない特性。</li><li>完全性：正確さ及び完全さの特性。</li><li>可用性：認可されたエンティティが要求したときに、アクセス及び使用が可能である特性。</li><li>真正性：エンティティは、それが主張するとおりのものであるという特性。</li><li>信頼性：意図する行動と結果が一貫しているという特性。</li><li>否認防止：主張された事象又は処置の発生、及びそれを引き起こしたエンティティを証明する能力。</li><li>責任追跡性：ある活動を誰が行ったかを、後から追跡できること。</li><li>補足：「なりすまされていないか」は真正性、「あとで『やっていない』と言わせない」は否認防止、「誰がやったか追える」は責任追跡性、と場面で見分ける。</li><li>誤り：真正性と信頼性の取り違え。「主張するとおり」は真正性、「意図する行動と結果が一貫」は信頼性。</li></ul>
+<div class='tw'><table><thead><tr><th>特性</th><th>ひとことで</th><th>キーワード</th></tr></thead><tbody><tr><td>機密性</td><td>見せない</td><td>認可されていない者に開示しない</td></tr><tr><td>完全性</td><td>正確・完全</td><td>改ざんされない</td></tr><tr><td>可用性</td><td>使いたいとき使える</td><td>要求したときにアクセスできる</td></tr><tr><td>真正性</td><td>本物</td><td>主張するとおりのもの</td></tr><tr><td>責任追跡性</td><td>誰がやったか追える</td><td>活動の主体を後から追跡</td></tr><tr><td>否認防止</td><td>「やっていない」と言わせない</td><td>事象と実行者を証明できる</td></tr><tr><td>信頼性</td><td>一貫している</td><td>意図する行動と結果が一貫</td></tr></tbody></table></div>
 <h3 id='quiz'>3. 思い出しクイズ</h3>
-<details class='qa'><summary><b>Q1</b> 自社製品の脆弱性に対応する社内機能は</summary><p>PSIRT</p></details><details class='qa'><summary><b>Q2</b> 脆弱性に付ける一意の識別番号は</summary><p>CVE</p></details><details class='qa'><summary><b>Q3</b> 基本・現状・環境の三つの基準で深刻度を評価するのは</summary><p>CVSS</p></details><details class='qa'><summary><b>Q4</b> 消費電力や処理時間から秘密鍵を推測する攻撃は</summary><p>サイドチャネル攻撃</p></details><details class='qa'><summary><b>Q5</b> 起動時に署名を検証し、改ざんされたソフトを起動させない仕組みは</summary><p>セキュアブート</p></details><details class='qa'><summary><b>Q6</b> 鍵を外に出さずに保管・暗号処理するチップは</summary><p>TPM</p></details><details class='qa'><summary><b>Q7</b> 「認可されていない者に情報を開示しない特性」は</summary><p>機密性</p></details><details class='qa'><summary><b>Q8</b> 「エンティティが主張するとおりのものである特性」は</summary><p>真正性</p></details><details class='qa'><summary><b>Q9</b> 「意図する行動と結果が一貫している特性」は</summary><p>信頼性</p></details><details class='qa'><summary><b>Q10</b> WAFによる防御が有効な攻撃の例を2つ</summary><p>SQLインジェクション、クロスサイトスクリプティング</p></details><details class='qa'><summary><b>Q11</b> 予期しないデータを大量に入力して脆弱性を見つける手法は</summary><p>ファジング</p></details><details class='qa'><summary><b>Q12</b> SQLインジェクションの対策は</summary><p>プレースホルダ（バインド機構）</p></details><details class='qa'><summary><b>Q13</b> ソフトウェアの構成部品を一覧にしたものは</summary><p>SBOM</p></details><details class='qa'><summary><b>Q14</b> クラウドの設定ミスを継続的に検出する仕組みは</summary><p>CSPM</p></details><details class='qa'><summary><b>Q15</b> 脆弱性公表時にSBOMが役立つ理由は</summary><p>影響を受ける製品をすぐ特定できるから</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>
+<details class='qa'><summary><b>Q1</b> 自社製品の脆弱性に対応する社内機能は</summary><p>PSIRT</p></details><details class='qa'><summary><b>Q2</b> 組織内のインシデントに対応するチームは</summary><p>CSIRT</p></details><details class='qa'><summary><b>Q3</b> 日本の製品の脆弱性情報を公開するポータルサイトは</summary><p>JVN（JPCERT/CCとIPAが運営）</p></details><details class='qa'><summary><b>Q4</b> 脆弱性に付ける一意の識別番号は</summary><p>CVE</p></details><details class='qa'><summary><b>Q5</b> 基本・現状・環境の三つの基準で深刻度を評価するのは</summary><p>CVSS</p></details><details class='qa'><summary><b>Q6</b> 消費電力や処理時間から秘密鍵を推測する攻撃は</summary><p>サイドチャネル攻撃</p></details><details class='qa'><summary><b>Q7</b> 起動時に署名を検証し、改ざんされたソフトを起動させない仕組みは</summary><p>セキュアブート</p></details><details class='qa'><summary><b>Q8</b> 鍵を外に出さずに保管・暗号処理するチップは</summary><p>TPM</p></details><details class='qa'><summary><b>Q9</b> 分解されても内部の情報を読まれにくい性質は</summary><p>耐タンパ性</p></details><details class='qa'><summary><b>Q10</b> 「認可されていない者に情報を開示しない特性」は</summary><p>機密性</p></details><details class='qa'><summary><b>Q11</b> 「エンティティが主張するとおりのものである特性」は</summary><p>真正性</p></details><details class='qa'><summary><b>Q12</b> 「意図する行動と結果が一貫している特性」は</summary><p>信頼性</p></details><details class='qa'><summary><b>Q13</b> 「あとから『やっていない』と言わせない」能力は</summary><p>否認防止</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

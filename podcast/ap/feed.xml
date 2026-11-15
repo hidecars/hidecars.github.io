@@ -11,159 +11,299 @@
   <itunes:category text="Education"><itunes:category text="Courses"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:block>Yes</itunes:block>
-  <lastBuildDate>Thu, 12 Nov 2026 23:25:29 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 09:23:20 +0900</lastBuildDate>
   <item>
-    <title>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法</title>
-    <description><![CDATA[<p>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマとシラバス改訂の新用語1つ（アジャイル開発とスクラム、UMLの図、テスト技法、信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、中小受託取引適正化法）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】優先順位はプロダクトオーナー／下位の代わり＝スタブ／強度は高く・結合度は低く</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマとシラバス改訂の新用語1つ（アジャイル開発とスクラム、UMLの図、テスト技法、信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、中小受託取引適正化法）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】優先順位はプロダクトオーナー／下位の代わり＝スタブ／強度は高く・結合度は低く</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・情報システム開発】開発用語6テーマ アジャイル・UML・テスト技法・エラー埋込み法・モジュール・取適法（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマとシラバス改訂の新用語1つ（アジャイル開発とスクラム、UMLの図、テスト技法、信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、中小受託取引適正化法）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】優先順位はプロダクトオーナー／下位の代わり＝スタブ／強度は高く・結合度は低く
+    <title>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法</title>
+    <description><![CDATA[<p>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法（用語集）</p><p>【概要】信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、取適法に加えて、DevSecOps/CI/CD、マイクロサービスとコンテナ、IaCとリファクタリングを確認する。</p><p>【決め手キーワード】強度は高く・結合度は低く／埋込み発見率で割り戻す／コンテナはOSを共有</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法（用語集）</p><p>【概要】信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、取適法に加えて、DevSecOps/CI/CD、マイクロサービスとコンテナ、IaCとリファクタリングを確認する。</p><p>【決め手キーワード】強度は高く・結合度は低く／埋込み発見率で割り戻す／コンテナはOSを共有</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法（用語集）
+【概要】信頼度成長曲線とエラー埋込み法、モジュール強度と結合度、取適法に加えて、DevSecOps/CI/CD、マイクロサービスとコンテナ、IaCとリファクタリングを確認する。
+【決め手キーワード】強度は高く・結合度は低く／埋込み発見率で割り戻す／コンテナはOSを共有
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdevb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysdevb.m4a" length="6318895" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-sysdevb-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:43:00 +0900</pubDate>
+    <itunes:duration>00:12:37</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・システム開発①】アジャイル・UML・テスト技法</title>
+    <description><![CDATA[<p>【用語集・システム開発①】アジャイル・UML・テスト技法（用語集）</p><p>【概要】アジャイル開発とスクラム、UMLの図、テスト技法を、図と例で確認する。</p><p>【決め手キーワード】優先順位はプロダクトオーナー／インスタンス間はオブジェクト図／下位の代わりはスタブ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・システム開発①】アジャイル・UML・テスト技法（用語集）</p><p>【概要】アジャイル開発とスクラム、UMLの図、テスト技法を、図と例で確認する。</p><p>【決め手キーワード】優先順位はプロダクトオーナー／インスタンス間はオブジェクト図／下位の代わりはスタブ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・システム開発①】アジャイル・UML・テスト技法（用語集）
+【概要】アジャイル開発とスクラム、UMLの図、テスト技法を、図と例で確認する。
+【決め手キーワード】優先順位はプロダクトオーナー／インスタンス間はオブジェクト図／下位の代わりはスタブ
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sysdev.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysdev.m4a" length="10514586" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysdev.m4a" length="9749372" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-sysdev-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:37:00 +0900</pubDate>
-    <itunes:duration>00:20:59</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:42:00 +0900</pubDate>
+    <itunes:duration>00:19:30</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・システム監査】システム監査用語5テーマ 独立性・監査手続・フォローアップ・IT統制・監査調書</title>
-    <description><![CDATA[<p>【用語集・システム監査】システム監査用語5テーマ 独立性・監査手続・フォローアップ・IT統制・監査調書（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップ、ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】改善を実施するのは監査対象部門／ウォークスルー法＝生成から活用までたどる／アクセス管理は全般統制</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・システム監査】システム監査用語5テーマ 独立性・監査手続・フォローアップ・IT統制・監査調書（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップ、ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】改善を実施するのは監査対象部門／ウォークスルー法＝生成から活用までたどる／アクセス管理は全般統制</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・システム監査】システム監査用語5テーマ 独立性・監査手続・フォローアップ・IT統制・監査調書（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップ、ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】改善を実施するのは監査対象部門／ウォークスルー法＝生成から活用までたどる／アクセス管理は全般統制
+    <title>【用語集・システム監査②】統制・調書・新しい監査テーマ</title>
+    <description><![CDATA[<p>【用語集・システム監査②】統制・調書・新しい監査テーマ（用語集）</p><p>【概要】ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査に加えて、令和5年の基準改訂、生成AIガバナンス、アジャイル開発の監査、監査手続の基本を確認する。</p><p>【決め手キーワード】アクセス管理は全般統制／調書を作るのは監査人／生成AIはルール・遵守・出力確認</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・システム監査②】統制・調書・新しい監査テーマ（用語集）</p><p>【概要】ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査に加えて、令和5年の基準改訂、生成AIガバナンス、アジャイル開発の監査、監査手続の基本を確認する。</p><p>【決め手キーワード】アクセス管理は全般統制／調書を作るのは監査人／生成AIはルール・遵守・出力確認</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・システム監査②】統制・調書・新しい監査テーマ（用語集）
+【概要】ITに係る全般統制と業務処理統制、監査調書・監査証拠・予備調査に加えて、令和5年の基準改訂、生成AIガバナンス、アジャイル開発の監査、監査手続の基本を確認する。
+【決め手キーワード】アクセス管理は全般統制／調書を作るのは監査人／生成AIはルール・遵守・出力確認
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sysauditb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysauditb.m4a" length="9214734" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-sysauditb-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:41:00 +0900</pubDate>
+    <itunes:duration>00:18:24</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・システム監査①】基準・独立性・手続・フォローアップ</title>
+    <description><![CDATA[<p>【用語集・システム監査①】基準・独立性・手続・フォローアップ（用語集）</p><p>【概要】システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップを、監査の流れ図で確認する。</p><p>【決め手キーワード】改善を実施するのは監査対象部門／網羅性＝漏れ・重複なし／フォローアップは確認だけ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・システム監査①】基準・独立性・手続・フォローアップ（用語集）</p><p>【概要】システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップを、監査の流れ図で確認する。</p><p>【決め手キーワード】改善を実施するのは監査対象部門／網羅性＝漏れ・重複なし／フォローアップは確認だけ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・システム監査①】基準・独立性・手続・フォローアップ（用語集）
+【概要】システム監査基準と監査人の独立性、監査手続と監査技法、フォローアップを、監査の流れ図で確認する。
+【決め手キーワード】改善を実施するのは監査対象部門／網羅性＝漏れ・重複なし／フォローアップは確認だけ
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sysaudit.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysaudit.m4a" length="5468390" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sysaudit.m4a" length="7190179" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-sysaudit-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:36:00 +0900</pubDate>
-    <itunes:duration>00:10:55</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:40:00 +0900</pubDate>
+    <itunes:duration>00:14:21</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA</title>
-    <description><![CDATA[<p>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（インシデント管理と問題管理、可用性、バックアップ、RPO・RTO・RLO、サービスレベル管理と是正処置）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】問題管理＝根本原因と再発防止／並列＝1−(1−A)(1−B)／差分の復元＝フル＋最新の差分</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（インシデント管理と問題管理、可用性、バックアップ、RPO・RTO・RLO、サービスレベル管理と是正処置）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】問題管理＝根本原因と再発防止／並列＝1−(1−A)(1−B)／差分の復元＝フル＋最新の差分</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・サービスマネジメント】サービスマネジメント用語5テーマ 問題管理・稼働率・バックアップ・RPO/RTO・SLA（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（インシデント管理と問題管理、可用性、バックアップ、RPO・RTO・RLO、サービスレベル管理と是正処置）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】問題管理＝根本原因と再発防止／並列＝1−(1−A)(1−B)／差分の復元＝フル＋最新の差分
+    <title>【用語集・サービスマネジメント②】RPO/RTO・SLA・ITIL 4・SPOC</title>
+    <description><![CDATA[<p>【用語集・サービスマネジメント②】RPO/RTO・SLA・ITIL 4・SPOC（用語集）</p><p>【概要】RPO・RTO・RLO、サービスレベル管理と是正処置に加えて、ITIL 4、SPOC、標準変更、AIOpsを確認する。</p><p>【決め手キーワード】RPO＝データの時点・RTO＝かかる時間／是正処置と修正の違い／標準変更は事前承認</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・サービスマネジメント②】RPO/RTO・SLA・ITIL 4・SPOC（用語集）</p><p>【概要】RPO・RTO・RLO、サービスレベル管理と是正処置に加えて、ITIL 4、SPOC、標準変更、AIOpsを確認する。</p><p>【決め手キーワード】RPO＝データの時点・RTO＝かかる時間／是正処置と修正の違い／標準変更は事前承認</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・サービスマネジメント②】RPO/RTO・SLA・ITIL 4・SPOC（用語集）
+【概要】RPO・RTO・RLO、サービスレベル管理と是正処置に加えて、ITIL 4、SPOC、標準変更、AIOpsを確認する。
+【決め手キーワード】RPO＝データの時点・RTO＝かかる時間／是正処置と修正の違い／標準変更は事前承認
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemngb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-servicemngb.m4a" length="9731646" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-servicemngb-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:39:00 +0900</pubDate>
+    <itunes:duration>00:19:26</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ</title>
+    <description><![CDATA[<p>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ（用語集）</p><p>【概要】インシデント管理と問題管理、可用性（稼働率）の計算、バックアップ（フル・差分・増分）を、図と数値例で確認する。</p><p>【決め手キーワード】問題管理＝根本原因／並列＝1−(1−A)(1−B)／差分＝前回のフル以降</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ（用語集）</p><p>【概要】インシデント管理と問題管理、可用性（稼働率）の計算、バックアップ（フル・差分・増分）を、図と数値例で確認する。</p><p>【決め手キーワード】問題管理＝根本原因／並列＝1−(1−A)(1−B)／差分＝前回のフル以降</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・サービスマネジメント①】問題管理・稼働率・バックアップ（用語集）
+【概要】インシデント管理と問題管理、可用性（稼働率）の計算、バックアップ（フル・差分・増分）を、図と数値例で確認する。
+【決め手キーワード】問題管理＝根本原因／並列＝1−(1−A)(1−B)／差分＝前回のフル以降
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-servicemng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-servicemng.m4a" length="6317571" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-servicemng.m4a" length="7251079" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-servicemng-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:35:00 +0900</pubDate>
-    <itunes:duration>00:12:35</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:38:00 +0900</pubDate>
+    <itunes:duration>00:14:29</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・プロジェクトマネジメント】プロジェクトマネジメント用語6テーマ PMBOK・日程計算・短縮技法・EVM・リスク・WBS</title>
-    <description><![CDATA[<p>【用語集・プロジェクトマネジメント】プロジェクトマネジメント用語6テーマ PMBOK・日程計算・短縮技法・EVM・リスク・WBS（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（PMBOKガイドとプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキング、EVM、リスク対応と期待金額価値、WBSとスコープの管理）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】最早結合点時刻は最大値／SV＝EV−PV・CV＝EV−AC／保険は転嫁</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・プロジェクトマネジメント】プロジェクトマネジメント用語6テーマ PMBOK・日程計算・短縮技法・EVM・リスク・WBS（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（PMBOKガイドとプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキング、EVM、リスク対応と期待金額価値、WBSとスコープの管理）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】最早結合点時刻は最大値／SV＝EV−PV・CV＝EV−AC／保険は転嫁</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・プロジェクトマネジメント】プロジェクトマネジメント用語6テーマ PMBOK・日程計算・短縮技法・EVM・リスク・WBS（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（PMBOKガイドとプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキング、EVM、リスク対応と期待金額価値、WBSとスコープの管理）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】最早結合点時刻は最大値／SV＝EV−PV・CV＝EV−AC／保険は転嫁
+    <title>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理</title>
+    <description><![CDATA[<p>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理（用語集）</p><p>【概要】EVM、リスク対応と期待金額価値、WBSとスコープの管理に加えて、CCPM、バーンダウンチャートとベロシティ、スコープクリープ、ステークホルダーエンゲージメントを確認する。</p><p>【決め手キーワード】進捗はEVとPV／保険は転嫁／残作業÷ベロシティ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理（用語集）</p><p>【概要】EVM、リスク対応と期待金額価値、WBSとスコープの管理に加えて、CCPM、バーンダウンチャートとベロシティ、スコープクリープ、ステークホルダーエンゲージメントを確認する。</p><p>【決め手キーワード】進捗はEVとPV／保険は転嫁／残作業÷ベロシティ</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理（用語集）
+【概要】EVM、リスク対応と期待金額価値、WBSとスコープの管理に加えて、CCPM、バーンダウンチャートとベロシティ、スコープクリープ、ステークホルダーエンゲージメントを確認する。
+【決め手キーワード】進捗はEVとPV／保険は転嫁／残作業÷ベロシティ
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-projmngb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-projmngb.m4a" length="8402026" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-projmngb-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:37:00 +0900</pubDate>
+    <itunes:duration>00:16:47</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・プロジェクトマネジメント①】PMBOK・クリティカルパス・スケジュール短縮</title>
+    <description><![CDATA[<p>【用語集・プロジェクトマネジメント①】PMBOK・クリティカルパス・スケジュール短縮（用語集）</p><p>【概要】PMBOKガイド第7版とプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキングを、図と数値例で確認する。</p><p>【決め手キーワード】合流点は最大／クラッシング＝要員追加・ファストトラッキング＝並行／短縮はクリティカルパス上</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・プロジェクトマネジメント①】PMBOK・クリティカルパス・スケジュール短縮（用語集）</p><p>【概要】PMBOKガイド第7版とプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキングを、図と数値例で確認する。</p><p>【決め手キーワード】合流点は最大／クラッシング＝要員追加・ファストトラッキング＝並行／短縮はクリティカルパス上</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・プロジェクトマネジメント①】PMBOK・クリティカルパス・スケジュール短縮（用語集）
+【概要】PMBOKガイド第7版とプログラムマネジメント、アローダイアグラムとクリティカルパス、クラッシングとファストトラッキングを、図と数値例で確認する。
+【決め手キーワード】合流点は最大／クラッシング＝要員追加・ファストトラッキング＝並行／短縮はクリティカルパス上
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-projmng.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-projmng.m4a" length="10400073" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-projmng.m4a" length="6233853" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-projmng-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:34:00 +0900</pubDate>
-    <itunes:duration>00:20:45</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:36:00 +0900</pubDate>
+    <itunes:duration>00:12:27</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化</title>
-    <description><![CDATA[<p>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ARPとNAPT、ビット誤り率の計算、冗長化とループ防止）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2^n−2／伝送時間はバイト×8でビットに直す</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ARPとNAPT、ビット誤り率の計算、冗長化とループ防止）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2^n−2／伝送時間はバイト×8でビットに直す</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・ネットワーク】ネットワーク用語6テーマ TCP/UDP・サブネット・伝送時間・ARP/NAPT・誤り率・冗長化（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ6テーマ（TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ARPとNAPT、ビット誤り率の計算、冗長化とループ防止）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2^n−2／伝送時間はバイト×8でビットに直す
+    <title>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術</title>
+    <description><![CDATA[<p>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術（用語集）</p><p>【概要】ARPとNAPT、VRRPとスパニングツリーに加えて、HTTP/3、TLS 1.3、SASE/ZTNA、SWG、Wi-Fi 6E/7/WPA3、IPoE、MQTT、SNMPトラップ、IEEE 802.1Xを確認する。</p><p>【決め手キーワード】NAPTは送信元を書き換える／ルータはVRRP・L2ループはSTP／HTTP/3はUDP 443</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術（用語集）</p><p>【概要】ARPとNAPT、VRRPとスパニングツリーに加えて、HTTP/3、TLS 1.3、SASE/ZTNA、SWG、Wi-Fi 6E/7/WPA3、IPoE、MQTT、SNMPトラップ、IEEE 802.1Xを確認する。</p><p>【決め手キーワード】NAPTは送信元を書き換える／ルータはVRRP・L2ループはSTP／HTTP/3はUDP 443</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術（用語集）
+【概要】ARPとNAPT、VRRPとスパニングツリーに加えて、HTTP/3、TLS 1.3、SASE/ZTNA、SWG、Wi-Fi 6E/7/WPA3、IPoE、MQTT、SNMPトラップ、IEEE 802.1Xを確認する。
+【決め手キーワード】NAPTは送信元を書き換える／ルータはVRRP・L2ループはSTP／HTTP/3はUDP 443
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-networkb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-networkb.m4a" length="7749134" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-networkb-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:35:00 +0900</pubDate>
+    <itunes:duration>00:15:29</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率</title>
+    <description><![CDATA[<p>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率（用語集）</p><p>【概要】TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ビット誤り率の計算の4テーマを、図とビットの手順つきで確認する。音声と記事の図を見比べて使う。</p><p>【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2のn乗−2／バイトは×8してから割る／0.0001％＝100万分の1</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率（用語集）</p><p>【概要】TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ビット誤り率の計算の4テーマを、図とビットの手順つきで確認する。音声と記事の図を見比べて使う。</p><p>【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2のn乗−2／バイトは×8してから割る／0.0001％＝100万分の1</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・ネットワーク①】TCP/UDP・CIDR・伝送時間・ビット誤り率（用語集）
+【概要】TCPとUDP、サブネットとCIDRの計算、伝送時間と回線速度の計算、ビット誤り率の計算の4テーマを、図とビットの手順つきで確認する。音声と記事の図を見比べて使う。
+【決め手キーワード】TCPだけにシーケンス番号／ホスト数＝2のn乗−2／バイトは×8してから割る／0.0001％＝100万分の1
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-network.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-network.m4a" length="6510090" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-network.m4a" length="8601378" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-network-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:33:00 +0900</pubDate>
-    <itunes:duration>00:12:59</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:34:00 +0900</pubDate>
+    <itunes:duration>00:17:10</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM</title>
-    <description><![CDATA[<p>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート、JIS Q 27000の情報セキュリティの特性、WAFとWebアプリケーションへの攻撃・ファジング、SBOMとCSPM）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】自社製品の脆弱性はPSIRT／CVE＝識別番号・CVSS＝深刻度／真正性＝主張どおり・信頼性＝結果が一貫</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート、JIS Q 27000の情報セキュリティの特性、WAFとWebアプリケーションへの攻撃・ファジング、SBOMとCSPM）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】自社製品の脆弱性はPSIRT／CVE＝識別番号・CVSS＝深刻度／真正性＝主張どおり・信頼性＝結果が一貫</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・情報セキュリティ②】情報セキュリティ用語② CSIRT/CVE・サイドチャネル・JIS Q 27000・WAF・SBOM/CSPM（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃・耐タンパ性・TPM・セキュアブート、JIS Q 27000の情報セキュリティの特性、WAFとWebアプリケーションへの攻撃・ファジング、SBOMとCSPM）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】自社製品の脆弱性はPSIRT／CVE＝識別番号・CVSS＝深刻度／真正性＝主張どおり・信頼性＝結果が一貫
+    <title>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応</title>
+    <description><![CDATA[<p>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応（用語集）</p><p>【概要】WAFとファジング、SBOMとCSPM、EDRとSIEM、サプライチェーン攻撃、イミュータブルバックアップとデジタルフォレンジックス、ASMを確認する。後半はシラバス強化用語集の新用語。</p><p>【決め手キーワード】WAFはHTTPの中身／EDR＝端末・SIEM＝ログ全体／イミュータブルは上書き不可</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応（用語集）</p><p>【概要】WAFとファジング、SBOMとCSPM、EDRとSIEM、サプライチェーン攻撃、イミュータブルバックアップとデジタルフォレンジックス、ASMを確認する。後半はシラバス強化用語集の新用語。</p><p>【決め手キーワード】WAFはHTTPの中身／EDR＝端末・SIEM＝ログ全体／イミュータブルは上書き不可</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応（用語集）
+【概要】WAFとファジング、SBOMとCSPM、EDRとSIEM、サプライチェーン攻撃、イミュータブルバックアップとデジタルフォレンジックス、ASMを確認する。後半はシラバス強化用語集の新用語。
+【決め手キーワード】WAFはHTTPの中身／EDR＝端末・SIEM＝ログ全体／イミュータブルは上書き不可
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2b.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec2b.m4a" length="10313620" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-sec2b-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:33:00 +0900</pubDate>
+    <itunes:duration>00:20:36</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト</title>
+    <description><![CDATA[<p>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト（用語集）</p><p>【概要】認証方式（チャレンジレスポンス・SAML・リスクベース）、パスワード攻撃4種、ゼロトラスト、IDaaS/SSO、パスキーを確認する。後半はシラバス強化用語集の新用語。</p><p>【決め手キーワード】リバースブルートフォースにロックアウトが効かない／SAMLの認証はIdP／パスキーは公開鍵だけ登録</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト（用語集）</p><p>【概要】認証方式（チャレンジレスポンス・SAML・リスクベース）、パスワード攻撃4種、ゼロトラスト、IDaaS/SSO、パスキーを確認する。後半はシラバス強化用語集の新用語。</p><p>【決め手キーワード】リバースブルートフォースにロックアウトが効かない／SAMLの認証はIdP／パスキーは公開鍵だけ登録</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト（用語集）
+【概要】認証方式（チャレンジレスポンス・SAML・リスクベース）、パスワード攻撃4種、ゼロトラスト、IDaaS/SSO、パスキーを確認する。後半はシラバス強化用語集の新用語。
+【決め手キーワード】リバースブルートフォースにロックアウトが効かない／SAMLの認証はIdP／パスキーは公開鍵だけ登録
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html#quiz
+出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1b.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec1b.m4a" length="5863022" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-gl-sec1b-r2</guid>
+    <pubDate>Sun, 01 Nov 2026 08:32:00 +0900</pubDate>
+    <itunes:duration>00:11:43</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性</title>
+    <description><![CDATA[<p>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性（用語集）</p><p>【概要】CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃とTPM・セキュアブート、JIS Q 27000の情報セキュリティの7つの特性を、用語どうしの区別を図と表で確認する。</p><p>【決め手キーワード】CVE＝識別番号・CVSS＝深刻度／サイドチャネルは処理時間・消費電力／真正性と信頼性の取り違え</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性（用語集）</p><p>【概要】CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃とTPM・セキュアブート、JIS Q 27000の情報セキュリティの7つの特性を、用語どうしの区別を図と表で確認する。</p><p>【決め手キーワード】CVE＝識別番号・CVSS＝深刻度／サイドチャネルは処理時間・消費電力／真正性と信頼性の取り違え</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・情報セキュリティ②】脆弱性対応・ハードウェア対策・特性（用語集）
+【概要】CSIRT・PSIRT・JVN・CVE・CVSS、サイドチャネル攻撃とTPM・セキュアブート、JIS Q 27000の情報セキュリティの7つの特性を、用語どうしの区別を図と表で確認する。
+【決め手キーワード】CVE＝識別番号・CVSS＝深刻度／サイドチャネルは処理時間・消費電力／真正性と信頼性の取り違え
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sec2.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec2.m4a" length="7275687" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec2.m4a" length="8375665" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-sec2-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:32:00 +0900</pubDate>
-    <itunes:duration>00:14:30</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:31:00 +0900</pubDate>
+    <itunes:duration>00:16:44</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃</title>
-    <description><![CDATA[<p>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSEC、認証方式、パスワード攻撃）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IPで照合・DKIM＝署名で検証／DNSSECは署名で検証し暗号化しない</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
-    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃（用語集）</p><p>【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSEC、認証方式、パスワード攻撃）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。</p><p>【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IPで照合・DKIM＝署名で検証／DNSSECは署名で検証し暗号化しない</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
-    <itunes:summary>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃（用語集）
-【概要】H24秋〜R7秋の午前15回分で出題が多いテーマから選んだ5テーマ（CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSEC、認証方式、パスワード攻撃）を、定義・判断ルール・計算例・誤りの選択肢の順に確認する。
-【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IPで照合・DKIM＝署名で検証／DNSSECは署名で検証し暗号化しない
+    <title>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS</title>
+    <description><![CDATA[<p>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS（用語集）</p><p>【概要】CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSECの3テーマを、誰が何を確かめるかの流れ図つきで確認する。</p><p>【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IP・DKIM＝署名・DMARC＝失敗時の扱い／DNSSECは署名で検証</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></description>
+    <content:encoded><![CDATA[<p>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS（用語集）</p><p>【概要】CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSECの3テーマを、誰が何を確かめるかの流れ図つきで確認する。</p><p>【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IP・DKIM＝署名・DMARC＝失敗時の扱い／DNSSECは署名で検証</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html#quiz">聴き終えたらクイズへ</a></p><p>出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</p>]]></content:encoded>
+    <itunes:summary>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS（用語集）
+【概要】CRLとOCSP、SPF・DKIM・DMARC、DNSキャッシュポイズニングとDNSSECの3テーマを、誰が何を確かめるかの流れ図つきで確認する。
+【決め手キーワード】CRLに有効期限切れは載らない／SPF＝IP・DKIM＝署名・DMARC＝失敗時の扱い／DNSSECは署名で検証
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html#quiz
 出典：H24秋〜R7秋の午前15回分（IPA公開問題）を当方でテーマ分類した出題回数をもとに作成（2026/11/01版）。出題回数は概数</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-gl-sec1.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec1.m4a" length="7709056" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-gl-sec1.m4a" length="4846649" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-gl-sec1-r2</guid>
-    <pubDate>Sun, 01 Nov 2026 08:31:00 +0900</pubDate>
-    <itunes:duration>00:15:24</itunes:duration>
+    <pubDate>Sun, 01 Nov 2026 08:30:00 +0900</pubDate>
+    <itunes:duration>00:09:41</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>
   <item>
-    <title>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数</title>
-    <description><![CDATA[<p>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）</p><p>【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n</p><p>【設問と解答のキーワード】<br>設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵<br>設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値<br>設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）<br>設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから<br>設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）<br>設問Q6：デジタル署名で実現できない要素 → 機密性</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></description>
-    <content:encoded><![CDATA[<p>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）</p><p>【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n</p><p>【設問と解答のキーワード】<br>設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵<br>設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値<br>設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）<br>設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから<br>設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）<br>設問Q6：デジタル署名で実現できない要素 → 機密性</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></content:encoded>
-    <itunes:summary>【早わかり・暗号】公開鍵暗号と共通鍵暗号 4パターンと鍵の数（早わかり）
-【概要】公開鍵暗号・共通鍵暗号・デジタル署名・ハイブリッド暗号の4パターンで、どの鍵を使うかを整理する。鍵の数の計算（n(n−1)/2と2n）とPKIも確認する。
+    <title>【早わかり・暗号②】鍵の数・PKI・ひっかけ</title>
+    <description><![CDATA[<p>【早わかり・暗号②】鍵の数・PKI・ひっかけ（早わかり）</p><p>【概要】鍵の数の計算（共通鍵n(n−1)/2・公開鍵2n）、PKIとデジタル証明書、CRL/OCSP、ひっかけポイントを確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。前編の4パターンの続き。<br>・後編は、鍵の数の計算、公開鍵の持ち主を保証するPKI、ひっかけ問題を図と手順で確かめる。</p><p>【決め手キーワード】鍵の数は共通鍵 n(n−1)/2・公開鍵 2n／公開鍵の持ち主はCAの証明書で保証</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></description>
+    <content:encoded><![CDATA[<p>【早わかり・暗号②】鍵の数・PKI・ひっかけ（早わかり）</p><p>【概要】鍵の数の計算（共通鍵n(n−1)/2・公開鍵2n）、PKIとデジタル証明書、CRL/OCSP、ひっかけポイントを確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。前編の4パターンの続き。<br>・後編は、鍵の数の計算、公開鍵の持ち主を保証するPKI、ひっかけ問題を図と手順で確かめる。</p><p>【決め手キーワード】鍵の数は共通鍵 n(n−1)/2・公開鍵 2n／公開鍵の持ち主はCAの証明書で保証</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></content:encoded>
+    <itunes:summary>【早わかり・暗号②】鍵の数・PKI・ひっかけ（早わかり）
+【概要】鍵の数の計算（共通鍵n(n−1)/2・公開鍵2n）、PKIとデジタル証明書、CRL/OCSP、ひっかけポイントを確認する。
+【状況】
+・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。前編の4パターンの続き。
+・後編は、鍵の数の計算、公開鍵の持ち主を保証するPKI、ひっかけ問題を図と手順で確かめる。
+【決め手キーワード】鍵の数は共通鍵 n(n−1)/2・公開鍵 2n／公開鍵の持ち主はCAの証明書で保証
+詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html
+クイズ：https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html#quiz
+出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</itunes:summary>
+    <link>https://hidecars.github.io/podcast/ap/notes/extra-pubkeyb.html</link>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-pubkeyb.m4a" length="8268752" type="audio/x-m4a"/>
+    <guid isPermaLink="false">ap-v2-extra-pubkeyb</guid>
+    <pubDate>Fri, 30 Oct 2026 08:45:00 +0900</pubDate>
+    <itunes:duration>00:16:31</itunes:duration>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>【早わかり・暗号①】共通鍵・公開鍵・デジタル署名・ハイブリッド暗号</title>
+    <description><![CDATA[<p>【早わかり・暗号①】共通鍵・公開鍵・デジタル署名・ハイブリッド暗号（早わかり）</p><p>【概要】共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号の4パターンを、誰のどの鍵を使うかの図で確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・前編では、鍵の使い方4パターンを、図で「誰の何の鍵を使うか」を中心に確かめる。鍵の数の計算とPKIは後編。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／本文は共通鍵・鍵の受け渡しは公開鍵</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></description>
+    <content:encoded><![CDATA[<p>【早わかり・暗号①】共通鍵・公開鍵・デジタル署名・ハイブリッド暗号（早わかり）</p><p>【概要】共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号の4パターンを、誰のどの鍵を使うかの図で確認する。</p><p>【状況】<br>・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。<br>・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。<br>・前編では、鍵の使い方4パターンを、図で「誰の何の鍵を使うか」を中心に確かめる。鍵の数の計算とPKIは後編。</p><p>【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／本文は共通鍵・鍵の受け渡しは公開鍵</p><p><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html">詳細ページ（Web記事）</a><br><a href="https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz">聴き終えたらクイズへ</a></p><p>出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</p>]]></content:encoded>
+    <itunes:summary>【早わかり・暗号①】共通鍵・公開鍵・デジタル署名・ハイブリッド暗号（早わかり）
+【概要】共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号の4パターンを、誰のどの鍵を使うかの図で確認する。
 【状況】
 ・応用情報 午前（科目A）対策の「早わかり」（2026/10/30版）。午後の暗号・認証の問題の土台にもなる。
 ・暗号化は「相手の公開鍵」、署名は「自分の秘密鍵」と覚える。
-・鍵の使い方は4パターン：共通鍵暗号、公開鍵暗号、デジタル署名、ハイブリッド暗号。
-【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／鍵の数は共通鍵n(n−1)/2・公開鍵2n
-【設問と解答のキーワード】
-設問Q1：BだけがAの文書を読めるよう、Aが使う鍵 → Bの公開鍵
-設問Q2：デジタル署名を作る鍵と署名する対象 → Aの秘密鍵／文書のハッシュ値
-設問Q3：50人が共通鍵暗号で相互に通信するときの鍵の数 → 1,225本（50×49÷2）
-設問Q4：TLSで本文を共通鍵で暗号化する理由 → 処理が速いから
-設問Q5：公開鍵が本人のものだと保証する仕組み → PKI（認証局CAが発行するデジタル証明書）
-設問Q6：デジタル署名で実現できない要素 → 機密性
+・前編では、鍵の使い方4パターンを、図で「誰の何の鍵を使うか」を中心に確かめる。鍵の数の計算とPKIは後編。
+【決め手キーワード】暗号化は相手の公開鍵／署名は自分の秘密鍵／本文は共通鍵・鍵の受け渡しは公開鍵
 詳細ページ：https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html
 クイズ：https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html#quiz
 出典：応用情報 シラバス強化用語集・早わかり（2026/10/30版）をもとに作成。出題実績は手元のIPA問題冊子・解答例で確認できたものに限る</itunes:summary>
     <link>https://hidecars.github.io/podcast/ap/notes/extra-pubkey.html</link>
-    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-pubkey.m4a" length="10135610" type="audio/x-m4a"/>
+    <enclosure url="https://github.com/hidecars/hidecars.github.io/releases/download/ap-extra/extra-pubkey.m4a" length="7291440" type="audio/x-m4a"/>
     <guid isPermaLink="false">ap-v2-extra-pubkey</guid>
-    <pubDate>Fri, 30 Oct 2026 08:30:00 +0900</pubDate>
-    <itunes:duration>00:20:15</itunes:duration>
+    <pubDate>Fri, 30 Oct 2026 08:44:00 +0900</pubDate>
+    <itunes:duration>00:14:33</itunes:duration>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:explicit>false</itunes:explicit>
   </item>

@@ -1,0 +1,103 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ④】Web防御・可視化・ランサムウェア対応</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数と、午後での出題実績。この回は、「攻撃を防ぐ・見つける・立ち直る」の道具を、場面別に整理する。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数・実績</th></tr></thead><tbody><tr><td>1</td><td>WAFとWebアプリケーションへの攻撃・ファジング</td><td>15回中11回（R3秋・R4秋・R6春）</td></tr><tr><td>2</td><td>SBOMとCSPM</td><td>15回中2回（R6秋・R7秋に連続出題）。SBOMはR7秋 午後問1、R7春 午前問40、R6秋 午前問43。CSPMはR7秋 午前問42</td></tr><tr><td>3</td><td>EDRとSIEM</td><td>SIEMはR7秋 午後問1（空欄d）、H29秋 午前問38。EDRは今回の資料内では未確認</td></tr><tr><td>4</td><td>サプライチェーン攻撃</td><td>R7春 午後問1、R7秋 午後問1</td></tr><tr><td>5</td><td>イミュータブルバックアップとデジタルフォレンジックス</td><td>イミュータブルはR7春 午後問1（設問5）。フォレンジックスはR7春 午後問1（設問1）、R7秋 午前問44、H27秋 午前問43</td></tr><tr><td>6</td><td>ASM</td><td>今回の資料内では未確認</td></tr></tbody></table></div>
+<p>3〜6は、シラバス強化用語集（2026/10/30版）の用語。音声では図は読み上げず流れを言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. WAFとWebアプリケーションへの攻撃・ファジング</h4>
+<p>WAFは、Webアプリケーションへの通信の中身を検査し、攻撃を遮断する仕組み。</p>
+<figure><svg class="dg" viewBox="0 0 360 414" role="img" aria-label="何を検査するか：FW と WAF" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">何を検査するか：FW と WAF</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="180.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">インターネットからの通信</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box dash"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">ファイアウォール</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">IPアドレスとポート番号だけで制御</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">WAF</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">HTTPの中身を検査（SQLi・XSS）</text>
+<rect x="12.0" y="336.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="363.0" class="dg-txt" text-anchor="middle">Webアプリケーション</text>
+<text x="12" y="402.0" class="dg-note">根本対策：プレースホルダ（SQLi）／エスケープ（XSS）</text>
+</svg><figcaption>ファイアウォールとWAFの検査対象の違い</figcaption></figure>
+<ul><li>WAFが防げる攻撃：SQLインジェクション、クロスサイトスクリプティング（XSS）など、HTTPの中身に攻撃が含まれるもの。</li><li>ファイアウォールはIPアドレスとポート番号で通信を制御する。HTTPの中身は見ない。</li><li>SQLインジェクション：入力欄にSQL文の一部を入れて、データベースを不正に操作する。対策はプレースホルダ（バインド機構）。</li><li>XSS：Webページに悪意のあるスクリプトを埋め込み、閲覧者のブラウザで実行させる。対策は出力時のエスケープ処理。</li><li>ファジング：予期しないデータ（ファズ）を大量に入力して、ソフトウェアの脆弱性を見つける検査手法。</li><li>補足：WAFは「外からの防御」、プレースホルダやエスケープは「プログラム自体を直す根本対策」。両方を組み合わせる。</li><li>誤り：「WAFはIPアドレスとポート番号だけで通信を制御する」は誤り。それはファイアウォール。WAFはHTTPの中身を検査する。</li></ul>
+<h4 id='s9'>2. SBOMとCSPM</h4>
+<p>ソフトウェアとクラウドの「中身と設定」を把握・管理するための新しい仕組み。</p>
+<ul><li>SBOM（ソフトウェア部品表）：ソフトウェアを構成するコンポーネント（OSSを含む）の名前・バージョン・依存関係・ライセンスの一覧。新しい脆弱性が公表されたとき、影響を受ける製品をすぐ特定できる。</li><li>CSPM：クラウドサービスの設定を継続的に点検し、設定ミスや設定の不備を検出して是正する仕組み。クラウドの情報漏えいは設定ミスが原因になりやすい。</li><li>似た用語：CASBは、社員のクラウドサービス利用を可視化・制御する仕組み。</li><li>午後での問われ方：「SBOMがないと何が困るか」→ 脆弱性発見時に影響範囲を迅速に判断できない（R7秋 午後問1の解答例）。</li><li>誤り：SBOMとCSPMの取り違え。部品の一覧はSBOM、クラウドの設定点検はCSPM。</li></ul>
+<h4 id='s12'>3. EDRとSIEM</h4>
+<p>どちらも「攻撃に気づく」ための仕組み。見る範囲が違う。</p>
+<figure><svg class="dg" viewBox="0 0 360 324" role="img" aria-label="EDR と SIEM" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">EDR と SIEM</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="147.5" y="110.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">端末の情報</text>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="200.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="213.0" class="dg-lbl" text-anchor="middle">集約</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">EDR</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">端末の挙動を監視。侵入後の検知・隔離・調査</text>
+<rect x="12.0" y="142.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">端末・サーバ・FWなどのログ</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">SIEM</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">ログを集めて相関分析。攻撃の兆候を見つける</text>
+<text x="12" y="312.0" class="dg-note">覚え方：EDR＝端末／SIEM＝全体のログ</text>
+</svg><figcaption>EDRは端末、SIEMはログ全体を見る</figcaption></figure>
+<ul><li>EDR（Endpoint Detection and Response）：PCやサーバ（端末）の挙動を監視し、侵入後の不審な動きを検知・対応する仕組み。従来のウイルス対策は侵入前の検知が中心。EDRは侵入後の検知・隔離・調査を支える。</li><li>午後での問われ方（EDR）：「マルウェア対策ソフトでは防げなかった攻撃をどう検知するか」の答えになりやすい。</li><li>SIEM（Security Information and Event Management）：FW・サーバ・端末などのログを集めて相関分析し、攻撃の兆候を見つける仕組み。1台のログでは分からない攻撃を、複数のログの組合せで見つける。</li><li>午後での問われ方（SIEM）：空欄補充（記号選択）で出やすい。「ログを一元的に収集・分析」がキーワード。</li><li>覚え方：EDRは端末、SIEMは全体のログ。</li></ul>
+<h4 id='s16'>4. サプライチェーン攻撃</h4>
+<p>取引先・委託先・ソフトウェア部品など、守りの弱い所を足がかりに標的へ侵入する攻撃。</p>
+<figure><svg class="dg" viewBox="0 0 360 302" role="img" aria-label="サプライチェーン攻撃" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">サプライチェーン攻撃</text>
+<line x1="180.0" y1="82.0" x2="93.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="82.0" x2="267.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="93.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box risk"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">攻撃者</text>
+<rect x="12.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="155.0" class="dg-txt" text-anchor="middle">取引先・委託先</text>
+<text x="93.0" y="177.0" class="dg-sub" text-anchor="middle">ビジネス経由：接続経路・パスワード使い回し</text>
+<rect x="186.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="155.0" class="dg-txt" text-anchor="middle">ソフトウェア部品・更新</text>
+<text x="267.0" y="177.0" class="dg-sub" text-anchor="middle">ソフトウェア経由</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">標的の企業</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">自社だけの対策では防げない</text>
+</svg><figcaption>サプライチェーン攻撃の2つの経路</figcaption></figure>
+<ul><li>ビジネス（取引先経由）とソフトウェア（部品・更新経由）の2種類がある。自社だけの対策では防げない。</li><li>午後での問われ方：委託先との接続経路、同じパスワードの使い回し、委託先の管理状況が根拠になることが多い。</li><li>補足：ソフトウェア経由の対策には、前のSBOMで部品を把握しておくことも役立つ。</li><li>出題実績：R7春 午後問1、R7秋 午後問1。</li></ul>
+<h4 id='s20'>5. イミュータブルバックアップとデジタルフォレンジックス</h4>
+<p>ランサムウェアの被害から「立ち直る」ための2つ。</p>
+<ul><li>イミュータブルバックアップ：一度書き込んだら、一定期間は変更・削除できない形で保存するバックアップ。ランサムウェアはバックアップも暗号化・上書きする。書き換えできなければ復旧に使える。</li><li>午後での問われ方（イミュータブル）：「前日のバックアップから復旧できなかった理由」→ 暗号化されたデータで上書きされていた（R7春 午後問1、設問5の解答はイミュータブル）。</li><li>デジタルフォレンジックス：電磁的記録の証拠保全・調査・分析を行う技術や手続。調査前に証拠を保全（複製・ハッシュ値で改ざん確認）してから分析する順番が重要。</li><li>午後での問われ方（フォレンジックス）：名称をそのまま答える空欄補充が多い。「ログが上書きされて調査できない」もセットで出る。</li></ul>
+<h4 id='s23'>6. ASM</h4>
+<p>ASM（Attack Surface Management）は、インターネットから見える自社のIT資産（攻撃対象領域）を洗い出し、継続的に管理すること。</p>
+<ul><li>管理されていない公開サーバや古い機器は攻撃の入口になる。まず「把握」から始める。</li><li>午後での問われ方：「把握していない機器が侵入口になった」事例の対策として書ける。</li><li>補足：CSPMはクラウドの設定を見る、ASMは外から見える資産の一覧を見る、と区別する。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> WAFによる防御が有効な攻撃の例を2つ</summary><p>SQLインジェクション、クロスサイトスクリプティング</p></details><details class='qa'><summary><b>Q2</b> IPアドレスとポート番号で通信を制御し、HTTPの中身は見ないのは</summary><p>ファイアウォール</p></details><details class='qa'><summary><b>Q3</b> 予期しないデータを大量に入力して脆弱性を見つける手法は</summary><p>ファジング</p></details><details class='qa'><summary><b>Q4</b> SQLインジェクションの対策は</summary><p>プレースホルダ（バインド機構）</p></details><details class='qa'><summary><b>Q5</b> ソフトウェアの構成部品を一覧にしたものは</summary><p>SBOM</p></details><details class='qa'><summary><b>Q6</b> クラウドの設定ミスを継続的に検出する仕組みは</summary><p>CSPM</p></details><details class='qa'><summary><b>Q7</b> 脆弱性公表時にSBOMが役立つ理由は</summary><p>影響を受ける製品をすぐ特定できるから</p></details><details class='qa'><summary><b>Q8</b> 端末の挙動を監視し、侵入後の不審な動きを検知する仕組みは</summary><p>EDR</p></details><details class='qa'><summary><b>Q9</b> 複数のログを集めて相関分析する仕組みは</summary><p>SIEM</p></details><details class='qa'><summary><b>Q10</b> 取引先や部品の弱い所から侵入する攻撃は</summary><p>サプライチェーン攻撃</p></details><details class='qa'><summary><b>Q11</b> 変更・削除できない形で保存するバックアップは</summary><p>イミュータブルバックアップ</p></details><details class='qa'><summary><b>Q12</b> 調査前にまずすることは</summary><p>証拠の保全（複製・ハッシュ値で改ざん確認）</p></details><details class='qa'><summary><b>Q13</b> 外から見える自社のIT資産を洗い出して管理することは</summary><p>ASM</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

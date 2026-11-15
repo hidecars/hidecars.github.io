@@ -1,4 +1,4 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃</title><style>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS</title><style>
 :root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
 body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
@@ -22,24 +22,89 @@ svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-f
 .dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
 .dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
 .dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
-</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ①】情報セキュリティ用語① 証明書の失効・送信元認証・DNS・認証方式・パスワード攻撃</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s3'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
-<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。</p>
-<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>CRLとOCSP（証明書の失効確認）</td><td>15回中6回</td><td>R4秋・R7秋</td></tr><tr><td>2</td><td>SPF・DKIM・DMARC（送信元ドメイン認証）</td><td>15回中7回</td><td>R4秋・R5秋・R6春・R7秋</td></tr><tr><td>3</td><td>DNSキャッシュポイズニングとDNSSEC</td><td>15回中5回</td><td>R4秋・R6秋・R6春</td></tr><tr><td>4</td><td>認証方式（チャレンジレスポンス・SAML・リスクベース認証）</td><td>15回中6回</td><td>R3秋・R6秋・R6春</td></tr><tr><td>5</td><td>パスワード攻撃（4種類の区別）</td><td>15回中7回</td><td>R5秋・R6秋</td></tr></tbody></table></div>
-<h3 id='s3'>2. 核心：用語ごとの判断ルール</h3>
-<h4 id='s4'>1. CRLとOCSP（証明書の失効確認）</h4>
-<p>CRLは、認証局が失効させたデジタル証明書のシリアル番号と失効日時を並べたリスト。OCSPは、証明書が失効しているかをオンラインで問い合わせるプロトコル。</p>
-<ul><li>CRLは認証局がデジタル署名して発行する。</li><li>CRLに載るのは「有効期限内に失効させた証明書」。有効期限が切れた証明書は載らない。</li><li>「オンラインで失効を確認するプロトコル」と聞かれたら OCSP。</li><li>ソフトウェアの発行元を確認する証明書は「コードサイニング証明書」。</li><li>誤り：「CRLには有効期限切れの証明書も載る」は誤り。</li><li>誤り：「CRLは利用者が自分で作る」は誤り。発行するのは認証局。</li></ul>
-<h4 id='s7'>2. SPF・DKIM・DMARC（送信元ドメイン認証）</h4>
-<p>メールの送信元ドメインが詐称されていないかを、受信側で確かめる仕組み。</p>
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ①】証明書の失効・送信元認証・DNS</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、仕組みを「誰が・何を・どこで確かめるか」の流れで押さえる3テーマ。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>CRLとOCSP（証明書の失効確認）</td><td>15回中6回</td><td>R4秋・R7秋</td></tr><tr><td>2</td><td>SPF・DKIM・DMARC（送信元ドメイン認証）</td><td>15回中7回</td><td>R4秋・R5秋・R6春・R7秋</td></tr><tr><td>3</td><td>DNSキャッシュポイズニングとDNSSEC</td><td>15回中5回</td><td>R4秋・R6秋・R6春</td></tr></tbody></table></div>
+<p>音声では図の矢印は読み上げず、流れを言葉で説明する。図を見たいところは、この記事を開きながら聞くとよい。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. CRLとOCSP（証明書の失効確認）</h4>
+<p>デジタル証明書は、有効期限の前でも、秘密鍵が漏れたときなどに認証局が「失効」させる。受け取った側は、その証明書がまだ有効かどうかを確かめる必要がある。その確かめ方が、CRLとOCSPの2つ。CRLは、認証局が失効させたデジタル証明書のシリアル番号と失効日時を並べたリスト。OCSPは、証明書が失効しているかをオンラインで問い合わせるプロトコル。</p>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="証明書の失効確認：CRL と OCSP" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">証明書の失効確認：CRL と OCSP</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="120.5" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="123.0" class="dg-lbl" text-anchor="middle">発行</text>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="207.5" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="123.0" class="dg-lbl" text-anchor="middle">回答</text>
+<line x1="93.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="98.5" y="214.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="227.0" class="dg-lbl" text-anchor="middle">取得して照合</text>
+<line x1="180.0" y1="246.0" x2="267.0" y2="200.0" class="dg-edge dash" marker-end="url(#ah)"/>
+<rect x="191.0" y="214.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="223.5" y="227.0" class="dg-lbl" text-anchor="middle">問い合わせ</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">認証局（CA）</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">証明書を失効させる</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">CRL</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">失効した証明書の一覧（署名つき）</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">OCSP</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">オンラインで1枚ずつ回答</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">確認する側</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">サイトやソフトを使う人</text>
+<text x="12" y="326.0" class="dg-note">CRLに載るのは、有効期限内に失効させた証明書だけ</text>
+</svg><figcaption>CRLとOCSPの違い（失効の確認方法）</figcaption></figure>
+<ul><li>CRLは認証局がデジタル署名して発行する。</li><li>CRLに載るのは「有効期限内に失効させた証明書」。有効期限が切れた証明書は載らない（期限切れは、そもそも期限で無効と分かるため）。</li><li>「オンラインで失効を確認するプロトコル」と聞かれたら OCSP。</li><li>補足：CRLは「リストをまとめて取得して自分で照合」、OCSPは「1枚ずつ問い合わせて答えをもらう」と覚える。</li><li>ソフトウェアの発行元を確認する証明書は「コードサイニング証明書」。</li><li>誤り：「CRLには有効期限切れの証明書も載る」は誤り。</li><li>誤り：「CRLは利用者が自分で作る」は誤り。発行するのは認証局。</li></ul>
+<h4 id='s9'>2. SPF・DKIM・DMARC（送信元ドメイン認証）</h4>
+<p>メールの送信元は簡単に偽れる。そこで、送信元ドメインが詐称されていないかを、受信側で確かめる仕組みが3つある。「何で確かめるか」が違う。</p>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="送信元ドメイン認証" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">送信元ドメイン認証</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="158.5" y="214.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">メール</text>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="318.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="331.0" class="dg-lbl" text-anchor="middle">検証結果</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">送信側ドメイン</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">DNSに SPF／公開鍵／DMARC方針を登録</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">送信メールサーバ</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">DKIM署名を付けて送る</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">受信メールサーバ</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">SPF=IP照合 / DKIM=署名検証</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box risk"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">DMARC</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">失敗なら 何もしない／隔離／拒否</text>
+<text x="12" y="430.0" class="dg-note">SPF＝IPで照合　DKIM＝署名で検証　DMARC＝失敗時の扱いを宣言</text>
+</svg><figcaption>送信元ドメイン認証の流れ（SPF・DKIM・DMARC）</figcaption></figure>
 <ul><li>SPF：送信側ドメインのDNSに、正規の送信メールサーバのIPアドレスを登録する。受信側は、接続してきたサーバのIPアドレスと照合する。</li><li>DKIM：送信側メールサーバがメールにデジタル署名を付ける。署名を検証する公開鍵は送信側ドメインのDNSで公開する。受信側が署名を検証する。</li><li>DMARC：SPFとDKIMの検証に失敗したメールの扱い（何もしない／隔離／拒否）を、送信側ドメインの管理者がDNSで宣言する。</li><li>OP25B：ISPが、動的IPアドレスの利用者から外部の25番ポートへの送信を遮断する。正規の送信は587番（サブミッションポート）とSMTP-AUTHで行う。</li><li>誤り：SPFとDKIMの取り違え。「IPアドレスで照合」はSPF、「デジタル署名で検証」はDKIM。</li><li>誤り：「DKIMはメール本文を暗号化する」は誤り。署名するだけで暗号化はしない。</li></ul>
-<h4 id='s10'>3. DNSキャッシュポイズニングとDNSSEC</h4>
-<p>DNSキャッシュポイズニングは、キャッシュDNSサーバに偽の応答を覚え込ませ、利用者を偽のサイトへ誘導する攻撃。</p>
-<ul><li>対策1：問合せの送信元ポート番号をランダムにする（偽の応答を当てにくくする）。</li><li>対策2：DNSSECを使う。応答にデジタル署名を付け、応答が正当な管理者のものか、改ざんされていないかを検証する。</li><li>対策3：キャッシュDNSサーバへの再帰問合せを社内からだけに制限する。外部から誰でも使えるサーバを「オープンリゾルバ」と呼ぶ。</li><li>オープンリゾルバは、送信元を偽装した問合せで大量の応答を標的に送る「DNSリフレクション攻撃」（DDoS）に悪用される。</li><li>誤り：「DNSSECで通信内容を暗号化できる」は誤り。DNSSECは署名による検証で、暗号化はしない。</li></ul>
-<h4 id='s13'>4. 認証方式（チャレンジレスポンス・SAML・リスクベース認証）</h4>
-<p>利用者が本人であることを確かめる方式。午前では「パスワードを送らない方式」「シングルサインオン」「状況に応じて追加認証する方式」が出る。</p>
-<ul><li>チャレンジレスポンス認証：サーバが毎回違う乱数（チャレンジ）を送り、利用者側はパスワードと乱数から計算した値（レスポンス）を返す。パスワードそのものはネットワークに流れない。</li><li>SAML：認証を行うIdP（アイデンティティプロバイダ）が認証結果（アサーション）を発行し、クラウドサービス側（SP）はそれを信頼してログインさせる。シングルサインオンを実現する。</li><li>リスクベース認証：いつもと違う端末・場所・時間からのアクセスのときだけ、追加の認証を求める。</li><li>3Dセキュア2.0：クレジットカードのネット決済の本人認証。リスクベース認証で、危険度が高い取引だけ追加の認証を求める。</li><li>誤り：「SAMLではクラウドサービス側が利用者のパスワードを保管して照合する」は誤り。認証するのはIdP。</li></ul>
-<h4 id='s16'>5. パスワード攻撃（4種類の区別）</h4>
-<p>パスワードを推測・入手して不正にログインする攻撃。午前では4種類の区別が出る。</p>
-<ul><li>ブルートフォース攻撃：1つのIDに対して、パスワードを総当たりで試す。</li><li>リバースブルートフォース攻撃：パスワードを1つに固定し、IDを次々に変えて試す。1つのIDへの失敗回数が増えないので、アカウントロックを回避できる。</li><li>パスワードリスト攻撃：他のサイトから漏えいしたIDとパスワードの組を使ってログインを試す。パスワードの使い回しが狙われる。</li><li>レインボーテーブル攻撃：パスワードとハッシュ値の対応を事前に計算した表を使い、ハッシュ値から元のパスワードを割り出す。対策は「ソルト」（パスワードごとに違う値を加えてからハッシュ化する）。</li><li>誤り：リバースブルートフォースとパスワードリスト攻撃の取り違え。「漏えいしたIDとパスワードの組」が出たらパスワードリスト攻撃。</li></ul>
+<div class='tw'><table><thead><tr><th>仕組み</th><th>確かめる材料</th><th>DNSに置くもの</th><th>失敗したときの扱い</th></tr></thead><tbody><tr><td>SPF</td><td>接続してきたサーバのIPアドレス</td><td>正規の送信サーバのIPアドレス</td><td>受信側が判断</td></tr><tr><td>DKIM</td><td>メールのデジタル署名</td><td>署名を検証する公開鍵</td><td>受信側が判断</td></tr><tr><td>DMARC</td><td>SPFとDKIMの結果</td><td>失敗時の扱い（なし／隔離／拒否）</td><td>送信側ドメインの宣言に従う</td></tr></tbody></table></div>
+<h4 id='s14'>3. DNSキャッシュポイズニングとDNSSEC</h4>
+<p>DNSは、名前（www.example.jp）からIPアドレスを調べる仕組み。キャッシュDNSサーバは、調べた結果をしばらく覚えておく。DNSキャッシュポイズニングは、そのキャッシュに偽の応答を覚え込ませ、利用者を偽のサイトへ誘導する攻撃。</p>
+<figure><svg class="dg" viewBox="0 0 360 324" role="img" aria-label="DNSキャッシュポイズニング" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">DNSキャッシュポイズニング</text>
+<line x1="180.0" y1="82.0" x2="93.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="104.0" y="96.0" width="65" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="109.0" class="dg-lbl" text-anchor="middle">問い合わせ</text>
+<line x1="186.0" y1="157.0" x2="174.0" y2="157.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="148.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="161.0" class="dg-lbl" text-anchor="middle">偽の応答</text>
+<line x1="93.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="115.0" y="200.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="136.5" y="213.0" class="dg-lbl" text-anchor="middle">誤誘導</text>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">利用者のPC</text>
+<rect x="12.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="155.0" class="dg-txt" text-anchor="middle">キャッシュDNSサーバ</text>
+<text x="93.0" y="177.0" class="dg-sub" text-anchor="middle">偽の応答を覚えてしまう</text>
+<rect x="186.0" y="128.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="155.0" class="dg-txt" text-anchor="middle">攻撃者</text>
+<text x="267.0" y="177.0" class="dg-sub" text-anchor="middle">偽の応答を送る</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">偽のサイト</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">IPアドレスが書き換わる</text>
+<text x="12" y="312.0" class="dg-note">対策：送信元ポートのランダム化／DNSSEC（署名で検証）／再帰問合せを社内に限定</text>
+</svg><figcaption>DNSキャッシュポイズニングの流れと対策</figcaption></figure>
+<ul><li>対策1：問合せの送信元ポート番号をランダムにする（偽の応答を当てにくくする）。</li><li>対策2：DNSSECを使う。応答にデジタル署名を付け、応答が正当な管理者のものか、改ざんされていないかを検証する。</li><li>対策3：キャッシュDNSサーバへの再帰問合せを社内からだけに制限する。外部から誰でも使えるサーバを「オープンリゾルバ」と呼ぶ。</li><li>オープンリゾルバは、送信元を偽装した問合せで大量の応答を標的に送る「DNSリフレクション攻撃」（DDoS）に悪用される。</li><li>補足：DNSリフレクション攻撃では、小さな問合せに大きな応答が返ることを利用して、攻撃の量を増やす。</li><li>誤り：「DNSSECで通信内容を暗号化できる」は誤り。DNSSECは署名による検証で、暗号化はしない。</li></ul>
 <h3 id='quiz'>3. 思い出しクイズ</h3>
-<details class='qa'><summary><b>Q1</b> 証明書が失効しているかをオンラインで確認するプロトコルは</summary><p>OCSP</p></details><details class='qa'><summary><b>Q2</b> 有効期限が切れた証明書はCRLに載るか</summary><p>載らない。載るのは有効期限内に失効させた証明書</p></details><details class='qa'><summary><b>Q3</b> ソフトウェアの発行元を確認するための証明書は</summary><p>コードサイニング証明書</p></details><details class='qa'><summary><b>Q4</b> 受信側が接続元サーバのIPアドレスとDNSの登録を照合する仕組みは</summary><p>SPF</p></details><details class='qa'><summary><b>Q5</b> 送信側サーバがデジタル署名を付け、受信側が検証する仕組みは</summary><p>DKIM</p></details><details class='qa'><summary><b>Q6</b> DKIMの署名を検証する公開鍵はどこで公開されるか</summary><p>送信側ドメインのDNS</p></details><details class='qa'><summary><b>Q7</b> DNSSECで実現できることは</summary><p>応答の送信元の正当性と、改ざんされていないことの検証</p></details><details class='qa'><summary><b>Q8</b> 外部の誰からでも再帰問合せを受け付けるDNSサーバを何というか</summary><p>オープンリゾルバ</p></details><details class='qa'><summary><b>Q9</b> キャッシュポイズニング対策として問合せ時にランダムにするものは</summary><p>送信元ポート番号</p></details><details class='qa'><summary><b>Q10</b> パスワードそのものをネットワークに流さない認証方式は</summary><p>チャレンジレスポンス認証</p></details><details class='qa'><summary><b>Q11</b> SAMLで認証を行い、アサーションを発行する側は</summary><p>IdP（アイデンティティプロバイダ）</p></details><details class='qa'><summary><b>Q12</b> 普段と違う環境からのアクセス時だけ追加認証する方式は</summary><p>リスクベース認証</p></details><details class='qa'><summary><b>Q13</b> 漏えいしたIDとパスワードの組を使う攻撃は</summary><p>パスワードリスト攻撃</p></details><details class='qa'><summary><b>Q14</b> パスワードを固定してIDを変える攻撃と、その狙いは</summary><p>リバースブルートフォース攻撃。アカウントロックの回避</p></details><details class='qa'><summary><b>Q15</b> レインボーテーブル攻撃への対策は</summary><p>ソルト</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>
+<details class='qa'><summary><b>Q1</b> 証明書が失効しているかをオンラインで確認するプロトコルは</summary><p>OCSP</p></details><details class='qa'><summary><b>Q2</b> 有効期限が切れた証明書はCRLに載るか</summary><p>載らない。載るのは有効期限内に失効させた証明書</p></details><details class='qa'><summary><b>Q3</b> CRLを発行するのは誰か</summary><p>認証局（デジタル署名をつけて発行）</p></details><details class='qa'><summary><b>Q4</b> ソフトウェアの発行元を確認するための証明書は</summary><p>コードサイニング証明書</p></details><details class='qa'><summary><b>Q5</b> 受信側が接続元サーバのIPアドレスとDNSの登録を照合する仕組みは</summary><p>SPF</p></details><details class='qa'><summary><b>Q6</b> 送信側サーバがデジタル署名を付け、受信側が検証する仕組みは</summary><p>DKIM</p></details><details class='qa'><summary><b>Q7</b> DKIMの署名を検証する公開鍵はどこで公開されるか</summary><p>送信側ドメインのDNS</p></details><details class='qa'><summary><b>Q8</b> SPFとDKIMに失敗したメールの扱いをDNSで宣言する仕組みは</summary><p>DMARC</p></details><details class='qa'><summary><b>Q9</b> 動的IPの利用者から外部の25番ポートへの送信を遮断する対策は</summary><p>OP25B（正規の送信は587番とSMTP-AUTH）</p></details><details class='qa'><summary><b>Q10</b> DNSSECで実現できることは</summary><p>応答の送信元の正当性と、改ざんされていないことの検証</p></details><details class='qa'><summary><b>Q11</b> 外部の誰からでも再帰問合せを受け付けるDNSサーバを何というか</summary><p>オープンリゾルバ</p></details><details class='qa'><summary><b>Q12</b> キャッシュポイズニング対策として問合せ時にランダムにするものは</summary><p>送信元ポート番号</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

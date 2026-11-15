@@ -1,0 +1,164 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・ネットワーク②】ARP・NAPT・冗長化・新しい通信技術</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、LANとインターネットの境目の仕組み（2テーマ）と、シラバス強化用語集の新しい通信技術（5テーマ）を押さえる。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数</th><th>直近の出題</th></tr></thead><tbody><tr><td>1</td><td>ARPとNAPT</td><td>15回中8回</td><td>R3秋・R5秋・R6秋</td></tr><tr><td>2</td><td>冗長化とループ防止（VRRP・スパニングツリー）</td><td>15回中2回</td><td>R6春・R7秋</td></tr><tr><td>3</td><td>HTTP/3（QUIC）とTLS 1.3</td><td>今回の資料内では未確認</td><td>—</td></tr><tr><td>4</td><td>SASE／ZTNAとSWG</td><td>SWGはR6秋 午後問5。SASE／ZTNAは今回の資料内では未確認</td><td>—</td></tr><tr><td>5</td><td>Wi-Fi 6E／Wi-Fi 7／WPA3とIPv6（IPoE）</td><td>今回の資料内では未確認</td><td>—</td></tr><tr><td>6</td><td>MQTTとSNMPトラップ</td><td>SNMPトラップはR7春 午後問5（設問3 正答率が低かった）。MQTTは今回の資料内では未確認</td><td>—</td></tr><tr><td>7</td><td>IEEE 802.1X</td><td>R7春 午後問5（設問1）</td><td>—</td></tr></tbody></table></div>
+<p>3〜7は、シラバス強化用語集（2026/10/30版）の用語。<br>音声では、図や表は読み上げず内容を言葉で説明する。目で確かめたいところは、この記事の図と表を開きながら聞くとよい。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. ARPとNAPT</h4>
+<p>ARPは、IPアドレスからMACアドレスを調べるプロトコル。NAPTは、IPアドレスとポート番号を変換して、複数の端末が1つのグローバルIPアドレスを共有する仕組み。</p>
+<figure><svg class="dg" viewBox="0 0 360 442" role="img" aria-label="ARP：IPアドレス → MACアドレス" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">ARP：IPアドレス → MACアドレス</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="142.0" y="110.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">①問い合わせ</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="304.0" x2="180.0" y2="350.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="158.5" y="318.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="331.0" class="dg-lbl" text-anchor="middle">②返事</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">PC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">相手のIP 192.168.1.20 のMACは？</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">同じLANの全機器</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">ブロードキャストで問い合わせ</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">該当する機器</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">私のMACは…（自分にだけ返事）</text>
+<rect x="12.0" y="350.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="377.0" class="dg-txt" text-anchor="middle">ARPテーブル</text>
+<text x="180.0" y="399.0" class="dg-sub" text-anchor="middle">結果をしばらく覚えておく</text>
+<text x="12" y="430.0" class="dg-note">LANの外は、デフォルトゲートウェイ（ルータ）のMACを調べる</text>
+</svg><figcaption>ARP：IPアドレスからMACアドレスを調べる</figcaption></figure>
+<ul><li>ARPは、知りたいIPアドレスをブロードキャストで問い合わせ、該当する機器がMACアドレスを返す。</li><li>同じLANの機器のMACアドレスを調べるコマンドは arp（R6秋）。</li><li>補足：問い合わせは全員に（ブロードキャスト）、返事は問い合わせた機器だけに（ユニキャスト）。調べた結果は、一定時間「ARPテーブル」に覚えておく。</li><li>補足：LANの外の相手へは、直接ではなく、デフォルトゲートウェイ（ルータ）のMACアドレスを調べて送る。</li><li>NAPTのルータが社内から外へ送るとき書き換えるのは、送信元IPアドレスと送信元ポート番号。（R3秋・R5秋に同じ問い）</li><li>補足：ルータは「書き換えの対応表」を持っていて、戻ってきた通信は、宛先を元の社内IPアドレスとポート番号に書き戻して、社内の端末に渡す。</li><li>補足：NAT（IPアドレスだけを変換）は、グローバルIPアドレスを1対1で使う。NAPTはポート番号まで変換するので、1つのグローバルIPアドレスを多数の端末で共有できる。</li><li>誤り：「NAPTは宛先IPアドレスを書き換える」は誤り（外へ送るときは送信元を書き換える）。</li><li>誤り：「ARPはMACアドレスからIPアドレスを調べる」は逆で誤り。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 354" role="img" aria-label="NAPT：送信元IPとポートを書き換える" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">NAPT：送信元IPとポートを書き換える</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="164.0" y="110.0" width="32" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">送信</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="142.0" y="214.0" width="76" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">送信元を変換</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">社内PC</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">192.168.1.10:50000</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">ルータ（NAPT）</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">対応表で 送信元 を書き換え</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">外のサーバ</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">198.51.100.1:60001 から来たと見える</text>
+<text x="12" y="326.0" class="dg-note">外向きは「送信元」を書き換え／戻りは宛先を書き戻す</text>
+<text x="12" y="342.0" class="dg-note">NAT＝IPのみ／NAPT＝IPとポート</text>
+</svg><figcaption>NAPT：社内のIPアドレスとポート番号を書き換える</figcaption></figure>
+<div class='tw'><table><thead><tr><th>場面</th><th>送信元IPアドレス:ポート</th><th>宛先IPアドレス:ポート</th></tr></thead><tbody><tr><td>社内の端末が送る（変換前）</td><td>192.168.1.10:50000（社内用）</td><td>203.0.113.5:443（外のサーバ）</td></tr><tr><td>ルータが外へ出す（変換後）</td><td>198.51.100.1:60001（ルータのグローバルIP）</td><td>203.0.113.5:443</td></tr><tr><td>戻りの通信（外から）</td><td>203.0.113.5:443</td><td>198.51.100.1:60001 → ルータが192.168.1.10:50000に書き戻す</td></tr></tbody></table></div>
+<h4 id='s11'>2. 冗長化とループ防止（VRRP・スパニングツリー）</h4>
+<p>VRRPはルータを冗長化するプロトコル。スパニングツリープロトコル（STP）はレイヤー2スイッチのループを防ぐプロトコル。</p>
+<figure><svg class="dg" viewBox="0 0 360 234" role="img" aria-label="VRRP と スパニングツリー" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">VRRP と スパニングツリー</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">VRRP</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">ルータの冗長化（仮想IPを共有）</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">スパニングツリー（STP）</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">L2スイッチのループ防止</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">稼働ルータが故障</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">待機ルータが引き継ぐ</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">一部のポートを止める</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">輪を切ってフレームの周回を防ぐ</text>
+<text x="12" y="222.0" class="dg-note">ルータ＝VRRP／L2スイッチのループ＝STP</text>
+</svg><figcaption>VRRPとSTPの役割</figcaption></figure>
+<ul><li>VRRP：複数のルータで1つの仮想IPアドレスを共有し、稼働中のルータが故障したら待機中のルータが引き継ぐ（R6春）。</li><li>STP：複数の経路があるレイヤー2ネットワークで、一部のポートを止めてフレームのループを防ぐ（R7秋）。</li><li>補足：端末は、仮想IPアドレスをデフォルトゲートウェイとして設定しておく。ルータが切り替わっても、端末の設定は変えなくてよい。</li><li>補足：L2スイッチを輪のようにつなぐとフレームが回り続け、ネットワークが止まる（ブロードキャストストーム）。STPが一部のポートを止めて、輪を切る。経路が切れたら止めていたポートを開く。</li><li>誤り：「ルータの冗長化」にSTPを選ぶ誤り。ルータはVRRP、L2スイッチのループはSTP。</li></ul>
+<div class='tw'><table><thead><tr><th>守りたいもの</th><th>仕組み</th><th>切り替えの考え方</th></tr></thead><tbody><tr><td>ルータ（出口の冗長化）</td><td>VRRP</td><td>待機ルータが仮想IPアドレスを引き継ぐ</td></tr><tr><td>L2スイッチの輪（ループ）</td><td>スパニングツリー（STP）</td><td>一部のポートを止めてループを防ぐ。故障時は開く</td></tr></tbody></table></div>
+<h4 id='s16'>3. HTTP/3（QUIC）とTLS 1.3</h4>
+<p>HTTP/3は、UDP上のQUICという通信方式を使う新しいHTTP。TLS 1.3は、通信を暗号化するTLSの最新版。</p>
+<figure><svg class="dg" viewBox="0 0 360 212" role="img" aria-label="HTTP/2まで と HTTP/3" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">HTTP/2まで と HTTP/3</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">HTTP/2まで</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">TCP＋TLSで接続（手順が多い）</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">HTTP/3</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">UDP上のQUIC（TLS 1.3相当を内蔵）</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">1つの遅れが他を止めやすい</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">接続が速く、遅れが他に響きにくい</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">FWでUDP 443番を許可</text>
+</svg><figcaption>HTTP/2までとHTTP/3の違い</figcaption></figure>
+<ul><li>HTTP/3：TCPより接続確立が速く、1つの通信の遅れが他の通信を止めにくい。暗号化（TLS 1.3相当）が組み込まれている。</li><li>午後での問われ方（HTTP/3）：「TCPではなくUDPを使う」点が問われやすい。FWでUDP 443番を許可する必要がある、という形でも出る。</li><li>TLS 1.3：手順（ハンドシェイク）が短くなり速い。古く弱い暗号方式は使えなくなった。</li><li>午後での問われ方（TLS 1.3）：Webサーバの設定変更や古い端末の非対応の話題で出やすい。</li><li>補足：HTTP/3が使うUDPは、前編のTCPとUDPの違い（確認応答をしない）をQUICの側で補っている、と考えると覚えやすい。</li></ul>
+<h4 id='s20'>4. SASE／ZTNAとSWG</h4>
+<p>SASEは、ネットワークとセキュリティの機能をクラウドでまとめて提供する考え方。ZTNAは、ゼロトラストに基づくリモートアクセス。SWGは、社外へのWebアクセスを中継して検査する仕組み。</p>
+<figure><svg class="dg" viewBox="0 0 360 212" role="img" aria-label="VPN と ZTNA" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">VPN と ZTNA</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">VPN</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">社内ネットワークに入る</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">ZTNA</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">利用者と端末を検証して許可アプリだけ</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box risk"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">入れば社内全体に届く</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">アプリ単位で接続を制御</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">SASE：ネットワークとセキュリティをクラウドで提供</text>
+</svg><figcaption>VPNとZTNAの違い</figcaption></figure>
+<ul><li>ZTNA：VPNで社内に入れる方式と違い、利用者と端末を検証してから、許可されたアプリだけに接続させる。</li><li>午後での問われ方（ZTNA）：「VPNと比べた利点」→ 社内ネットワーク全体へ入れない、アクセスをアプリ単位で制御できる。</li><li>SWG（Secure Web Gateway）：社外へのWebアクセスを中継し、有害サイトの遮断やマルウェア検査を行う仕組み（クラウド型が多い）。従来は社内のプロキシで行っていた検査を、場所を問わず受けられる。テレワークで必要になる。</li><li>午後での問われ方（SWG）：「テレワーク端末も社内と同じWeb検査を受けられる」点を書く。出題実績：R6秋 午後問5（テーマ：セキュアWebゲートウェイサービスの導入）。</li></ul>
+<h4 id='s24'>5. Wi-Fi 6E／Wi-Fi 7／WPA3とIPv6（IPoE）</h4>
+<ul><li>Wi-Fi 6E・7：6GHz帯も使える新しい無線LAN規格。6GHz帯は混雑が少なく速い。</li><li>WPA3：無線LANの新しい暗号化方式。パスワード総当たりに強く、6GHz帯の利用に必須。</li><li>午後での問われ方（Wi-Fi）：選択肢の正誤（周波数帯、暗号化方式の組合せ）として出やすい。</li><li>IPv6（IPoE）：IPoEは、PPPoEのような認証の手順を使わず、IPv6で直接インターネットにつなぐ接続方式。PPPoEの混雑する装置を通らないため、混む時間帯でも速度が落ちにくい。</li><li>午後での問われ方（IPoE）：回線の速度低下の原因と対策の文脈で出る。</li></ul>
+<h4 id='s26'>6. MQTTとSNMPトラップ</h4>
+<ul><li>MQTT：IoT機器向けの軽量な通信プロトコル。発行（publish）と購読（subscribe）の方式。機器（パブリッシャ）はブローカーにデータを送り、受け手（サブスクライバ）はブローカーから受け取る。</li><li>午後での問われ方（MQTT）：ブローカーの役割、トピック、通信量が少ない点が問われる。</li><li>SNMPトラップ：ネットワーク機器が、しきい値超過などの異常を管理装置へ自発的に通知する機能。通常のSNMPは管理装置から問い合わせる（ポーリング）。トラップは機器側から送る。</li><li>午後での問われ方（SNMPトラップ）：「通知機能の名称と条件」の記述で出た（R7春 午後問5：トラフィック量が800Mビット/秒を超える）。</li></ul>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="MQTT：発行と購読" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">MQTT：発行と購読</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="136.5" y="110.0" width="87" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">publish</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="125.5" y="214.0" width="109" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">subscribe</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">パブリッシャ</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">機器：データを発行</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">ブローカー</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">トピックごとに仲介</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">サブスクライバ</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">受け手：購読したトピックを受信</text>
+<text x="12" y="326.0" class="dg-note">軽量でIoT向け。通信量が少ない</text>
+</svg><figcaption>MQTT：ブローカーを介した発行と購読</figcaption></figure>
+<h4 id='s29'>7. IEEE 802.1X</h4>
+<p>LANに接続する端末や利用者を、接続時に認証する規格。認証サーバ（RADIUS）と組み合わせ、認証されない端末はネットワークに入れない。</p>
+<ul><li>午後での問われ方：「無許可の端末を接続させない対策」として空欄補充で出る。出題実績：R7春 午後問5（設問1）。</li><li>補足：構成は「端末 → スイッチ（または無線アクセスポイント）→ 認証サーバ（RADIUS）」。認証に成功した端末だけ、ネットワークにつながる。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> IPアドレスからMACアドレスを調べるプロトコルは</summary><p>ARP</p></details><details class='qa'><summary><b>Q2</b> ARPの問合せはユニキャストかブロードキャストか</summary><p>ブロードキャスト</p></details><details class='qa'><summary><b>Q3</b> 同じLANの機器のMACアドレスを調べるコマンドは</summary><p>arp</p></details><details class='qa'><summary><b>Q4</b> NAPTのルータが外向きの通信で書き換える2つは</summary><p>送信元IPアドレスと送信元ポート番号</p></details><details class='qa'><summary><b>Q5</b> NATとNAPTの違いは</summary><p>NATはIPアドレスだけ、NAPTはポート番号も変換する</p></details><details class='qa'><summary><b>Q6</b> NAPTで1つのグローバルIPアドレスを共有できる理由は</summary><p>ポート番号で端末を区別するから</p></details><details class='qa'><summary><b>Q7</b> ルータを冗長化するプロトコルは</summary><p>VRRP</p></details><details class='qa'><summary><b>Q8</b> VRRPで端末が使うデフォルトゲートウェイは</summary><p>仮想IPアドレス</p></details><details class='qa'><summary><b>Q9</b> L2スイッチのフレームのループを防ぐプロトコルは</summary><p>スパニングツリープロトコル（STP）</p></details><details class='qa'><summary><b>Q10</b> L2スイッチを輪のようにつなぐとなぜ止まるか</summary><p>フレームが回り続けるから（ブロードキャストストーム）</p></details><details class='qa'><summary><b>Q11</b> HTTP/3が使うトランスポートプロトコルは</summary><p>UDP（QUIC）</p></details><details class='qa'><summary><b>Q12</b> HTTP/3のとき、FWで許可が要るのは</summary><p>UDP 443番</p></details><details class='qa'><summary><b>Q13</b> VPNと比べたZTNAの利点は</summary><p>社内ネットワーク全体へ入れず、アプリ単位で制御できる</p></details><details class='qa'><summary><b>Q14</b> テレワーク端末にも社内と同じWeb検査を受けさせる仕組みは</summary><p>SWG</p></details><details class='qa'><summary><b>Q15</b> WPA3の特徴は</summary><p>パスワード総当たりに強い（6GHz帯の利用に必須）</p></details><details class='qa'><summary><b>Q16</b> PPPoEの混雑を避けて速度低下を防ぐ接続方式は</summary><p>IPoE（IPv6）</p></details><details class='qa'><summary><b>Q17</b> MQTTでデータを仲介する役は</summary><p>ブローカー</p></details><details class='qa'><summary><b>Q18</b> 機器から管理装置へ異常を自発的に通知する機能は</summary><p>SNMPトラップ</p></details><details class='qa'><summary><b>Q19</b> 接続時に端末を認証し、認証されない端末を入れない規格は</summary><p>IEEE 802.1X（RADIUSと組み合わせ）</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

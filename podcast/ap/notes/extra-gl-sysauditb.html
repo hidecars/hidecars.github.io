@@ -1,0 +1,78 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・システム監査②】統制・調書・新しい監査テーマ</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・システム監査②】統制・調書・新しい監査テーマ</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数と、午後での出題実績。この回は、IT統制と監査調書に加えて、令和5年の基準改訂・生成AI・アジャイルの監査を確認する。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数・実績</th></tr></thead><tbody><tr><td>1</td><td>ITに係る全般統制と業務処理統制</td><td>15回中8回（R3秋・R5秋・R6春・R7秋）</td></tr><tr><td>2</td><td>監査調書・監査証拠・予備調査</td><td>15回中5回（R5秋・R6秋・R6春）</td></tr><tr><td>3</td><td>システム監査基準・システム管理基準（令和5年改訂）</td><td>R7春 午前問60（システム管理基準 令和5年）、R7秋 午前問58（システム監査基準 令和5年）</td></tr><tr><td>4</td><td>生成AI利用のガバナンス</td><td>今回の資料内では未確認</td></tr><tr><td>5</td><td>アジャイル開発の監査</td><td>今回の資料内では未確認</td></tr><tr><td>6</td><td>監査手続の基本（午後）</td><td>R7秋 午後問11、R7春 午前問58</td></tr></tbody></table></div>
+<p>3〜6は、シラバス強化用語集（2026/10/30版）の用語。音声では図は読み上げず流れを言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. ITに係る全般統制と業務処理統制</h4>
+<p>ITの統制は、全般統制と業務処理統制の2つに分かれる。</p>
+<figure><svg class="dg" viewBox="0 0 360 234" role="img" aria-label="IT統制の2階建て" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">IT統制の2階建て</text>
+<line x1="180.0" y1="142.0" x2="180.0" y2="96.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="114.5" y="110.0" width="131" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">有効に働く環境を整える</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">業務処理統制</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">入力チェック・エラー修正と再処理・マスタ管理</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">全般統制</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">開発・保守／運用／アクセス管理／外部委託（土台）</text>
+<text x="12" y="222.0" class="dg-note">アクセス管理は全般統制</text>
+</svg><figcaption>全般統制と業務処理統制の関係</figcaption></figure>
+<ul><li>全般統制：業務処理統制が有効に働く環境を整える統制。例：システムの開発・保守の管理、運用管理、アクセス管理、外部委託の管理。</li><li>業務処理統制：個々の業務の処理が正しく行われるように組み込まれた統制。例：入力データのチェック、エラーデータの修正と再処理、マスタデータの管理。</li><li>入力・処理・出力の正確性と網羅性を確保するのが業務処理統制（R6春）。</li><li>補足：全般統制は「土台（環境）」、業務処理統制は「その上で動く、個別業務の中の仕組み」と覚える。</li><li>誤り：アクセス管理を業務処理統制とする誤り。アクセス管理は全般統制。</li></ul>
+<div class='tw'><table><thead><tr><th>区分</th><th>目的</th><th>例</th></tr></thead><tbody><tr><td>全般統制</td><td>業務処理統制が働く環境を整える</td><td>開発・保守の管理、運用管理、アクセス管理、外部委託管理</td></tr><tr><td>業務処理統制</td><td>個々の業務処理を正しくする</td><td>入力データのチェック、エラーの修正と再処理、マスタ管理</td></tr></tbody></table></div>
+<h4 id='s10'>2. 監査調書・監査証拠・予備調査</h4>
+<p>監査調書は、監査人が実施した監査手続とその結果、関連資料を記録したもの。監査の結論の根拠になる。</p>
+<ul><li>監査調書：監査意見を裏付ける証拠として作成し、適切に保管する（R5秋・R6春）。</li><li>監査証拠：監査の結論を裏付ける、十分かつ適切な証拠。</li><li>予備調査：本調査の前に、監査対象の実態を把握するために行う。結果をもとに監査手続を決める（R6秋）。</li><li>補足：流れは「予備調査 → 本調査（監査手続で証拠を集める）→ 監査調書に記録 → 監査報告」。</li><li>誤り：「監査調書は監査対象部門が作成する」は誤り。作成するのは監査人。</li></ul>
+<h4 id='s13'>3. システム監査基準・システム管理基準（令和5年改訂）</h4>
+<p>システム監査人の行動規範と手続（監査基準）、管理者が整備すべき管理策（管理基準）を定めた経済産業省の基準。</p>
+<ul><li>令和5年に改訂され、ITガバナンスやアジャイル開発、クラウドなど新しい環境に対応した。</li><li>午後での問われ方：監査の根拠として「どの基準に照らすか」が問われる。近年の午前では令和5年版が出典になっている。</li><li>出題実績：R7春 午前問60（システム管理基準 令和5年）、R7秋 午前問58（システム監査基準 令和5年）。</li></ul>
+<h4 id='s16'>4. 生成AI利用のガバナンス</h4>
+<p>生成AIの利用ルール、入力してよい情報、出力の確認方法などを決めて管理すること。</p>
+<ul><li>機密情報の入力による漏えい、誤った出力の利用、著作権の侵害がリスクになる。</li><li>午後での問われ方：監査では「利用ルールがあるか」「守られているか」「出力を人が確認しているか」を確かめる。</li><li>補足：ルールの有無、遵守の状況、出力の確認の3点で確かめる、と整理できる。</li></ul>
+<h4 id='s19'>5. アジャイル開発の監査</h4>
+<p>短い反復で開発する場合も、要件・品質・変更の管理が機能しているかを確かめる監査。</p>
+<ul><li>文書が少ないため、バックログやレビュー記録、テスト結果など実際の作業記録を証拠にする。</li><li>午後での問われ方：「どの記録で確かめるか」を本文の資料名から選ぶ。</li></ul>
+<h4 id='s22'>6. 監査手続の基本（午後）</h4>
+<p>監査証拠を集める方法。ドキュメントレビュー、インタビュー、ウォークスルー、テストデータ法など。</p>
+<figure><svg class="dg" viewBox="0 0 360 212" role="img" aria-label="確かめ方を分ける" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">確かめ方を分ける</text>
+<line x1="93.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">ドキュメントレビュー</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">記録に承認があるか</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">インタビュー</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">関係者が把握しているか</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">両方を組み合わせて確かめる</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">例：各管理表と点検表を照合する</text>
+</svg><figcaption>記録の承認と関係者の把握を別々に確かめる</figcaption></figure>
+<ul><li>記録の「承認の有無」と、関係者が「把握しているか」を別々に確かめるのが定番。</li><li>午後での問われ方：照合する資料の組合せ（例：各管理表と点検表）が問われる（R7秋 午後問11）。</li><li>補足：記録（書類）をレビューして承認を確かめ、関係者にインタビューして把握を確かめる。1つの方法だけでは、どちらかが確かめられない。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 入力データのチェックやエラーの修正・再処理は、全般統制か業務処理統制か</summary><p>業務処理統制</p></details><details class='qa'><summary><b>Q2</b> システムのアクセス管理は、全般統制か業務処理統制か</summary><p>全般統制</p></details><details class='qa'><summary><b>Q3</b> 業務処理統制が有効に働く環境を整える統制は</summary><p>全般統制</p></details><details class='qa'><summary><b>Q4</b> 監査人が実施した手続と結果を記録したものは</summary><p>監査調書</p></details><details class='qa'><summary><b>Q5</b> 本調査の前に監査対象の実態を把握する調査は</summary><p>予備調査</p></details><details class='qa'><summary><b>Q6</b> 監査調書を作成するのは誰か</summary><p>監査人</p></details><details class='qa'><summary><b>Q7</b> システム監査基準・管理基準が改訂された年は</summary><p>令和5年</p></details><details class='qa'><summary><b>Q8</b> 生成AIの監査で確かめる3点は</summary><p>ルールがあるか、守られているか、出力を人が確認しているか</p></details><details class='qa'><summary><b>Q9</b> アジャイル開発の監査で、証拠にする記録の例は</summary><p>バックログ、レビュー記録、テスト結果</p></details><details class='qa'><summary><b>Q10</b> 記録の「承認の有無」と関係者の「把握」を確かめる方法は</summary><p>ドキュメントレビューとインタビューを組み合わせる</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

@@ -1,0 +1,100 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・システム開発②】信頼度成長曲線・モジュール設計・新しい開発手法</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数と、午後での出題実績。この回は、品質の推定とモジュール設計の計算・区別に加えて、シラバス改訂の新用語と最近の開発手法を確認する。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数・実績</th></tr></thead><tbody><tr><td>1</td><td>信頼度成長曲線とエラー埋込み法</td><td>15回中4回（R6春・R7秋）</td></tr><tr><td>2</td><td>モジュール強度と結合度</td><td>15回中3回（R4秋・R6春）</td></tr><tr><td>3</td><td>中小受託取引適正化法（取適法）</td><td>シラバスVer.7.2（2026/01/08公開）で追加。出題なし（新規）</td></tr><tr><td>4</td><td>DevSecOps／CI/CD</td><td>今回の資料内では未確認</td></tr><tr><td>5</td><td>マイクロサービスとコンテナ（Docker／Kubernetes）</td><td>マイクロサービスはR6秋 午前問47。コンテナはR4秋 午前問12、R3秋 午前問14</td></tr><tr><td>6</td><td>IaCとリファクタリング</td><td>IaCはR7秋 午前問12、R5秋 午前問14。リファクタリングはR7秋 午後問9、R3秋 午前問48、H27秋 午前問49</td></tr></tbody></table></div>
+<p>4〜6は、シラバス強化用語集（2026/10/30版）の用語。音声では式や図は読み上げず、考え方を言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. 信頼度成長曲線とエラー埋込み法</h4>
+<p>テストで見つかるバグの数から、品質やバグの残り数を推定する方法。</p>
+<figure><svg class="dg" viewBox="0 0 360 406" role="img" aria-label="エラー埋込み法" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">エラー埋込み法</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="290.0" x2="180.0" y2="336.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="153.0" y="304.0" width="54" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="317.0" class="dg-lbl" text-anchor="middle">割り戻す</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">既知のエラーを埋め込む</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">例：48個</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">テストで見つかった数</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">埋込み 36個／元から 54個</text>
+<rect x="12.0" y="246.0" width="336.0" height="44" rx="8" class="dg-box key"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">埋込みの発見率＝36÷48＝0.75</text>
+<rect x="12.0" y="336.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="363.0" class="dg-txt" text-anchor="middle">推定総数＝54÷0.75＝72個</text>
+<text x="180.0" y="385.0" class="dg-sub" text-anchor="middle">残り＝72−54＝18個</text>
+</svg><figcaption>エラー埋込み法の考え方</figcaption></figure>
+<ul><li>ゴンペルツ曲線：累積バグ数の推移を表すS字の曲線。曲線が横ばいになれば、バグが収束したと判断する（R6春）。</li><li>エラー埋込み法：わざと既知のエラーを埋め込んでテストし、見つかった割合から、元からあるエラーの総数を推定する。</li><li>推定総エラー数＝発見した元からのエラー数×埋込みエラー総数÷発見した埋込みエラー数。</li><li>誤り：発見数をそのまま総数とする誤り。埋込みエラーの発見率で割り戻す。</li></ul>
+<p>数値例：埋め込んだエラー48個のうち36個を発見し、元からのエラーを54個発見した。埋込みエラーの発見率は36÷48＝0.75。推定総数＝54÷0.75＝72個（54×48÷36と同じ）。残りは72−54＝18個。</p>
+<h4 id='s10'>2. モジュール強度と結合度</h4>
+<p>モジュール分割の良さを測る2つの尺度。強度はモジュール内のまとまり、結合度はモジュール間の依存の強さ。</p>
+<figure><svg class="dg" viewBox="0 0 360 220" role="img" aria-label="良い設計：強度は高く、結合度は低く" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">良い設計：強度は高く、結合度は低く</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">モジュール強度</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">高いほど良い（最良：機能的強度）</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">モジュール結合度</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">低いほど良い（最良：データ結合）</text>
+<rect x="12.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box risk"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">最悪：暗合的強度</text>
+<rect x="186.0" y="142.0" width="162.0" height="44" rx="8" class="dg-box risk"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">最悪：内容結合</text>
+<text x="12" y="208.0" class="dg-note">結合度の良い順：データ→スタンプ→制御→外部→共通→内容</text>
+</svg><figcaption>モジュール強度と結合度：良い方向</figcaption></figure>
+<ul><li>強度は高いほど良い。最も良いのは機能的強度、最も悪いのは暗合的強度。</li><li>結合度は低いほど良い。最も良いのはデータ結合、最も悪いのは内容結合。</li><li>結合度を良い順に：データ結合、スタンプ結合、制御結合、外部結合、共通結合、内容結合。</li><li>補足：「強度は高く、結合度は低く」が良い設計。1つのモジュールは1つの機能に絞り（強度が高い）、他のモジュールへの依存は最小限にする（結合度が低い）。</li><li>誤り：「結合度は高いほど良い」は誤り。強度は高く、結合度は低く。</li></ul>
+<div class='tw'><table><thead><tr><th>尺度</th><th>良い方向</th><th>最良</th><th>最悪</th></tr></thead><tbody><tr><td>モジュール強度</td><td>高い</td><td>機能的強度</td><td>暗合的強度</td></tr><tr><td>モジュール結合度</td><td>低い</td><td>データ結合</td><td>内容結合</td></tr></tbody></table></div>
+<h4 id='s15'>3. 中小受託取引適正化法（取適法）</h4>
+<p>正式名称は「製造委託等に係る中小受託事業者に対する代金の支払の遅延等の防止に関する法律」。下請法（下請代金支払遅延等防止法）を改正し、2026年1月1日に施行された。略称は取適法。シラバスVer.7.2（2026/01/08）で「下請法」から置き換わった。（最新確認推奨）</p>
+<ul><li>用語の変更：親事業者は「委託事業者」、下請事業者は「中小受託事業者」になった。</li><li>主な追加：手形による代金の支払の禁止、協議に応じずに一方的に代金を決めることの禁止。</li><li>発注時に取引の内容を明示する義務、受領から60日以内に支払う義務は、下請法から引き続きある。</li><li>委託する側（大企業など）が、受託する中小企業に不当な代金の減額や支払遅延をすることを禁じる。</li><li>午後での問われ方：法務分野の午前で、旧「下請法」の問題が新しい名称で出る可能性がある（要確認）。</li><li>誤り：新しい名称の問題で「下請事業者」「親事業者」を選ぶ誤り。</li></ul>
+<h4 id='s18'>4. DevSecOps／CI/CD</h4>
+<p>CI/CDは、コードの統合・テスト・リリースを自動で継続的に行う仕組み。DevSecOpsは、そこにセキュリティ検査を組み込む考え方。</p>
+<figure><svg class="dg" viewBox="0 0 360 324" role="img" aria-label="CI/CD と シフトレフト" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">CI/CD と シフトレフト</text>
+<line x1="180.0" y1="82.0" x2="180.0" y2="128.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="186.0" x2="180.0" y2="232.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="44" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">コードを統合</text>
+<rect x="12.0" y="128.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="155.0" class="dg-txt" text-anchor="middle">自動テスト＋脆弱性検査</text>
+<text x="180.0" y="177.0" class="dg-sub" text-anchor="middle">早い段階で実行＝シフトレフト（DevSecOps）</text>
+<rect x="12.0" y="232.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="259.0" class="dg-txt" text-anchor="middle">自動でリリース</text>
+<text x="180.0" y="281.0" class="dg-sub" text-anchor="middle">継続的デリバリー（CD）</text>
+<text x="12" y="312.0" class="dg-note">後工程の手作業の検査を、自動化して前へ</text>
+</svg><figcaption>CI/CDの流れとシフトレフト</figcaption></figure>
+<ul><li>脆弱性検査を開発の後工程ではなく早い段階（シフトレフト）で自動実行する。</li><li>午後での問われ方：「リリースのたびに手作業で検査する問題点」の改善策として書ける。</li><li>補足：CIは継続的な統合（統合とテストを繰り返す）、CDは継続的なデリバリー（リリースまでを自動化）。</li></ul>
+<h4 id='s22'>5. マイクロサービスとコンテナ（Docker／Kubernetes）</h4>
+<ul><li>マイクロサービス：システムを小さな独立したサービスに分け、Web APIで連携させる構成。サービスごとに開発・更新・拡張ができる。反面、通信の増加や障害の切り分けが難しくなる。午後では、利点と欠点の両方が選択肢に出る（R6秋 午前問47）。</li><li>コンテナ：アプリと実行環境をまとめて動かす軽量な仮想化。Kubernetesは多数のコンテナを管理する仕組み。OSを共有するので、仮想マシンより起動が速く軽い。</li><li>午後での問われ方（コンテナ）：仮想マシン（ハイパーバイザ型）との違いが問われる。</li><li>補足：仮想マシンは1台ごとにOSを持つが、コンテナはホストのOSを共有する。</li></ul>
+<h4 id='s24'>6. IaCとリファクタリング</h4>
+<ul><li>IaC（Infrastructure as Code）：サーバやネットワークの構成をコード（設定ファイル）で記述し、自動で構築する手法。同じ環境を何度でも正確に作れる。構成の変更履歴もコードとして管理できる。</li><li>午後での問われ方（IaC）：「手作業の構築による設定ミス」の対策として書ける。</li><li>リファクタリング：外部から見た動作（仕様）を変えずに、プログラムの内部構造を整理すること。機能追加はしない。読みやすさ・保守しやすさを上げる。</li><li>午後での問われ方（リファクタリング）：名称を答える空欄補充で出た（R7秋 午後問9）。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> 累積バグ数がS字で横ばいになることで収束を判断する曲線は</summary><p>ゴンペルツ曲線</p></details><details class='qa'><summary><b>Q2</b> 埋込み40個中20個発見、元からのエラー30個発見。推定総数は</summary><p>60個（残り30個）</p></details><details class='qa'><summary><b>Q3</b> エラー埋込み法で、推定総数を出す式は</summary><p>元のエラー発見数×埋込み総数÷埋込みの発見数</p></details><details class='qa'><summary><b>Q4</b> モジュール強度と結合度は、それぞれ高い方が良いか低い方が良いか</summary><p>強度は高い方、結合度は低い方</p></details><details class='qa'><summary><b>Q5</b> 最も望ましい結合は</summary><p>データ結合</p></details><details class='qa'><summary><b>Q6</b> 最も望ましいモジュール強度は</summary><p>機能的強度</p></details><details class='qa'><summary><b>Q7</b> 下請法の改正後の通称は</summary><p>中小受託取引適正化法（取適法）</p></details><details class='qa'><summary><b>Q8</b> 改正後、「下請事業者」は何と呼ばれる</summary><p>中小受託事業者</p></details><details class='qa'><summary><b>Q9</b> 脆弱性検査を開発の早い段階で自動実行する考え方は</summary><p>DevSecOps（シフトレフト）</p></details><details class='qa'><summary><b>Q10</b> マイクロサービスの欠点は</summary><p>通信の増加や障害の切り分けの難しさ</p></details><details class='qa'><summary><b>Q11</b> コンテナが仮想マシンより起動が速く軽い理由は</summary><p>OSを共有するから</p></details><details class='qa'><summary><b>Q12</b> サーバやネットワークの構成をコードで記述して自動構築する手法は</summary><p>IaC</p></details><details class='qa'><summary><b>Q13</b> 外から見た動作を変えず内部構造を整理することは</summary><p>リファクタリング</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

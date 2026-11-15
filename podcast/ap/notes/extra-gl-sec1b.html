@@ -1,0 +1,96 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・情報セキュリティ③】認証・パスワード攻撃・ゼロトラスト</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数。この回は、「本人確認の方法」と「それを破る攻撃」、そして新しい考え方（ゼロトラスト・パスキー）を押さえる。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数・実績</th></tr></thead><tbody><tr><td>1</td><td>認証方式（チャレンジレスポンス・SAML・リスクベース認証）</td><td>15回中6回（R3秋・R6秋・R6春）</td></tr><tr><td>2</td><td>パスワード攻撃（4種類の区別）</td><td>15回中7回（R5秋・R6秋）。リバースブルートフォース攻撃はR7春 午後問1（設問3 正答率が低かった）</td></tr><tr><td>3</td><td>ゼロトラスト</td><td>R7秋 午後問1（空欄a：境界防御）と対で覚える</td></tr><tr><td>4</td><td>IDaaS／SSO</td><td>今回の資料内では未確認</td></tr><tr><td>5</td><td>パスキー（FIDO2）</td><td>今回の資料内では未確認</td></tr></tbody></table></div>
+<p>3〜5は、シラバス強化用語集（2026/10/30版）の用語。音声では図は読み上げず流れを言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. 認証方式（チャレンジレスポンス・SAML・リスクベース認証）</h4>
+<p>利用者が本人であることを確かめる方式。午前では「パスワードを送らない方式」「シングルサインオン」「状況に応じて追加認証する方式」が出る。</p>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="SAML：シングルサインオン" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">SAML：シングルサインオン</text>
+<line x1="180.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="158.5" y="110.0" width="43" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">①認証</text>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="136.5" y="214.0" width="87" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="227.0" class="dg-lbl" text-anchor="middle">②アサーション</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">利用者</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">1回だけ認証する</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">IdP（認証する側）</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">認証結果（アサーション）を発行</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">クラウドサービス（SP）</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">アサーションを信頼してログインさせる</text>
+<text x="12" y="326.0" class="dg-note">サービス側は利用者のパスワードを持たない／IDaaSがIdPを担うことが多い</text>
+</svg><figcaption>SAMLによるシングルサインオン</figcaption></figure>
+<ul><li>チャレンジレスポンス認証：サーバが毎回違う乱数（チャレンジ）を送り、利用者側はパスワードと乱数から計算した値（レスポンス）を返す。パスワードそのものはネットワークに流れない。</li><li>SAML：認証を行うIdP（アイデンティティプロバイダ）が認証結果（アサーション）を発行し、クラウドサービス側（SP）はそれを信頼してログインさせる。シングルサインオンを実現する。</li><li>リスクベース認証：いつもと違う端末・場所・時間からのアクセスのときだけ、追加の認証を求める。</li><li>3Dセキュア2.0：クレジットカードのネット決済の本人認証。リスクベース認証で、危険度が高い取引だけ追加の認証を求める。</li><li>補足：チャレンジが毎回違うので、通信を盗み見て同じ応答を送り直しても（リプレイ攻撃）通らない。</li><li>誤り：「SAMLではクラウドサービス側が利用者のパスワードを保管して照合する」は誤り。認証するのはIdP。</li></ul>
+<h4 id='s9'>2. パスワード攻撃（4種類の区別）</h4>
+<p>パスワードを推測・入手して不正にログインする攻撃。午前では4種類の区別が出る。「何を固定し、何を変えるか」で見分ける。</p>
+<ul><li>ブルートフォース攻撃：1つのIDに対して、パスワードを総当たりで試す。</li><li>リバースブルートフォース攻撃：パスワードを1つに固定し、IDを次々に変えて試す。1つのIDへの失敗回数が増えないので、アカウントロックを回避できる。</li><li>パスワードリスト攻撃：他のサイトから漏えいしたIDとパスワードの組を使ってログインを試す。パスワードの使い回しが狙われる。</li><li>レインボーテーブル攻撃：パスワードとハッシュ値の対応を事前に計算した表を使い、ハッシュ値から元のパスワードを割り出す。対策は「ソルト」（パスワードごとに違う値を加えてからハッシュ化する）。</li><li>午後での問われ方：「ロックアウトで防げない理由」は、同一のIDで2回以上ログインを試行しないから（R7春 午後問1）。</li><li>誤り：リバースブルートフォースとパスワードリスト攻撃の取り違え。「漏えいしたIDとパスワードの組」が出たらパスワードリスト攻撃。</li></ul>
+<div class='tw'><table><thead><tr><th>攻撃</th><th>固定するもの</th><th>変えるもの</th><th>効かない／効く対策</th></tr></thead><tbody><tr><td>ブルートフォース</td><td>ID</td><td>パスワード</td><td>アカウントロックが効く</td></tr><tr><td>リバースブルートフォース</td><td>パスワード</td><td>ID</td><td>アカウントロックが効かない</td></tr><tr><td>パスワードリスト</td><td>（漏えいしたIDとパスワードの組）</td><td>試すサイト</td><td>使い回しをやめる・多要素認証</td></tr><tr><td>レインボーテーブル</td><td>ハッシュ値</td><td>事前計算の表</td><td>ソルト</td></tr></tbody></table></div>
+<h4 id='s13'>3. ゼロトラスト</h4>
+<p>社内・社外を区別せず、すべてのアクセスを信頼せずに毎回検証する考え方。</p>
+<figure><svg class="dg" viewBox="0 0 360 212" role="img" aria-label="境界防御 と ゼロトラスト" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">境界防御 と ゼロトラスト</text>
+<line x1="93.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">境界防御</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">FWの内側は安全とみなす</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">ゼロトラスト</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">内側でも毎回、認証・認可・ログ監視</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">侵入されると</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">内部で横展開される</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">侵入されても</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">一つずつ検証して広がりを抑える</text>
+</svg><figcaption>境界防御とゼロトラストの違い</figcaption></figure>
+<ul><li>境界防御（FWの内側は安全）の反対。利用者・端末・通信を、その都度、認証・認可し、ログで監視する。</li><li>午後での問われ方：「境界防御だけでは不十分な理由」。内部に侵入された後の横展開を防げない、と書く。</li><li>補足：境界防御は「城壁の内側は信じる」考え方。一度内側に入られると、他のサーバへ広がっても止められない。ゼロトラストは、内側でも毎回確かめる。</li><li>出題実績：R7秋 午後問1（空欄a：境界防御）と対で覚える。</li></ul>
+<h4 id='s17'>4. IDaaS／SSO</h4>
+<p>IDaaSは、クラウドで認証・ID管理を提供するサービス。SSOは、1回の認証で複数のサービスを使える仕組み。</p>
+<ul><li>認証をIDaaSに集約すると、退職者のID停止や多要素認証の適用を1か所で管理できる。</li><li>午後での問われ方：「ID管理を集約する利点」として、アカウント削除漏れの防止、統一した認証強化を書く。</li><li>補足：SSOを実現する仕組みの一つが、前のテーマのSAML。IDaaSがIdPの役割を担うことが多い。</li></ul>
+<h4 id='s20'>5. パスキー（FIDO2）</h4>
+<p>パスワードの代わりに、端末内の秘密鍵と生体認証などで本人確認する方式。FIDO2／WebAuthnという規格に基づく。</p>
+<figure><svg class="dg" viewBox="0 0 360 234" role="img" aria-label="パスキー（FIDO2）のログイン" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">パスキー（FIDO2）のログイン</text>
+<line x1="180.0" y1="142.0" x2="180.0" y2="96.0" class="dg-edge" marker-end="url(#ah)" marker-start="url(#ah)"/>
+<rect x="98.0" y="110.0" width="164" height="18" rx="4" class="dg-lbg"/><text x="180.0" y="123.0" class="dg-lbl" text-anchor="middle">①乱数を送る ②署名して返す</text>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">利用者の端末</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">生体認証で秘密鍵を使う（鍵は端末の外に出ない）</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">サーバ</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">登録済みの公開鍵で署名を検証</text>
+<text x="12" y="222.0" class="dg-note">パスワードを送らない → フィッシング・使い回しに強い</text>
+</svg><figcaption>パスキーによるログインの流れ</figcaption></figure>
+<ul><li>サーバには公開鍵だけを登録する。パスワードを送らないので、フィッシングや使い回しの被害を受けにくい。</li><li>午後での問われ方：「パスワード漏えい・リスト型攻撃への対策」として書ける。秘密鍵が端末から出ない点が要点。</li><li>補足：仕組みは、デジタル署名と同じ。サーバが送る乱数に、端末の秘密鍵で署名して返し、サーバが登録済みの公開鍵で検証する。本人確認（生体認証など）は、端末の中の秘密鍵を使うための鍵あけとして行う。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> パスワードそのものをネットワークに流さない認証方式は</summary><p>チャレンジレスポンス認証</p></details><details class='qa'><summary><b>Q2</b> SAMLで認証を行い、アサーションを発行する側は</summary><p>IdP（アイデンティティプロバイダ）</p></details><details class='qa'><summary><b>Q3</b> 普段と違う環境からのアクセス時だけ追加認証する方式は</summary><p>リスクベース認証</p></details><details class='qa'><summary><b>Q4</b> 漏えいしたIDとパスワードの組を使う攻撃は</summary><p>パスワードリスト攻撃</p></details><details class='qa'><summary><b>Q5</b> パスワードを固定してIDを変える攻撃と、その狙いは</summary><p>リバースブルートフォース攻撃。アカウントロックの回避</p></details><details class='qa'><summary><b>Q6</b> リバースブルートフォースにロックアウトが効かない理由は</summary><p>同じIDで2回以上試行しないから</p></details><details class='qa'><summary><b>Q7</b> レインボーテーブル攻撃への対策は</summary><p>ソルト</p></details><details class='qa'><summary><b>Q8</b> 社内・社外を区別せず、毎回検証する考え方は</summary><p>ゼロトラスト</p></details><details class='qa'><summary><b>Q9</b> 境界防御だけでは不十分な理由は</summary><p>内部に侵入された後の横展開を防げないから</p></details><details class='qa'><summary><b>Q10</b> 認証を集約し、退職者のID停止などを1か所で管理できるサービスは</summary><p>IDaaS</p></details><details class='qa'><summary><b>Q11</b> パスキーでサーバに登録しておくものは</summary><p>公開鍵だけ（秘密鍵は端末から出ない）</p></details><details class='qa'><summary><b>Q12</b> パスキーがフィッシングに強い理由は</summary><p>パスワードを送らないから</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>

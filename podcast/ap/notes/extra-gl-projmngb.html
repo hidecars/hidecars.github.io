@@ -1,0 +1,116 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#d2d2d7;--acc:#0a66c2;--th:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--sub:#a1a1a6;--line:#38383a;--acc:#4ea1ff;--th:#1c1c1e}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Hiragino Sans",sans-serif;max-width:760px;margin-inline:auto}
+h1{font-size:1.3rem;line-height:1.4}h2{font-size:1.1rem;border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:2em}
+h3{font-size:1rem}.meta{color:var(--sub);font-size:.85rem}a{color:var(--acc)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--th)}pre{white-space:pre-wrap;background:var(--th);padding:10px;border-radius:6px;font-size:.85rem}
+audio{width:100%;margin:12px 0}li{margin:2px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nav a{display:inline-block;padding:6px 12px;border:1px solid var(--acc);border-radius:16px;text-decoration:none;font-size:.9rem}
+.nav a.main{background:var(--acc);color:var(--bg)}
+details.qa{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}details.qa summary{cursor:pointer}
+details.qa[open] summary{margin-bottom:6px}details.qa p{margin:0;color:var(--acc);font-weight:600}
+h2,h3{scroll-margin-top:12px}
+:root{--box:#f5f5f7;--key:#e8f1fb;--risk:#fdecea;--riskl:#c62828}
+@media (prefers-color-scheme:dark){:root{--box:#1c1c1e;--key:#0d2a45;--risk:#3a1614;--riskl:#ff6b5e}}
+figure{margin:12px 0}figcaption{color:var(--sub);font-size:.8rem;text-align:center}
+svg.dg{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;font-family:-apple-system,"Hiragino Sans",sans-serif}
+.dg-box{fill:var(--box);stroke:var(--sub);stroke-width:1.2}.dg-box.key{fill:var(--key);stroke:var(--acc);stroke-width:2}
+.dg-box.dash{stroke-dasharray:5 4}.dg-box.risk{fill:var(--risk);stroke:var(--riskl);stroke-width:1.6}
+.dg-txt{fill:var(--fg);font-size:13px;font-weight:600}.dg-sub{fill:var(--sub);font-size:10.5px}
+.dg-edge{stroke:var(--sub);stroke-width:1.4}.dg-edge.dash{stroke-dasharray:4 4}.dg-ah{fill:var(--sub)}
+.dg-lbg{fill:var(--bg);stroke:var(--line)}.dg-lbl{fill:var(--fg);font-size:10.5px}
+.dg-title{fill:var(--fg);font-size:13px;font-weight:700}.dg-note{fill:var(--sub);font-size:10.5px}
+</style></head><body><a id='top'></a><p class='meta'>extra｜用語集｜<a href='../index.html'>一覧へ</a></p><h1>【用語集・プロジェクトマネジメント②】EVM・リスク・WBS・アジャイルの管理</h1><nav class='nav'><a class='main' href='#quiz'>▶ クイズに挑戦</a><a href='#s4'>核心：用語ごとの判断ルール</a></nav><h3 id='s0'>1. 今回の用語と出題回数</h3>
+<p>H24秋〜R7秋の午前15回（当方集計・概数）で出題された回数と、午後での出題実績。この回は、計算（EVM・EMV）を図と手順で押さえ、新しい管理手法（CCPM・バーンダウン・ベロシティなど）も確認する。</p>
+<div class='tw'><table><thead><tr><th>#</th><th>用語</th><th>出題回数・実績</th></tr></thead><tbody><tr><td>1</td><td>EVM（アーンドバリューマネジメント）</td><td>15回中8回（R5秋・R6春）。午後はR7秋 午後問9、午前はR7春 午前問52</td></tr><tr><td>2</td><td>リスク対応と期待金額価値（EMV）</td><td>15回中7回（R3秋・R5秋・R6春・R7秋）</td></tr><tr><td>3</td><td>WBSとスコープの管理</td><td>15回中7回（R4秋・R5秋・R6秋）</td></tr><tr><td>4</td><td>CCPM</td><td>R7春 午後問9</td></tr><tr><td>5</td><td>バーンダウンチャートとベロシティ</td><td>バーンダウンはR7秋 午後問9、R3秋 午前問49、H29秋 午前問50。ベロシティは今回の資料内では未確認</td></tr><tr><td>6</td><td>スコープクリープとステークホルダーエンゲージメント</td><td>今回の資料内では未確認</td></tr></tbody></table></div>
+<p>4〜6は、シラバス強化用語集（2026/10/30版）の用語。音声では式や図は読み上げず、考え方を言葉で説明する。</p>
+<h3 id='s4'>2. 核心：用語ごとの判断ルール</h3>
+<h4 id='s5'>1. EVM（アーンドバリューマネジメント）</h4>
+<p>出来高（EV）を使って、進捗とコストを同じ金額の尺度で管理する手法。</p>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="EVM：PV・EV・AC から指標へ" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">EVM：PV・EV・AC から指標へ</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box"/>
+<text x="64.0" y="65.0" class="dg-txt" text-anchor="middle">PV 計画価値</text>
+<text x="64.0" y="87.0" class="dg-sub" text-anchor="middle">今日までに終える予定</text>
+<rect x="128.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box key"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">EV 出来高</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">実際に終えた作業の予算</text>
+<rect x="244.0" y="38.0" width="104.0" height="58" rx="8" class="dg-box"/>
+<text x="296.0" y="65.0" class="dg-txt" text-anchor="middle">AC 実コスト</text>
+<text x="296.0" y="87.0" class="dg-sub" text-anchor="middle">実際にかかった費用</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">進捗：SV＝EV−PV</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">SPI＝EV÷PV</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">コスト：CV＝EV−AC</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">CPI＝EV÷AC</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">EAC＝BAC÷CPI</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">完成時総コストの見積り</text>
+<text x="12" y="326.0" class="dg-note">進捗はEVとPV／コストはEVとAC／式は必ずEVが先</text>
+</svg><figcaption>EVMの3つの値と、そこから出す指標</figcaption></figure>
+<ul><li>PV（計画価値）：今日までに終える予定だった作業の予算。EV（出来高）：今日までに実際に終えた作業の予算。AC（実コスト）：実際にかかった費用。BAC：全体の予算。</li><li>SV＝EV−PV。マイナスなら進捗の遅れ（R5秋：EV−PVが負→遅れ）。</li><li>CV＝EV−AC。マイナスならコスト超過。</li><li>SPI＝EV÷PV、CPI＝EV÷AC。1未満なら悪い。</li><li>完成時総コストの見積り（今の効率が続く場合）：EAC＝BAC÷CPI。</li><li>午後での問われ方：進捗遅れの判断では EVとPV を比べる（R7秋 午後問9）。</li><li>誤り：進捗の判断でACとPVを比べる誤り。進捗はEVとPVで比べる。</li><li>誤り：式の順番の誤り。差も比も、必ずEVが先（左・分子）。</li></ul>
+<div class='tw'><table><thead><tr><th>指標</th><th>式</th><th>悪いとき</th></tr></thead><tbody><tr><td>SV（進捗差異）</td><td>EV−PV</td><td>マイナス＝遅れ</td></tr><tr><td>CV（コスト差異）</td><td>EV−AC</td><td>マイナス＝予算超過</td></tr><tr><td>SPI</td><td>EV÷PV</td><td>1未満＝遅れ</td></tr><tr><td>CPI</td><td>EV÷AC</td><td>1未満＝超過</td></tr><tr><td>EAC</td><td>BAC÷CPI</td><td>BACより大きいと予算超過の見込み</td></tr></tbody></table></div>
+<p>数値例：BAC 1,000万円、PV 500万円、EV 400万円、AC 500万円。SV＝400−500＝−100万円（遅れ）、CV＝400−500＝−100万円（超過）、SPI＝400÷500＝0.8、CPI＝400÷500＝0.8、EAC＝1,000÷0.8＝1,250万円。</p>
+<h4 id='s11'>2. リスク対応と期待金額価値（EMV）</h4>
+<p>リスクは、起きると目標に影響する不確かな事象。悪い影響（脅威）と良い影響（好機）がある。</p>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="リスク対応とEMV" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">リスク対応とEMV</text>
+<line x1="93.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="267.0" y1="96.0" x2="180.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="200.0" x2="180.0" y2="246.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="93.0" y="65.0" class="dg-txt" text-anchor="middle">脅威への対応</text>
+<text x="93.0" y="87.0" class="dg-sub" text-anchor="middle">回避・転嫁・軽減・受容</text>
+<rect x="186.0" y="38.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="267.0" y="65.0" class="dg-txt" text-anchor="middle">好機への対応</text>
+<text x="267.0" y="87.0" class="dg-sub" text-anchor="middle">活用・共有・強化・受容</text>
+<rect x="12.0" y="142.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="169.0" class="dg-txt" text-anchor="middle">EMV＝確率×金額の合計</text>
+<text x="180.0" y="191.0" class="dg-sub" text-anchor="middle">例 0.6×10＋0.4×(−2)＝5.2億円</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">デシジョンツリー</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">EMVが大きい案を選ぶ</text>
+<text x="12" y="326.0" class="dg-note">保険は「転嫁」（軽減ではない）</text>
+</svg><figcaption>脅威への4つの対応と、デシジョンツリーでのEMV</figcaption></figure>
+<ul><li>脅威への対応：回避（原因を取り除く）、転嫁（保険や契約で第三者に移す）、軽減（発生確率や影響を下げる）、受容（何もしないか予備を持つ）。</li><li>好機への対応：活用、共有、強化、受容。脅威と好機に共通するのは「受容」（第6版以降は「エスカレーション」も共通）。</li><li>期待金額価値（EMV）＝発生確率×金額の合計。デシジョンツリーでは、EMVが大きい案を選ぶ。</li><li>コンティンジェンシー計画：リスクが発生したときに実行する対応を、前もって決めておく計画。</li><li>誤り：保険をかけるのを「軽減」とする誤り。保険は「転嫁」。</li></ul>
+<p>数値例：新規開発案は成功確率0.6で利益10億円、失敗確率0.4で損失2億円。EMV＝0.6×10＋0.4×(−2)＝6−0.8＝5.2億円。確率0.5で8億、0.5で−2億なら、4−1＝3億円。</p>
+<h4 id='s16'>3. WBSとスコープの管理</h4>
+<p>WBSは、プロジェクトの成果物と作業を階層的に分解した図。スコープは、プロジェクトで行う作業と作る成果物の範囲。</p>
+<ul><li>WBSの最上位から最下位まで、すべての作業を漏れなく含める（100%ルール）。</li><li>スコープ記述書に書くもの：成果物、受入基準、除外事項（やらないこと）など。</li><li>スコープの管理（コントロール）：計画したスコープと実際を比べ、差があれば変更要求を出す（R4秋・R6秋に同じ問い）。</li><li>誤り：「スコープの管理＝WBSを作ること」は誤り。WBSの作成は計画、管理は実績との比較と変更要求。</li></ul>
+<h4 id='s19'>4. CCPM</h4>
+<p>CCPM（Critical Chain Project Management）は、各作業の余裕（バッファ）を外して最後にまとめ、全体で管理する手法。</p>
+<ul><li>人は余裕があると使い切る（パーキンソンの法則）。バッファを統合すると無駄な消費を防げる。</li><li>午後での問われ方：遅れそうなとき → 延期ではなく、余裕のあるチームから要員をシフトする（R7春 午後問9）。</li></ul>
+<h4 id='s22'>5. バーンダウンチャートとベロシティ</h4>
+<p>アジャイル開発の進み具合を見る道具。</p>
+<figure><svg class="dg" viewBox="0 0 360 338" role="img" aria-label="バーンダウンチャートの読み方" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-ah"/></marker></defs>
+<text x="180.0" y="26" class="dg-title" text-anchor="middle">バーンダウンチャートの読み方</text>
+<line x1="180.0" y1="96.0" x2="93.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<line x1="180.0" y1="96.0" x2="267.0" y2="142.0" class="dg-edge" marker-end="url(#ah)"/>
+<rect x="12.0" y="38.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="65.0" class="dg-txt" text-anchor="middle">縦軸＝残りの作業量／横軸＝日</text>
+<text x="180.0" y="87.0" class="dg-sub" text-anchor="middle">計画線は右下がり</text>
+<rect x="12.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box key"/>
+<text x="93.0" y="169.0" class="dg-txt" text-anchor="middle">実績線が計画線より下</text>
+<text x="93.0" y="191.0" class="dg-sub" text-anchor="middle">進んでいる</text>
+<rect x="186.0" y="142.0" width="162.0" height="58" rx="8" class="dg-box risk"/>
+<text x="267.0" y="169.0" class="dg-txt" text-anchor="middle">実績線が計画線より上</text>
+<text x="267.0" y="191.0" class="dg-sub" text-anchor="middle">遅れている</text>
+<rect x="12.0" y="246.0" width="336.0" height="58" rx="8" class="dg-box"/>
+<text x="180.0" y="273.0" class="dg-txt" text-anchor="middle">タスクが追加されると</text>
+<text x="180.0" y="295.0" class="dg-sub" text-anchor="middle">線が上がる（チケットを発行して管理）</text>
+<text x="12" y="326.0" class="dg-note">ベロシティ：1スプリントで終わる量／残作業÷ベロシティ＝必要な反復回数</text>
+</svg><figcaption>バーンダウンチャートの読み方</figcaption></figure>
+<ul><li>バーンダウンチャート：残りの作業量が日ごとに減っていく様子を表すグラフ。計画線より上なら遅れ、下なら進んでいる。残作業は残チケット数などで数える。</li><li>午後での問われ方：グラフから遅れ日数を読む計算、タスク追加時の「チケット発行」が出た（R7秋 午後問9）。</li><li>ベロシティ：アジャイル開発で、1回の反復（スプリント）で完了できる作業量。過去のベロシティから、残りの作業が何回の反復で終わるかを見積もる。</li><li>午後での問われ方（ベロシティ）：「残作業÷ベロシティ＝必要な反復回数」の計算で出やすい。</li><li>補足の例：残作業が60ポイント、ベロシティが20ポイント/スプリントなら、60÷20＝3スプリントで終わる見込み。</li></ul>
+<h4 id='s26'>6. スコープクリープとステークホルダーエンゲージメント</h4>
+<ul><li>スコープクリープ：正式な手続を経ずに、作業範囲（スコープ）が少しずつ広がっていくこと。コストや納期の超過の原因になる。変更は変更管理の手続で承認してから行う。</li><li>午後での問われ方：「仕様変更要望をどう扱うか」→ 一覧で管理し、影響を評価して承認を得る、と書く。</li><li>ステークホルダーエンゲージメント：利害関係者を特定し、関与の度合いを適切に保つ活動。影響力と関心の高さで分類し、伝える内容や頻度を変える。</li><li>午後での問われ方：「誰の合意が必要か」「どの段階で関与させるか」を本文の登場人物から読み取る。</li></ul>
+<h3 id='quiz'>3. 思い出しクイズ</h3>
+<details class='qa'><summary><b>Q1</b> EV−PVが負のとき何が分かる</summary><p>進捗が遅れている</p></details><details class='qa'><summary><b>Q2</b> EV 300、AC 250のときのCVは</summary><p>＋50（予算内）</p></details><details class='qa'><summary><b>Q3</b> BAC 800、CPI 0.8のときのEACは</summary><p>1,000</p></details><details class='qa'><summary><b>Q4</b> EV 400、PV 500のときのSPIは</summary><p>0.8</p></details><details class='qa'><summary><b>Q5</b> 保険でリスクの影響を第三者に移す対応は</summary><p>転嫁</p></details><details class='qa'><summary><b>Q6</b> 脅威と好機に共通する対応は</summary><p>受容（とエスカレーション）</p></details><details class='qa'><summary><b>Q7</b> 確率0.5で8億、0.5で−2億のEMVは</summary><p>3億円</p></details><details class='qa'><summary><b>Q8</b> デシジョンツリーで選ぶ案は</summary><p>EMVが大きい案</p></details><details class='qa'><summary><b>Q9</b> スコープ記述書に書く「やらないこと」を何という</summary><p>除外事項</p></details><details class='qa'><summary><b>Q10</b> スコープの管理（コントロール）で行うことは</summary><p>計画と実際を比べ、必要なら変更要求を出す</p></details><details class='qa'><summary><b>Q11</b> バッファを統合して全体で管理する手法は</summary><p>CCPM</p></details><details class='qa'><summary><b>Q12</b> バーンダウンチャートで、実績線が計画線より上のとき</summary><p>遅れている</p></details><details class='qa'><summary><b>Q13</b> 残60ポイント、ベロシティ20のとき必要な反復回数は</summary><p>3回</p></details><details class='qa'><summary><b>Q14</b> 正式な手続なしに作業範囲が広がることは</summary><p>スコープクリープ</p></details><p class='meta'>タップすると答えが開きます。<a href='#top'>ページの先頭へ</a></p></body></html>
